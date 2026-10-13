@@ -1,0 +1,11 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+308,Abyssal Crawler,2,,Minion,1,2,1,"At the end of your turn, turn a nearby space into Shadow Creep."
+310,Bloodtide Priestess,2,provoke,Minion,4,3,3,Deathwatch: Summon a Wraithling on a random nearby space.
+317,Gloomchaser,2,echo,Minion,2,2,2,Opening Gambit: Summon a 1/1 Wraithling nearby.
+316,Darkspine Elemental,2,,Minion,2,1,4,Double the damage dealt by friendly Shadow Creep.
+319,Nightsorrow Assassin,2,,Minion,3,2,1,Opening Gambit: Destroy a nearby enemy minion with 2 or less attack.
+311,Shadow Watcher,2,,Minion,3,2,2,Deathwatch: Gains +1/+1.
+331,Furiosa,2,,Minion,1,1,2,Blood Surge: Friendly Wraithlings gain +1/+1.
+20072,Wraithling Swarm,2,spell_draw,Spell,3,,,Summon three 1/1 Wraithlings nearby each other.
+20051,Shadow Nova,2,,Spell,4,,,Turn a 2x2 area into Shadow Creep.
+20049,Daemonic Lure,2,spell_power,Spell,2,,,Deal 1 damage to an enemy minion and teleport it anywhere.

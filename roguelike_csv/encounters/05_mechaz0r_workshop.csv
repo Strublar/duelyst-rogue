@@ -1,0 +1,13 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+19002,Helm of MECHAZ0R,3,cost,Minion,1,2,2,Opening Gambit: Progresses MECHAZ0R build by +20%.
+19003,Wings of MECHAZ0R,3,cost,Minion,2,1,4,"Airdrop
+Opening Gambit: Progresses MECHAZ0R build by +20%."
+19004,Cannon of MECHAZ0R,3,cost,Minion,3,2,2,"Ranged
+Opening Gambit: Progresses MECHAZ0R build by +20%."
+19005,Sword of MECHAZ0R,3,,Minion,3,3,3,"Frenzy
+Opening Gambit: Progresses MECHAZ0R build by +20%."
+19006,Chassis of MECHAZ0R,3,provoke,Minion,4,2,4,"Forcefield
+Opening Gambit: Progresses MECHAZ0R build by +20%."
+11123,Metaltooth,2,mixed_stats,Minion,2,2,2,"If you have another Mech minion, this minion has Rush."
+11126,Replicant,2,echo,Minion,2,2,2,Opening Gambit: Draw another Replicant from your deck.
+11085,Ironclad,1,,Minion,5,4,3,Dying Wish: Dispel all enemy minions.

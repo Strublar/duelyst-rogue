@@ -1,0 +1,8 @@
+﻿role,id,name,copies,type,mana_cost,attack,health,description
+general,401,Vaath the Immortal,1,General,,2,25,Bloodbound Spell: Give your General +1 Attack.
+bloodbound_spell,20182,Overload,,Spell,1,,,Give your General +1 Attack.
+card,20111,Dampening Wave,3,Spell,0,,,Choose a unit. It cannot counterattack this turn.
+card,430,Rancour,3,Minion,2,1,3,"Whenever your General takes damage, this minion gains that much attack."
+card,20288,Vaath's Brutality,3,Spell,2,,,Stun an enemy minion. Give your General +1 Attack.
+card,429,Thraex,3,Minion,3,2,4,Blood Surge: All friendly minions gain +1 Attack (including itself).
+card,19044,Silhouette Tracer,3,Minion,4,2,6,Opening Gambit: Teleport your General up to 3 spaces.

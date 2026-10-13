@@ -1,0 +1,8 @@
+﻿role,id,name,copies,type,mana_cost,attack,health,description
+general,123,Reva Eventide,1,General,,2,25,Bloodbound Spell: Summon a Heartseeker nearby your General.
+bloodbound_spell,20177,Arcane Heart,,Spell,1,,,Summon a Heartseeker nearby your General.
+card,110,Kaido Assassin,3,Minion,2,2,3,Backstab: (1).
+card,109,Widowmaker,3,Minion,3,2,3,Ranged
+card,20081,Phoenix Fire,3,Spell,2,,,Deal 3 damage to anything.
+card,20102,Killing Edge,3,Spell,3,,,"Give a friendly minion +4/+2. If that minion has Backstab, draw a card at end of turn."
+card,10978,Hailstone Golem,3,Minion,4,4,6,

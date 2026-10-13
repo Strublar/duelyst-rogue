@@ -1,0 +1,128 @@
+﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description
+254,Ciphyron Ascendant,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Give an enemy minion -2 Attack until your next turn.
+223,Scioness Sajj,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Your General deals double damage to minions this turn.
+201,Zirix Starstrider,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Summon a 2/2 Iron Dervish on a random space nearby your General.
+20335,Burden of Knowledge,Spell,Common,Immortal,yes,0,,,,,Deal 3 damage to your General to draw a card.
+227,Rae,Minion,Common,ShimZar,yes,0,1,1,BattlePet,"Battle Pet, Dying Wish",Dying Wish: Dispel the nearest enemy minion.
+20073,Siphon Energy,Spell,Common,Core,yes,0,,,,,Dispel an enemy minion nearby your General.
+20255,Arid Unmaking,Spell,Common,Unearthed,yes,1,,,,Exhuming Sand,Destroy a friendly minion to turn its space into Exhuming Sand.
+20132,Auroras Tears,Spell,Epic,Core,yes,1,,,,,"This turn, your General gains +2 Attack for every equipped artifact."
+20286,Azure Summoning,Spell,Epic,Unearthed,yes,1,,,,Flying,"Whenever you summon a minion with Flying from your action bar this turn, draw a minion with Flying from your deck."
+20075,Blindscorch,Spell,Basic,Core,yes,1,,,,,Lower a minion's Attack to 0 until your next turn.
+20300,Droplift,Spell,Rare,Unearthed,yes,1,,,,,Steal a random artifact from the enemy General and equip it.
+20336,Equality Constraint,Spell,Common,Immortal,yes,1,,,,,ANY minion's Health becomes equal to its Attack.
+20313,Kinematic Projection,Spell,Rare,Immortal,yes,1,,,,,Give a minion Blast. It can no longer move.
+30036,Oblivion Sickle,Artifact,Legendary,Unearthed,yes,1,,,,"Destructible, Exhuming Sand, Token","Whenever your General destroys an enemy, turn that space into Exhuming Sand."
+20378,Planar Foundry,Spell,Common,Mythron,yes,1,,,,,Draw an artifact from your deck.
+20095,Scion's First Wish,Spell,Basic,Core,yes,1,,,,,Give a friendly minion +1/+1. Draw a card.
+20246,Stone to Spears,Spell,Rare,Ancients,yes,1,,,,,A friendly Obelysk gains +3 Attack and may move and attack this turn if able.
+20151,Bone Swarm,Spell,Common,Core,yes,2,,,,,Deal 2 damage to the enemy General and all enemy minions around them.
+20074,Cosmic Flesh,Spell,Basic,Core,yes,2,,,,Provoke,Give a friendly minion +1/+3 and Provoke.
+238,Dreamshaper,Minion,Common,Ancients,yes,2,2,2,Golem,Bond,Bond: Draw two cards.
+211,Dunecaster,Minion,Common,Core,yes,2,2,1,Dervish,Opening Gambit,"Opening Gambit: Give +2/+2 to a friendly Dervish. If it is a Wind Dervish, it no longer disappears."
+241,Duskweaver,Minion,Common,Unearthed,yes,2,2,1,Dervish,Dying Wish,Dying Wish: Put a random Scion's Wish spell into your action bar.
+258,Dustdrinker,Minion,Common,Mythron,yes,2,2,1,Dervish,Intensify,Intensify: Deal 1 damage to the enemy General and this minion gains +1 Health.
+214,Ethereal Obelysk,Minion,Basic,Core,yes,2,0,6,Structure,"Token, Summon Dervish, Structure",Summon Dervish
+20152,Fountain of Youth,Spell,Rare,Core,yes,2,,,,,Fully heal all friendly minions.
+30050,Iris Barrier,Artifact,Rare,Immortal,yes,2,,,,Destructible,Your General takes no damage during your turn.
+243,Lavastorm Obelysk,Minion,Rare,Unearthed,yes,2,0,4,Structure,"Token, Summon Dervish, Structure","Summon Dervish
+At the start of your turn, deal 6 damage to all enemy minions in this row."
+20386,Metalmeld,Spell,Rare,Mythron,yes,2,,,,,Equip a friendly artifact that was destroyed this game.
+20350,Neurolink,Spell,Epic,Immortal,yes,2,,,,,Your General gains all keywords of friendly minions this turn.
+30054,Obdurator,Artifact,Epic,Mythron,yes,2,,,,Destructible,"Your General gains +1 Attack.
+At the start of your turn, repair all of your artifacts by 1 durability."
+256,Orbrider,Minion,Common,Mythron,yes,2,2,2,,Opening Gambit,Opening Gambit: Return a nearby friendly minion to your action bar.
+228,Pax,Minion,Rare,ShimZar,yes,2,2,1,BattlePet,"Token, Battle Pet, Dying Wish",Dying Wish: Summon two 2/2 Iron Dervishes nearby.
+213,Pyromancer,Minion,Basic,Core,yes,2,2,1,,Blast,Blast
+20099,Rasha's Curse,Spell,Epic,Core,yes,2,,,,"Rush, Token",Destroy a random artifact on the enemy General. Summon a Wind Dervish with Rush near them.
+20265,Reassemble,Spell,Common,Unearthed,yes,2,,,,,Return a friendly Obelysk to your action bar and reduce its cost to 0. Draw a card.
+20093,Sand Trap,Spell,Common,Core,yes,2,,,,,Choose an enemy minion.  It can no longer move.
+20096,Scion's Second Wish,Spell,Basic,Core,yes,2,,,,,Give a friendly minion +2/+2. It takes no damage from Generals.
+30006,Staff Of Y'Kir,Artifact,Basic,Core,yes,2,,,,Destructible,Your General gains +2 Attack.
+20196,Whisper of the Sands,Spell,Common,ShimZar,yes,2,,,,Token,Summon a Wind Dervish nearby each friendly Obelysk.
+229,Wind Slicer,Minion,Rare,ShimZar,yes,2,2,3,,Opening Gambit,Opening Gambit: Lower the cost of all Structure minions in your action bar by 1.
+216,Windstorm Obelysk,Minion,Common,Core,yes,2,0,4,Structure,"Token, Summon Dervish, Structure","Summon Dervish
+Your dervishes have +1 Health."
+20195,Astral Flood,Spell,Common,ShimZar,yes,3,,,,Token,Put 3 random Battle Pets into your action bar.
+20076,Astral Phasing,Spell,Common,Core,yes,3,,,,Flying,Give a friendly minion +5 Health and Flying.
+263,Atom Klinger,Minion,Rare,Mythron,yes,3,1,5,,,"Whenever you equip an artifact, this minion gains +Attack equal to the artifact's cost."
+20242,Divine Spark,Spell,Common,Ancients,yes,3,,,,,Draw two cards.
+245,Fate Watcher,Minion,Common,Unearthed,yes,3,2,3,,,"Whenever your opponent draws a card, this minion gains a random keyword ability."
+215,Fireblaze Obelysk,Minion,Rare,Core,yes,3,0,6,Structure,"Token, Summon Dervish, Structure","Summon Dervish
+Your dervishes have +1 Attack."
+218,Imperial Mechanyst,Minion,Rare,Core,yes,3,2,5,,Opening Gambit,Opening Gambit: Repair all of your artifacts to full durability.
+20153,Inner Oasis,Spell,Rare,Core,yes,3,,,,,Give all friendly minions +3 Health. Draw a card.
+212,Orb Weaver,Minion,Common,Core,yes,3,2,2,Dervish,Opening Gambit,Opening Gambit: Summon a copy of this minion on a nearby space.
+221,Portal Guardian,Minion,Epic,Core,yes,3,0,8,,Frenzy,"Frenzy
+Whenever you summon a minion, this minion gains +1 Attack."
+20197,Psychic Conduit,Spell,Rare,ShimZar,yes,3,,,,,Reactivate and take control of an enemy minion with 2 or less Attack until end of turn.
+210,Sand Howler,Minion,Rare,Core,yes,3,3,3,Dervish,,Cannot be targeted by enemy spells.
+20097,Scion's Third Wish,Spell,Legendary,Core,yes,3,,,,Flying,Give a friendly Dervish minion +3/+3 and Flying.
+253,Simulacra Obelysk,Minion,Legendary,Immortal,yes,3,0,7,Structure,"Token, Summon Dervish, Structure, Build","Build: (2).
+Summon Dervish
+When this minion is built, start building another on a nearby space."
+251,Skyppy,Minion,Common,Immortal,yes,3,3,3,,Dying Wish,Dying Wish: Put a random legendary artifact from your opponent's Faction into your action bar.
+20078,Time Maelstrom,Spell,Legendary,Core,yes,3,,,,,Reactivate your General.
+30008,Wildfire Ankh,Artifact,Epic,Core,yes,3,,,,"Destructible, Blast",Your General gains Blast.
+20362,Wither,Spell,Rare,Mythron,yes,3,,,,,An enemy minion disappears at the start of your next turn.
+235,Zephyr,Minion,Common,Ancients,yes,3,3,3,,"Frenzy, Blood Surge",Blood Surge: Your General gains Frenzy this turn.
+231,Allomancer,Minion,Epic,ShimZar,yes,4,4,3,,"Token, Dying Wish",Dying Wish: Summon a random Obelysk on this space.
+249,Barren Shrike,Minion,Common,Immortal,yes,4,5,5,,"Token, Blast, Build","Build: (2).
+Blast"
+20077,Entropic Decay,Spell,Basic,Core,yes,4,,,,,Destroy an enemy minion nearby your General.
+226,Falcius,Minion,Common,ShimZar,yes,4,3,3,,Opening Gambit,Opening Gambit: Your General gains +2 Attack and takes no damage this turn.
+30011,Hexblade,Artifact,Legendary,Core,yes,4,,,,Destructible,"Your General gains +3 Attack. Whenever your General damages an enemy minion, its Attack becomes 1."
+20342,Lost in the Desert,Spell,Epic,Immortal,yes,4,,,,,Deal 5 damage to enemies that are not nearby another enemy.
+219,Mirage Master,Minion,Epic,Core,yes,4,1,1,,Opening Gambit,Opening Gambit: This minion transforms into a copy of an enemy minion.
+224,Sand Sister Saon,Minion,Legendary,Core,yes,4,4,4,,,Your General has +1 Attack.
+20381,Synaptic Arbitrage,Spell,Epic,Mythron,yes,4,,,,,Give your opponent a minion to take control of nearby enemy minions with less Attack.
+30029,Thunderclap,Artifact,Rare,Ancients,yes,4,,,,Destructible,"When your General destroys a minion, summon a copy of it nearby."
+242,Trygon Obelysk,Minion,Legendary,Unearthed,yes,4,0,9,Structure,"Token, Summon Dervish, Structure","Summon Dervish, Summon Dervish, Summon Dervish"
+244,Wasteland Wraith,Minion,Epic,Unearthed,yes,4,1,5,,,"At the start of your turn, destroy this and all enemy minions."
+208,Wind Shrike,Minion,Basic,Core,yes,4,4,3,,"Flying, Dying Wish","Flying
+Dying Wish: Draw a card."
+239,Wind Striker,Minion,Epic,Ancients,yes,4,1,4,Golem,"Flying, Opening Gambit","Flying
+Opening Gambit: Equip a Staff of Y'kir to your General."
+20357,Accumulonimbus,Spell,Common,Mythron,yes,5,,,,"Token, Intensify",Intensify: Summon 2 Wind Dervishes nearby your General.
+20254,Blood of Air,Spell,Common,Core,yes,5,,,,Token,Transform an enemy minion into a friendly Wind Dervish.
+20198,Corpse Combustion,Spell,Epic,ShimZar,yes,5,,,,,Summon all friendly minions with Dying Wish destroyed since your last turn on random spaces.
+257,Fifth Canopic,Minion,Epic,Mythron,yes,5,4,8,,,The enemy General cannot cast their Bloodbound Spell.
+247,Gust,Minion,Epic,Immortal,yes,5,3,5,,"Token, Blood Surge",Blood Surge: Summon two Wind Dervishes nearby.
+236,Incinera,Minion,Rare,Ancients,yes,5,5,6,,,Your General may move 2 additional spaces.
+260,Khanuum-ka,Minion,Legendary,Mythron,yes,5,3,3,Dervish,"Rush, Flying, Dying Wish","Flying, Rush
+Dying Wish: A random friendly Dervish disappears, summoning a Khanuum-ka in its place."
+232,Nimbus,Minion,Legendary,ShimZar,yes,5,3,8,,Token,"Whenever this minion takes damage, summon a 0/4 Soulburn Obelysk nearby."
+246,Sandswirl Reader,Minion,Rare,Unearthed,yes,5,3,3,,"Exhuming Sand, Opening Gambit, Token",Opening Gambit: Return a nearby minion to its action bar. Turn that space into Exhuming Sand.
+250,Silica Weaver,Minion,Rare,Immortal,yes,5,4,4,Mech,"MECHAZ0R Progress, Opening Gambit",Opening Gambit: Progresses MECHAZ0R build by +40%.
+240,Sirocco,Minion,Legendary,Ancients,yes,5,4,3,Golem,Opening Gambit,Opening Gambit: Summon a Skyrock Golem on random spaces for each other Golem you've summoned this game.
+30022,Spinecleaver,Artifact,Legendary,ShimZar,yes,5,,,,"Destructible, Token",Your General gains +1 Attack. Enemy minions destroyed by your General summon a Bloodfire Totem on that space.
+20105,Star's Fury,Spell,Epic,Core,yes,5,,,,"Rush, Token",Summon a Wind Dervish with Rush in front of each enemy minion and General.
+209,Starfire Scarab,Minion,Common,Core,yes,5,4,6,,Blast,Blast
+20299,Superior Mirage,Spell,Epic,Unearthed,yes,5,,,,,Summon three copies of an enemy minion nearby it. They disappear when attacked.
+20244,Autarch's Gifts,Spell,Epic,Ancients,yes,6,,,,,Equip 2 random Vetruvian artifacts.
+220,Aymara Healer,Minion,Legendary,Core,yes,6,5,5,,"Provoke, Dying Wish","Provoke
+Dying Wish: Deal 5 damage to the enemy General. Restore 5 Health to your General."
+20262,Cataclysmic Fault,Spell,Legendary,Unearthed,yes,6,,,,"Exhuming Sand, Token",Turn the entire center column into Exhuming Sand.
+252,Grapnel Paradigm,Minion,Legendary,Immortal,yes,6,5,5,,Opening Gambit,Opening Gambit: Take control of enemy minions with 2 or less Attack on this row.
+259,Notion of Starless Eternity,Minion,Mythron,Mythron,yes,6,3,3,,"Trial, Destiny","Trial: General reaches the other edge of the battlefield with an equipped artifact.
+Destiny: Each equipped artifact gives your General a tier of ascension."
+222,Oserix,Minion,Legendary,Core,yes,6,6,5,,"Flying, Dying Wish","Flying
+Dying Wish: Equip 2 random artifacts from your deck."
+233,Pantheran,Minion,Epic,ShimZar,yes,6,8,8,,,Costs 0 if you've cast all three Scion's Wish spells this game.
+261,Swarmking Scarab,Minion,Legendary,Mythron,yes,6,5,7,,"Rush, Flying, Token, Blast","Blast
+Whenever this minion blasts, summon 1/1 Scarabyte with Flying and Rush in those spaces."
+20028,Dominate Will,Spell,Rare,Core,yes,7,,,,,Take control of an enemy minion nearby your General.
+20216,Circle of Desiccation,Spell,Legendary,ShimZar,yes,8,,,,,Destroy ALL non-Structure minions.
+237,Grandmaster Nosh-Rak,Minion,Legendary,Core,yes,8,4,8,,"Flying, Blast","Blast, Flying
+The enemy General takes double damage."
+20363,Circle of Fabrication,Spell,Legendary,Mythron,yes,9,,,,,Summon one of each Obelysk from your deck on random spaces.
+20322,Monolithic Vision,Spell,Legendary,Immortal,yes,9,,,,,Transform your action bar into six random Vetruvian cards that cost 4 less.
+30044,Barren Relic,Artifact,Token,Immortal,no,0,,,,Destructible,
+225,Iron Dervish,Minion,Token,Core,no,1,2,2,Dervish,Token,
+262,Scarabyte,Minion,Token,Mythron,no,1,1,1,,"Token, Flying, Rush","Flying, Rush"
+234,Bloodfire Totem,Minion,Token,ShimZar,no,2,0,4,Structure,"Token, Structure","At end of turn, deal 1 damage to your General."
+217,Wind Dervish,Minion,Token,Core,no,2,2,2,Dervish,"Token, Ephemeral, Rush","Rush, Ephemeral"
+255,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",
+230,Soulburn Obelysk,Minion,Token,ShimZar,no,3,0,4,Structure,"Token, Summon Dervish, Structure","Summon Dervish
+Enemy minions that damage this are destroyed."
+248,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",

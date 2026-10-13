@@ -1,0 +1,13 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+110,Kaido Assassin,2,rush,Minion,2,2,3,Backstab: (1).
+111,Scarlet Viper,2,,Minion,5,2,5,"Flying
+Backstab: (4)."
+112,Gore Horn,2,,Minion,3,3,3,"Backstab: (2)
+After this minion attacks, it gains +1/+1."
+115,Chakri Avatar,2,mixed_stats,Minion,2,1,2,"Whenever you cast a spell, this minion gains +1/+1"
+109,Widowmaker,2,,Minion,3,2,3,Ranged
+108,Heartseeker,2,echo,Minion,1,1,1,Ranged
+20129,Juxtaposition,2,mirror,Spell,0,,,Switch positions between ANY two minions.
+20168,Mist Dragon Seal,2,spell_buff;mirror,Spell,1,,,Give a friendly minion +1/+1 and teleport it anywhere.
+20086,Inner Focus,2,spell_draw,Spell,1,,,Reactivate an exhausted friendly minion with 3 or less Attack.
+20081,Phoenix Fire,2,spell_power,Spell,2,,,Deal 3 damage to anything.

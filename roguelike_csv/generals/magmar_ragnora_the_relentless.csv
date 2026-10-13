@@ -1,0 +1,8 @@
+﻿role,id,name,copies,type,mana_cost,attack,health,description
+general,449,Ragnora the Relentless,1,General,,2,25,Bloodbound Spell: Summon a Ripper Egg nearby your General, or hatch a friendly Egg.
+bloodbound_spell,20305,Propagate Rage,,Spell,1,,,Summon a Ripper Egg nearby your General, or hatch a friendly Egg.
+card,20203,Lava Lance,3,Spell,1,,,"Deal 2 damage to a unit. If you have an Egg, deal 4 damage instead."
+card,20382,Mitotic Induction,3,Spell,2,,,Summon an Egg of the minion most recently summoned from your action bar.
+card,412,Young Silithar,3,Minion,2,2,3,Rebirth
+card,413,Veteran Silithar,3,Minion,4,4,4,Rebirth
+card,422,Wild Inceptor,3,Minion,3,2,3,Opening Gambit: Hatch a friendly Egg.

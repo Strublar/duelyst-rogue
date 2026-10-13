@@ -1,0 +1,12 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+412,Young Silithar,2,mixed_stats,Minion,2,2,3,Rebirth
+402,Earth Walker,2,mixed_stats,Minion,3,3,3,Grow: +1/+1
+409,Kujata,2,echo,Minion,2,2,2,Your minions cost 1 less to summon and take 1 damage when summoned from your action bar.
+410,Primordial Gazer,2,,Minion,3,2,2,Opening Gambit: Give a nearby friendly minion +2/+2.
+403,Grimrock,2,,Minion,4,3,4,Grow: +2/+2
+423,Moloki Huntress,2,draw,Minion,3,1,2,"Grow: +1/+1
+Friendly minions grow at the start of BOTH player's turns."
+406,Phalanxar,2,rush,Minion,2,6,1,
+20116,Greater Fortitude,2,spell_buff;mirror,Spell,1,,,Give a friendly minion +2/+2.
+20125,Natural Selection,2,,Spell,2,,,Destroy ANY minion with the lowest Attack or tied for the lowest Attack.
+20157,Egg Morph,2,spell_draw,Spell,4,,,"Turn a non-Egg minion into an Egg, or hatch an Egg."

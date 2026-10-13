@@ -1,0 +1,9 @@
+﻿role,id,name,copies,type,mana_cost,attack,health,description
+general,201,Zirix Starstrider,1,General,,2,25,Bloodbound Spell: Summon a 2/2 Iron Dervish on a random space nearby your General.
+bloodbound_spell,20178,Iron Shroud,,Spell,1,,,Summon a 2/2 Iron Dervish on a random space nearby your General.
+card,213,Pyromancer,3,Minion,2,2,1,Blast
+card,208,Wind Shrike,3,Minion,4,4,3,"Flying
+Dying Wish: Draw a card."
+card,20095,Scion's First Wish,3,Spell,1,,,Give a friendly minion +1/+1. Draw a card.
+card,20077,Entropic Decay,3,Spell,4,,,Destroy an enemy minion nearby your General.
+card,19027,Primus Shieldmaster,3,Minion,4,3,6,Provoke

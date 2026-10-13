@@ -1,0 +1,13 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+210,Sand Howler,2,mixed_stats,Minion,3,3,3,Cannot be targeted by enemy spells.
+213,Pyromancer,2,rush,Minion,2,2,1,Blast
+209,Starfire Scarab,2,,Minion,5,4,6,Blast
+211,Dunecaster,2,,Minion,2,2,1,"Opening Gambit: Give +2/+2 to a friendly Dervish. If it is a Wind Dervish, it no longer disappears."
+221,Portal Guardian,2,,Minion,3,0,8,"Frenzy
+Whenever you summon a minion, this minion gains +1 Attack."
+214,Ethereal Obelysk,2,,Minion,2,0,6,Summon Dervish
+229,Wind Slicer,2,,Minion,2,2,3,Opening Gambit: Lower the cost of all Structure minions in your action bar by 1.
+220,Aymara Healer,2,,Minion,6,5,5,"Provoke
+Dying Wish: Deal 5 damage to the enemy General. Restore 5 Health to your General."
+20075,Blindscorch,2,,Spell,1,,,Lower a minion's Attack to 0 until your next turn.
+20105,Star's Fury,2,,Spell,5,,,Summon a Wind Dervish with Rush in front of each enemy minion and General.

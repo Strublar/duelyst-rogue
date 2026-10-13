@@ -1,0 +1,13 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+320,Spectral Revenant,2,mixed_stats,Minion,8,6,6,"Rush
+Whenever this damages an enemy minion, deal 4 damage to the enemy General."
+321,Black Solus,2,provoke,Minion,5,4,7,"When you summon a Wraithling, this minion gains +2 Attack."
+309,Abyssal Juggernaut,2,mixed_stats,Minion,4,3,3,This minion has +1/+1 for each friendly Shadow Creep.
+314,Vorpal Reaver,2,provoke,Minion,6,6,6,"Celerity
+Dying Wish: Summon six Wraithlings on random spaces."
+313,Blood Siren,2,echo,Minion,2,3,2,Opening Gambit: Give a nearby enemy -2 attack this turn.
+336,Nightshroud,2,frenzy,Minion,4,5,1,Bond: Your General steals 1 Health from the enemy General for each other friendly Arcanyst.
+10982,Void Hunter,2,rush,Minion,3,4,2,Dying Wish: Draw a card.
+20061,Dark Transformation,2,spell_cost,Spell,5,,,Destroy an enemy minion and summon a 1/1 Wraithling on that space.
+20051,Shadow Nova,2,spell_draw,Spell,4,,,Turn a 2x2 area into Shadow Creep.
+20049,Daemonic Lure,2,spell_power;mirror,Spell,2,,,Deal 1 damage to an enemy minion and teleport it anywhere.

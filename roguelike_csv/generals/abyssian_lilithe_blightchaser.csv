@@ -1,0 +1,8 @@
+﻿role,id,name,copies,type,mana_cost,attack,health,description
+general,301,Lilithe Blightchaser,1,General,,2,25,Bloodbound Spell: Summon a Wraithling nearby your General and give all friendly Wraithlings +1/+1.
+bloodbound_spell,20180,Shadowspawn,,Spell,1,,,Summon a Wraithling nearby your General and give all friendly Wraithlings +1/+1.
+card,331,Furiosa,3,Minion,1,1,2,Blood Surge: Friendly Wraithlings gain +1/+1.
+card,317,Gloomchaser,3,Minion,2,2,2,Opening Gambit: Summon a 1/1 Wraithling nearby.
+card,20089,Wraithling Fury,3,Spell,3,,,Give a friendly Wraithling minion +4/+4.
+card,20072,Wraithling Swarm,3,Spell,3,,,Summon three 1/1 Wraithlings nearby each other.
+card,310,Bloodtide Priestess,3,Minion,4,3,3,Deathwatch: Summon a Wraithling on a random nearby space.

@@ -1,0 +1,8 @@
+﻿role,id,name,copies,type,mana_cost,attack,health,description
+general,418,Starhorn the Seeker,1,General,,2,25,Bloodbound Spell: Insight 3
+bloodbound_spell,20183,Seeking Eye,,Spell,1,,,Insight 3
+card,20112,Flash Reincarnation,3,Spell,0,,,"If the next card you play this turn is a minion, it costs 2 less and takes 2 damage."
+card,20119,Amplification,3,Spell,1,,,Give a friendly damaged minion +2 Attack and +4 Health.
+card,409,Kujata,3,Minion,2,2,2,Your minions cost 1 less to summon and take 1 damage when summoned from your action bar.
+card,419,Earth Sister Taygete,3,Minion,4,3,4,"Whenever this minion takes damage, deal that much damage to all nearby enemies."
+card,405,Makantor Warbeast,3,Minion,6,4,4,"Frenzy, Rush"

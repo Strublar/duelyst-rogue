@@ -1,0 +1,8 @@
+﻿role,id,name,copies,type,mana_cost,attack,health,description
+general,323,Cassyva Soulreaper,1,General,,2,25,"Bloodbound Spell: Deal 1 damage to a minion. If it dies this turn, the space turns into Shadow Creep."
+bloodbound_spell,20181,Abyssal Scar,,Spell,1,,,"Deal 1 damage to a minion. If it dies this turn, the space turns into Shadow Creep."
+card,317,Gloomchaser,3,Minion,2,2,2,Opening Gambit: Summon a 1/1 Wraithling nearby.
+card,311,Shadow Watcher,3,Minion,3,2,2,Deathwatch: Gains +1/+1.
+card,20072,Wraithling Swarm,3,Spell,3,,,Summon three 1/1 Wraithlings nearby each other.
+card,20061,Dark Transformation,3,Spell,5,,,Destroy an enemy minion and summon a 1/1 Wraithling on that space.
+card,19031,Thorn Needler,3,Minion,4,6,4,

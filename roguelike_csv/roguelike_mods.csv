@@ -1,0 +1,17 @@
+mod_id,name,applies_to,Cost_0_2,Cost_3_4,Cost_5_6,Cost_7_plus,notes
+mixed_stats,Stats,Minions,+1 Attack +1 Health,+2 Attack +2 Health,+3 Attack +3 Health,+5 Attack +5 Health,Changes base health (not dispellable)
+cost,Cost,Minions/artifacts with cost 1+,-1 Cost,-1 Cost,-2 Cost,-3 Cost,Changes base cost (minimum 0; not dispellable)
+provoke,Provoke,Minions without Provoke,Provoke +0/+1,Provoke +0/+2,Provoke +1/+3,Provoke +2/+5,Keyword is dispellable; stat bonus is not
+frenzy,Frenzy,Minions without Frenzy,Frenzy +1/+0,Frenzy +2/+0,Frenzy +3/+0,Frenzy +5/+0,Keyword is dispellable; stat bonus is not
+rush,Rush,Minions without Rush,Rush,Rush,Rush,Rush,Keyword is dispellable; stat bonus is not
+draw,Insight,Minions,Insight,Insight 1,Insight 2,Insight 3,"Insight X: when played, draw a card that costs X less (Opening Gambit, dispellable)"
+spell_draw,Insight,Spells,Insight,Insight 1,Insight 2,Insight 3,Insight X: draw a card that costs X less after the spell resolves
+spell_power,Damage,Spells that deal damage,+2 Damage,+3 Damage,+4 Damage,+5 Damage,Increases the damage the spell deals (card text updated)
+spell_buff,Buff,Spells that give +Attack/+Health,+1/+1 Buff,+2/+2 Buff,+3/+3 Buff,+5/+5 Buff,Increases each stat the spell buffs (card text updated)
+spell_cost,Cost,Spells with cost 1+,-1 Cost,-1 Cost,-2 Cost,-3 Cost,Changes base cost (minimum 0; not dispellable)
+echo,Echo,All cards (minions/spells/artifacts),+ Echo,+ Echo,+ Echo,+ Echo,Keyword: the first card with Echo you play each turn returns to your hand (with its mods)
+warp,Warp,Minions with cost 0-2,+ Warp,,,,"Keyword: when you replace this minion, it is summoned in front of your General instead of going back to the deck (nothing happens if that space is taken)"
+blood_link,Blood Link,All cards (minions/spells/artifacts),+ Blood Link,+ Blood Link,+ Blood Link,+ Blood Link,"Keyword: when you cast your Bloodbound Spell, draw one copy of this card from your deck"
+bloodcall,Bloodcall,All cards (minions/spells/artifacts),+ Bloodcall,+ Bloodcall,+ Bloodcall,+ Bloodcall,"Keyword: when played, refresh your Bloodbound Spell"
+patient,Patient,All cards with cost 5+ (minions/spells/artifacts),,+ Patient,+ Patient,+ Patient,"Keyword: at the end of your turn, if this card is in your hand, it costs 1 less (stacks each turn)"
+mirror,Mirror,Spells with cost 0-2,+ Mirror,,,,"Keyword: when cast, add an Ethereal copy of this spell that costs 0 (other mods kept, without Mirror) to your hand. Ethereal: discarded at the end of your turn if still in hand"

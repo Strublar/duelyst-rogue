@@ -1,0 +1,12 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+19038,Golem Metallurgist,2,draw,Minion,2,2,3,The first Golem you summon each turn costs 1 less.
+10204,Brightmoss Golem,2,provoke,Minion,5,4,9,
+10207,Stormmetal Golem,2,cost,Minion,6,8,8,
+10206,Drybone Golem,2,,Minion,7,10,10,
+19048,Skyrock Golem,2,mixed_stats,Minion,2,3,2,
+10978,Hailstone Golem,2,mixed_stats,Minion,4,4,6,
+10205,Bloodshard Golem,2,provoke,Minion,3,4,3,
+19039,Golem Vanquisher,2,,Minion,3,2,4,"Provoke
+Your other Golem minions have Provoke."
+11106,Razorcrag Golem,2,frenzy,Minion,4,10,3,
+11037,Diamond Golem,2,,Minion,6,5,11,

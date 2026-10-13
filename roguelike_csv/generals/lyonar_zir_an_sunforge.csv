@@ -1,0 +1,8 @@
+﻿role,id,name,copies,type,mana_cost,attack,health,description
+general,23,Zir'An Sunforge,1,General,,2,25,Bloodbound Spell: Restore 3 Health to anything.
+bloodbound_spell,20175,Afterglow,,Spell,1,,,Restore 3 Health to anything.
+card,20043,Sundrop Elixir,3,Spell,1,,,Restore 5 Health to anything.
+card,15,Lightchaser,3,Minion,2,3,2,"Whenever anything is healed, this minion gains +1/+1."
+card,20190,Lucent Beam,3,Spell,2,,,"Deal 2 damage to an enemy. If anything was healed this turn, deal 4 damage instead."
+card,10301,Sun Seer,3,Minion,3,2,4,"Whenever this minion deals damage, restore 2 Health to your General."
+card,22,Sunriser,3,Minion,4,3,4,"Whenever anything is healed, deal 2 damage to all nearby enemies."

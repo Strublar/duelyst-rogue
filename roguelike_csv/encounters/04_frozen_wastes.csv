@@ -1,0 +1,11 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+505,Crystal Cloaker,2,,Minion,2,2,3,Infiltrate: Gain +2 Attack.
+517,Hearth-Sister,2,,Minion,2,3,2,Opening Gambit: Switch positions with ANY other minion.
+530,Icy,2,provoke,Minion,2,2,3,Opening Gambit: Stun a nearby enemy.
+510,Snow Chaser,2,,Minion,1,2,1,"Infiltrate:  When this minion dies, return it to your action bar."
+526,Arctic Displacer,2,,Minion,5,10,4,Airdrop
+10978,Hailstone Golem,2,provoke,Minion,4,4,6,
+20139,Flash Freeze,2,mirror,Spell,0,,,Deal 1 damage to a minion and Stun it.
+20134,Chromatic Cold,2,spell_power,Spell,2,,,"Dispel a space. If there is an enemy on that space, deal it 1 damage."
+20148,Blazing Spines,2,,Spell,3,,,Summon two joined 3/3 Walls that can attack.
+20147,Gravity Well,2,spell_draw,Spell,2,,,Summon four joined 0/1 Walls with Provoke.

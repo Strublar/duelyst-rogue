@@ -1,0 +1,11 @@
+﻿id,name,copies,mods,type,mana_cost,attack,health,description
+10303,Prismatic Illusionist,2,mixed_stats,Minion,3,2,3,"Whenever you cast a spell, summon a 2/1 Illusion on a random nearby space."
+10302,Manaforger,2,draw,Minion,2,1,3,The first non-Bloodbound spell you cast each turn costs 1 less.
+10305,Owlbeast Sage,2,provoke,Minion,4,4,4,"Whenever you cast a spell, your Arcanyst minions gain +2 Health."
+10975,Spelljammer,2,,Minion,4,3,5,Each player draws an additional card at the end of their turns.
+10304,Alcuin Loremaster,2,draw,Minion,3,3,1,Opening Gambit: Put a copy of the most recently cast spell into your action bar.
+10301,Sun Seer,2,,Minion,3,2,4,"Whenever this minion deals damage, restore 2 Health to your General."
+20081,Phoenix Fire,2,spell_power,Spell,2,,,Deal 3 damage to anything.
+20066,True Strike,2,spell_power;mirror,Spell,1,,,Deal 2 damage to a minion.
+20134,Chromatic Cold,2,spell_draw,Spell,2,,,"Dispel a space. If there is an enemy on that space, deal it 1 damage."
+20139,Flash Freeze,2,echo,Spell,0,,,Deal 1 damage to a minion and Stun it.
