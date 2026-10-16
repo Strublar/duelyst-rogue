@@ -541,9 +541,9 @@ class CardFactory_CoreSet_Faction2
         damage : RSX.f2ChakriAvatarDamage.name
         death : RSX.f2ChakriAvatarDeath.name
       )
-      card.atk = 1
-      card.maxHP = 2
-      card.manaCost = 2
+      card.atk = 2
+      card.maxHP = 3
+      card.manaCost = 3
       card.rarityId = Rarity.Fixed
       statsBuff = Modifier.createContextObjectWithAttributeBuffs(1,1)
       statsBuff.appliedName = i18next.t("modifiers.faction_2_chakri_avatar_buff_name")
@@ -721,6 +721,7 @@ class CardFactory_CoreSet_Faction2
       card.setDescription(i18next.t("cards.faction_2_spell_blink_description"))
       card.manaCost = 1
       card.spellFilterType = SpellFilterType.AllyDirect
+      card.canTargetGeneral = true
       card.setFXResource(["FX.Cards.Spell.Blink"])
       card.setFollowups([
         {

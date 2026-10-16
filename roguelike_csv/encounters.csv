@@ -1,11 +1,11 @@
 ﻿level,name,deck_file,general_id,general_name,general_attack,general_health,ai_difficulty,bonus_reward
-1,Bandit Camp,01_bandit_camp.csv,200901,Ragtooth the Bandit,1,8,0.1,upgrade
-2,Desert Raiders,02_desert_raiders.csv,201,Zirix Starstrider,2,10,0.2,upgrade
-3,Wraith Cult,03_wraith_cult.csv,301,Lilithe Blightchaser,2,12,0.3,upgrade
-4,Frozen Wastes,04_frozen_wastes.csv,200001,Boreal Juggernaut,2,14,0.4,upgrade
-5,Mechaz0r Workshop,05_mechaz0r_workshop.csv,200007,CALIBERO,2,16,0.5,upgrade
-6,Golem Quarry,06_golem_quarry.csv,200008,Monolith Guardian,2,18,0.6,upgrade
-7,Primal Jungle,07_primal_jungle.csv,200018,Megapenti,3,20,0.7,upgrade
-8,Shadow Dojo,08_shadow_dojo.csv,200025,Shadow Lord,3,22,0.8,upgrade
-9,Arcane Academy,09_arcane_academy.csv,200026,Archmagus Vol,2,25,0.9,upgrade
-10,The Void,10_the_void.csv,200016,Scion of the Void,2,30,1,upgrade
+1,Bandit Camp,01_bandit_camp.csv,200901,Ragtooth the Bandit,1,10,0.1,upgrade
+2,Desert Raiders,02_desert_raiders.csv,201,Zirix Starstrider,2,14,0.2,upgrade
+3,Wraith Cult,03_wraith_cult.csv,301,Lilithe Blightchaser,2,19,0.3,upgrade
+4,Frozen Wastes,04_frozen_wastes.csv,200001,Boreal Juggernaut,2,23,0.4,upgrade
+5,Mechaz0r Workshop,05_mechaz0r_workshop.csv,200007,CALIBERO,2,28,0.5,upgrade
+6,Golem Quarry,06_golem_quarry.csv,200008,Monolith Guardian,2,32,0.6,upgrade
+7,Primal Jungle,07_primal_jungle.csv,200018,Megapenti,3,37,0.7,upgrade
+8,Shadow Dojo,08_shadow_dojo.csv,200025,Shadow Lord,3,41,0.8,upgrade
+9,Arcane Academy,09_arcane_academy.csv,200026,Archmagus Vol,2,46,0.9,upgrade
+10,The Void,10_the_void.csv,200016,Scion of the Void,2,50,1,upgrade

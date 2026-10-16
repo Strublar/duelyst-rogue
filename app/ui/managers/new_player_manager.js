@@ -121,7 +121,8 @@ var NewPlayerManager = Manager.extend({
   },
 
   canSeeQuests: function () {
-    return NewPlayerProgressionHelper.isFeatureAvailableAtStage(NewPlayerFeatureLookup.UtilityMenuQuests, this.getCurrentCoreStage());
+    // roguelike: daily quests from the start
+    return true;
   },
 
   canSeeDailyChallenge: function () {

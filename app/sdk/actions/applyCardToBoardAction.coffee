@@ -68,6 +68,7 @@ class ApplyCardToBoardAction extends Action
       if @_private.cachedCard?
         if !@cardOwnedByGameSession
           @_private.cachedCard.setOwnerId(@getOwnerId())
+          @getGameSession().injectRoguelikeCardModsIntoNewCard(@_private.cachedCard)
     return @_private.cachedCard
 
   ###*

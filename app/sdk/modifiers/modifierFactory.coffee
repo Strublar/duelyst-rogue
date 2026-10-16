@@ -158,6 +158,7 @@ ModifierOpeningGambitRazorback = require './modifierOpeningGambitRazorback'
 ModifierDyingWishSpawnEntityNearbyGeneral = require './modifierDyingWishSpawnEntityNearbyGeneral'
 ModifierSummonWatchFromActionBarSpawnEntity = require './modifierSummonWatchFromActionBarSpawnEntity'
 ModifierOpeningGambitBuffSelfByOpponentHandCount = require './modifierOpeningGambitBuffSelfByOpponentHandCount'
+ModifierOpeningGambitBuffSelfByGeneralAttack = require './modifierOpeningGambitBuffSelfByGeneralAttack'
 ModifierTakeDamageWatchDamageEnemyGeneralForSame = require './modifierTakeDamageWatchDamageEnemyGeneralForSame'
 ModifierDealDamageWatchBuffSelf = require './modifierDealDamageWatchBuffSelf'
 ModifierDyingWishDamageNearbyAllies = require './modifierDyingWishDamageNearbyAllies'
@@ -245,11 +246,13 @@ ModifierOpeningGambitDrawCard = require 'app/sdk/modifiers/modifierOpeningGambit
 ModifierInsight = require 'app/sdk/modifiers/modifierInsight'
 ModifierEcho = require 'app/sdk/modifiers/modifierEcho'
 ModifierWarp = require 'app/sdk/modifiers/modifierWarp'
-ModifierBloodLink = require 'app/sdk/modifiers/modifierBloodLink'
 ModifierBloodcall = require 'app/sdk/modifiers/modifierBloodcall'
 ModifierPatient = require 'app/sdk/modifiers/modifierPatient'
 ModifierEthereal = require 'app/sdk/modifiers/modifierEthereal'
 ModifierMirror = require 'app/sdk/modifiers/modifierMirror'
+ModifierSpellWatchShuffleCardIntoDeck = require 'app/sdk/modifiers/modifierSpellWatchShuffleCardIntoDeck'
+ModifierEnemyStunWatchDamageStunned = require 'app/sdk/modifiers/modifierEnemyStunWatchDamageStunned'
+ModifierMyAttackWatchStunnedRefreshExhaustion = require 'app/sdk/modifiers/modifierMyAttackWatchStunnedRefreshExhaustion'
 ModifierEndTurnWatchApplyModifiersRandomly = require 'app/sdk/modifiers/modifierEndTurnWatchApplyModifiersRandomly'
 ModifierBandingChangeCardDraw = require 'app/sdk/modifiers/modifierBandingChangeCardDraw'
 ModifierTakeDamageWatchDamageAllEnemies = require 'app/sdk/modifiers/modifierTakeDamageWatchDamageAllEnemies'
@@ -1065,6 +1068,9 @@ class ModifierFactory
       return ModifierSummonWatchFromActionBarSpawnEntity
     if (modifierType == ModifierOpeningGambitBuffSelfByOpponentHandCount.type)
       return ModifierOpeningGambitBuffSelfByOpponentHandCount
+
+    if (modifierType == ModifierOpeningGambitBuffSelfByGeneralAttack.type)
+      return ModifierOpeningGambitBuffSelfByGeneralAttack
     if (modifierType == ModifierTakeDamageWatchDamageEnemyGeneralForSame.type)
       return ModifierTakeDamageWatchDamageEnemyGeneralForSame
     if (modifierType == ModifierDealDamageWatchBuffSelf.type)
@@ -1237,8 +1243,6 @@ class ModifierFactory
       return ModifierEcho
     if (modifierType == ModifierWarp.type)
       return ModifierWarp
-    if (modifierType == ModifierBloodLink.type)
-      return ModifierBloodLink
     if (modifierType == ModifierBloodcall.type)
       return ModifierBloodcall
     if (modifierType == ModifierPatient.type)
@@ -1247,6 +1251,12 @@ class ModifierFactory
       return ModifierEthereal
     if (modifierType == ModifierMirror.type)
       return ModifierMirror
+    if (modifierType == ModifierSpellWatchShuffleCardIntoDeck.type)
+      return ModifierSpellWatchShuffleCardIntoDeck
+    if (modifierType == ModifierEnemyStunWatchDamageStunned.type)
+      return ModifierEnemyStunWatchDamageStunned
+    if (modifierType == ModifierMyAttackWatchStunnedRefreshExhaustion.type)
+      return ModifierMyAttackWatchStunnedRefreshExhaustion
     if (modifierType == ModifierEndTurnWatchApplyModifiersRandomly.type)
       return ModifierEndTurnWatchApplyModifiersRandomly
     if (modifierType == ModifierBandingChangeCardDraw.type)

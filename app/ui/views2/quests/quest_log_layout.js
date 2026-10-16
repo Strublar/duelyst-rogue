@@ -59,7 +59,8 @@ var QuestLogLayout = Backbone.Marionette.LayoutView.extend({
     var data = model.toJSON.apply(model, _.rest(arguments));
     data.first_win_of_the_day_available = this.isFirstWinOfTheDayAvailable();
     data.first_win_gold_amount = CONFIG.FIRST_WIN_OF_DAY_GOLD_REWARD;
-    data.is_first_win_visible = NewPlayerManager.getInstance().canSeeFirstWinOfTheDay();
+    // roguelike: no first win of the day gold
+    data.is_first_win_visible = false;
     data.is_replace_instruction_visible = this.collection.find(function (q) { return q.get('is_replaceable'); });
     data.is_confirm_visible = this.showConfirm;
     return data;
@@ -87,8 +88,8 @@ var QuestLogLayout = Backbone.Marionette.LayoutView.extend({
         // }))
       }
 
-      // FCOTD
-      if (newPlayerManager.canSeeFreeCardOfTheDay()) {
+      // FCOTD (not in roguelike)
+      if (false && newPlayerManager.canSeeFreeCardOfTheDay()) {
         this.freeCardOfTheDayRegion.show(new FreeCardOfTheDayItemView({
           model: new Backbone.Model(ProfileManager.getInstance().profile.attributes),
         }));

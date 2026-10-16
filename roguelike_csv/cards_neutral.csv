@@ -1,300 +1,300 @@
-﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description
-19052,Bloodtear Alchemist,Minion,Basic,Core,yes,1,2,1,,Opening Gambit,Opening Gambit: Deal 1 damage to an enemy.
-10001,Dragonlark,Minion,Basic,Core,yes,1,2,1,,Flying,Flying
-11022,Dreamgazer,Minion,Epic,Core,yes,1,1,1,,,"When you replace this card, summon it on a random nearby space. Your General takes 2 damage."
-19002,Helm of MECHAZ0R,Minion,Common,Core,yes,1,2,2,Mech,"MECHAZ0R Progress, Opening Gambit",Opening Gambit: Progresses MECHAZ0R build by +20%.
-11053,Koi,Minion,Common,ShimZar,yes,1,3,1,BattlePet,Battle Pet,This minion takes no damage from Generals.
-10018,Komodo Charger,Minion,Basic,Core,yes,1,1,3,,,
-11141,Mirrorrim,Minion,Common,Mythron,yes,1,2,1,,Opening Gambit,Opening Gambit: Shuffle three copies of a friendly minion into your deck.
-10019,Planar Scout,Minion,Basic,Core,yes,1,2,1,,Airdrop,Airdrop
-11016,Prophet of the White Palm,Minion,Rare,Core,yes,1,1,1,,Opening Gambit,Opening Gambit: Prevent ALL spell damage until your next turn.
-19025,Swamp Entangler,Minion,Common,Core,yes,1,0,3,,Provoke,Provoke
-10993,Aethermaster,Minion,Epic,Core,yes,2,1,3,Arcanyst,,You may replace an additional card each turn.
-11001,Amu,Minion,Common,ShimZar,yes,2,3,3,BattlePet,Battle Pet,
-11017,Araki Headhunter,Minion,Epic,Core,yes,2,1,3,,,"Whenever you summon a minion with Opening Gambit from your action bar, gain +2 Attack."
-11152,Araras Prophet,Minion,Rare,Mythron,yes,2,1,3,Arcanyst,,"Whenever you replace a card, shuffle a Brilliant Plume into your deck."
-11084,Azure Herald,Minion,Common,Core,yes,2,1,4,,Opening Gambit,Opening Gambit: Restore 3 Health to your General.
-19050,Azure Horn Shaman,Minion,Rare,Core,yes,2,1,4,,Dying Wish,Dying Wish: Give +4 Health to friendly minions around it.
-19029,Bluetip Scorpion,Minion,Common,Core,yes,2,3,1,,,Deals double damage to minions.
-11102,Carcynus,Minion,Common,Unearthed,yes,2,1,5,,,
-11098,Celebrant,Minion,Rare,Ancients,yes,2,1,4,Golem,Opening Gambit,Opening Gambit: Create a mana spring tile nearby.
-11088,Cryptographer,Minion,Common,Ancients,yes,2,2,2,,Opening Gambit,Opening Gambit: Refresh your Bloodbound Spell.
-10020,Ephemeral Shroud,Minion,Basic,Core,yes,2,1,1,,Opening Gambit,Opening Gambit: Dispel 1 nearby space.
-19051,Flameblood Warlock,Minion,Rare,Core,yes,2,3,1,,Opening Gambit,Opening Gambit: Deal 3 damage to BOTH Generals.
-11009,Ghost Lynx,Minion,Common,Core,yes,2,2,1,,Opening Gambit,Opening Gambit: Teleport a nearby minion to a random space.
-19038,Golem Metallurgist,Minion,Rare,Core,yes,2,2,3,Golem,,The first Golem you summon each turn costs 1 less.
-10981,Healing Mystic,Minion,Basic,Core,yes,2,2,3,,Opening Gambit,Opening Gambit: Restore 2 Health to anything.
-11014,Jaxi,Minion,Common,Core,yes,2,1,1,,"Token, Dying Wish",Dying Wish: Summon a 1/1 Ranged Mini-Jax in a random corner.
-11124,Lost Artificer,Minion,Rare,Immortal,yes,2,2,3,,,The first artifact you equip each turn costs 1 less.
-10302,Manaforger,Minion,Rare,Core,yes,2,1,3,Arcanyst,,The first non-Bloodbound spell you cast each turn costs 1 less.
-10979,Maw,Minion,Common,Core,yes,2,2,2,,Opening Gambit,Opening Gambit: Deal 2 damage to a nearby enemy minion.
-11123,Metaltooth,Minion,Common,Immortal,yes,2,2,2,Mech,Rush,"If you have another Mech minion, this minion has Rush."
-19040,Piercing Mantis,Minion,Basic,Core,yes,2,2,2,,Frenzy,Frenzy
-19037,Primus Fist,Minion,Common,Core,yes,2,2,3,,Opening Gambit,Opening Gambit: Give a nearby friendly minion +2 Attack this turn.
-11135,Recombobulus,Minion,Common,Immortal,yes,2,2,3,,Opening Gambit,Opening Gambit: Teleport ANY minion one space randomly.
-11126,Replicant,Minion,Common,Immortal,yes,2,2,2,Mech,Opening Gambit,Opening Gambit: Draw another Replicant from your deck.
+﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description,tags
+19052,Bloodtear Alchemist,Minion,Basic,Core,yes,1,2,1,,Opening Gambit,Opening Gambit: Deal 1 damage to an enemy.,opening_gambit
+10001,Dragonlark,Minion,Basic,Core,yes,1,2,1,,Flying,Flying,
+11022,Dreamgazer,Minion,Epic,Core,yes,1,1,1,,,"When you replace this card, summon it on a random nearby space. Your General takes 2 damage.",
+19002,Helm of MECHAZ0R,Minion,Common,Core,yes,1,2,2,Mech,"MECHAZ0R Progress, Opening Gambit",Opening Gambit: Progresses MECHAZ0R build by +20%.,mech;opening_gambit
+11053,Koi,Minion,Common,ShimZar,yes,1,3,1,BattlePet,Battle Pet,This minion takes no damage from Generals.,
+10018,Komodo Charger,Minion,Basic,Core,yes,1,1,3,,,,
+11141,Mirrorrim,Minion,Common,Mythron,yes,1,2,1,,Opening Gambit,Opening Gambit: Shuffle three copies of a friendly minion into your deck.,opening_gambit
+10019,Planar Scout,Minion,Basic,Core,yes,1,2,1,,Airdrop,Airdrop,
+11016,Prophet of the White Palm,Minion,Rare,Core,yes,1,1,1,,Opening Gambit,Opening Gambit: Prevent ALL spell damage until your next turn.,opening_gambit
+19025,Swamp Entangler,Minion,Common,Core,yes,1,0,3,,Provoke,Provoke,provoke
+10993,Aethermaster,Minion,Epic,Core,yes,2,1,3,Arcanyst,,You may replace an additional card each turn.,arcanyst
+11001,Amu,Minion,Common,ShimZar,yes,2,3,3,BattlePet,Battle Pet,,
+11017,Araki Headhunter,Minion,Epic,Core,yes,2,1,3,,,"Whenever you summon a minion with Opening Gambit from your action bar, gain +2 Attack.",opening_gambit
+11152,Araras Prophet,Minion,Rare,Mythron,yes,2,1,3,Arcanyst,,"Whenever you cast a spell other than Brilliant Plume, shuffle a Brilliant Plume into your deck.",arcanyst
+11084,Azure Herald,Minion,Common,Core,yes,2,1,4,,Opening Gambit,Opening Gambit: Restore 3 Health to your General.,heal;opening_gambit
+19050,Azure Horn Shaman,Minion,Rare,Core,yes,2,1,4,,Dying Wish,Dying Wish: Give +4 Health to friendly minions around it.,dying_wish
+19029,Bluetip Scorpion,Minion,Common,Core,yes,2,3,1,,,Deals double damage to minions.,
+11102,Carcynus,Minion,Common,Unearthed,yes,2,1,5,,,,
+11098,Celebrant,Minion,Rare,Ancients,yes,2,1,4,Golem,Opening Gambit,Opening Gambit: Create a mana spring tile nearby.,golem;ramp;opening_gambit
+11088,Cryptographer,Minion,Common,Ancients,yes,2,2,2,,Opening Gambit,Opening Gambit: Refresh your Bloodbound Spell.,bbs;opening_gambit
+10020,Ephemeral Shroud,Minion,Basic,Core,yes,2,1,1,,Opening Gambit,Opening Gambit: Dispel 1 nearby space.,opening_gambit
+19051,Flameblood Warlock,Minion,Rare,Core,yes,2,3,1,,Opening Gambit,Opening Gambit: Deal 3 damage to BOTH Generals.,opening_gambit
+11009,Ghost Lynx,Minion,Common,Core,yes,2,2,1,,Opening Gambit,Opening Gambit: Teleport a nearby minion to a random space.,opening_gambit
+19038,Golem Metallurgist,Minion,Rare,Core,yes,2,2,3,Golem,,The first Golem you summon each turn costs 1 less.,golem;ramp
+10981,Healing Mystic,Minion,Basic,Core,yes,2,2,3,,Opening Gambit,Opening Gambit: Restore 2 Health to anything.,heal;opening_gambit
+11014,Jaxi,Minion,Common,Core,yes,2,1,1,,"Token, Dying Wish",Dying Wish: Summon a 1/1 Ranged Mini-Jax in a random corner.,ranged;dying_wish
+11124,Lost Artificer,Minion,Rare,Immortal,yes,2,2,3,,,The first artifact you equip each turn costs 1 less.,ramp
+10302,Manaforger,Minion,Rare,Core,yes,2,1,3,Arcanyst,,The first non-Bloodbound spell you cast each turn costs 1 less.,arcanyst
+10979,Maw,Minion,Common,Core,yes,2,2,2,,Opening Gambit,Opening Gambit: Deal 2 damage to a nearby enemy minion.,opening_gambit
+11123,Metaltooth,Minion,Common,Immortal,yes,2,2,2,Mech,Rush,"If you have another Mech minion, this minion has Rush.",mech
+19040,Piercing Mantis,Minion,Basic,Core,yes,2,2,2,,Frenzy,Frenzy,
+19037,Primus Fist,Minion,Common,Core,yes,2,2,3,,Opening Gambit,Opening Gambit: Give a nearby friendly minion +2 Attack this turn.,opening_gambit
+11135,Recombobulus,Minion,Common,Immortal,yes,2,2,3,,Opening Gambit,Opening Gambit: Teleport ANY minion one space randomly.,opening_gambit
+11126,Replicant,Minion,Common,Immortal,yes,2,2,2,Mech,Opening Gambit,Opening Gambit: Draw another Replicant from your deck.,mech;opening_gambit
 11137,Rescue-RX,Minion,Common,Immortal,yes,2,2,4,,"Token, Build","Build: (2).
-When this minion is built, restore 5 Health to your General."
-19026,Rock Pulverizer,Minion,Basic,Core,yes,2,1,4,,Provoke,Provoke
-10957,Rust Crawler,Minion,Common,Core,yes,2,2,3,,Opening Gambit,Opening Gambit: Destroy a random artifact on the enemy General.
-11046,Shiro Puppydragon,Minion,Common,Core,yes,2,1,4,,,"At the end of your turn, give each nearby friendly minion +1 Attack."
-11109,Sinister Silhouette,Minion,Rare,Unearthed,yes,2,1,2,,,Cannot be attacked.
-19048,Skyrock Golem,Minion,Basic,Core,yes,2,3,2,Golem,,
-11066,Sol,Minion,Rare,ShimZar,yes,2,1,1,BattlePet,Battle Pet,Opening Gambit: Activate a friendly Battle Pet.
-10021,Vale Hunter,Minion,Basic,Core,yes,2,1,2,,Ranged,Ranged
+When this minion is built, restore 5 Health to your General.",heal
+19026,Rock Pulverizer,Minion,Basic,Core,yes,2,1,4,,Provoke,Provoke,provoke
+10957,Rust Crawler,Minion,Common,Core,yes,2,2,3,,Opening Gambit,Opening Gambit: Destroy a random artifact on the enemy General.,opening_gambit
+11046,Shiro Puppydragon,Minion,Common,Core,yes,2,1,4,,,"At the end of your turn, give each nearby friendly minion +1 Attack.",
+11109,Sinister Silhouette,Minion,Rare,Unearthed,yes,2,1,2,,,Cannot be attacked.,
+19048,Skyrock Golem,Minion,Basic,Core,yes,2,3,2,Golem,,,golem
+11066,Sol,Minion,Rare,ShimZar,yes,2,1,1,BattlePet,Battle Pet,Opening Gambit: Activate a friendly Battle Pet.,opening_gambit
+10021,Vale Hunter,Minion,Basic,Core,yes,2,1,2,,Ranged,Ranged,ranged
 19003,Wings of MECHAZ0R,Minion,Common,Core,yes,2,1,4,Mech,"MECHAZ0R Progress, Airdrop, Opening Gambit","Airdrop
-Opening Gambit: Progresses MECHAZ0R build by +20%."
+Opening Gambit: Progresses MECHAZ0R build by +20%.",mech;opening_gambit
 11075,Wood-Wen,Minion,Common,Core,yes,2,2,2,,"Opening Gambit, Provoke","Provoke
-Opening Gambit: Give a nearby friendly minion Provoke."
-11061,Z0r,Minion,Epic,ShimZar,yes,2,2,1,BattlePet,"Token, Battle Pet, Dying Wish",Dying Wish: Put a random MECH minion into your action bar.
-11083,Zyx,Minion,Rare,Core,yes,2,1,2,,Opening Gambit,Opening Gambit: Summon a copy of this minion on a random nearby space.
-11039,Abjudicator,Minion,Rare,Core,yes,3,3,1,Arcanyst,Opening Gambit,Opening Gambit: Lower the cost of all spells in your action bar by 1.
-11142,Aer Pridebeak,Minion,Common,Mythron,yes,3,3,4,,,"Whenever your opponent casts a spell, restore 1 Health to your General."
-10304,Alcuin Loremaster,Minion,Epic,Core,yes,3,3,1,Arcanyst,Opening Gambit,Opening Gambit: Put a copy of the most recently cast spell into your action bar.
+Opening Gambit: Give a nearby friendly minion Provoke.",provoke;opening_gambit
+11061,Z0r,Minion,Epic,ShimZar,yes,2,2,1,BattlePet,"Token, Battle Pet, Dying Wish",Dying Wish: Put a random MECH minion into your action bar.,mech;dying_wish
+11083,Zyx,Minion,Rare,Core,yes,2,1,2,,Opening Gambit,Opening Gambit: Summon a copy of this minion on a random nearby space.,opening_gambit
+11039,Abjudicator,Minion,Rare,Core,yes,3,3,1,Arcanyst,Opening Gambit,Opening Gambit: Lower the cost of all spells in your action bar by 1.,arcanyst;opening_gambit
+11142,Aer Pridebeak,Minion,Common,Mythron,yes,3,3,4,,,"Whenever your opponent casts a spell, restore 1 Health to your General.",heal
+10304,Alcuin Loremaster,Minion,Epic,Core,yes,3,3,1,Arcanyst,Opening Gambit,Opening Gambit: Put a copy of the most recently cast spell into your action bar.,arcanyst;opening_gambit
 11138,Architect-T2K5,Minion,Epic,Immortal,yes,3,1,5,,"Token, Build","Build: (1).
-Whenever this or another friendly minion is built, draw a card."
-11038,Bastion,Minion,Epic,Core,yes,3,0,5,Structure,Structure,"At the end of your turn, give all friendly minions +1 health."
-10013,Blaze Hound,Minion,Common,Core,yes,3,4,3,,Opening Gambit,Opening Gambit: Both players draw a card.
-11125,Bloodbound Mentor,Minion,Epic,Immortal,yes,3,3,4,,Blood Surge,Blood Surge: Put a copy of your Bloodbound Spell into your action bar.
-10205,Bloodshard Golem,Minion,Basic,Core,yes,3,4,3,Golem,,
+Whenever this or another friendly minion is built, draw a card.",
+11038,Bastion,Minion,Epic,Core,yes,3,0,5,Structure,Structure,"At the end of your turn, give all friendly minions +1 health.",structure
+10013,Blaze Hound,Minion,Common,Core,yes,3,4,3,,Opening Gambit,Opening Gambit: Both players draw a card.,opening_gambit
+11125,Bloodbound Mentor,Minion,Epic,Immortal,yes,3,3,4,,Blood Surge,Blood Surge: Put a copy of your Bloodbound Spell into your action bar.,bbs
+10205,Bloodshard Golem,Minion,Basic,Core,yes,3,4,3,Golem,,,golem
 19004,Cannon of MECHAZ0R,Minion,Rare,Core,yes,3,2,2,Mech,"MECHAZ0R Progress, Ranged, Opening Gambit","Ranged
-Opening Gambit: Progresses MECHAZ0R build by +20%."
-10962,Chaos Elemental,Minion,Epic,Core,yes,3,4,4,,,"Whenever this minion takes damage, it randomly teleports."
-19030,Crimson Oculus,Minion,Rare,Core,yes,3,2,3,,,"Whenever opponent summons a minion, this minion gains +1/+1"
-10953,Crossbones,Minion,Rare,Core,yes,3,3,3,,Opening Gambit,Opening Gambit: Destroy an enemy minion with Ranged.
-11079,Day Watcher,Minion,Common,Core,yes,3,3,3,,,"Whenever a friendly minion attacks, restore 1 Health to your General."
-11076,Elkowl,Minion,Rare,Core,yes,3,2,3,,Opening Gambit,Opening Gambit: Gain two random keywords.
-11090,Ghoulie,Minion,Common,Ancients,yes,3,3,4,,,This minion is from every tribe.
-11056,Golden Mantella,Minion,Common,ShimZar,yes,3,4,2,,"Token, Opening Gambit",Opening Gambit: Put a random Battle Pet into your action bar.
+Opening Gambit: Progresses MECHAZ0R build by +20%.",mech;ranged;opening_gambit
+10962,Chaos Elemental,Minion,Epic,Core,yes,3,4,4,,,"Whenever this minion takes damage, it randomly teleports.",
+19030,Crimson Oculus,Minion,Rare,Core,yes,3,2,3,,,"Whenever opponent summons a minion, this minion gains +1/+1",
+10953,Crossbones,Minion,Rare,Core,yes,3,3,3,,Opening Gambit,Opening Gambit: Destroy an enemy minion with Ranged.,ranged;opening_gambit
+11079,Day Watcher,Minion,Common,Core,yes,3,3,3,,,"Whenever a friendly minion attacks, restore 1 Health to your General.",heal
+11076,Elkowl,Minion,Rare,Core,yes,3,2,3,,Opening Gambit,Opening Gambit: Gain two random keywords.,opening_gambit
+11090,Ghoulie,Minion,Common,Ancients,yes,3,3,4,,,This minion is from every tribe.,
+11056,Golden Mantella,Minion,Common,ShimZar,yes,3,4,2,,"Token, Opening Gambit",Opening Gambit: Put a random Battle Pet into your action bar.,opening_gambit
 19039,Golem Vanquisher,Minion,Legendary,Core,yes,3,2,4,Golem,Provoke,"Provoke
-Your other Golem minions have Provoke."
-11052,Hydrax,Minion,Legendary,ShimZar,yes,3,3,4,,,"Whenever a friendly Battle Pet dies, draw a card."
+Your other Golem minions have Provoke.",provoke;golem
+11052,Hydrax,Minion,Legendary,ShimZar,yes,3,3,4,,,"Whenever a friendly Battle Pet dies, draw a card.",
 11051,Ion,Minion,Rare,ShimZar,yes,3,2,3,BattlePet,"Battle Pet, Ranged","Ranged
-Deals double damage to Generals."
-11103,Komodo Hunter,Minion,Common,Unearthed,yes,3,5,6,,Opening Gambit,Opening Gambit: Your opponent summons two Komodo Chargers nearby their General.
+Deals double damage to Generals.",ranged
+11103,Komodo Hunter,Minion,Common,Unearthed,yes,3,5,6,,Opening Gambit,Opening Gambit: Your opponent summons two Komodo Chargers nearby their General.,opening_gambit
 10987,Lady Locke,Minion,Legendary,Core,yes,3,2,3,,"Opening Gambit, Provoke","Provoke
-Opening Gambit: Other minions you summon this turn gain +1/+1 and gain Provoke."
-19047,Mirkblood Devourer,Minion,Legendary,Core,yes,3,2,4,,,Friendly minions summoned nearby this minion gain +1/+1.
-11008,Mogwai,Minion,Epic,Core,yes,3,2,3,,,"After this moves, draw a card."
-11145,Orbo the Ostentatious,Minion,Legendary,Mythron,yes,3,3,4,,Opening Gambit,Opening Gambit: Transform the cards in your action bar into random prismatic legendary cards.
-10303,Prismatic Illusionist,Minion,Rare,Core,yes,3,2,3,Arcanyst,Token,"Whenever you cast a spell, summon a 2/1 Illusion on a random nearby space."
-11148,Prongbok,Minion,Common,Mythron,yes,3,2,5,,,May move an additional space.
-19033,Putrid Dreadflayer,Minion,Basic,Core,yes,3,2,4,,Flying,Flying
-11131,Redsteel Minos,Minion,Common,Immortal,yes,3,2,3,,Blood Surge,Blood Surge: Gains +2/+2.
-10016,Repulsor Beast,Minion,Basic,Core,yes,3,2,2,,Opening Gambit,Opening Gambit: Push a nearby enemy minion to any space.
-11108,Rokadoptera,Minion,Common,Unearthed,yes,3,2,3,,Opening Gambit,Opening Gambit: Put a Boulder Hurl into your action bar.
-10014,Sand Burrower,Minion,Common,Core,yes,3,2,4,,,"When this minion survives damage, it returns to your action bar."
-11027,Sapphire Seer,Minion,Common,Core,yes,3,2,2,,Forcefield,Forcefield
-19045,Sarlac the Eternal,Minion,Legendary,Core,yes,3,1,1,,Dying Wish,Dying Wish: Re-summon this minion on a random space.
-11157,Scarzig,Minion,Legendary,Mythron,yes,3,1,2,,Token,"If this minion destroys an enemy and survives, friendly Scarzig ANYWHERE transform into Feather Knights."
-11146,Sellsoul,Minion,Rare,Mythron,yes,3,4,5,,Dying Wish,Dying Wish: Deal 4 damage to YOUR General.
-10009,Silvertongue Corsair,Minion,Rare,Core,yes,3,3,3,,,Takes no damage from Generals.
+Opening Gambit: Other minions you summon this turn gain +1/+1 and gain Provoke.",provoke;opening_gambit
+19047,Mirkblood Devourer,Minion,Legendary,Core,yes,3,2,4,,,Friendly minions summoned nearby this minion gain +1/+1.,
+11008,Mogwai,Minion,Epic,Core,yes,3,2,3,,,"After this moves, draw a card.",
+11145,Orbo the Ostentatious,Minion,Legendary,Mythron,yes,3,3,4,,Opening Gambit,Opening Gambit: Transform the cards in your action bar into random prismatic legendary cards.,opening_gambit
+10303,Prismatic Illusionist,Minion,Rare,Core,yes,3,2,3,Arcanyst,Token,"Whenever you cast a spell, summon a 2/1 Illusion on a random nearby space.",arcanyst
+11148,Prongbok,Minion,Common,Mythron,yes,3,2,5,,,May move an additional space.,
+19033,Putrid Dreadflayer,Minion,Basic,Core,yes,3,2,4,,Flying,Flying,
+11131,Redsteel Minos,Minion,Common,Immortal,yes,3,2,3,,Blood Surge,Blood Surge: Gains +2/+2.,bbs
+10016,Repulsor Beast,Minion,Basic,Core,yes,3,2,2,,Opening Gambit,Opening Gambit: Push a nearby enemy minion to any space.,opening_gambit
+11108,Rokadoptera,Minion,Common,Unearthed,yes,3,2,3,,Opening Gambit,Opening Gambit: Put a Boulder Hurl into your action bar.,opening_gambit
+10014,Sand Burrower,Minion,Common,Core,yes,3,2,4,,,"When this minion survives damage, it returns to your action bar.",
+11027,Sapphire Seer,Minion,Common,Core,yes,3,2,2,,Forcefield,Forcefield,
+19045,Sarlac the Eternal,Minion,Legendary,Core,yes,3,1,1,,Dying Wish,Dying Wish: Re-summon this minion on a random space.,dying_wish
+11157,Scarzig,Minion,Legendary,Mythron,yes,3,1,2,,Token,"If this minion destroys an enemy and survives, friendly Scarzig ANYWHERE transform into Feather Knights.",
+11146,Sellsoul,Minion,Rare,Mythron,yes,3,4,5,,Dying Wish,Dying Wish: Deal 4 damage to YOUR General.,dying_wish
+10009,Silvertongue Corsair,Minion,Rare,Core,yes,3,3,3,,,Takes no damage from Generals.,
 11035,Skywing,Minion,Rare,Core,yes,3,3,3,,Flying,"Flying
-Your other minions with Flying cost 1 less."
-11058,Soboro,Minion,Epic,ShimZar,yes,3,3,4,,,"Whenever this damages a neutral minion, destroy that minion."
-19049,Sojourner,Minion,Rare,Core,yes,3,1,5,,,"Whenever this minion deals damage, draw a card."
-10992,Songweaver,Minion,Common,Core,yes,3,3,3,,Opening Gambit,Opening Gambit: Give a nearby friendly minion +1/+1.
-10301,Sun Seer,Minion,Common,Core,yes,3,2,4,Arcanyst,,"Whenever this minion deals damage, restore 2 Health to your General."
+Your other minions with Flying cost 1 less.",ramp
+11058,Soboro,Minion,Epic,ShimZar,yes,3,3,4,,,"Whenever this damages a neutral minion, destroy that minion.",
+19049,Sojourner,Minion,Rare,Core,yes,3,1,5,,,"Whenever this minion deals damage, draw a card.",
+10992,Songweaver,Minion,Common,Core,yes,3,3,3,,Opening Gambit,Opening Gambit: Give a nearby friendly minion +1/+1.,opening_gambit
+10301,Sun Seer,Minion,Common,Core,yes,3,2,4,Arcanyst,,"Whenever this minion deals damage, restore 2 Health to your General.",heal;arcanyst
 19005,Sword of MECHAZ0R,Minion,Rare,Core,yes,3,3,3,Mech,"MECHAZ0R Progress, Frenzy, Opening Gambit","Frenzy
-Opening Gambit: Progresses MECHAZ0R build by +20%."
+Opening Gambit: Progresses MECHAZ0R build by +20%.",mech;opening_gambit
 10954,Sworn Avenger,Minion,Epic,Core,yes,3,1,3,,Ranged,"Ranged
-Whenever your General takes damage, this minion gains +1 Attack."
+Whenever your General takes damage, this minion gains +1 Attack.",general_atk;ranged
 10974,Syvrel the Exile,Minion,Epic,Core,yes,3,1,4,,Ranged,"Ranged
-Minions damaged by Syvrel are pulled in front of him."
-10960,Venom Toth,Minion,Epic,Core,yes,3,3,3,,,"Whenever your opponent summons a minion, deal 1 damage to the enemy General."
-10982,Void Hunter,Minion,Common,Core,yes,3,4,2,,Dying Wish,Dying Wish: Draw a card.
+Minions damaged by Syvrel are pulled in front of him.",ranged
+10960,Venom Toth,Minion,Epic,Core,yes,3,3,3,,,"Whenever your opponent summons a minion, deal 1 damage to the enemy General.",
+10982,Void Hunter,Minion,Common,Core,yes,3,4,2,,Dying Wish,Dying Wish: Draw a card.,dying_wish
 11105,Wild Tahr,Minion,Common,Unearthed,yes,3,2,4,,Frenzy,"Frenzy
-Whenever an enemy attacks, this minion gains +3 Attack until the end of your turn."
-11007,Wind Runner,Minion,Rare,Core,yes,3,3,3,,,"After this minion moves, give all friendly minions around it +1/+1."
-19010,Wind Stopper,Minion,Common,Core,yes,3,1,7,,,Ranged attackers must attack this minion first.
+Whenever an enemy attacks, this minion gains +3 Attack until the end of your turn.",
+11007,Wind Runner,Minion,Rare,Core,yes,3,3,3,,,"After this minion moves, give all friendly minions around it +1/+1.",
+19010,Wind Stopper,Minion,Common,Core,yes,3,1,7,,,Ranged attackers must attack this minion first.,ranged
 11020,Wings of Paradise,Minion,Common,Core,yes,3,3,3,,Flying,"Flying
-Whenever you replace a card, this minion gains +2 Attack this turn."
-11004,Yun,Minion,Common,ShimZar,yes,3,5,4,BattlePet,Battle Pet,
-11059,Zukong,Minion,Legendary,ShimZar,yes,3,3,4,,,You control your Battle Pets.
+Whenever you replace a card, this minion gains +2 Attack this turn.",
+11004,Yun,Minion,Common,ShimZar,yes,3,5,4,BattlePet,Battle Pet,,
+11059,Zukong,Minion,Legendary,ShimZar,yes,3,3,4,,,You control your Battle Pets.,
 11033,Arrow Whistler,Minion,Common,Core,yes,4,2,4,,Ranged,"Ranged
-Your other minions with Ranged get +1 Attack."
-10961,Artifact Hunter,Minion,Epic,Core,yes,4,3,4,,Opening Gambit,Opening Gambit: Draw a random artifact from your deck.
+Your other minions with Ranged get +1 Attack.",ranged
+10961,Artifact Hunter,Minion,Epic,Core,yes,4,3,4,,Opening Gambit,Opening Gambit: Draw a random artifact from your deck.,opening_gambit
 11006,Black Locust,Minion,Legendary,Core,yes,4,2,2,,Flying,"Flying
-After this minion moves, summon a Black Locust nearby."
-11043,Blistering Skorn,Minion,Common,Core,yes,4,4,5,,Opening Gambit,Opening Gambit: Deal 1 damage to everything (including itself).
+After this minion moves, summon a Black Locust nearby.",
+11043,Blistering Skorn,Minion,Common,Core,yes,4,4,5,,Opening Gambit,Opening Gambit: Deal 1 damage to everything (including itself).,opening_gambit
 11122,Bloodsworn Gambler,Minion,Epic,Unearthed,yes,4,2,3,,Ranged,"Ranged
-Each time this minion attacks, it has a 50% chance to attack again, attacking a random enemy."
-11063,Calculator,Minion,Epic,ShimZar,yes,4,1,1,,Opening Gambit,Opening Gambit: Gain the combined Attack and Health of all Battle Pets in your action bar.
+Each time this minion attacks, it has a 50% chance to attack again, attacking a random enemy.",ranged
+11063,Calculator,Minion,Epic,ShimZar,yes,4,1,1,,Opening Gambit,Opening Gambit: Gain the combined Attack and Health of all Battle Pets in your action bar.,opening_gambit
 10989,Captain Hank Hart,Minion,Epic,Core,yes,4,2,4,,Ranged,"Ranged
-Whenever this minion deals damage, restore that much Health to it. "
+Whenever this minion deals damage, restore that much Health to it. ",heal;ranged
 19006,Chassis of MECHAZ0R,Minion,Epic,Core,yes,4,2,4,Mech,"MECHAZ0R Progress, Forcefield, Opening Gambit","Forcefield
-Opening Gambit: Progresses MECHAZ0R build by +20%."
-11086,Decimus,Minion,Legendary,Core,yes,4,4,4,,,"Whenever your opponent draws a card, deal 2 damage to the enemy General."
-10976,Dioltas,Minion,Epic,Core,yes,4,5,3,,"Token, Dying Wish",Dying Wish: Summon a 0/8 Tombstone minion with Provoke near your General.
-10995,Emerald Rejuvenator,Minion,Rare,Core,yes,4,4,4,,Opening Gambit,Opening Gambit: Restore 4 Health to BOTH Generals.
-11091,Feralu,Minion,Rare,Ancients,yes,4,4,3,,,Friendly minions from any tribe have +1/+1.
-10017,Fire Spitter,Minion,Basic,Core,yes,4,3,2,,Ranged,Ranged
-11151,Fizzling Mystic,Minion,Common,Mythron,yes,4,3,3,,Opening Gambit,Opening Gambit: Deal 2 damage to an enemy OR restore 2 Health to a friendly minion or General.
-19042,Frostbone Naga,Minion,Common,Core,yes,4,3,3,,Opening Gambit,Opening Gambit: Deal 2 damage to everything around it.
-11057,Gnasher,Minion,Common,ShimZar,yes,4,3,3,,Dying Wish,Dying Wish: This minion deals 3 damage to all enemies around it.
-10978,Hailstone Golem,Minion,Basic,Core,yes,4,4,6,Golem,,
-11159,Hsuku,Minion,Epic,Mythron,yes,4,2,6,,,"At the end of any player's turn, give one of their minions a random buff and keyword (excluding Hsuku)."
-10306,Lightbender,Minion,Rare,Core,yes,4,3,3,Arcanyst,Opening Gambit,Opening Gambit: Dispel ALL spaces around it.
-11096,Loreweaver,Minion,Rare,Ancients,yes,4,2,5,Arcanyst,,"Whenever you draw a spell, put a copy of it into your action bar."
-11110,Matter Shaper,Minion,Rare,Unearthed,yes,4,5,4,,Opening Gambit,Opening Gambit: Destroy an enemy artifact to put a random artifact from your faction into your action bar.
-10965,Mindwarper,Minion,Rare,Core,yes,4,4,3,Arcanyst,Opening Gambit,Opening Gambit: Gain a copy of a random spell from your opponent's action bar.
-10988,Moebius,Minion,Epic,Core,yes,4,3,5,Arcanyst,,"At the start of your turn, fully heal this minion and switch its Attack and Health."
+Opening Gambit: Progresses MECHAZ0R build by +20%.",mech;opening_gambit
+11086,Decimus,Minion,Legendary,Core,yes,4,4,4,,,"Whenever your opponent draws a card, deal 2 damage to the enemy General.",
+10976,Dioltas,Minion,Epic,Core,yes,4,5,3,,"Token, Dying Wish",Dying Wish: Summon a 0/8 Tombstone minion with Provoke near your General.,provoke;dying_wish
+10995,Emerald Rejuvenator,Minion,Rare,Core,yes,4,4,4,,Opening Gambit,Opening Gambit: Restore 4 Health to BOTH Generals.,heal;opening_gambit
+11091,Feralu,Minion,Rare,Ancients,yes,4,4,3,,,Friendly minions from any tribe have +1/+1.,
+10017,Fire Spitter,Minion,Basic,Core,yes,4,3,2,,Ranged,Ranged,ranged
+11151,Fizzling Mystic,Minion,Common,Mythron,yes,4,3,3,,Opening Gambit,Opening Gambit: Deal 2 damage to an enemy OR restore 2 Health to a friendly minion or General.,heal;opening_gambit
+19042,Frostbone Naga,Minion,Common,Core,yes,4,3,3,,Opening Gambit,Opening Gambit: Deal 2 damage to everything around it.,opening_gambit
+11057,Gnasher,Minion,Common,ShimZar,yes,4,3,3,,Dying Wish,Dying Wish: This minion deals 3 damage to all enemies around it.,dying_wish
+10978,Hailstone Golem,Minion,Basic,Core,yes,4,4,6,Golem,,,golem
+11159,Hsuku,Minion,Epic,Mythron,yes,4,2,6,,,"At the end of any player's turn, give one of their minions a random buff and keyword (excluding Hsuku).",
+10306,Lightbender,Minion,Rare,Core,yes,4,3,3,Arcanyst,Opening Gambit,Opening Gambit: Dispel ALL spaces around it.,arcanyst;opening_gambit
+11096,Loreweaver,Minion,Rare,Ancients,yes,4,2,5,Arcanyst,,"Whenever you draw a spell, put a copy of it into your action bar.",arcanyst
+11110,Matter Shaper,Minion,Rare,Unearthed,yes,4,5,4,,Opening Gambit,Opening Gambit: Destroy an enemy artifact to put a random artifact from your faction into your action bar.,opening_gambit
+10965,Mindwarper,Minion,Rare,Core,yes,4,4,3,Arcanyst,Opening Gambit,Opening Gambit: Gain a copy of a random spell from your opponent's action bar.,arcanyst;opening_gambit
+10988,Moebius,Minion,Epic,Core,yes,4,3,5,Arcanyst,,"At the start of your turn, fully heal this minion and switch its Attack and Health.",heal;arcanyst
 11080,Night Watcher,Minion,Epic,Core,yes,4,2,4,,"Rush, Forcefield","Forcefield
-Whenever ANY player summons a minion with Rush, exhaust it."
-10305,Owlbeast Sage,Minion,Rare,Core,yes,4,4,4,Arcanyst,,"Whenever you cast a spell, your Arcanyst minions gain +2 Health."
-19027,Primus Shieldmaster,Minion,Basic,Core,yes,4,3,6,,Provoke,Provoke
-10991,"Purgatos, The Realmkeeper",Minion,Epic,Core,yes,4,3,5,,,"Whenever this minion deals damage, either deal 3 damage to the enemy General OR restore 3 Health to your General."
-11106,Razorcrag Golem,Minion,Common,Unearthed,yes,4,10,3,Golem,,
+Whenever ANY player summons a minion with Rush, exhaust it.",
+10305,Owlbeast Sage,Minion,Rare,Core,yes,4,4,4,Arcanyst,,"Whenever you cast a spell, your Arcanyst minions gain +2 Health.",arcanyst
+19027,Primus Shieldmaster,Minion,Basic,Core,yes,4,3,6,,Provoke,Provoke,provoke
+10991,"Purgatos, The Realmkeeper",Minion,Epic,Core,yes,4,3,5,,,"Whenever this minion deals damage, either deal 3 damage to the enemy General OR restore 3 Health to your General.",heal
+11106,Razorcrag Golem,Minion,Common,Unearthed,yes,4,10,3,Golem,,,golem
 11150,Riftwalker,Minion,Rare,Mythron,yes,4,3,3,,"Airdrop, Intensify","Airdrop
-Intensify: Deal 1 damage to everything around it."
-10012,Saberspine Tiger,Minion,Basic,Core,yes,4,3,2,,Rush,Rush
-11087,Sanguinar,Minion,Rare,Ancients,yes,4,5,4,,,Your Bloodbound Spell costs 0.
-19044,Silhouette Tracer,Minion,Common,Core,yes,4,2,6,,Opening Gambit,Opening Gambit: Teleport your General up to 3 spaces.
-10975,Spelljammer,Minion,Legendary,Core,yes,4,3,5,,,Each player draws an additional card at the end of their turns.
-11078,Sphynx,Minion,Legendary,Core,yes,4,5,4,,Opening Gambit,Opening Gambit: Put a Riddle in your opponent's action bar.
-11015,Sun Elemental,Minion,Common,Core,yes,4,3,3,,Opening Gambit,Opening Gambit: Give two random friendly minions +2 Health.
-11028,Sunsteel Defender,Minion,Rare,Core,yes,4,3,3,,Forcefield,Forcefield
-11041,Sworn Sister L'Kian,Minion,Legendary,Core,yes,4,2,4,,Opening Gambit,Opening Gambit: Add 2 random cards from your Faction to your action bar.
+Intensify: Deal 1 damage to everything around it.",
+10012,Saberspine Tiger,Minion,Basic,Core,yes,4,3,2,,Rush,Rush,
+11087,Sanguinar,Minion,Rare,Ancients,yes,4,5,4,,,Your Bloodbound Spell costs 0.,ramp;bbs;arcanyst
+19044,Silhouette Tracer,Minion,Common,Core,yes,4,2,6,,Opening Gambit,Opening Gambit: Teleport your General up to 3 spaces.,opening_gambit
+10975,Spelljammer,Minion,Legendary,Core,yes,4,3,5,,,Each player draws an additional card at the end of their turns.,
+11078,Sphynx,Minion,Legendary,Core,yes,4,5,4,,Opening Gambit,Opening Gambit: Put a Riddle in your opponent's action bar.,opening_gambit
+11015,Sun Elemental,Minion,Common,Core,yes,4,3,3,,Opening Gambit,Opening Gambit: Give two random friendly minions +2 Health.,opening_gambit
+11028,Sunsteel Defender,Minion,Rare,Core,yes,4,3,3,,Forcefield,Forcefield,
+11041,Sworn Sister L'Kian,Minion,Legendary,Core,yes,4,2,4,,Opening Gambit,Opening Gambit: Add 2 random cards from your Faction to your action bar.,opening_gambit
 11025,Tethermancer,Minion,Rare,Core,yes,4,1,6,,Provoke,"Provoke
-Dispel any minion that deals damage to this one."
-19031,Thorn Needler,Minion,Basic,Core,yes,4,6,4,,,
-11115,Thunderhorn,Minion,Epic,Unearthed,yes,4,4,4,,,"Whenever this minion damages an enemy, it also damages all joined enemies."
-11139,Timekeeper,Minion,Common,Immortal,yes,4,2,2,,Opening Gambit,Opening Gambit: Your buildings progress by 1 turn.
-11036,Unseven,Minion,Legendary,Core,yes,4,2,4,,Dying Wish,Dying Wish: Summon a minion with Dying Wish from your action bar.
-11019,White Widow,Minion,Rare,Core,yes,4,3,4,,,"Whenever you replace a card, deal 2 damage to a random enemy."
-19034,Young Flamewing,Minion,Basic,Core,yes,4,5,4,,Flying,Flying.
-11144,Alcuin Fugitive,Minion,Legendary,Mythron,yes,5,2,5,Arcanyst,,"At the end of any turn you cast a spell, put a copy of the most recently cast spell into your action bar."
-11040,Alter Rexx,Minion,Legendary,Core,yes,5,5,5,Mech,,"Whenever you summon MECHAZ0R, put a MECHAZ0R in your action bar."
-10983,Ash Mephyt,Minion,Common,Core,yes,5,2,3,,Opening Gambit,Opening Gambit: Summon two copies of this minion on random spaces.
-11054,Beastbound Savage,Minion,Rare,ShimZar,yes,5,2,5,,"Frenzy, Celerity","Frenzy, Celerity"
-11094,Blue Conjurer,Minion,Rare,Ancients,yes,5,4,6,Arcanyst,,"Whenever you cast a spell, put a random Arcanyst into your action bar."
-11092,Boulder Breacher,Minion,Rare,Ancients,yes,5,5,5,Golem,Bond,Bond: Enemies can't counterattack this turn.
-10204,Brightmoss Golem,Minion,Basic,Core,yes,5,4,9,Golem,,
-11134,Capricious Marauder,Minion,Rare,Immortal,yes,5,9,9,,Deathwatch,"Whenever a friendly minion is destroyed, your opponent takes control of this minion."
-11042,Chakkram,Minion,Rare,Core,yes,5,5,5,,,This minion costs 2 less if your General took damage on opponent's last turn.
-11154,Chirpuka,Minion,Epic,Mythron,yes,5,3,6,,"Provoke, Token","Whenever your opponent summons a minion, summon a 2/1 Puka with Provoke in front of it."
-10958,Dagger Kiri,Minion,Common,Core,yes,5,2,8,,Celerity,Celerity
-10959,Dancing Blades,Minion,Common,Core,yes,5,4,6,,Opening Gambit,Opening Gambit: Deal 3 damage to ANY minion in front of this.
-11128,DECEPTIB0T,Minion,Epic,Immortal,yes,5,5,5,Mech,,"Whenever this minion destroys an enemy, summon a different Mech minion from your deck nearby."
-11048,Envybaer,Minion,Legendary,Core,yes,5,3,10,,,"Whenever this minion damages an enemy, teleport that enemy to a random corner."
-19028,Fireblazer,Minion,Common,Core,yes,5,5,5,,Provoke,Provoke
-11011,Firestarter,Minion,Rare,Core,yes,5,3,5,Arcanyst,"Rush, Token","Whenever you cast a spell, summon a 1/1 Spellspark with Rush on a random nearby space."
+Dispel any minion that deals damage to this one.",provoke
+19031,Thorn Needler,Minion,Basic,Core,yes,4,6,4,,,,
+11115,Thunderhorn,Minion,Epic,Unearthed,yes,4,4,4,,,"Whenever this minion damages an enemy, it also damages all joined enemies.",
+11139,Timekeeper,Minion,Common,Immortal,yes,4,2,2,,Opening Gambit,Opening Gambit: Your buildings progress by 1 turn.,opening_gambit
+11036,Unseven,Minion,Legendary,Core,yes,4,2,4,,Dying Wish,Dying Wish: Summon a minion with Dying Wish from your action bar.,dying_wish
+11019,White Widow,Minion,Rare,Core,yes,4,3,4,,,"Whenever you replace a card, deal 2 damage to a random enemy.",
+19034,Young Flamewing,Minion,Basic,Core,yes,4,5,4,,Flying,Flying.,
+11144,Alcuin Fugitive,Minion,Legendary,Mythron,yes,5,2,5,Arcanyst,,"At the end of any turn you cast a spell, put a copy of the most recently cast spell into your action bar.",arcanyst
+11040,Alter Rexx,Minion,Legendary,Core,yes,5,5,5,Mech,,"Whenever you summon MECHAZ0R, put a MECHAZ0R in your action bar.",mech
+10983,Ash Mephyt,Minion,Common,Core,yes,5,2,3,,Opening Gambit,Opening Gambit: Summon two copies of this minion on random spaces.,opening_gambit
+11054,Beastbound Savage,Minion,Rare,ShimZar,yes,5,2,5,,"Frenzy, Celerity","Frenzy, Celerity",
+11094,Blue Conjurer,Minion,Rare,Ancients,yes,5,4,6,Arcanyst,,"Whenever you cast a spell, put a random Arcanyst into your action bar.",arcanyst
+11092,Boulder Breacher,Minion,Rare,Ancients,yes,5,5,5,Golem,Bond,Bond: Enemies can't counterattack this turn.,golem
+10204,Brightmoss Golem,Minion,Basic,Core,yes,5,4,9,Golem,,,golem
+11134,Capricious Marauder,Minion,Rare,Immortal,yes,5,9,9,,Deathwatch,"Whenever a friendly minion is destroyed, your opponent takes control of this minion.",
+11042,Chakkram,Minion,Rare,Core,yes,5,5,5,,,This minion costs 2 less if your General took damage on opponent's last turn.,ramp
+11154,Chirpuka,Minion,Epic,Mythron,yes,5,3,6,,"Provoke, Token","Whenever your opponent summons a minion, summon a 2/1 Puka with Provoke in front of it.",provoke
+10958,Dagger Kiri,Minion,Common,Core,yes,5,2,8,,Celerity,Celerity,
+10959,Dancing Blades,Minion,Common,Core,yes,5,4,6,,Opening Gambit,Opening Gambit: Deal 3 damage to ANY minion in front of this.,opening_gambit
+11128,DECEPTIB0T,Minion,Epic,Immortal,yes,5,5,5,Mech,,"Whenever this minion destroys an enemy, summon a different Mech minion from your deck nearby.",mech
+11048,Envybaer,Minion,Legendary,Core,yes,5,3,10,,,"Whenever this minion damages an enemy, teleport that enemy to a random corner.",
+19028,Fireblazer,Minion,Common,Core,yes,5,5,5,,Provoke,Provoke,provoke
+11011,Firestarter,Minion,Rare,Core,yes,5,3,5,Arcanyst,"Rush, Token","Whenever you cast a spell, summon a 1/1 Spellspark with Rush on a random nearby space.",arcanyst
 11034,Golden Justicar,Minion,Epic,Core,yes,5,4,6,,Provoke,"Provoke
-Your other minions with Provoke can move two additional spaces."
-11049,Grincher,Minion,Rare,Core,yes,5,5,4,,Opening Gambit,Opening Gambit: Add a random artifact to your action bar. It costs 3 less.
-11024,Hollow Grovekeeper,Minion,Legendary,Core,yes,5,3,4,,Opening Gambit,"Opening Gambit: Destroy ANY nearby minion with Provoke or Frenzy. If you do, this minion gains Provoke and Frenzy."
+Your other minions with Provoke can move two additional spaces.",provoke
+11049,Grincher,Minion,Rare,Core,yes,5,5,4,,Opening Gambit,Opening Gambit: Add a random artifact to your action bar. It costs 3 less.,ramp;opening_gambit
+11024,Hollow Grovekeeper,Minion,Legendary,Core,yes,5,3,4,,Opening Gambit,"Opening Gambit: Destroy ANY nearby minion with Provoke or Frenzy. If you do, this minion gains Provoke and Frenzy.",provoke;opening_gambit
 11133,Impervious Giago,Minion,Rare,Immortal,yes,5,1,10,,Provoke,"Provoke
-Whenever this minion is attacked, it gains +2 Attack."
+Whenever this minion is attacked, it gains +2 Attack.",provoke
 11064,Inquisitor Kron,Minion,Legendary,ShimZar,yes,5,4,5,,"Token, Provoke","Provoke
-Whenever you replace a card, summon a 2/2 Prisoner with a random ability nearby."
-11085,Ironclad,Minion,Epic,Core,yes,5,4,3,,Dying Wish,Dying Wish: Dispel all enemy minions.
-11018,Keeper of the Vale,Minion,Legendary,Core,yes,5,3,4,,Opening Gambit,Opening Gambit: Summon a random friendly minion destroyed this game nearby this minion.
+Whenever you replace a card, summon a 2/2 Prisoner with a random ability nearby.",provoke
+11085,Ironclad,Minion,Epic,Core,yes,5,4,3,,Dying Wish,Dying Wish: Dispel all enemy minions.,dying_wish
+11018,Keeper of the Vale,Minion,Legendary,Core,yes,5,3,4,,Opening Gambit,Opening Gambit: Summon a random friendly minion destroyed this game nearby this minion.,opening_gambit
 11112,Letigress,Minion,Legendary,Unearthed,yes,5,2,6,,"Token, Ranged","Ranged
-Whenever your General attacks, a cub joins the pack."
+Whenever your General attacks, a cub joins the pack.",general_atk;ranged
 10973,Lux Ignis,Minion,Epic,Core,yes,5,2,5,,Ranged,"Ranged
-At the end of your turn, restore 2 Health to all nearby friendly minions. "
-11031,Necroseer,Minion,Basic,Core,yes,5,5,4,,Dying Wish,Dying Wish: Draw a card.
-11111,Quahog,Minion,Rare,Unearthed,yes,5,7,7,,,Enemy minions destroyed by this are returned to their action bar.
-11060,Rawr,Minion,Legendary,ShimZar,yes,5,3,7,BattlePet,"Token, Battle Pet","Whenever this minion takes damage, summon a random Battle Pet nearby."
-19032,Rogue Warden,Minion,Common,Core,yes,5,4,3,,Ranged,Ranged
-11030,Sunset Paragon,Minion,Epic,Core,yes,5,3,2,,Opening Gambit,Opening Gambit: ALL nearby minions deal damage to themselves equal to their Attack.
-10955,Sworn Defender,Minion,Epic,Core,yes,5,4,7,,,"Whenever your General takes damage, fully heal this minion."
-10985,The High Hand,Minion,Common,Core,yes,5,2,3,,Opening Gambit,Opening Gambit: Gains +1/+1 for each card in your opponent's action bar.
-11114,Theobule,Minion,Legendary,Unearthed,yes,5,5,6,,Opening Gambit,Opening Gambit: Replace each card in your action bar.
+At the end of your turn, restore 2 Health to all nearby friendly minions. ",heal;ranged
+11031,Necroseer,Minion,Basic,Core,yes,5,5,4,,Dying Wish,Dying Wish: Draw a card.,dying_wish
+11111,Quahog,Minion,Rare,Unearthed,yes,5,7,7,,,Enemy minions destroyed by this are returned to their action bar.,
+11060,Rawr,Minion,Legendary,ShimZar,yes,5,3,7,BattlePet,"Token, Battle Pet","Whenever this minion takes damage, summon a random Battle Pet nearby.",
+19032,Rogue Warden,Minion,Common,Core,yes,5,4,3,,Ranged,Ranged,ranged
+11030,Sunset Paragon,Minion,Epic,Core,yes,5,3,2,,Opening Gambit,Opening Gambit: ALL nearby minions deal damage to themselves equal to their Attack.,opening_gambit
+10955,Sworn Defender,Minion,Epic,Core,yes,5,4,7,,,"Whenever your General takes damage, fully heal this minion.",heal
+10985,The High Hand,Minion,Common,Core,yes,5,2,3,,Opening Gambit,Opening Gambit: Gains +1/+1 for each card in your opponent's action bar.,opening_gambit
+11114,Theobule,Minion,Legendary,Unearthed,yes,5,5,6,,Opening Gambit,Opening Gambit: Replace each card in your action bar.,opening_gambit
 11097,Trinity Wing,Minion,Legendary,Ancients,yes,5,4,4,Arcanyst,"Flying, Bond","Flying
-Bond: Put the three Teachings of the Dragon into your action bar."
-10022,Twilight Sorcerer,Minion,Epic,Core,yes,5,3,6,,Opening Gambit,Opening Gambit: Put a copy of a random spell you cast this game into your action bar.
-19043,Archon Spellbinder,Minion,Legendary,Core,yes,6,7,7,Arcanyst,,Your opponent's non-Bloodbound spells cost 1 more to cast.
+Bond: Put the three Teachings of the Dragon into your action bar.",arcanyst
+10022,Twilight Sorcerer,Minion,Epic,Core,yes,5,3,6,,Opening Gambit,Opening Gambit: Put a copy of a random spell you cast this game into your action bar.,arcanyst;opening_gambit
+19043,Archon Spellbinder,Minion,Legendary,Core,yes,6,7,7,Arcanyst,,Your opponent's non-Bloodbound spells cost 1 more to cast.,arcanyst
 11023,Bonereaper,Minion,Epic,Core,yes,6,2,9,,Provoke,"Provoke
-At the end of your turn, deal 2 damage to each enemy minion around this one."
-10980,Deathblighter,Minion,Common,Core,yes,6,3,4,,Opening Gambit,Opening Gambit: Deal 3 damage to all enemy minions around it.
-11037,Diamond Golem,Minion,Common,Core,yes,6,5,11,Golem,,
+At the end of your turn, deal 2 damage to each enemy minion around this one.",provoke
+10980,Deathblighter,Minion,Common,Core,yes,6,3,4,,Opening Gambit,Opening Gambit: Deal 3 damage to all enemy minions around it.,opening_gambit
+11037,Diamond Golem,Minion,Common,Core,yes,6,5,11,Golem,,,golem
 11082,Dust Wailer,Minion,Rare,Core,yes,6,3,4,,"Opening Gambit, Flying","Flying
-Opening Gambit: Deal 3 damage to all enemies in front of this minion."
-10986,Eclipse,Minion,Legendary,Core,yes,6,3,7,Arcanyst,,"Whenever this minion takes damage, it deals that much damage to the enemy General."
-11032,Facestriker,Minion,Basic,Core,yes,6,4,6,,,Deals double damage to Generals.
-10984,First Sword of Akrane,Minion,Common,Core,yes,6,7,7,,,Your other minions have +1 Attack.
-11095,Grimes,Minion,Rare,Ancients,yes,6,3,3,,"Token, Opening Gambit, Dying Wish",Opening Gambit and Dying Wish: Summon a random minion from any tribe nearby.
-11077,Grove Lion,Minion,Epic,Core,yes,6,5,5,,Forcefield,"While this minion is on the battlefield, your General has Forcefield."
+Opening Gambit: Deal 3 damage to all enemies in front of this minion.",opening_gambit
+10986,Eclipse,Minion,Legendary,Core,yes,6,3,7,Arcanyst,,"Whenever this minion takes damage, it deals that much damage to the enemy General.",arcanyst
+11032,Facestriker,Minion,Basic,Core,yes,6,4,6,,,Deals double damage to Generals.,
+10984,First Sword of Akrane,Minion,Common,Core,yes,6,7,7,,,Your other minions have +1 Attack.,
+11095,Grimes,Minion,Rare,Ancients,yes,6,3,3,,"Token, Opening Gambit, Dying Wish",Opening Gambit and Dying Wish: Summon a random minion from any tribe nearby.,dying_wish;opening_gambit
+11077,Grove Lion,Minion,Epic,Core,yes,6,5,5,,Forcefield,"While this minion is on the battlefield, your General has Forcefield.",
 10963,Jax Truesight,Minion,Legendary,Core,yes,6,1,1,,"Token, Ranged, Opening Gambit","Ranged
-Opening Gambit: Summon a 1/1 Ranged Mini-Jax in each corner."
+Opening Gambit: Summon a 1/1 Ranged Mini-Jax in each corner.",ranged;opening_gambit
 11153,Lodestar,Minion,Epic,Mythron,yes,6,4,4,,"Forcefield, Airdrop","Airdrop, Forcefield
-At the end of BOTH players' turns, pull some things to this minion."
-11107,Magesworn,Minion,Legendary,Unearthed,yes,6,3,8,Arcanyst,,BOTH players cannot cast spells that cost 2 or less.
+At the end of BOTH players' turns, pull some things to this minion.",
+11107,Magesworn,Minion,Legendary,Unearthed,yes,6,3,8,Arcanyst,,BOTH players cannot cast spells that cost 2 or less.,arcanyst
 11149,Mythron Wanderer,Minion,Mythron,Mythron,yes,6,6,6,,"Destiny, Trial","Trial: Have no duplicate cards in your deck.
-Destiny: Your minions have +1/+1."
-11127,Project Ω,Minion,Legendary,Immortal,yes,6,1,1,Mech,,This minion gains +2/+2 for each other Mech minion you summoned this game.
-11132,Q'orrhlma'a,Minion,Legendary,Immortal,yes,6,6,6,,Opening Gambit,Opening Gambit: Remove all minions that cost 2 or less from each player's deck.
-11081,Quartermaster Gauj,Minion,Legendary,Core,yes,6,5,2,,,Takes no damage from minions or Generals.
-11045,Ruby Rifter,Minion,Legendary,Core,yes,6,4,6,,,"Whenever your General takes damage, draw a card and give this minion +2 Attack."
-11129,S.I.L.V.E.R.,Minion,Legendary,Immortal,yes,6,7,5,Mech,,"Whenever you summon this or another Mech, friendly Mechs gain all keywords of other friendly Mechs."
-10307,Serpenti,Minion,Common,Core,yes,6,7,4,,Frenzy,Frenzy
-11055,Silverbeak,Minion,Common,ShimZar,yes,6,6,9,,,
+Destiny: Your minions have +1/+1.",
+11127,Project Ω,Minion,Legendary,Immortal,yes,6,1,1,Mech,,This minion gains +2/+2 for each other Mech minion you summoned this game.,mech
+11132,Q'orrhlma'a,Minion,Legendary,Immortal,yes,6,6,6,,Opening Gambit,Opening Gambit: Remove all minions that cost 2 or less from each player's deck.,opening_gambit
+11081,Quartermaster Gauj,Minion,Legendary,Core,yes,6,5,2,,,Takes no damage from minions or Generals.,
+11045,Ruby Rifter,Minion,Legendary,Core,yes,6,4,6,,,"Whenever your General takes damage, draw a card and give this minion +2 Attack.",general_atk
+11129,S.I.L.V.E.R.,Minion,Legendary,Immortal,yes,6,7,5,Mech,,"Whenever you summon this or another Mech, friendly Mechs gain all keywords of other friendly Mechs.",mech
+10307,Serpenti,Minion,Common,Core,yes,6,7,4,,Frenzy,Frenzy,
+11055,Silverbeak,Minion,Common,ShimZar,yes,6,6,9,,,,
 11116,Spriggin,Minion,Epic,Unearthed,yes,6,8,8,,"Token, Opening Gambit, Provoke","Provoke
-Opening Gambit: Each player summons three Spriggin Kin nearby their General."
-19035,Storm Aratha,Minion,Common,Core,yes,6,6,5,,Flying,Flying
-10207,Stormmetal Golem,Minion,Basic,Core,yes,6,8,8,Golem,,
-11047,The Scientist,Minion,Epic,Core,yes,6,6,6,Arcanyst,,"Whenever you play a spell that targets a friendly minion, draw a card."
-10994,"Zen'Rui, the Blightspawned",Minion,Legendary,Core,yes,6,4,4,,Opening Gambit,Opening Gambit: Take control of a nearby enemy minion with 2 or less Attack.
-11021,Astral Crusader,Minion,Legendary,Core,yes,7,7,6,,,"Whenever you replace this card, it costs 3 less and gains +3/+3."
-19046,Dark Nemesis,Minion,Legendary,Core,yes,7,4,10,,,"At the start of your turn, deal 4 damage to the enemy General and this minion gains +4 Attack."
-10206,Drybone Golem,Minion,Basic,Core,yes,7,10,10,Golem,,
+Opening Gambit: Each player summons three Spriggin Kin nearby their General.",provoke;opening_gambit
+19035,Storm Aratha,Minion,Common,Core,yes,6,6,5,,Flying,Flying,
+10207,Stormmetal Golem,Minion,Basic,Core,yes,6,8,8,Golem,,,golem
+11047,The Scientist,Minion,Epic,Core,yes,6,6,6,Arcanyst,,"Whenever you play a spell that targets a friendly minion, draw a card.",arcanyst
+10994,"Zen'Rui, the Blightspawned",Minion,Legendary,Core,yes,6,4,4,,Opening Gambit,Opening Gambit: Take control of a nearby enemy minion with 2 or less Attack.,opening_gambit
+11021,Astral Crusader,Minion,Legendary,Core,yes,7,7,6,,,"Whenever you replace this card, it costs 3 less and gains +3/+3.",ramp
+19046,Dark Nemesis,Minion,Legendary,Core,yes,7,4,10,,,"At the start of your turn, deal 4 damage to the enemy General and this minion gains +4 Attack.",ramp;general_atk
+10206,Drybone Golem,Minion,Basic,Core,yes,7,10,10,Golem,,,golem;ramp
 11029,E'Xun,Minion,Legendary,Core,yes,7,5,5,,Forcefield,"Forcefield
-Whenever this minion attacks or is attacked, draw a card."
-11104,Emberwyrm,Minion,Common,Unearthed,yes,7,10,7,,Flying,Flying
-11093,EMP,Minion,Rare,Ancients,yes,7,7,7,Golem,Opening Gambit,"Opening Gambit: Dispel ALL minions and Generals, and destroy ALL artifacts."
-11010,Grailmaster,Minion,Epic,Core,yes,7,6,6,,,"Whenever you summon a minion, this minion gains a random keyword ability."
-11156,Mnemovore,Minion,Legendary,Mythron,yes,7,7,7,,,"Whenever you summon a minion, burn three cards from your opponent's deck."
+Whenever this minion attacks or is attacked, draw a card.",ramp
+11104,Emberwyrm,Minion,Common,Unearthed,yes,7,10,7,,Flying,Flying,ramp
+11093,EMP,Minion,Rare,Ancients,yes,7,7,7,Golem,Opening Gambit,"Opening Gambit: Dispel ALL minions and Generals, and destroy ALL artifacts.",golem;ramp;opening_gambit
+11010,Grailmaster,Minion,Epic,Core,yes,7,6,6,,,"Whenever you summon a minion, this minion gains a random keyword ability.",ramp
+11156,Mnemovore,Minion,Legendary,Mythron,yes,7,7,7,,,"Whenever you summon a minion, burn three cards from your opponent's deck.",ramp
 10997,Paddo,Minion,Legendary,Core,yes,7,12,6,,"Airdrop, Opening Gambit","Airdrop
-Opening Gambit: Push ALL nearby minions and Generals to random spaces."
-10966,Pandora,Minion,Legendary,Core,yes,7,3,10,,Token,"At the end of your turn, summon a 3/3 Spirit Wolf with a random ability into a nearby space."
-10956,Red Synja,Minion,Legendary,Core,yes,7,7,7,,,"Whenever your General takes damage, deal 7 damage to a random nearby enemy minion."
-11136,Reliquarian,Minion,Legendary,Immortal,yes,7,3,3,,"Opening Gambit, Token",Opening Gambit: Forge a friendly minion into a Faction artifact with equal Attack.
-10990,Rook,Minion,Legendary,Core,yes,7,5,5,,,"At the end of your turn, this minion gains a random Faction ability."
-11143,Saberspine Alpha,Minion,Common,Mythron,yes,7,5,5,,Rush,Rush
-11026,War Talon,Minion,Common,Core,yes,7,4,9,,"Provoke, Frenzy","Frenzy, Provoke"
-19036,Whistling Blade,Minion,Common,Core,yes,7,2,15,,Provoke,Provoke
-10996,"Zurael, the Lifegiver",Minion,Legendary,Core,yes,7,4,7,,Opening Gambit,Opening Gambit: Summon all non-token friendly minions destroyed on your opponent's last turn on a random space.
+Opening Gambit: Push ALL nearby minions and Generals to random spaces.",ramp;opening_gambit
+10966,Pandora,Minion,Legendary,Core,yes,7,3,10,,Token,"At the end of your turn, summon a 3/3 Spirit Wolf with a random ability into a nearby space.",ramp
+10956,Red Synja,Minion,Legendary,Core,yes,7,7,7,,,"Whenever your General takes damage, deal 7 damage to a random nearby enemy minion.",ramp
+11136,Reliquarian,Minion,Legendary,Immortal,yes,7,3,3,,"Opening Gambit, Token",Opening Gambit: Forge a friendly minion into a Faction artifact with equal Attack.,ramp;opening_gambit
+10990,Rook,Minion,Legendary,Core,yes,7,5,5,,,"At the end of your turn, this minion gains a random Faction ability.",ramp
+11143,Saberspine Alpha,Minion,Common,Mythron,yes,7,5,5,,Rush,Rush,ramp
+11026,War Talon,Minion,Common,Core,yes,7,4,9,,"Provoke, Frenzy","Frenzy, Provoke",provoke;ramp
+19036,Whistling Blade,Minion,Common,Core,yes,7,2,15,,Provoke,Provoke,provoke;ramp
+10996,"Zurael, the Lifegiver",Minion,Legendary,Core,yes,7,4,7,,Opening Gambit,Opening Gambit: Summon all non-token friendly minions destroyed on your opponent's last turn on a random space.,ramp;opening_gambit
 11121,Dagona,Minion,Legendary,Unearthed,yes,8,8,8,,"Opening Gambit, Dying Wish","Opening Gambit: Devour ANY minion, anywhere.
-Dying Wish: Spit out the devoured minion on this space."
-11013,Khymera,Minion,Legendary,Core,yes,8,5,12,,Token,"Whenever this minion takes damage, summon a random token minion nearby."
-11089,Meltdown,Minion,Legendary,Ancients,yes,8,6,6,,Blood Surge,Blood Surge: Deal 6 damage to a random enemy.
-11147,Worldcore Golem,Minion,Common,Mythron,yes,9,25,25,Golem,,
+Dying Wish: Spit out the devoured minion on this space.",ramp;dying_wish;opening_gambit
+11013,Khymera,Minion,Legendary,Core,yes,8,5,12,,Token,"Whenever this minion takes damage, summon a random token minion nearby.",ramp
+11089,Meltdown,Minion,Legendary,Ancients,yes,8,6,6,,Blood Surge,Blood Surge: Deal 6 damage to a random enemy.,ramp;bbs
+11147,Worldcore Golem,Minion,Common,Mythron,yes,9,25,25,Golem,,,golem;ramp
 11044,Blood Taura,Minion,Epic,Core,yes,25,12,12,,Provoke,"Provoke
-This minion's cost is your General's health."
+This minion's cost is your General's health.",provoke;ramp
 20388,Brilliant Plume,Spell,Token,Mythron,no,0,,,,,"Restore 1 Health to your General.
-Draw a card."
-30041,Empty Relic,Artifact,Token,Immortal,no,0,,,,Destructible,
-20345,Forge Artifact,Spell,Token,Immortal,no,0,,,,,Forge a friendly minion into an artifact.
+Draw a card.",
+30041,Empty Relic,Artifact,Token,Immortal,no,0,,,,Destructible,,
+20345,Forge Artifact,Spell,Token,Immortal,no,0,,,,,Forge a friendly minion into an artifact.,
 11118,Binky,Minion,Token,Unearthed,no,1,2,1,,"Token, Flying","Flying
-Whenever this damages a minion, restore 2 Health to your General."
-11067,Dex,Minion,Token,ShimZar,no,1,2,5,BattlePet,"Token, Battle Pet, Celerity",Celerity
-10998,Fog,Minion,Token,ShimZar,no,1,1,1,BattlePet,"Token, Dying Wish, Battle Pet",Dying Wish: Draw a random battle pet.
-11117,Glub,Minion,Token,Unearthed,no,1,1,1,,Token,"Whenever a Spriggin is destroyed, this minion gains +3/+3."
-10309,Illusion,Minion,Token,Core,no,1,2,1,Arcanyst,Token,
-10972,Mini-Jax,Minion,Token,Core,no,1,1,1,,"Token, Ranged",Ranged
-11120,Moro,Minion,Token,Unearthed,no,1,0,3,,Token,"As long as there is a Spriggin, this minion has +3 Attack."
-11074,Oni,Minion,Token,ShimZar,no,1,1,1,BattlePet,"Token, Battle Pet, Forcefield",Forcefield.
-11155,Puka,Minion,Token,Mythron,no,1,2,1,,"Token, Provoke",Provoke
-11050,Rok,Minion,Token,ShimZar,no,1,4,4,BattlePet,"Token, Battle Pet",Can't move.
-11113,Saberspine Cub,Minion,Token,Unearthed,no,1,2,1,,"Token, Rush",Rush
-11003,Sai,Minion,Token,ShimZar,no,1,3,3,BattlePet,"Token, Battle Pet",
-11012,Spellspark,Minion,Token,Core,no,1,1,1,,"Token, Rush",Rush
-10999,Ubo,Minion,Token,ShimZar,no,1,2,3,BattlePet,"Token, Battle Pet, Flying",Flying
-11119,Zetta,Minion,Token,Unearthed,no,1,2,3,,"Token, Frenzy",Frenzy
-11069,Broken Captive,Minion,Token,ShimZar,no,2,2,2,,"Token, Rush",Rush
-11130,Building,Minion,Token,Immortal,no,2,0,10,Structure,"Token, Structure",
-11065,Dispirited Prisoner,Minion,Token,ShimZar,no,2,2,2,,"Token, Frenzy",Frenzy
-11072,Drudging Servant,Minion,Token,ShimZar,no,2,2,2,,"Token, Flying",Flying
-10970,Envy,Minion,Token,Core,no,2,3,3,,"Token, Ranged",Ranged
-10971,Fear,Minion,Token,Core,no,2,3,3,,"Token, Provoke",Provoke
-10968,Rage,Minion,Token,Core,no,2,3,3,,"Token, Frenzy",Frenzy
-11070,Ruined Slave,Minion,Token,ShimZar,no,2,2,2,,"Token, Provoke",Provoke
-10967,Serenity,Minion,Token,Core,no,2,3,3,,"Token, Flying",Flying
-11073,Toiling Vassal,Minion,Token,ShimZar,no,2,2,2,,"Token, Ranged",Ranged
-10969,Wrath,Minion,Token,Core,no,2,3,3,,"Token, Celerity",Celerity
-11140,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",
+Whenever this damages a minion, restore 2 Health to your General.",
+11067,Dex,Minion,Token,ShimZar,no,1,2,5,BattlePet,"Token, Battle Pet, Celerity",Celerity,
+10998,Fog,Minion,Token,ShimZar,no,1,1,1,BattlePet,"Token, Dying Wish, Battle Pet",Dying Wish: Draw a random battle pet.,
+11117,Glub,Minion,Token,Unearthed,no,1,1,1,,Token,"Whenever a Spriggin is destroyed, this minion gains +3/+3.",
+10309,Illusion,Minion,Token,Core,no,1,2,1,Arcanyst,Token,,
+10972,Mini-Jax,Minion,Token,Core,no,1,1,1,,"Token, Ranged",Ranged,
+11120,Moro,Minion,Token,Unearthed,no,1,0,3,,Token,"As long as there is a Spriggin, this minion has +3 Attack.",
+11074,Oni,Minion,Token,ShimZar,no,1,1,1,BattlePet,"Token, Battle Pet, Forcefield",Forcefield.,
+11155,Puka,Minion,Token,Mythron,no,1,2,1,,"Token, Provoke",Provoke,
+11050,Rok,Minion,Token,ShimZar,no,1,4,4,BattlePet,"Token, Battle Pet",Can't move.,
+11113,Saberspine Cub,Minion,Token,Unearthed,no,1,2,1,,"Token, Rush",Rush,
+11003,Sai,Minion,Token,ShimZar,no,1,3,3,BattlePet,"Token, Battle Pet",,
+11012,Spellspark,Minion,Token,Core,no,1,1,1,,"Token, Rush",Rush,
+10999,Ubo,Minion,Token,ShimZar,no,1,2,3,BattlePet,"Token, Battle Pet, Flying",Flying,
+11119,Zetta,Minion,Token,Unearthed,no,1,2,3,,"Token, Frenzy",Frenzy,
+11069,Broken Captive,Minion,Token,ShimZar,no,2,2,2,,"Token, Rush",Rush,
+11130,Building,Minion,Token,Immortal,no,2,0,10,Structure,"Token, Structure",,
+11065,Dispirited Prisoner,Minion,Token,ShimZar,no,2,2,2,,"Token, Frenzy",Frenzy,
+11072,Drudging Servant,Minion,Token,ShimZar,no,2,2,2,,"Token, Flying",Flying,
+10970,Envy,Minion,Token,Core,no,2,3,3,,"Token, Ranged",Ranged,
+10971,Fear,Minion,Token,Core,no,2,3,3,,"Token, Provoke",Provoke,
+10968,Rage,Minion,Token,Core,no,2,3,3,,"Token, Frenzy",Frenzy,
+11070,Ruined Slave,Minion,Token,ShimZar,no,2,2,2,,"Token, Provoke",Provoke,
+10967,Serenity,Minion,Token,Core,no,2,3,3,,"Token, Flying",Flying,
+11073,Toiling Vassal,Minion,Token,ShimZar,no,2,2,2,,"Token, Ranged",Ranged,
+10969,Wrath,Minion,Token,Core,no,2,3,3,,"Token, Celerity",Celerity,
+11140,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",,
 11158,"Scarzig, Feather Knight",Minion,Token,Mythron,no,3,4,8,,"Token, Celerity","Celerity
-Whenever this minion attacks, give other friendly minions +1/+1."
-10977,Tombstone,Minion,Token,Core,no,3,0,8,,"Token, Provoke",Provoke
-19001,MECHAZ0R!,Minion,Token,Core,no,4,6,6,Mech,"Token, Frenzy, Ranged, Airdrop, Forcefield","Airdrop, Forcefield, Frenzy, Ranged"
+Whenever this minion attacks, give other friendly minions +1/+1.",
+10977,Tombstone,Minion,Token,Core,no,3,0,8,,"Token, Provoke",Provoke,
+19001,MECHAZ0R!,Minion,Token,Core,no,4,6,6,Mech,"Token, Frenzy, Ranged, Airdrop, Forcefield","Airdrop, Forcefield, Frenzy, Ranged",

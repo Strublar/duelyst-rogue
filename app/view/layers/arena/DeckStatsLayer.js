@@ -35,6 +35,7 @@ const DeckStatsLayer = BaseLayer.extend({
   histogram: null,
   controlBarBackground: null,
   playButton: null,
+  rerollButton: null,
   resignButton: null,
   _mouseOverButton: null,
 
@@ -127,6 +128,22 @@ const DeckStatsLayer = BaseLayer.extend({
     this.playButton.setTitleColorForState(cc.color(255, 255, 255), cc.CONTROL_STATE_NORMAL);
     this.playButton.setPosition(314, 22);
     this.addChild(this.playButton);
+
+    // reward reroll (roguelike), shown in place of the play button while choosing a reward
+    const rerollButtonSprite = new ccui.Scale9Sprite(RSX.button_secondary.img);
+    const rerollButtonGlowSprite = new ccui.Scale9Sprite(RSX.button_secondary_glow.img);
+    this.rerollButton = new cc.ControlButton('', rerollButtonSprite, 24);
+    this.rerollButton.setPreferredSize(rerollButtonSprite.getContentSize());
+    this.rerollButton.setAdjustBackgroundImage(false);
+    this.rerollButton.setZoomOnTouchDown(false);
+    this.rerollButton.setTitleTTFForState(RSX.font_bold.name, cc.CONTROL_STATE_NORMAL);
+    this.rerollButton.setBackgroundSpriteForState(rerollButtonSprite, cc.CONTROL_STATE_NORMAL);
+    this.rerollButton.setBackgroundSpriteForState(rerollButtonGlowSprite, cc.CONTROL_STATE_HIGHLIGHTED);
+    this.rerollButton.setTitleColorForState(cc.color(255, 255, 255), cc.CONTROL_STATE_NORMAL);
+    this.rerollButton.setPosition(314, 22);
+    this.rerollButton.setEnabled(false);
+    this.rerollButton.setVisible(false);
+    this.addChild(this.rerollButton);
   },
 
   /* endregion INITIALIZE */
@@ -161,7 +178,8 @@ const DeckStatsLayer = BaseLayer.extend({
   },
 
   onPointerMove(event) {
-    if (event && event.isStopped) {
+    // buttons of a hidden panel can't be used
+    if ((event && event.isStopped) || !this.isVisible()) {
       return;
     }
 
@@ -173,6 +191,9 @@ const DeckStatsLayer = BaseLayer.extend({
       }
       if (this.playButton instanceof cc.ControlButton && this.playButton.isEnabled() && UtilsEngine.getNodeUnderMouse(this.playButton, location.x, location.y)) {
         mouseOverButton = this.playButton;
+      }
+      if (this.rerollButton instanceof cc.ControlButton && this.rerollButton.isEnabled() && UtilsEngine.getNodeUnderMouse(this.rerollButton, location.x, location.y)) {
+        mouseOverButton = this.rerollButton;
       }
     }
 
@@ -188,7 +209,8 @@ const DeckStatsLayer = BaseLayer.extend({
   },
 
   onPointerUp(event) {
-    if (event && event.isStopped) {
+    // buttons of a hidden panel can't be used
+    if ((event && event.isStopped) || !this.isVisible()) {
       return;
     }
 
@@ -199,6 +221,9 @@ const DeckStatsLayer = BaseLayer.extend({
       }
       if (this.playButton instanceof cc.ControlButton && this.playButton.isEnabled() && UtilsEngine.getNodeUnderMouse(this.playButton, location.x, location.y)) {
         this.onPlayPressed();
+      }
+      if (this.rerollButton instanceof cc.ControlButton && this.rerollButton.isEnabled() && UtilsEngine.getNodeUnderMouse(this.rerollButton, location.x, location.y)) {
+        this.onRerollPressed();
       }
     }
   },
@@ -238,9 +263,41 @@ const DeckStatsLayer = BaseLayer.extend({
     });
   },
 
+  onRerollPressed() {
+    // disable reroll button until the new choices are shown
+    this.hideRerollButton();
+
+    audio_engine.current().play_effect_for_interaction(RSX.sfx_ui_confirm.audio, CONFIG.CONFIRM_SFX_PRIORITY);
+
+    this.delegate.rerollReward();
+  },
+
   /* endregion EVENTS */
 
   /* region BUTTON STATES */
+
+  /**
+   * Shows the reroll button with the rerolls left, or hides it when there are none.
+   * @param {Number} rerollCount
+   */
+  showRerollButton(rerollCount) {
+    if (!(rerollCount > 0)) {
+      this.hideRerollButton();
+      return;
+    }
+    this.rerollButton.setTitleForState(i18next.t('main_menu.roguelike_reroll_button_label', { count: rerollCount }).toUpperCase(), cc.CONTROL_STATE_NORMAL);
+    this.rerollButton.setEnabled(true);
+    this.rerollButton.setVisible(true);
+    this.rerollButton.setOpacity(0.0);
+    this.rerollButton.fadeTo(CONFIG.FADE_FAST_DURATION, 255.0);
+  },
+
+  hideRerollButton() {
+    if (this.rerollButton.isEnabled() || this.rerollButton.isVisible()) {
+      this.rerollButton.setEnabled(false);
+      this.rerollButton.fadeTo(CONFIG.FADE_FAST_DURATION, 0.0);
+    }
+  },
 
   showPlayButton() {
     this.playButton.setEnabled(true);

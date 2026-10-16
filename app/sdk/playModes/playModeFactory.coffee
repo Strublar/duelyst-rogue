@@ -48,8 +48,8 @@ class PlayModeFactory
         name: i18next.t("main_menu.play_mode_practice_name"),
         description: i18next.t("main_menu.play_mode_practice_description"),
         img: RSX.play_mode_sandbox.img,
-        enabled: true
-        isHiddenInUI: false
+        enabled: false
+        isHiddenInUI: true
       }
 
       pm[PlayModes.Ranked] = {
@@ -57,8 +57,8 @@ class PlayModeFactory
         name: i18next.t("main_menu.play_mode_ranked_name"),
         description: i18next.t("main_menu.play_mode_ranked_description"),
         img: RSX.play_mode_rankedladder.img,
-        enabled: true
-        isHiddenInUI: false
+        enabled: false
+        isHiddenInUI: true
       }
 
       pm[PlayModes.Challenges] = {
@@ -66,8 +66,8 @@ class PlayModeFactory
         name: i18next.t("main_menu.play_mode_solo_challenges_name"),
         description: i18next.t("main_menu.play_mode_solo_challenges_description"),
         img: RSX.challenge_gate_010.img,
-        enabled: true
-        isHiddenInUI: false
+        enabled: false
+        isHiddenInUI: true
       }
 
       pm[PlayModes.Casual] = {
@@ -84,8 +84,8 @@ class PlayModeFactory
         name: i18next.t("main_menu.play_mode_gauntlet_name"),
         description: i18next.t("main_menu.play_mode_gauntlet_description"),
         img: RSX.play_mode_arenagauntlet.img,
-        enabled: true
-        isHiddenInUI: false
+        enabled: false
+        isHiddenInUI: true
         # availableOnDaysOfWeek: [0,3,5,6] # 0-6 indexed Sun-Sat
       }
 
@@ -115,7 +115,7 @@ class PlayModeFactory
         name: "Boss Battle",
         description: "",
         img: RSX.play_mode_bossbattle.img,
-        enabled: true
+        enabled: false
         isHiddenInUI: true
       }
 
@@ -124,7 +124,7 @@ class PlayModeFactory
         name: "Friendly Match",
         description: "Play against a friend.",
         img: RSX.play_mode_sandbox.img,
-        enabled: true
+        enabled: false
         isHiddenInUI: true
       }
 
@@ -133,7 +133,7 @@ class PlayModeFactory
         name: "Sandbox",
         description: "Play against yourself as both Player 1 and Player 2.",
         img: RSX.play_mode_sandbox.img,
-        enabled: true
+        enabled: false
         isHiddenInUI: true
       }
 
@@ -142,7 +142,7 @@ class PlayModeFactory
         name: "Developer Sandbox",
         description: "Shuffle free. Mulligan free.",
         img: RSX.play_mode_sandbox.img,
-        enabled: true
+        enabled: false
         isHiddenInUI: true
       }
 

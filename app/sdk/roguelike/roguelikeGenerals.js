@@ -9,7 +9,8 @@ const FactionFactory = require('app/sdk/cards/factionFactory');
  *
  * General format: {
  *   signatureCardId: cardId, // replaces the general's Bloodbound Spell (null keeps its own)
- *   cards: [[cardId, copies], ...] // starting deck excluding the general
+ *   cards: [[cardId, copies], ...], // starting deck excluding the general
+ *   signatureSpawnDeckCardId: cardId, // optional, the Bloodbound Spell summons this card with the mods it has in the deck
  * }
  */
 
@@ -17,17 +18,17 @@ const RoguelikeGenerals = {};
 
 RoguelikeGenerals.generals = {};
 
-function general(generalId, signatureCardId, cards) {
-  RoguelikeGenerals.generals[generalId] = { signatureCardId, cards };
+function general(generalId, signatureCardId, cards, options) {
+  RoguelikeGenerals.generals[generalId] = _.extend({ signatureCardId, cards }, options);
 }
 
 // Argeon Highmayne
 general(Cards.Faction1.General, null, [
   [Cards.Faction1.WindbladeAdept, 3],
-  [Cards.Faction1.LysianBrawler, 3],
-  [Cards.Spell.TrueStrike, 3],
-  [Cards.Spell.WarSurge, 3],
-  [Cards.Neutral.PrimusShieldmaster, 3],
+  [Cards.Spell.DauntlessAdvance, 3],
+  [Cards.Spell.Afterblaze, 3],
+  [Cards.Faction1.SilverguardKnight, 3],
+  [Cards.Faction1.SuntideMaiden, 3],
 ]);
 // Zir'An Sunforge
 general(Cards.Faction1.AltGeneral, null, [
@@ -48,26 +49,26 @@ general(Cards.Faction1.ThirdGeneral, null, [
 // Kaleos Xaan
 general(Cards.Faction2.General, null, [
   [Cards.Faction2.KaidoAssassin, 3],
-  [Cards.Faction2.Widowmaker, 3],
-  [Cards.Spell.PhoenixFire, 3],
   [Cards.Spell.KillingEdge, 3],
-  [Cards.Neutral.HailstoneGolem, 3],
+  [Cards.Faction2.GoreHorn, 3],
+  [Cards.Spell.MistDragonSeal, 3],
+  [Cards.Spell.Backstabbery, 3], // Obscuring Blow
 ]);
 // Reva Eventide
-general(Cards.Faction2.AltGeneral, null, [
-  [Cards.Faction2.KaidoAssassin, 3],
+general(Cards.Faction2.AltGeneral, Cards.Spell.ArcaneHeart, [
+  [Cards.Faction2.Heartseeker, 3],
+  [Cards.Spell.SaberspineSeal, 3],
+  [Cards.Faction2.KiBeholder, 3],
+  [Cards.Spell.TwinStrike, 3],
   [Cards.Faction2.Widowmaker, 3],
-  [Cards.Spell.PhoenixFire, 3],
-  [Cards.Spell.KillingEdge, 3],
-  [Cards.Neutral.HailstoneGolem, 3],
-]);
+], { signatureSpawnDeckCardId: Cards.Faction2.Heartseeker });
 // Shidai Stormblossom
 general(Cards.Faction2.ThirdGeneral, null, [
-  [Cards.Faction2.KaidoAssassin, 3],
-  [Cards.Faction2.Widowmaker, 3],
+  [Cards.Spell.Gotatsu, 3],
+  [Cards.Faction2.ChakriAvatar, 3],
   [Cards.Spell.PhoenixFire, 3],
-  [Cards.Spell.KillingEdge, 3],
-  [Cards.Neutral.HailstoneGolem, 3],
+  [Cards.Faction2.Suzumebachi, 3],
+  [Cards.Faction2.MageOfFourWinds, 3],
 ]);
 // Zirix Starstrider
 general(Cards.Faction3.General, null, [
@@ -151,19 +152,19 @@ general(Cards.Faction6.General, null, [
 ]);
 // Kara Winterblade
 general(Cards.Faction6.AltGeneral, null, [
-  [Cards.Faction6.CrystalCloaker, 3],
-  [Cards.Faction6.ArcticDisplacer, 3],
-  [Cards.Spell.FlashFreeze, 3],
-  [Cards.Spell.PermafrostShield, 3],
-  [Cards.Neutral.FlameWing, 3],
+  [Cards.Faction6.CrystalWisp, 3],
+  [Cards.Spell.IceCage, 3], // Hailstone Prison
+  [Cards.Spell.ManaDeathgrip, 3],
+  [Cards.Neutral.Thunderhorn, 3],
+  [Cards.Neutral.WarTalon, 3],
 ]);
 // Ilena Cryobyte
 general(Cards.Faction6.ThirdGeneral, null, [
-  [Cards.Faction6.CrystalCloaker, 3],
-  [Cards.Faction6.ArcticDisplacer, 3],
   [Cards.Spell.FlashFreeze, 3],
-  [Cards.Spell.PermafrostShield, 3],
-  [Cards.Neutral.FlameWing, 3],
+  [Cards.Faction6.FrostbladeFiend, 3], // Cryoblade
+  [Cards.Spell.FrigidCorona, 3],
+  [Cards.Faction6.SnowElemental, 3], // Glacial Elemental
+  [Cards.Faction6.SleetDasher, 3],
 ]);
 
 /**
@@ -190,13 +191,23 @@ RoguelikeGenerals.getStartingDeckCardIds = function (generalId) {
 };
 
 /**
- * Returns the Bloodbound Spell card id replacing a general's own, or null if it keeps its own.
+ * Returns the Bloodbound Spell card data replacing a general's own, or null if it keeps its own.
  * @param {Number} generalId
- * @returns {Number|null}
+ * @param {Array} deckCardsData run deck card data (with mods)
+ * @returns {Object|null}
  */
-RoguelikeGenerals.getSignatureCardIdOverride = function (generalId) {
+RoguelikeGenerals.getSignatureCardDataOverride = function (generalId, deckCardsData) {
   const generalData = RoguelikeGenerals.generals[generalId];
-  return generalData != null && generalData.signatureCardId != null ? generalData.signatureCardId : null;
+  if (generalData == null || generalData.signatureCardId == null) {
+    return null;
+  }
+  const signatureCardData = { id: generalData.signatureCardId };
+  if (generalData.signatureSpawnDeckCardId != null) {
+    // summon the deck card with its mods
+    const deckCardData = _.find(deckCardsData, (cardData) => cardData != null && cardData.id === generalData.signatureSpawnDeckCardId);
+    signatureCardData.cardDataOrIndexToSpawn = deckCardData != null ? JSON.parse(JSON.stringify(deckCardData)) : { id: generalData.signatureSpawnDeckCardId };
+  }
+  return signatureCardData;
 };
 
 /**
@@ -205,9 +216,9 @@ RoguelikeGenerals.getSignatureCardIdOverride = function (generalId) {
  * @returns {Number|null}
  */
 RoguelikeGenerals.getSignatureCardId = function (generalId) {
-  const override = RoguelikeGenerals.getSignatureCardIdOverride(generalId);
-  if (override != null) {
-    return override;
+  const generalData = RoguelikeGenerals.generals[generalId];
+  if (generalData != null && generalData.signatureCardId != null) {
+    return generalData.signatureCardId;
   }
   // required lazily to avoid a circular dependency with the sdk
   const GameSession = require('app/sdk/gameSession');

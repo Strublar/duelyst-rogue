@@ -50,7 +50,9 @@ class PutCardInHandAction extends Action
   getCard: () ->
     if !@_private.cachedCard?
       @_private.cachedCard = @getGameSession().getExistingCardFromIndexOrCreateCardFromData(@cardDataOrIndex)
-      if @_private.cachedCard? then @_private.cachedCard.setOwnerId(@getOwnerId())
+      if @_private.cachedCard?
+        @_private.cachedCard.setOwnerId(@getOwnerId())
+        @getGameSession().injectRoguelikeCardModsIntoNewCard(@_private.cachedCard)
     return @_private.cachedCard
 
   ###*

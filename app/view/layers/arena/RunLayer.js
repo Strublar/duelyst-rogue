@@ -92,8 +92,15 @@ const RunLayer = BaseLayer.extend({
     // this.horizontalGlowFlare.setColor(cc.color(0, 200, 255));
     // this.addChild(this.horizontalGlowFlare);
 
-    // add label
-    this.addChild(this.runDetailsLabel);
+    // add label (runs can hide it with an empty details label)
+    if (arenaData.run_details_label !== '') {
+      this.addChild(this.runDetailsLabel);
+    }
+
+    // optional milestones bar (ex: roguelike encounter levels), as {count, completed, loop}
+    if (arenaData.run_milestones != null) {
+      this._addMilestones(arenaData.run_milestones);
+    }
 
     // optional secondary details below the keyblade
     if (arenaData.run_details_sub_label != null) {
@@ -115,6 +122,59 @@ const RunLayer = BaseLayer.extend({
     this.playButton.setTitleColorForState(cc.color(255, 255, 255), cc.CONTROL_STATE_NORMAL);
     this.playButton.setPosition(0, -165);
     // this.addChild(this.playButton);
+  },
+
+  /**
+   * Adds a bar of milestone tiles: completed ones are filled, the current one is highlighted.
+   * @param {Object} milestones {count, completed, loop}
+   */
+  _addMilestones(milestones) {
+    const count = milestones.count;
+    const completed = milestones.completed;
+    const tileSize = 30;
+    const spacing = 58;
+    // below the keyblade, above the deck panel
+    const y = -150;
+    const startX = -((count - 1) * spacing) * 0.5;
+    const highlightColor = cc.color(255, 222, 90, 255);
+
+    const barNode = new cc.DrawNode();
+    // link between tiles, brighter up to the current tile
+    barNode.drawSegment(cc.p(startX, y), cc.p(startX + (count - 1) * spacing, y), 1.5, cc.color(255, 255, 255, 60));
+    if (completed > 0) {
+      barNode.drawSegment(cc.p(startX, y), cc.p(startX + Math.min(completed, count - 1) * spacing, y), 1.5, cc.color(255, 255, 255, 220));
+    }
+    for (let i = 0; i < count; i++) {
+      const x = startX + i * spacing;
+      const isCompleted = i < completed;
+      const isCurrent = i === completed;
+      const half = (isCurrent ? tileSize + 8 : tileSize) * 0.5;
+      // tiles are diamonds, like board tiles seen from the side
+      const tilePoints = [cc.p(x, y + half), cc.p(x + half, y), cc.p(x, y - half), cc.p(x - half, y)];
+      if (isCurrent) {
+        const glowHalf = half + 6;
+        barNode.drawPoly([cc.p(x, y + glowHalf), cc.p(x + glowHalf, y), cc.p(x, y - glowHalf), cc.p(x - glowHalf, y)], cc.color(255, 222, 90, 70), 0, cc.color(0, 0, 0, 0));
+        barNode.drawPoly(tilePoints, cc.color(0, 0, 0, 255), 2, highlightColor);
+      } else if (isCompleted) {
+        barNode.drawPoly(tilePoints, cc.color(255, 255, 255, 255), 1, cc.color(255, 255, 255, 255));
+      } else {
+        barNode.drawPoly(tilePoints, cc.color(0, 0, 0, 200), 1, cc.color(255, 255, 255, 110));
+      }
+
+      const levelLabel = new cc.LabelTTF(`${i + 1}`, RSX.font_bold.name, isCurrent ? 18 : 14, cc.size(40, 24), cc.TEXT_ALIGNMENT_CENTER, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+      levelLabel.setFontFillColor(isCompleted ? cc.color(0, 0, 0) : (isCurrent ? highlightColor : cc.color(255, 255, 255)));
+      levelLabel.setOpacity(isCompleted || isCurrent ? 255 : 150);
+      levelLabel.setPosition(x, y);
+      this.addChild(levelLabel, 2);
+    }
+    this.addChild(barNode, 1);
+
+    if (milestones.loop > 0) {
+      const loopLabel = new cc.LabelTTF(i18next.t('main_menu.roguelike_loop_label').toUpperCase() + ' ' + (milestones.loop + 1), RSX.font_bold.name, 16, cc.size(100, 24), cc.TEXT_ALIGNMENT_RIGHT);
+      loopLabel.setFontFillColor(highlightColor);
+      loopLabel.setPosition(startX - 70, y);
+      this.addChild(loopLabel, 2);
+    }
   },
 
   showKeyblade(winCount, wonLastGauntletGame) {

@@ -30,6 +30,10 @@ const RewardsLayer = require('./RewardsLayer');
  ArenaLayer
  *************************************************************************** */
 
+// general portrait at the top and deck panel at the bottom, relative to the window center (spread out to fit full size card choices with labels)
+const PORTRAIT_Y = 325;
+const DECK_STATS_Y = -360;
+
 const ArenaLayer = FXCompositeLayer.extend({
 
   bgGradientSprite: null,
@@ -142,12 +146,12 @@ const ArenaLayer = FXCompositeLayer.extend({
     }
 
     if (this._portrait) {
-      this._portrait.setPosition(winCenterPosition.x, winCenterPosition.y + 320);
+      this._portrait.setPosition(winCenterPosition.x, winCenterPosition.y + PORTRAIT_Y);
     }
 
     this.deckLayer.setPosition(UtilsEngine.getGSIWinRight() - 260.0, UtilsEngine.getGSIWinBottom());
 
-    this.deckStatsLayer.setPosition(winCenterPosition.x, winCenterPosition.y - 320);
+    this.deckStatsLayer.setPosition(winCenterPosition.x, winCenterPosition.y + DECK_STATS_Y);
   },
 
   /* endregion LAYOUT */
@@ -204,6 +208,14 @@ const ArenaLayer = FXCompositeLayer.extend({
    */
   resignArenaRun() {
     return this.delegate.resignArenaRun();
+  },
+
+  /**
+   * Rerolls the current reward choices (roguelike).
+   * @returns {Promise}
+   */
+  rerollReward() {
+    return this.delegate.rerollReward();
   },
 
   /**
@@ -308,7 +320,7 @@ const ArenaLayer = FXCompositeLayer.extend({
           this._portrait = BaseSprite.create();
           this._portrait.setRequiredTextureResource(portraitHexResource);
           const winCenterPosition = UtilsEngine.getGSIWinCenterPosition();
-          this._portrait.setPosition(winCenterPosition.x, winCenterPosition.y + 285);
+          this._portrait.setPosition(winCenterPosition.x, winCenterPosition.y + PORTRAIT_Y);
           this._portrait.setScale(0.5);
           this._portrait._generalId = generalId;
           this._portraitsByGeneralId[generalId] = this._portrait;
@@ -401,6 +413,7 @@ const ArenaLayer = FXCompositeLayer.extend({
    */
   showFactionSelectScreen(arenaRunData) {
     this.showFactionVisualsForFactionId(null, null);
+    this.deckStatsLayer.hideRerollButton();
 
     return this.transitionCurrentScreenOut().then(() => {
       // create new layer for faction choices
@@ -470,8 +483,14 @@ const ArenaLayer = FXCompositeLayer.extend({
     // immediately after transition
     transitionPromise = transitionPromise.then(() => {
       this.showFactionVisualsForFactionId(arenaRunData.faction_id, arenaRunData.general_id);
-      this.deckLayer.showDeck();
-      this.deckStatsLayer.showDeckStats();
+      // some choices have no deck to show yet (ex: roguelike general choice), which frees the space under the cards
+      if (arenaRunData.hide_deck) {
+        this.deckLayer.hideDeck();
+        this.deckStatsLayer.hideDeckStats();
+      } else {
+        this.deckLayer.showDeck();
+        this.deckStatsLayer.showDeckStats();
+      }
     });
 
     // selected cards are added to the deck unless the choice is about cards already in it
@@ -483,8 +502,10 @@ const ArenaLayer = FXCompositeLayer.extend({
       if (arenaRunData.general_choices != null) {
         this.outerLayer.showCardOptions(arenaRunData.general_choices);
       } else {
-        this.outerLayer.showCardOptions(arenaRunData.card_choices, arenaRunData.card_choice_labels, arenaRunData.card_choice_title);
+        this.outerLayer.showCardOptions(arenaRunData.card_choices, arenaRunData.card_choice_labels, arenaRunData.card_choice_title, arenaRunData.card_choice_progressions);
       }
+      // rerolls left for these choices (roguelike)
+      this.deckStatsLayer.showRerollButton(arenaRunData.reroll_count);
     });
   },
 
@@ -501,6 +522,7 @@ const ArenaLayer = FXCompositeLayer.extend({
   selectCard(selectedSdkCard, unselectedSdkCards, selectedCardData) {
     // read before selecting, as the delegate may show the next choices right away
     const addSelectedCardToDeck = this._addSelectedCardToDeck !== false;
+    this.deckStatsLayer.hideRerollButton();
     const selectCardPromise = this.delegate.selectCard(selectedSdkCard, unselectedSdkCards, selectedCardData);
 
     // wait for select to resolve and then add the card to deck
@@ -540,6 +562,7 @@ const ArenaLayer = FXCompositeLayer.extend({
    * @returns {Promise}
    */
   showArenaRunScreen(arenaRunData, wonLastGauntletGame) {
+    this.deckStatsLayer.hideRerollButton();
     return this.transitionCurrentScreenOut().then(() => {
       this.outerLayer = new RunLayer(arenaRunData, wonLastGauntletGame);
       this.outerLayer.delegate = this;

@@ -1,138 +1,138 @@
-﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description
-501,Faie Bloodwing,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Deal 2 damage to all enemies in the enemy General's Column.
-558,Ilena Cryobyte,General,Basic,Core,yes,0,2,25,,Stun,Bloodbound Spell: Stun a nearby enemy minion.
-527,Kara Winterblade,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Friendly minions summoned this turn gain +1/+1.
-20329,Essence Sculpt,Spell,Rare,Immortal,yes,0,,,,Stunned,Choose a Stunned minion. Put a copy of that card into your action bar.
-20139,Flash Freeze,Spell,Basic,Core,yes,0,,,,Stun,Deal 1 damage to a minion and Stun it.
-20150,Polarity,Spell,Common,Core,yes,0,,,,,Switch ANY minion's Attack and Health.
-20393,Aspect of Ego,Spell,Rare,Mythron,yes,1,,,,,Transform ANY minion into a random minion of the same cost.
-30031,Iceshatter Gauntlet,Artifact,Rare,Ancients,yes,1,,,,"Destructible, Stunned","Whenever your General attacks a Stunned minion, destroy it instantly."
-20138,Mesmerize,Spell,Rare,Core,yes,1,,,,,Teleport an enemy one space.
-510,Snow Chaser,Minion,Rare,Core,yes,1,2,1,Vespyr,Infiltrate,"Infiltrate:  When this minion dies, return it to your action bar."
-30035,The Dredger,Artifact,Legendary,Unearthed,yes,1,,,,Destructible,"Whenever your General damages an enemy, randomly teleport them to your starting side of the battlefield."
-20209,Vespyric Call,Spell,Epic,ShimZar,yes,1,,,,,Put a random Vespyr minion into your action bar. It costs 1 less and has +1/+1.
-20375,Wanderlust,Spell,Common,Mythron,yes,1,,,,Intensify,Intensify: Teleport 1 random enemy minion to a space on your starting side of the battlefield.
-20324,Aspect of the Bear,Spell,Common,Immortal,yes,2,,,,Token,Transform ANY minion into a 4/5 Ursaplomb that will not counterattack.
-20144,Aspect of the Ravager,Spell,Basic,Core,yes,2,,,,Token,Transform ANY minion into a 3/3 Ravager with no abilities.
-20149,Bonechill Barrier,Spell,Common,Core,yes,2,,,,"Stunned, Token",Summon three joined 0/2 Vespyr Walls.  Minions that attack these walls are Stunned.
-512,Borean Bear,Minion,Common,Core,yes,2,1,3,Vespyr,,"Whenever you summon a Vespyr minion, this minion gains +1 Attack."
-20137,Boundless Courage,Spell,Epic,Core,yes,2,,,,,Give a friendly minion +2 Attack. It takes no damage this turn.
-531,Bur,Minion,Rare,ShimZar,yes,2,3,3,BattlePet,"Token, Battle Pet","When this minion survives damage, transform it into a different Battle Pet."
-20134,Chromatic Cold,Spell,Basic,Core,yes,2,,,,,"Dispel a space. If there is an enemy on that space, deal it 1 damage."
-540,Circulus,Minion,Epic,Ancients,yes,2,1,1,Arcanyst,Token,"Whenever you cast a spell, add a 2/1 Illusion to your action bar."
-30016,Coldbiter,Artifact,Legendary,Core,yes,2,,,,Destructible,"At the end of your turn, your General deals 2 damage to each enemy minion around them."
-20228,Concealing Shroud,Spell,Rare,Ancients,yes,2,,,,,Your General takes no damage until your next turn.
-555,Cryoblade,Minion,Common,Immortal,yes,2,2,3,,Stunned,Deals double damage to Stunned enemies.
-550,Crystal Arbiter,Minion,Common,Unearthed,yes,2,1,4,Vespyr,,This minion has +3 Attack on your opponent's turn.
-505,Crystal Cloaker,Minion,Basic,Core,yes,2,2,3,Vespyr,Infiltrate,Infiltrate: Gain +2 Attack.
-506,Crystal Wisp,Minion,Common,Core,yes,2,1,1,,Dying Wish,Dying Wish: Permanently gain 1 mana crystal.
-20237,Frigid Corona,Spell,Common,Ancients,yes,2,,,,Stun,Stun an enemy minion. Draw a card.
-20135,Frostfire,Spell,Basic,Core,yes,2,,,,,"Give a friendly minion +3 Attack. If it is Vespyr, also give it +3 Health."
-20147,Gravity Well,Spell,Legendary,Core,yes,2,,,,"Provoke, Token",Summon four joined 0/1 Walls with Provoke.
-20160,Hailstone Prison,Spell,Common,Core,yes,2,,,,,Return ANY minion to its action bar.
-517,Hearth-Sister,Minion,Common,Core,yes,2,3,2,,Opening Gambit,Opening Gambit: Switch positions with ANY other minion.
-530,Icy,Minion,Common,ShimZar,yes,2,2,3,BattlePet,"Opening Gambit, Stun, Battle Pet",Opening Gambit: Stun a nearby enemy.
-20211,Lightning Blitz,Spell,Epic,ShimZar,yes,2,,,,,Give all friendly minions +1/+1 and randomly teleport them to your opponent's starting side of the battlefield.
-20261,Mana Deathgrip,Spell,Common,Ancients,yes,2,,,,,"Deal 1 damage to an enemy minion. If it dies this turn, permanently gain 1 mana crystal."
-20140,Mark of Solitude,Spell,Rare,Core,yes,2,,,,,One minion becomes 5/5. It can no longer attack Generals.
+﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description,tags
+501,Faie Bloodwing,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Deal 2 damage to all enemies in the enemy General's Column.,
+558,Ilena Cryobyte,General,Basic,Core,yes,0,2,25,,Stun,Bloodbound Spell: Stun a nearby enemy minion.,
+527,Kara Winterblade,General,Basic,Core,yes,0,2,25,,,"Bloodbound Spell: Permanently gain 1 mana crystal. If you already had 9, deal 3 damage to all nearby enemies.",
+20329,Essence Sculpt,Spell,Rare,Immortal,yes,0,,,,Stunned,Choose a Stunned minion. Put a copy of that card into your action bar.,arcanyst;stun
+20139,Flash Freeze,Spell,Basic,Core,yes,0,,,,Stun,Deal 1 damage to a minion and Stun it.,dmg_spell;arcanyst;stun
+20150,Polarity,Spell,Common,Core,yes,0,,,,,Switch ANY minion's Attack and Health.,arcanyst
+20393,Aspect of Ego,Spell,Rare,Mythron,yes,1,,,,,Transform ANY minion into a random minion of the same cost.,arcanyst
+30031,Iceshatter Gauntlet,Artifact,Rare,Ancients,yes,1,,,,"Destructible, Stunned","Whenever your General attacks a Stunned minion, destroy it instantly.",general_atk;stun
+20138,Mesmerize,Spell,Rare,Core,yes,1,,,,,Teleport an enemy one space.,arcanyst
+510,Snow Chaser,Minion,Rare,Core,yes,1,2,1,Vespyr,Infiltrate,"Infiltrate:  When this minion dies, return it to your action bar.",
+30035,The Dredger,Artifact,Legendary,Unearthed,yes,1,,,,Destructible,"Whenever your General damages an enemy, randomly teleport them to your starting side of the battlefield.",
+20209,Vespyric Call,Spell,Epic,ShimZar,yes,1,,,,,Put a random Vespyr minion into your action bar. It costs 1 less and has +1/+1.,arcanyst;ramp
+20375,Wanderlust,Spell,Common,Mythron,yes,1,,,,Intensify,Intensify: Teleport 1 random enemy minion to a space on your starting side of the battlefield.,arcanyst
+20324,Aspect of the Bear,Spell,Common,Immortal,yes,2,,,,Token,Transform ANY minion into a 4/5 Ursaplomb that will not counterattack.,arcanyst
+20144,Aspect of the Ravager,Spell,Basic,Core,yes,2,,,,Token,Transform ANY minion into a 3/3 Ravager with no abilities.,arcanyst
+20149,Bonechill Barrier,Spell,Common,Core,yes,2,,,,"Stunned, Token",Summon three joined 0/2 Vespyr Walls.  Minions that attack these walls are Stunned.,arcanyst;stun
+512,Borean Bear,Minion,Common,Core,yes,2,1,3,Vespyr,,"Whenever you summon a Vespyr minion, this minion gains +1 Attack.",
+20137,Boundless Courage,Spell,Epic,Core,yes,2,,,,,Give a friendly minion +2 Attack. It takes no damage this turn.,arcanyst
+531,Bur,Minion,Rare,ShimZar,yes,2,3,3,BattlePet,"Token, Battle Pet","When this minion survives damage, transform it into a different Battle Pet.",
+20134,Chromatic Cold,Spell,Basic,Core,yes,2,,,,,"Dispel a space. If there is an enemy on that space, deal it 1 damage.",dmg_spell;arcanyst
+540,Circulus,Minion,Epic,Ancients,yes,2,1,1,Arcanyst,Token,"Whenever you cast a spell, add a 2/1 Illusion to your action bar.",arcanyst
+30016,Coldbiter,Artifact,Legendary,Core,yes,2,,,,Destructible,"At the end of your turn, your General deals 2 damage to each enemy minion around them.",
+20228,Concealing Shroud,Spell,Rare,Ancients,yes,2,,,,,Your General takes no damage until your next turn.,arcanyst
+555,Cryoblade,Minion,Common,Immortal,yes,2,2,3,,Stunned,Deals double damage to Stunned enemies.,stun
+550,Crystal Arbiter,Minion,Common,Unearthed,yes,2,1,4,Vespyr,,This minion has +3 Attack on your opponent's turn.,
+505,Crystal Cloaker,Minion,Basic,Core,yes,2,2,3,Vespyr,Infiltrate,Infiltrate: Gain +2 Attack.,
+506,Crystal Wisp,Minion,Common,Core,yes,2,1,1,,Dying Wish,Dying Wish: Permanently gain 1 mana crystal.,ramp;dying_wish
+20237,Frigid Corona,Spell,Common,Ancients,yes,2,,,,Stun,"Stun an enemy. If it was already Stunned, Insight 2 and Bloodcall.",arcanyst;stun;bbs
+20135,Frostfire,Spell,Basic,Core,yes,2,,,,,"Give a friendly minion +3 Attack. If it is Vespyr, also give it +3 Health.",arcanyst
+20147,Gravity Well,Spell,Legendary,Core,yes,2,,,,"Provoke, Token",Summon four joined 0/1 Walls with Provoke.,provoke;arcanyst
+20160,Hailstone Prison,Spell,Common,Core,yes,2,,,,,Return ANY minion to its action bar.,arcanyst
+517,Hearth-Sister,Minion,Common,Core,yes,2,3,2,,Opening Gambit,Opening Gambit: Switch positions with ANY other minion.,opening_gambit
+530,Icy,Minion,Common,ShimZar,yes,2,2,3,BattlePet,"Opening Gambit, Stun, Battle Pet",Opening Gambit: Stun a nearby enemy.,stun;opening_gambit
+20211,Lightning Blitz,Spell,Epic,ShimZar,yes,2,,,,,Give all friendly minions +1/+1 and randomly teleport them to your opponent's starting side of the battlefield.,arcanyst
+20261,Mana Deathgrip,Spell,Common,Ancients,yes,2,,,,,"Deal 1 damage to an enemy minion. If it dies this turn, permanently gain 1 mana crystal.",dmg_spell;arcanyst;ramp
+20140,Mark of Solitude,Spell,Rare,Core,yes,2,,,,,One minion becomes 5/5. It can no longer attack Generals.,arcanyst
 554,Protosensor,Minion,Common,Immortal,yes,2,2,2,,"Token, Build, Airdrop","Build: (1).
-Airdrop"
+Airdrop",
 30056,Resonance Scythe,Artifact,Epic,Mythron,yes,2,,,,"Destructible, Stunned","Your General has +1 Attack.
-Reactivate your General whenever they destroy a Stunned enemy."
-20337,Shatter,Spell,Common,Immortal,yes,2,,,,Stunned,Destroy a Stunned enemy minion.
+Reactivate your General whenever they destroy a Stunned enemy.",general_atk;stun
+20337,Shatter,Spell,Common,Immortal,yes,2,,,,Stunned,Destroy a Stunned enemy minion.,arcanyst;stun
 545,Shivers,Minion,Epic,Unearthed,yes,2,2,1,Vespyr,"Flying, Infiltrate","Flying
-Infiltrate: When this minion attacks, permanently gain 1 mana crystal."
-567,Thicket Augur,Minion,Common,Mythron,yes,2,1,1,,"Provoke, Token, Intensify",Intensify: Summon 1 Treant with Provoke nearby.
-20214,Aspect of Shim'Zar,Spell,Common,ShimZar,yes,3,,,,Token,Transform ANY minion into a random Battle Pet.
-20148,Blazing Spines,Spell,Rare,Core,yes,3,,,,Token,Summon two joined 3/3 Walls that can attack.
-20371,Cryonic Potential,Spell,Common,Mythron,yes,3,,,,,Give an exhausted friendly minion +6/+6.
-20347,Crystalline Reinforcement,Spell,Epic,Immortal,yes,3,,,,,Double the Attack and Health buffs of friendly minions.
-565,Disciple of Yggdra,Minion,Legendary,Mythron,yes,3,2,3,,"Token, Stunned","When an enemy is Stunned, transform this minion into Yggdra's Voracity."
+Infiltrate: When this minion attacks, permanently gain 1 mana crystal.",ramp
+567,Thicket Augur,Minion,Common,Mythron,yes,2,1,1,,"Provoke, Token, Intensify",Intensify: Summon 1 Treant with Provoke nearby.,provoke
+20214,Aspect of Shim'Zar,Spell,Common,ShimZar,yes,3,,,,Token,Transform ANY minion into a random Battle Pet.,
+20148,Blazing Spines,Spell,Rare,Core,yes,3,,,,Token,Summon two joined 3/3 Walls that can attack.,
+20371,Cryonic Potential,Spell,Common,Mythron,yes,3,,,,,Give an exhausted friendly minion +6/+6.,
+20347,Crystalline Reinforcement,Spell,Epic,Immortal,yes,3,,,,,Double the Attack and Health buffs of friendly minions.,
+565,Disciple of Yggdra,Minion,Legendary,Mythron,yes,3,2,3,,"Token, Stunned","When an enemy is Stunned, transform this minion into Yggdra's Voracity.",stun
 548,Drake Dowager,Minion,Rare,Unearthed,yes,3,1,3,,"Sentinel, Token, Ranged","Sentinel: General attacks.
 Ranged
-Whenever this attacks, summon a 4/4 Flying Drake nearby."
-503,Fenrir Warmaster,Minion,Basic,Core,yes,3,3,2,,"Token, Dying Wish",Dying Wish: Summon a 3/2 Ghost Wolf on this space.
+Whenever this attacks, summon a 4/4 Flying Drake nearby.",general_atk;ranged
+503,Fenrir Warmaster,Minion,Basic,Core,yes,3,3,2,,"Token, Dying Wish",Dying Wish: Summon a 3/2 Ghost Wolf on this space.,dying_wish
 547,Freeblade,Minion,Common,Unearthed,yes,3,3,5,,"Sentinel, Token","Sentinel: Minion summoned.
-This switches positions with the minion that transformed it."
-519,Glacial Elemental,Minion,Rare,Core,yes,3,2,3,Vespyr,,"Whenever you summon a Vespyr minion, deal 2 damage to a random enemy minion."
-20266,Glacial Fissure,Spell,Epic,Unearthed,yes,3,,,,,Deal 8 damage to EVERYTHING in the center column.
-533,Iceblade Dryad,Minion,Epic,ShimZar,yes,3,3,3,Vespyr,"Opening Gambit, Flying",Opening Gambit: Give a friendly Vespyr minion +1/+1 and Flying.
-539,Kindred Hunter,Minion,Common,Ancients,yes,3,3,3,Arcanyst,"Token, Bond",Bond: Summon a 3/3 Night Howler on a random nearby space.
+This switches positions with the minion that transformed it.",
+519,Glacial Elemental,Minion,Rare,Core,yes,3,2,3,Vespyr,,"Whenever an enemy is Stunned, deal 2 damage to it.",stun
+20266,Glacial Fissure,Spell,Epic,Unearthed,yes,3,,,,,Deal 8 damage to EVERYTHING in the center column.,dmg_spell
+533,Iceblade Dryad,Minion,Epic,ShimZar,yes,3,3,3,Vespyr,"Opening Gambit, Flying",Opening Gambit: Give a friendly Vespyr minion +1/+1 and Flying.,opening_gambit
+539,Kindred Hunter,Minion,Common,Ancients,yes,3,3,3,Arcanyst,"Token, Bond",Bond: Summon a 3/3 Night Howler on a random nearby space.,arcanyst
 549,Moonlit Basilysk,Minion,Rare,Unearthed,yes,3,2,2,,"Sentinel, Token","Sentinel: Spell cast.
-Whenever your opponent casts a spell, this minion gains +3/+3."
-536,Myriad,Minion,Common,Ancients,yes,3,3,3,Vespyr,"Token, Blood Surge",Blood Surge: Summon a random Wall nearby.
+Whenever your opponent casts a spell, this minion gains +3/+3.",arcanyst
+536,Myriad,Minion,Common,Ancients,yes,3,3,3,Vespyr,"Token, Blood Surge",Blood Surge: Summon a random Wall nearby.,bbs
 20394,Permafrost,Spell,Epic,Mythron,yes,3,,,,"Stunned, Stun","Stun an enemy minion.
-Stunned enemy minions Stun a nearby enemy."
-529,Snow Rippler,Minion,Common,ShimZar,yes,3,3,4,Vespyr,"Token, Infiltrate","Infiltrate: Whenever this minion damages a General, put a random Battle Pet into your action bar."
-30015,Snowpiercer,Artifact,Basic,Core,yes,3,,,,Destructible,Your General gains +3 Attack.
+Stunned enemy minions Stun a nearby enemy.",stun
+529,Snow Rippler,Minion,Common,ShimZar,yes,3,3,4,Vespyr,"Token, Infiltrate","Infiltrate: Whenever this minion damages a General, put a random Battle Pet into your action bar.",
+30015,Snowpiercer,Artifact,Basic,Core,yes,3,,,,Destructible,Your General gains +3 Attack.,general_atk
 511,Wolfraven,Minion,Common,Core,yes,3,1,4,,"Flying, Infiltrate","Flying
-Infiltrate: Gain +3 Attack."
-20145,Aspect of the Wyrm,Spell,Epic,Core,yes,4,,,,"Token, Flying",Transform ANY minion into a 4/4 Whyte Drake with Flying. Nearby friendly minions gain Flying.
-20136,Avalanche,Spell,Basic,Core,yes,4,,,,Stun,Deal 4 damage to everything on your starting side of the battlefield and Stun them.
-20298,Blinding Snowstorm,Spell,Common,Unearthed,yes,4,,,,,Deal 1 damage to all enemies. Those enemies can only move 1 space next turn.
-20165,Cryogenesis,Spell,Common,Core,yes,4,,,,,Deal 4 damage to an enemy minion. Draw a Vespyr minion from your deck.
-557,Denadoro,Minion,Legendary,Immortal,yes,4,4,5,,,Your minions are always infiltrated.
+Infiltrate: Gain +3 Attack.",
+20145,Aspect of the Wyrm,Spell,Epic,Core,yes,4,,,,"Token, Flying",Transform ANY minion into a 4/4 Whyte Drake with Flying. Nearby friendly minions gain Flying.,
+20136,Avalanche,Spell,Basic,Core,yes,4,,,,Stun,Deal 4 damage to everything on your starting side of the battlefield and Stun them.,dmg_spell;stun
+20298,Blinding Snowstorm,Spell,Common,Unearthed,yes,4,,,,,Deal 1 damage to all enemies. Those enemies can only move 1 space next turn.,dmg_spell
+20165,Cryogenesis,Spell,Common,Core,yes,4,,,,,Deal 4 damage to an enemy minion. Draw a Vespyr minion from your deck.,dmg_spell
+557,Denadoro,Minion,Legendary,Immortal,yes,4,4,5,,,Your minions are always infiltrated.,
 20391,Endless Hunt,Spell,Rare,Mythron,yes,4,,,,Token,"Summon a 3/3 Vespyr Night Howler.
-Put an Endless Hunt into your action bar."
-542,Hydrogarm,Minion,Epic,Immortal,yes,4,3,3,Vespyr,"Stun, Blood Surge",Blood Surge: Deal 1 damage to enemy minions in this row and Stun them.
+Put an Endless Hunt into your action bar.",
+542,Hydrogarm,Minion,Epic,Immortal,yes,4,3,3,Vespyr,"Stun, Blood Surge",Blood Surge: Deal 1 damage to enemy minions in this row and Stun them.,stun;bbs
 561,Malicious Wisp,Minion,Epic,Mythron,yes,4,4,3,,"Opening Gambit, Dying Wish","Opening Gambit: Take a mana crystal from your opponent.
-Dying Wish: Give back the mana crystal."
-563,Meltwater Moose,Minion,Common,Mythron,yes,4,6,7,Vespyr,Stun,"When this minion is summoned, Stun it."
-513,Razorback,Minion,Rare,Core,yes,4,4,3,,Opening Gambit,Opening Gambit: Give all friendly minions +2 Attack this turn.
-537,Sleet Dasher,Minion,Rare,Ancients,yes,4,3,6,,,"Whenever this minion destroys an enemy, reactivate it."
-515,Voice of the Wind,Minion,Legendary,Core,yes,4,4,4,,Token,"Whenever you summon a minion from your action bar, summon a 2/2 Vespyr Winter Maerid nearby."
-20208,Wailing Overdrive,Spell,Common,ShimZar,yes,4,,,,,Give a friendly minion on your opponent's starting side of the battlefield +5/+5.
-30021,White Asp,Artifact,Legendary,ShimZar,yes,4,,,,"Destructible, Token","Your General gains +3 Attack. Whenever your General destroys a minion, summon a 3/3 Blazing Spine Wall on that space."
-528,Wind Sister Maia,Minion,Legendary,Core,yes,4,4,5,,Infiltrate,Friendly minions with Infiltrate have +1/+1.
-30019,Winterblade,Artifact,Epic,Core,yes,4,,,,"Destructible, Stunned",Your General gains +2 Attack. Enemy minions damaged by your General are Stunned.
-20330,Wintertide,Spell,Epic,Immortal,yes,4,,,,Token,Summon three 2/2 Vespyr Winter Maerids on any column.
+Dying Wish: Give back the mana crystal.",ramp;dying_wish;opening_gambit
+563,Meltwater Moose,Minion,Common,Mythron,yes,4,6,7,Vespyr,Stun,"When this minion is summoned, Stun it.",stun
+513,Razorback,Minion,Rare,Core,yes,4,4,3,,Opening Gambit,Opening Gambit: Give all friendly minions +2 Attack this turn.,opening_gambit
+537,Sleet Dasher,Minion,Rare,Ancients,yes,4,3,6,,,"Whenever this minion attacks a Stunned enemy, reactivate it and remove the Stun.",stun
+515,Voice of the Wind,Minion,Legendary,Core,yes,4,4,4,,Token,"Whenever you summon a minion from your action bar, summon a 2/2 Vespyr Winter Maerid nearby.",
+20208,Wailing Overdrive,Spell,Common,ShimZar,yes,4,,,,,Give a friendly minion on your opponent's starting side of the battlefield +5/+5.,
+30021,White Asp,Artifact,Legendary,ShimZar,yes,4,,,,"Destructible, Token","Your General gains +3 Attack. Whenever your General destroys a minion, summon a 3/3 Blazing Spine Wall on that space.",general_atk
+528,Wind Sister Maia,Minion,Legendary,Core,yes,4,4,5,,Infiltrate,Friendly minions with Infiltrate have +1/+1.,
+30019,Winterblade,Artifact,Epic,Core,yes,4,,,,"Destructible, Stunned",Your General gains +2 Attack. Enemy minions damaged by your General are Stunned.,general_atk;stun
+20330,Wintertide,Spell,Epic,Immortal,yes,4,,,,Token,Summon three 2/2 Vespyr Winter Maerids on any column.,
 30040,Animus Plate,Artifact,Rare,Immortal,yes,5,,,,Destructible,"Your General gains +2 Attack.
-Whenever your General attacks or counterattacks, give all friendly Vespyr minions +2/+2."
-526,Arctic Displacer,Minion,Basic,Core,yes,5,10,4,Vespyr,Airdrop,Airdrop
-20343,Auroraboros,Spell,Legendary,Immortal,yes,5,,,,Dying Wish,"Give friendly minions ""Dying Wish: Re-summon this minion on this space."""
-560,Cloudcaller,Minion,Legendary,Mythron,yes,5,4,5,,Opening Gambit,Opening Gambit: Your Bloodbound Spell refreshes and is Lesser Waterball this turn.
-20229,Enfeeble,Spell,Epic,Ancients,yes,5,,,,,All minions become 1/1.
-562,Fenrir Berserker,Minion,Rare,Mythron,yes,5,4,3,,"Token, Dying Wish",Dying Wish: Summon a Fenrir Warmaster on this space.
-507,Frosthorn Rhyno,Minion,Epic,Core,yes,5,6,5,,"Celerity, Infiltrate",Infiltrate: Gain +1 Attack and Celerity.
+Whenever your General attacks or counterattacks, give all friendly Vespyr minions +2/+2.",general_atk
+526,Arctic Displacer,Minion,Basic,Core,yes,5,10,4,Vespyr,Airdrop,Airdrop,
+20343,Auroraboros,Spell,Legendary,Immortal,yes,5,,,,Dying Wish,"Give friendly minions ""Dying Wish: Re-summon this minion on this space.""",dying_wish
+560,Cloudcaller,Minion,Legendary,Mythron,yes,5,4,5,,Opening Gambit,Opening Gambit: Your Bloodbound Spell refreshes and is Lesser Waterball this turn.,bbs;opening_gambit
+20229,Enfeeble,Spell,Epic,Ancients,yes,5,,,,,All minions become 1/1.,
+562,Fenrir Berserker,Minion,Rare,Mythron,yes,5,4,3,,"Token, Dying Wish",Dying Wish: Summon a Fenrir Warmaster on this space.,dying_wish
+507,Frosthorn Rhyno,Minion,Epic,Core,yes,5,6,5,,"Celerity, Infiltrate",Infiltrate: Gain +1 Attack and Celerity.,
 534,Frostiva,Minion,Legendary,ShimZar,yes,5,3,3,,"Token, Forcefield","Forcefield
-Whenever this minion attacks or is attacked, summon a 3/3 Vespyr Night Howler nearby."
-532,Huldra,Minion,Rare,ShimZar,yes,5,3,4,,"Opening Gambit, Celerity",Opening Gambit: Give a friendly Vespyr minion Celerity.
-20276,Luminous Charge,Spell,Rare,Unearthed,yes,5,,,,"Dying Wish, Token",Summon five joined 0/1 Walls that deal 2 damage to nearby enemies when destroyed.
-20163,Spirit of the Wild,Spell,Epic,Core,yes,5,,,,,Reactivate friendly minions on your opponent's starting side of the battlefield.
-20289,Vespyrian Might,Spell,Common,Unearthed,yes,5,,,,,Give a Vespyr minion +2/+2 for each friendly Vespyr.
-20146,Aspect of the Mountains,Spell,Legendary,Core,yes,6,,,,Token,Transform ANY minion into a 5/5 Seismic Elemental. Deal 5 damage to enemy minions around it.
+Whenever this minion attacks or is attacked, summon a 3/3 Vespyr Night Howler nearby.",
+532,Huldra,Minion,Rare,ShimZar,yes,5,3,4,,"Opening Gambit, Celerity",Opening Gambit: Give a friendly Vespyr minion Celerity.,opening_gambit
+20276,Luminous Charge,Spell,Rare,Unearthed,yes,5,,,,"Dying Wish, Token",Summon five joined 0/1 Walls that deal 2 damage to nearby enemies when destroyed.,dmg_spell;dying_wish
+20163,Spirit of the Wild,Spell,Epic,Core,yes,5,,,,,Reactivate friendly minions on your opponent's starting side of the battlefield.,
+20289,Vespyrian Might,Spell,Common,Unearthed,yes,5,,,,,Give a Vespyr minion +2/+2 for each friendly Vespyr.,
+20146,Aspect of the Mountains,Spell,Legendary,Core,yes,6,,,,Token,Transform ANY minion into a 5/5 Seismic Elemental. Deal 5 damage to enemy minions around it.,dmg_spell
 556,Draugar Eyolith,Minion,Legendary,Immortal,yes,6,7,14,,"Token, Build","Build: (2).
-While this is building or on the battlefield, enemy minions and Generals can only move 1 space."
-508,Draugar Lord,Minion,Epic,Core,yes,6,4,8,Vespyr,"Token, Dying Wish",Dying Wish: Summon a 4/8 Ice Drake on this space.
-552,Echo Deliverant,Minion,Rare,Immortal,yes,6,6,4,Mech,,"Whenever you summon another Mech, summon a copy of it nearby."
-20207,Frostburn,Spell,Rare,Core,yes,6,,,,,Deal 3 damage to all enemy minions.
-20295,Icebreak Ambush,Spell,Epic,Unearthed,yes,6,,,,Infiltrate,Summon an ambush of Infiltrate minions on your opponent's starting side of the battlefield.
+While this is building or on the battlefield, enemy minions and Generals can only move 1 space.",
+508,Draugar Lord,Minion,Epic,Core,yes,6,4,8,Vespyr,"Token, Dying Wish",Dying Wish: Summon a 4/8 Ice Drake on this space.,dying_wish
+552,Echo Deliverant,Minion,Rare,Immortal,yes,6,6,4,Mech,,"Whenever you summon another Mech, summon a copy of it nearby.",mech
+20207,Frostburn,Spell,Rare,Core,yes,6,,,,,Deal 3 damage to all enemy minions.,dmg_spell
+20295,Icebreak Ambush,Spell,Epic,Unearthed,yes,6,,,,Infiltrate,Summon an ambush of Infiltrate minions on your opponent's starting side of the battlefield.,
 564,Oak in the Nemeton,Minion,Mythron,Mythron,yes,6,6,6,,"Trial, Destiny","Trial: Have 5 token minions with different names.
-Destiny: Friendly token minions have +4/+4."
+Destiny: Friendly token minions have +4/+4.",
 514,Ancient Grove,Minion,Legendary,Core,yes,7,7,7,Vespyr,"Dying Wish, Token, Provoke, Opening Gambit","Provoke
-Opening Gambit: Your minions gain ""Dying Wish: Summon a 1/1 Treant with Provoke""."
-20293,Flawless Reflection,Spell,Legendary,Unearthed,yes,7,,,,,Choose a minion. Transform ALL nearby minions into copies of it.
-541,Ghost Seraphim,Minion,Legendary,Ancients,yes,7,8,9,Arcanyst,,The first spell you cast each turn costs 5 less.
-538,Grandmaster Embla,Minion,Legendary,Core,yes,8,5,5,,"Token, Opening Gambit",Opening Gambit: Surround the enemy General with random Walls.
-20359,Ice Age,Spell,Legendary,Mythron,yes,8,,,,Token,Summon Blazing Spines along the outside of the battlefield.
-543,Matron Elveiti,Minion,Legendary,Unearthed,yes,8,7,5,,,Minions cannot attack your General.
-20212,Winter's Wake,Spell,Legendary,ShimZar,yes,8,,,,,Give all friendly Wall minions +4/+4. Those minions can now move.
-30047,Howling Relic,Artifact,Token,Immortal,no,0,,,,"Destructible, Token",
-524,Blazing Spines,Minion,Token,Core,no,1,3,3,,"Token, Wall",Wall
+Opening Gambit: Your minions gain ""Dying Wish: Summon a 1/1 Treant with Provoke"".",provoke;ramp;dying_wish;opening_gambit
+20293,Flawless Reflection,Spell,Legendary,Unearthed,yes,7,,,,,Choose a minion. Transform ALL nearby minions into copies of it.,ramp
+541,Ghost Seraphim,Minion,Legendary,Ancients,yes,7,8,9,Arcanyst,,The first spell you cast each turn costs 5 less.,arcanyst;ramp
+538,Grandmaster Embla,Minion,Legendary,Core,yes,8,5,5,,"Token, Opening Gambit",Opening Gambit: Surround the enemy General with random Walls.,ramp;opening_gambit
+20359,Ice Age,Spell,Legendary,Mythron,yes,8,,,,Token,Summon Blazing Spines along the outside of the battlefield.,ramp
+543,Matron Elveiti,Minion,Legendary,Unearthed,yes,8,7,5,,,Minions cannot attack your General.,ramp
+20212,Winter's Wake,Spell,Legendary,ShimZar,yes,8,,,,,Give all friendly Wall minions +4/+4. Those minions can now move.,ramp
+30047,Howling Relic,Artifact,Token,Immortal,no,0,,,,"Destructible, Token",,
+524,Blazing Spines,Minion,Token,Core,no,1,3,3,,"Token, Wall",Wall,
 525,Bonechill Barrier,Minion,Token,Core,no,1,0,2,Vespyr,"Stunned, Token, Wall","Wall
-Minions next to this minion that attack it are Stunned."
-523,Gravity Well,Minion,Token,Core,no,1,0,1,,"Token, Wall, Provoke","Wall, Provoke"
-544,Luminous Charge,Minion,Token,Core,no,1,0,1,,"Token, Wall, Dying Wish",Dying Wish: Deal 2 damage to nearby enemies.
-516,Treant,Minion,Token,Core,no,1,1,1,,"Token, Provoke",Provoke
-553,Ursaplomb,Minion,Token,Immortal,no,1,4,5,,Token,Will not counterattack.
-518,Winter Maerid,Minion,Token,Core,no,1,2,2,Vespyr,Token,
-551,Building,Minion,Token,Immortal,no,2,0,10,Structure,"Token, Structure",
-520,Fox Ravager,Minion,Token,Core,no,2,3,3,,Token,
-504,Ghost Wolf,Minion,Token,Core,no,2,3,2,,Token,
-535,Night Howler,Minion,Token,ShimZar,no,2,3,3,Vespyr,Token,
-546,Watchful Sentinel,Minion,Token,Unearthed,no,3,3,3,,Token,Sentinel: This transforms into a powerful minion if its hidden condition is met.
-566,Yggdra's Voracity,Minion,Token,Mythron,no,3,5,5,,"Token, Stunned","Whenever an enemy is Stunned, fully heal this minion."
-509,Ice Drake,Minion,Token,Core,no,4,4,8,,Token,
-522,Seismic Elemental,Minion,Token,Core,no,4,5,5,,Token,
-521,Whyte Drake,Minion,Token,Core,no,4,4,4,,"Token, Flying",Flying
-559,Building,Minion,Token,Immortal,no,6,0,10,Structure,"Token, Structure",
+Minions next to this minion that attack it are Stunned.",
+523,Gravity Well,Minion,Token,Core,no,1,0,1,,"Token, Wall, Provoke","Wall, Provoke",
+544,Luminous Charge,Minion,Token,Core,no,1,0,1,,"Token, Wall, Dying Wish",Dying Wish: Deal 2 damage to nearby enemies.,
+516,Treant,Minion,Token,Core,no,1,1,1,,"Token, Provoke",Provoke,
+553,Ursaplomb,Minion,Token,Immortal,no,1,4,5,,Token,Will not counterattack.,
+518,Winter Maerid,Minion,Token,Core,no,1,2,2,Vespyr,Token,,
+551,Building,Minion,Token,Immortal,no,2,0,10,Structure,"Token, Structure",,
+520,Fox Ravager,Minion,Token,Core,no,2,3,3,,Token,,
+504,Ghost Wolf,Minion,Token,Core,no,2,3,2,,Token,,
+535,Night Howler,Minion,Token,ShimZar,no,2,3,3,Vespyr,Token,,
+546,Watchful Sentinel,Minion,Token,Unearthed,no,3,3,3,,Token,Sentinel: This transforms into a powerful minion if its hidden condition is met.,
+566,Yggdra's Voracity,Minion,Token,Mythron,no,3,5,5,,"Token, Stunned","Whenever an enemy is Stunned, fully heal this minion.",
+509,Ice Drake,Minion,Token,Core,no,4,4,8,,Token,,
+522,Seismic Elemental,Minion,Token,Core,no,4,5,5,,Token,,
+521,Whyte Drake,Minion,Token,Core,no,4,4,4,,"Token, Flying",Flying,
+559,Building,Minion,Token,Immortal,no,6,0,10,Structure,"Token, Structure",,

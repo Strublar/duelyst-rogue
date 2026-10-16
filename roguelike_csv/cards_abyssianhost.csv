@@ -1,127 +1,127 @@
-﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description
-323,Cassyva Soulreaper,General,Basic,Core,yes,0,2,25,,,"Bloodbound Spell: Deal 1 damage to a minion. If it dies this turn, the space turns into Shadow Creep."
-301,Lilithe Blightchaser,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Summon a Wraithling nearby your General and give all friendly Wraithlings +1/+1.
-355,Maehv Skinsolder,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Destroy a friendly minion to summon a 4/4 Husk nearby. Deal 2 damage to your General.
-20059,Darkfire Sacrifice,Spell,Rare,Core,yes,0,,,,,Destroy a friendly minion. Your next minion costs 2 less.
-308,Abyssal Crawler,Minion,Basic,Core,yes,1,2,1,,Shadow Creep,"At the end of your turn, turn a nearby space into Shadow Creep."
-20226,Aphotic Drain,Spell,Common,Ancients,yes,1,,,,,Destroy a friendly minion to restore 5 Health to your General.
-20376,Demonic Conversion,Spell,Common,Mythron,yes,1,,,,,Draw a minion from your opponent's deck. It gains +1/+1.
-331,Furiosa,Minion,Common,Ancients,yes,1,1,2,,Blood Surge,Blood Surge: Friendly Wraithlings gain +1/+1.
-20070,Grasp of Agony,Spell,Common,Core,yes,1,,,,,"Choose an enemy minion. When it dies, it deals 3 damage to enemies around it."
-30005,Horn of the Forsaken,Artifact,Basic,Core,yes,1,,,,"Destructible, Token","Whenever your General deals damage, summon a 1/1 Wraithling nearby your General."
-20272,Inkling Surge,Spell,Common,Unearthed,yes,1,,,,Token,"Summon a 1/1 Wraithling. If you have another Wraithling, draw a card."
-20269,Nethermeld,Spell,Epic,Unearthed,yes,1,,,,Shadow Creep,Teleport ANY minion to friendly Shadow Creep.
-20356,Painful Pluck,Spell,Common,Mythron,yes,1,,,,"Shadow Creep, Intensify","Intensify: Turn 1 random space into Shadow Creep, prioritizing spaces under enemy minions."
-20052,Void Pulse,Spell,Common,Core,yes,1,,,,,Deal 2 damage to enemy General. Restore 3 Health to your General.
-313,Blood Siren,Minion,Common,Core,yes,2,3,2,,Opening Gambit,Opening Gambit: Give a nearby enemy -2 attack this turn.
-359,Carrion Collector,Minion,Epic,Mythron,yes,2,1,1,,Dying Wish,Dying Wish: Lower the cost of all minions with Dying Wish in your deck and action bar by 1.
-20271,Choking Tendrils,Spell,Common,Unearthed,yes,2,,,,Shadow Creep,Destroy an enemy minion on friendly Shadow Creep.
-20166,Consuming Rebirth,Spell,Epic,Core,yes,2,,,,,"Destroy a friendly minion. At the end of your turn, re-summon it on the same space and give it +1/+1."
-20049,Daemonic Lure,Spell,Basic,Core,yes,2,,,,,Deal 1 damage to an enemy minion and teleport it anywhere.
-316,Darkspine Elemental,Minion,Rare,Core,yes,2,1,4,,Shadow Creep,Double the damage dealt by friendly Shadow Creep.
-20333,Deathmark,Spell,Rare,Immortal,yes,2,,,,,"Deal 1 damage to an enemy minion. After it is attacked this turn, destroy it."
-20204,Echoing Shriek,Spell,Epic,ShimZar,yes,2,,,,Token,Transform ALL minions that cost 2 or less into 1/1 Wraithlings.
-363,Gibbet,Minion,Rare,Mythron,yes,2,1,2,,,"Whenever this attacks an enemy minion, destroy that minion and summon a Gibbet on that space."
-317,Gloomchaser,Minion,Basic,Core,yes,2,2,2,,"Token, Opening Gambit",Opening Gambit: Summon a 1/1 Wraithling nearby.
-326,Gor,Minion,Common,ShimZar,yes,2,1,1,BattlePet,"Battle Pet, Dying Wish",Dying Wish: Re-summon this minion in a random corner.
-20200,Inkhorn Gaze,Spell,Common,ShimZar,yes,2,,,,Token,"Deal 2 damage to a minion. If it dies this turn, put a random Battle Pet into your action bar."
-20199,Lurking Fear,Spell,Epic,ShimZar,yes,2,,,,Dying Wish,Lower the cost of all minions with Dying Wish in your action bar and deck by 1.
-351,Nightmare Operant,Minion,Rare,Immortal,yes,2,3,2,Mech,"Token, Dying Wish",Dying Wish: Shuffle a MECHAZ0R into your deck.
-337,Nocturne,Minion,Epic,Ancients,yes,2,2,2,Arcanyst,Token,"Whenever you make Shadow Creep or a Wraithling, instead make both."
-327,Ooz,Minion,Rare,ShimZar,yes,2,3,3,BattlePet,"Shadow Creep, Battle Pet","Whenever this minion takes damage, turn a space occupied by an enemy into Shadow Creep."
-339,Phantasm,Minion,Common,Unearthed,yes,2,3,2,,,"Whenever your opponent summons a minion, give a minion in your action bar +1 Attack."
-20243,Punish,Spell,Rare,Ancients,yes,2,,,,,Destroy a damaged minion.
-20273,Shadowstalk,Spell,Rare,Unearthed,yes,2,,,,Token,Summon a Wraithling behind each enemy.
-20071,Soulshatter Pact,Spell,Basic,Core,yes,2,,,,,Give all friendly minions +2 Attack this turn.
+﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description,tags
+323,Cassyva Soulreaper,General,Basic,Core,yes,0,2,25,,,"Bloodbound Spell: Deal 1 damage to a minion. If it dies this turn, the space turns into Shadow Creep.",
+301,Lilithe Blightchaser,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Summon a Wraithling nearby your General and give all friendly Wraithlings +1/+1.,
+355,Maehv Skinsolder,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Destroy a friendly minion to summon a 4/4 Husk nearby. Deal 2 damage to your General.,
+20059,Darkfire Sacrifice,Spell,Rare,Core,yes,0,,,,,Destroy a friendly minion. Your next minion costs 2 less.,arcanyst;ramp
+308,Abyssal Crawler,Minion,Basic,Core,yes,1,2,1,,Shadow Creep,"At the end of your turn, turn a nearby space into Shadow Creep.",shadow_creep
+20226,Aphotic Drain,Spell,Common,Ancients,yes,1,,,,,Destroy a friendly minion to restore 5 Health to your General.,heal;arcanyst
+20376,Demonic Conversion,Spell,Common,Mythron,yes,1,,,,,Draw a minion from your opponent's deck. It gains +1/+1.,arcanyst
+331,Furiosa,Minion,Common,Ancients,yes,1,1,2,,Blood Surge,Blood Surge: Friendly Wraithlings gain +1/+1.,bbs;wraithling
+20070,Grasp of Agony,Spell,Common,Core,yes,1,,,,,"Choose an enemy minion. When it dies, it deals 3 damage to enemies around it.",dmg_spell;arcanyst
+30005,Horn of the Forsaken,Artifact,Basic,Core,yes,1,,,,"Destructible, Token","Whenever your General deals damage, summon a 1/1 Wraithling nearby your General.",wraithling
+20272,Inkling Surge,Spell,Common,Unearthed,yes,1,,,,Token,"Summon a 1/1 Wraithling. If you have another Wraithling, draw a card.",arcanyst;wraithling
+20269,Nethermeld,Spell,Epic,Unearthed,yes,1,,,,Shadow Creep,Teleport ANY minion to friendly Shadow Creep.,arcanyst;shadow_creep
+20356,Painful Pluck,Spell,Common,Mythron,yes,1,,,,"Shadow Creep, Intensify","Intensify: Turn 1 random space into Shadow Creep, prioritizing spaces under enemy minions.",arcanyst;shadow_creep
+20052,Void Pulse,Spell,Common,Core,yes,1,,,,,Deal 2 damage to enemy General. Restore 3 Health to your General.,heal;dmg_spell;arcanyst
+313,Blood Siren,Minion,Common,Core,yes,2,3,2,,Opening Gambit,Opening Gambit: Give a nearby enemy -2 attack this turn.,opening_gambit
+359,Carrion Collector,Minion,Epic,Mythron,yes,2,1,1,,Dying Wish,Dying Wish: Lower the cost of all minions with Dying Wish in your deck and action bar by 1.,dying_wish
+20271,Choking Tendrils,Spell,Common,Unearthed,yes,2,,,,Shadow Creep,Destroy an enemy minion on friendly Shadow Creep.,arcanyst;shadow_creep
+20166,Consuming Rebirth,Spell,Epic,Core,yes,2,,,,,"Destroy a friendly minion. At the end of your turn, re-summon it on the same space and give it +1/+1.",arcanyst
+20049,Daemonic Lure,Spell,Basic,Core,yes,2,,,,,Deal 1 damage to an enemy minion and teleport it anywhere.,dmg_spell;arcanyst
+316,Darkspine Elemental,Minion,Rare,Core,yes,2,1,4,,Shadow Creep,Double the damage dealt by friendly Shadow Creep.,shadow_creep
+20333,Deathmark,Spell,Rare,Immortal,yes,2,,,,,"Deal 1 damage to an enemy minion. After it is attacked this turn, destroy it.",dmg_spell;arcanyst
+20204,Echoing Shriek,Spell,Epic,ShimZar,yes,2,,,,Token,Transform ALL minions that cost 2 or less into 1/1 Wraithlings.,arcanyst;wraithling
+363,Gibbet,Minion,Rare,Mythron,yes,2,1,2,,,"Whenever this attacks an enemy minion, destroy that minion and summon a Gibbet on that space.",
+317,Gloomchaser,Minion,Basic,Core,yes,2,2,2,,"Token, Opening Gambit",Opening Gambit: Summon a 1/1 Wraithling nearby.,wraithling;opening_gambit
+326,Gor,Minion,Common,ShimZar,yes,2,1,1,BattlePet,"Battle Pet, Dying Wish",Dying Wish: Re-summon this minion in a random corner.,dying_wish
+20200,Inkhorn Gaze,Spell,Common,ShimZar,yes,2,,,,Token,"Deal 2 damage to a minion. If it dies this turn, put a random Battle Pet into your action bar.",dmg_spell;arcanyst
+20199,Lurking Fear,Spell,Epic,ShimZar,yes,2,,,,Dying Wish,Lower the cost of all minions with Dying Wish in your action bar and deck by 1.,arcanyst;dying_wish
+351,Nightmare Operant,Minion,Rare,Immortal,yes,2,3,2,Mech,"Token, Dying Wish",Dying Wish: Shuffle a MECHAZ0R into your deck.,mech;dying_wish
+337,Nocturne,Minion,Epic,Ancients,yes,2,2,2,Arcanyst,Token,"Whenever you make Shadow Creep or a Wraithling, instead make both.",arcanyst;wraithling;shadow_creep
+327,Ooz,Minion,Rare,ShimZar,yes,2,3,3,BattlePet,"Shadow Creep, Battle Pet","Whenever this minion takes damage, turn a space occupied by an enemy into Shadow Creep.",shadow_creep
+339,Phantasm,Minion,Common,Unearthed,yes,2,3,2,,,"Whenever your opponent summons a minion, give a minion in your action bar +1 Attack.",
+20243,Punish,Spell,Rare,Ancients,yes,2,,,,,Destroy a damaged minion.,arcanyst
+20273,Shadowstalk,Spell,Rare,Unearthed,yes,2,,,,Token,Summon a Wraithling behind each enemy.,arcanyst;wraithling
+20071,Soulshatter Pact,Spell,Basic,Core,yes,2,,,,,Give all friendly minions +2 Attack this turn.,arcanyst
 30014,Spectral Blade,Artifact,Epic,Core,yes,2,,,,Destructible,"Your General gains +2 Attack.
-Whenever your General destroys an enemy, restore 2 Health to your General."
-20201,Sphere of Darkness,Spell,Common,ShimZar,yes,2,,,,Shadow Creep,Turn an enemy minion's space into Shadow Creep. Draw a card.
-30030,The Releaser,Artifact,Rare,Ancients,yes,2,,,,Destructible,"When this artifact breaks, summon a random friendly non-token minion destroyed this game nearby."
-20367,Yielding Depths,Spell,Rare,Mythron,yes,2,,,,Shadow Creep,"If you have three or more Shadow Creep, draw 2 cards."
-20348,Abhorrent Unbirth,Spell,Epic,Immortal,yes,3,,,,Token,"Destroy all friendly minions to summon a 1/1 Abomination that gains their Attack, Health, and keywords."
-328,Blood Baronette,Minion,Rare,ShimZar,yes,3,3,3,,,Opening Gambit: Double a nearby Wraithling's Attack and Health.
-20257,Blood Echoes,Spell,Common,Ancients,yes,3,,,,,Destroy all friendly minions and resummon them on random spaces at end of turn.
-361,Bonecrusher,Minion,Common,Mythron,yes,3,0,3,,Intensify,Intensify: This minion gains +5 Attack.
+Whenever your General destroys an enemy, restore 2 Health to your General.",heal;general_atk
+20201,Sphere of Darkness,Spell,Common,ShimZar,yes,2,,,,Shadow Creep,Turn an enemy minion's space into Shadow Creep. Draw a card.,arcanyst;shadow_creep
+30030,The Releaser,Artifact,Rare,Ancients,yes,2,,,,Destructible,"When this artifact breaks, summon a random friendly non-token minion destroyed this game nearby.",
+20367,Yielding Depths,Spell,Rare,Mythron,yes,2,,,,Shadow Creep,"If you have three or more Shadow Creep, draw 2 cards.",arcanyst;shadow_creep
+20348,Abhorrent Unbirth,Spell,Epic,Immortal,yes,3,,,,Token,"Destroy all friendly minions to summon a 1/1 Abomination that gains their Attack, Health, and keywords.",
+328,Blood Baronette,Minion,Rare,ShimZar,yes,3,3,3,,,Opening Gambit: Double a nearby Wraithling's Attack and Health.,wraithling;opening_gambit
+20257,Blood Echoes,Spell,Common,Ancients,yes,3,,,,,Destroy all friendly minions and resummon them on random spaces at end of turn.,
+361,Bonecrusher,Minion,Common,Mythron,yes,3,0,3,,Intensify,Intensify: This minion gains +5 Attack.,
 344,Bound Tormentor,Minion,Common,Unearthed,yes,3,2,3,,"Sentinel, Token","Sentinel: Minion summoned.
-Put a copy of the minion that transformed this into your action bar. It costs 2 less."
+Put a copy of the minion that transformed this into your action bar. It costs 2 less.",ramp
 362,Chittering Tiller,Minion,Common,Mythron,yes,3,4,3,,"Opening Gambit, Frenzy","Frenzy
-Opening Gambit: Teleport the enemy General one space forward."
-20133,Deathfire Crescendo,Spell,Legendary,Core,yes,3,,,,Deathwatch,"Give a friendly minion, ""Deathwatch: Gains +2/+2."""
-20340,Horrific Visage,Spell,Common,Immortal,yes,3,,,,,Give all enemy minions -4 Attack until your next turn.
-334,Horror Burster,Minion,Rare,Ancients,yes,3,4,1,,"Token, Dying Wish",Dying Wish: Transform a random friendly minion into a 6/6 Horror.
-20321,Infest,Spell,Legendary,Immortal,yes,3,,,,,"Choose an enemy minion. When it dies, give this effect to all nearby enemy minions and deal 2 damage to the enemy General."
-30034,Mindlathe,Artifact,Legendary,Unearthed,yes,3,,,,Destructible,"After your General damages a minion, reactivate and take control of it until the end of your turn."
-20374,Munch,Spell,Rare,Mythron,yes,3,,,,,Steal Health from an enemy minion for each friendly Shadow Creep (but not more than its Health).
-319,Nightsorrow Assassin,Minion,Common,Core,yes,3,2,1,,Opening Gambit,Opening Gambit: Destroy a nearby enemy minion with 2 or less attack.
-20057,Ritual Banishing,Spell,Rare,Core,yes,3,,,,,Destroy a friendly minion to destroy an enemy minion.
-20065,Shadow Reflection,Spell,Common,Core,yes,3,,,,,Give a friendly minion +5 Attack.
-311,Shadow Watcher,Minion,Basic,Core,yes,3,2,2,,Deathwatch,Deathwatch: Gains +1/+1.
+Opening Gambit: Teleport the enemy General one space forward.",opening_gambit
+20133,Deathfire Crescendo,Spell,Legendary,Core,yes,3,,,,Deathwatch,"Give a friendly minion, ""Deathwatch: Gains +2/+2.""",
+20340,Horrific Visage,Spell,Common,Immortal,yes,3,,,,,Give all enemy minions -4 Attack until your next turn.,
+334,Horror Burster,Minion,Rare,Ancients,yes,3,4,1,,"Token, Dying Wish",Dying Wish: Transform a random friendly minion into a 6/6 Horror.,dying_wish
+20321,Infest,Spell,Legendary,Immortal,yes,3,,,,,"Choose an enemy minion. When it dies, give this effect to all nearby enemy minions and deal 2 damage to the enemy General.",dmg_spell
+30034,Mindlathe,Artifact,Legendary,Unearthed,yes,3,,,,Destructible,"After your General damages a minion, reactivate and take control of it until the end of your turn.",
+20374,Munch,Spell,Rare,Mythron,yes,3,,,,,Steal Health from an enemy minion for each friendly Shadow Creep (but not more than its Health).,shadow_creep
+319,Nightsorrow Assassin,Minion,Common,Core,yes,3,2,1,,Opening Gambit,Opening Gambit: Destroy a nearby enemy minion with 2 or less attack.,opening_gambit
+20057,Ritual Banishing,Spell,Rare,Core,yes,3,,,,,Destroy a friendly minion to destroy an enemy minion.,
+20065,Shadow Reflection,Spell,Common,Core,yes,3,,,,,Give a friendly minion +5 Attack.,
+311,Shadow Watcher,Minion,Basic,Core,yes,3,2,2,,Deathwatch,Deathwatch: Gains +1/+1.,
 343,Skullprophet,Minion,Rare,Unearthed,yes,3,2,4,,"Sentinel, Token","Sentinel: General attacks.
-The enemy General has -1 Attack."
-30002,Soul Grimwar,Artifact,Legendary,Core,yes,3,,,,"Destructible, Deathwatch","Your General gains, ""Deathwatch: Gains +2 Attack."""
-20205,Void Steal,Spell,Rare,ShimZar,yes,3,,,,,Give an enemy minion -3 Attack. Nearby friendly minions gain +3 Attack.
-350,Void Talon,Minion,Common,Immortal,yes,3,6,1,,"Token, Build",Build: (1).
-20089,Wraithling Fury,Spell,Epic,Core,yes,3,,,,,Give a friendly Wraithling minion +4/+4.
-20072,Wraithling Swarm,Spell,Basic,Core,yes,3,,,,Token,Summon three 1/1 Wraithlings nearby each other.
+The enemy General has -1 Attack.",general_atk
+30002,Soul Grimwar,Artifact,Legendary,Core,yes,3,,,,"Destructible, Deathwatch","Your General gains, ""Deathwatch: Gains +2 Attack.""",general_atk
+20205,Void Steal,Spell,Rare,ShimZar,yes,3,,,,,Give an enemy minion -3 Attack. Nearby friendly minions gain +3 Attack.,
+350,Void Talon,Minion,Common,Immortal,yes,3,6,1,,"Token, Build",Build: (1).,
+20089,Wraithling Fury,Spell,Epic,Core,yes,3,,,,,Give a friendly Wraithling minion +4/+4.,wraithling
+20072,Wraithling Swarm,Spell,Basic,Core,yes,3,,,,Token,Summon three 1/1 Wraithlings nearby each other.,wraithling
 345,Xerroloth,Minion,Rare,Unearthed,yes,3,3,2,,"Sentinel, Token","Sentinel: Spell cast.
-Whenever your opponent casts a spell, put a 4/4 Fiend into your action bar."
-309,Abyssal Juggernaut,Minion,Common,Core,yes,4,3,3,,Shadow Creep,This minion has +1/+1 for each friendly Shadow Creep.
-310,Bloodtide Priestess,Minion,Rare,Core,yes,4,3,3,,"Token, Deathwatch",Deathwatch: Summon a Wraithling on a random nearby space.
-20131,Breath Of The Unborn,Spell,Common,Core,yes,4,,,,,Deal 2 damage to all enemy minions. Fully heal all friendly minions.
-348,Cacophynos,Minion,Common,Immortal,yes,4,6,3,,Dying Wish,Dying Wish: Destroy a random nearby enemy minion.
-20069,Dark Seed,Spell,Rare,Core,yes,4,,,,,Deal 1 damage to the enemy General for each card in the opponent's action bar.
+Whenever your opponent casts a spell, put a 4/4 Fiend into your action bar.",arcanyst
+309,Abyssal Juggernaut,Minion,Common,Core,yes,4,3,3,,Shadow Creep,This minion has +1/+1 for each friendly Shadow Creep.,shadow_creep
+310,Bloodtide Priestess,Minion,Rare,Core,yes,4,3,3,,"Token, Deathwatch",Deathwatch: Summon a Wraithling on a random nearby space.,wraithling
+20131,Breath Of The Unborn,Spell,Common,Core,yes,4,,,,,Deal 2 damage to all enemy minions. Fully heal all friendly minions.,heal;dmg_spell
+348,Cacophynos,Minion,Common,Immortal,yes,4,6,3,,Dying Wish,Dying Wish: Destroy a random nearby enemy minion.,dying_wish
+20069,Dark Seed,Spell,Rare,Core,yes,4,,,,,Deal 1 damage to the enemy General for each card in the opponent's action bar.,dmg_spell
 312,Deepfire Devourer,Minion,Common,Core,yes,4,4,4,,"Frenzy, Opening Gambit","Frenzy
-Opening Gambit: Destroy friendly minions around it and gain +2/+2 for each minion."
+Opening Gambit: Destroy friendly minions around it and gain +2/+2 for each minion.",opening_gambit
 341,Desolator,Minion,Legendary,Unearthed,yes,4,2,1,,"Opening Gambit, Dying Wish","Opening Gambit: Steal 2 Health from the enemy General.
-Dying Wish: Return Desolator to your action bar."
+Dying Wish: Return Desolator to your action bar.",dying_wish;opening_gambit
 353,Gate to the Undervault,Minion,Legendary,Immortal,yes,4,0,0,Structure,"Token, Build, Structure, Invulnerable, Deathwatch","Build: (3).
 Invulnerable
-Deathwatch: Summon a random Demon nearby."
-30020,Ghost Azalea,Artifact,Legendary,ShimZar,yes,4,,,,"Destructible, Shadow Creep",Your General gains +1 Attack for each friendly Shadow Creep.
-340,Nekomata,Minion,Epic,Unearthed,yes,4,4,2,,Dying Wish,Dying Wish: Draw two minions with Dying Wish from your deck.
-336,Nightshroud,Minion,Common,Ancients,yes,4,5,1,Arcanyst,Bond,Bond: Your General steals 1 Health from the enemy General for each other friendly Arcanyst.
-20051,Shadow Nova,Spell,Basic,Core,yes,4,,,,Shadow Creep,Turn a 2x2 area into Shadow Creep.
-324,Shadow Sister Kelaino,Minion,Legendary,Core,yes,4,3,3,,,"Whenever an enemy takes damage, restore 1 Health to your General."
-20334,Vellumscry,Spell,Common,Immortal,yes,4,,,,,Destroy a friendly minion to draw three cards.
-30051,Wraithcrown,Artifact,Epic,Mythron,yes,4,,,,Destructible,Friendly Wraithlings have +2/+2.
-321,Black Solus,Minion,Epic,Core,yes,5,4,7,,,"When you summon a Wraithling, this minion gains +2 Attack."
-20284,Corporeal Cadence,Spell,Epic,Unearthed,yes,5,,,,,Destroy a friendly minion to deal its Attack to the enemy General.
-20061,Dark Transformation,Spell,Basic,Core,yes,5,,,,Token,Destroy an enemy minion and summon a 1/1 Wraithling on that space.
-30039,Furor Chakram,Artifact,Rare,Immortal,yes,5,,,,"Destructible, Frenzy",Friendly minions gain +2 Attack and Frenzy.
-358,Hexclaw,Minion,Legendary,Mythron,yes,5,7,2,,Dying Wish,"Dying Wish: The enemy General gains, ""At the start of your turn, take 1 damage."""
-20050,Nether Summoning,Spell,Legendary,Core,yes,5,,,,,Summon 2 non-token minions destroyed since the end of your last turn nearby.
-325,Night Fiend,Minion,Common,ShimZar,yes,5,4,4,,"Shadow Creep, Opening Gambit",Opening Gambit: Deal 2 damage to each enemy on or near friendly Shadow Creep.
+Deathwatch: Summon a random Demon nearby.",structure
+30020,Ghost Azalea,Artifact,Legendary,ShimZar,yes,4,,,,"Destructible, Shadow Creep",Your General gains +1 Attack for each friendly Shadow Creep.,general_atk;shadow_creep
+340,Nekomata,Minion,Epic,Unearthed,yes,4,4,2,,Dying Wish,Dying Wish: Draw two minions with Dying Wish from your deck.,dying_wish
+336,Nightshroud,Minion,Common,Ancients,yes,4,5,1,Arcanyst,Bond,Bond: Your General steals 1 Health from the enemy General for each other friendly Arcanyst.,arcanyst
+20051,Shadow Nova,Spell,Basic,Core,yes,4,,,,Shadow Creep,Turn a 2x2 area into Shadow Creep.,shadow_creep
+324,Shadow Sister Kelaino,Minion,Legendary,Core,yes,4,3,3,,,"Whenever an enemy takes damage, restore 1 Health to your General.",heal
+20334,Vellumscry,Spell,Common,Immortal,yes,4,,,,,Destroy a friendly minion to draw three cards.,
+30051,Wraithcrown,Artifact,Epic,Mythron,yes,4,,,,Destructible,Friendly Wraithlings have +2/+2.,wraithling
+321,Black Solus,Minion,Epic,Core,yes,5,4,7,,,"When you summon a Wraithling, this minion gains +2 Attack.",wraithling
+20284,Corporeal Cadence,Spell,Epic,Unearthed,yes,5,,,,,Destroy a friendly minion to deal its Attack to the enemy General.,
+20061,Dark Transformation,Spell,Basic,Core,yes,5,,,,Token,Destroy an enemy minion and summon a 1/1 Wraithling on that space.,wraithling
+30039,Furor Chakram,Artifact,Rare,Immortal,yes,5,,,,"Destructible, Frenzy",Friendly minions gain +2 Attack and Frenzy.,
+358,Hexclaw,Minion,Legendary,Mythron,yes,5,7,2,,Dying Wish,"Dying Wish: The enemy General gains, ""At the start of your turn, take 1 damage.""",dying_wish
+20050,Nether Summoning,Spell,Legendary,Core,yes,5,,,,,Summon 2 non-token minions destroyed since the end of your last turn nearby.,
+325,Night Fiend,Minion,Common,ShimZar,yes,5,4,4,,"Shadow Creep, Opening Gambit",Opening Gambit: Deal 2 damage to each enemy on or near friendly Shadow Creep.,shadow_creep;opening_gambit
 322,Reaper of the Nine Moons,Minion,Epic,Core,yes,5,5,3,,"Flying, Dying Wish","Flying
-Dying Wish: Summon a random minion from the opponent's deck on this space."
-318,Shadowdancer,Minion,Rare,Core,yes,5,4,4,,Deathwatch,"Deathwatch: Deal 1 damage to the enemy General, and restore 1 Health to your General."
+Dying Wish: Summon a random minion from the opponent's deck on this space.",dying_wish
+318,Shadowdancer,Minion,Rare,Core,yes,5,4,4,,Deathwatch,"Deathwatch: Deal 1 damage to the enemy General, and restore 1 Health to your General.",heal
 360,Abyssal Tormentor,Minion,Legendary,Mythron,yes,6,6,6,,"Shadow Creep, Provoke","Provoke
-Your Shadow Creep deals damage equal to the number of friendly Shadow Creep."
-20331,Betrayal,Spell,Epic,Immortal,yes,6,,,,,Enemy minions nearby their General attack their General.
+Your Shadow Creep deals damage equal to the number of friendly Shadow Creep.",provoke;shadow_creep
+20331,Betrayal,Spell,Epic,Immortal,yes,6,,,,,Enemy minions nearby their General attack their General.,general_atk
 330,Klaxon,Minion,Legendary,ShimZar,yes,6,6,6,,"Shadow Creep, Provoke, Dying Wish","Provoke
-Dying Wish: Turn six random spaces into Shadow Creep."
-352,Moonrider,Minion,Epic,Immortal,yes,6,6,6,,"Token, Blood Surge",Blood Surge: Summon a 4/4 Fiend on a nearby space.
-20227,Necrotic Sphere,Spell,Epic,Ancients,yes,6,,,,Token,Destroy ALL minions nearby your General and summon Wraithlings in their place.
-20154,Rite Of The Undervault,Spell,Epic,Core,yes,6,,,,,Draw to fill your action bar.
+Dying Wish: Turn six random spaces into Shadow Creep.",provoke;dying_wish;shadow_creep
+352,Moonrider,Minion,Epic,Immortal,yes,6,6,6,,"Token, Blood Surge",Blood Surge: Summon a 4/4 Fiend on a nearby space.,bbs
+20227,Necrotic Sphere,Spell,Epic,Ancients,yes,6,,,,Token,Destroy ALL minions nearby your General and summon Wraithlings in their place.,wraithling
+20154,Rite Of The Undervault,Spell,Epic,Core,yes,6,,,,,Draw to fill your action bar.,
 357,Underlord Xor'Xuul,Minion,Mythron,Mythron,yes,6,6,1,,"Destiny, Trial","Trial: Cast 6 spells that destroy a friendly minion.
-Destiny: Whenever a friendly minion dies, re-summon it on a random space."
-20373,Unfathomable Rite,Spell,Epic,Mythron,yes,6,,,,,Draw cards from your opponent's deck to fill your action bar.
+Destiny: Whenever a friendly minion dies, re-summon it on a random space.",
+20373,Unfathomable Rite,Spell,Epic,Mythron,yes,6,,,,,Draw cards from your opponent's deck to fill your action bar.,
 314,Vorpal Reaver,Minion,Legendary,Core,yes,6,6,6,,"Token, Celerity, Dying Wish","Celerity
-Dying Wish: Summon six Wraithlings on random spaces."
-329,Arcane Devourer,Minion,Epic,ShimZar,yes,7,8,4,,Opening Gambit,Opening Gambit: The next minion you summon this turn costs 1.
-347,Stygian Observer,Minion,Legendary,Immortal,yes,7,7,7,,Deathwatch,Deathwatch: Give minions in your action bar +2/+2.
-338,Death Knell,Minion,Legendary,Ancients,yes,8,6,6,Arcanyst,Opening Gambit,Opening Gambit: Summon all friendly non-token Arcanysts destroyed this game nearby.
-333,Grandmaster Variax,Minion,Legendary,Core,yes,8,8,8,,"Token, Opening Gambit",Opening Gambit: Your Bloodbound Spell costs 3 and is now AWESOME.
-20213,Obliterate,Spell,Legendary,ShimZar,yes,8,,,,Shadow Creep,Destroy all friendly Shadow Creep to deal that much damage to all enemies.
+Dying Wish: Summon six Wraithlings on random spaces.",dying_wish;wraithling
+329,Arcane Devourer,Minion,Epic,ShimZar,yes,7,8,4,,Opening Gambit,Opening Gambit: The next minion you summon this turn costs 1.,ramp;opening_gambit
+347,Stygian Observer,Minion,Legendary,Immortal,yes,7,7,7,,Deathwatch,Deathwatch: Give minions in your action bar +2/+2.,ramp
+338,Death Knell,Minion,Legendary,Ancients,yes,8,6,6,Arcanyst,Opening Gambit,Opening Gambit: Summon all friendly non-token Arcanysts destroyed this game nearby.,arcanyst;ramp;opening_gambit
+333,Grandmaster Variax,Minion,Legendary,Core,yes,8,8,8,,"Token, Opening Gambit",Opening Gambit: Your Bloodbound Spell costs 3 and is now AWESOME.,ramp;bbs;arcanyst;opening_gambit
+20213,Obliterate,Spell,Legendary,ShimZar,yes,8,,,,Shadow Creep,Destroy all friendly Shadow Creep to deal that much damage to all enemies.,dmg_spell;ramp;shadow_creep
 320,Spectral Revenant,Minion,Legendary,Core,yes,8,6,6,,Rush,"Rush
-Whenever this damages an enemy minion, deal 4 damage to the enemy General."
-20380,Unleash the Evil,Spell,Legendary,Mythron,yes,8,,,,"Rush, Flying",Summon a copy of the minion your opponent most recently summoned from their action bar. It gains Rush and Flying.
-20264,Doom,Spell,Legendary,Unearthed,yes,9,,,,,The enemy General is DOOMED and will die after three turns.
-30045,Void Relic,Artifact,Token,Immortal,no,0,,,,Destructible,
-354,Abomination,Minion,Token,Immortal,no,1,1,1,,Token,
-346,Husk,Minion,Token,Core,no,1,4,4,,Token,
-315,Wraithling,Minion,Token,Core,no,1,1,1,,Token,
-332,Fiend,Minion,Token,Ancients,no,2,4,4,,Token,
-349,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",
-342,Watchful Sentinel,Minion,Token,Unearthed,no,3,3,3,,Token,Sentinel: This transforms into a powerful minion if its hidden condition is met.
-356,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",
-335,Horror,Minion,Token,Ancients,no,6,6,6,,Token,
+Whenever this damages an enemy minion, deal 4 damage to the enemy General.",ramp
+20380,Unleash the Evil,Spell,Legendary,Mythron,yes,8,,,,"Rush, Flying",Summon a copy of the minion your opponent most recently summoned from their action bar. It gains Rush and Flying.,ramp
+20264,Doom,Spell,Legendary,Unearthed,yes,9,,,,,The enemy General is DOOMED and will die after three turns.,ramp
+30045,Void Relic,Artifact,Token,Immortal,no,0,,,,Destructible,,
+354,Abomination,Minion,Token,Immortal,no,1,1,1,,Token,,
+346,Husk,Minion,Token,Core,no,1,4,4,,Token,,
+315,Wraithling,Minion,Token,Core,no,1,1,1,,Token,,
+332,Fiend,Minion,Token,Ancients,no,2,4,4,,Token,,
+349,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",,
+342,Watchful Sentinel,Minion,Token,Unearthed,no,3,3,3,,Token,Sentinel: This transforms into a powerful minion if its hidden condition is met.,
+356,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",,
+335,Horror,Minion,Token,Ancients,no,6,6,6,,Token,,

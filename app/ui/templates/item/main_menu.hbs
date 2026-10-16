@@ -16,7 +16,12 @@
 		<span class="play-label">{{localize 'main_menu.menu_item_play'}}</span>
 		<div class="badges"><span class="badge"></span></div>
 	</button>
-	<button class="btn watch animate-reveal" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.menu_item_watch_tooltip'}}">
+	<button class="btn roguelike-progression animate-reveal" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.menu_item_roguelike_progression_tooltip'}}">
+		<canvas class="zodiac-symbol-canvas"></canvas>
+		{{localize 'main_menu.menu_item_roguelike_progression'}}
+		<div class="badges"><span class="badge"></span></div>
+	</button>
+	<button class="btn watch animate-reveal hidden" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.menu_item_watch_tooltip'}}">
 		<canvas class="zodiac-symbol-canvas"></canvas>
 		<span class="watch-label">{{localize 'main_menu.menu_item_watch'}}</span>
 		<div class="badges"><i class="badge badge-live fa fa-circle"></i></div>
@@ -29,7 +34,7 @@
         <i class="badge badge-unread-lore fa fa-book"></i>
 		</div>
 	</button>
-	<button class="btn crate-inventory animate-reveal" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.menu_item_crates_tooltip'}}">
+	<button class="btn crate-inventory animate-reveal hidden" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.menu_item_crates_tooltip'}}">
 		<canvas class="zodiac-symbol-canvas"></canvas>
 		{{localize 'main_menu.menu_item_crates'}}
 		<div class="badges"><span class="badge"></span></div>
@@ -50,7 +55,7 @@
 	<div class="symbol-main-menu-icon"></div>
 </div>
 
-<div class="boss-toast-promo hide {{#if boss_battle_is_defeated}}inactive{{/if}} {{#unless boss_battle_is_available}}inactive{{/unless}}" data-toggle="tooltip" data-placement="left" title="{{localize 'boss_battles.instructions'}}">
+<div class="boss-toast-promo hidden hide {{#if boss_battle_is_defeated}}inactive{{/if}} {{#unless boss_battle_is_available}}inactive{{/unless}}" data-toggle="tooltip" data-placement="left" title="{{localize 'boss_battles.instructions'}}">
 	<h2>
 		{{#unless boss_battle_is_defeated}}
 			{{#if boss_battle_is_available}}

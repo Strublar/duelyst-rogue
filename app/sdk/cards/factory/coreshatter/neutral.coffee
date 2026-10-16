@@ -33,6 +33,7 @@ ModifierStartsInHand = require 'app/sdk/modifiers/modifierStartsInHand'
 ModifierAirdrop = require 'app/sdk/modifiers/modifierAirdrop'
 ModifierIntensifyDamageNearby = require 'app/sdk/modifiers/modifierIntensifyDamageNearby'
 ModifierReplaceWatchShuffleCardIntoDeck = require 'app/sdk/modifiers/modifierReplaceWatchShuffleCardIntoDeck'
+ModifierSpellWatchShuffleCardIntoDeck = require 'app/sdk/modifiers/modifierSpellWatchShuffleCardIntoDeck'
 ModifierEndTurnWatchAnyPlayerPullRandomUnits = require 'app/sdk/modifiers/modifierEndTurnWatchAnyPlayerPullRandomUnits'
 ModifierOpponentSummonWatchSummonMinionInFront = require 'app/sdk/modifiers/modifierOpponentSummonWatchSummonMinionInFront'
 ModifierProvoke = require 'app/sdk/modifiers/modifierProvoke'
@@ -446,14 +447,14 @@ class CardFactory_CoreshatterSet_Neutral
       card.setCardSetId(CardSet.Coreshatter)
       card.factionId = Factions.Neutral
       card.name = "Araras Prophet"
-      card.setDescription("Whenever you replace a card, shuffle a Brilliant Plume into your deck.")
+      card.setDescription("Whenever you cast a spell other than Brilliant Plume, shuffle a Brilliant Plume into your deck.")
       card.atk = 1
       card.maxHP = 3
       card.manaCost = 2
       card.rarityId = Rarity.Rare
       card.raceId = Races.Arcanyst
       card.setInherentModifiersContextObjects([
-        ModifierReplaceWatchShuffleCardIntoDeck.createContextObject({id: Cards.Spell.BrilliantPlume}, 1)
+        ModifierSpellWatchShuffleCardIntoDeck.createContextObject({id: Cards.Spell.BrilliantPlume}, 1)
       ])
       card.setFXResource(["FX.Cards.Neutral.AlterRexx"])
       card.setBoundingBoxWidth(85)

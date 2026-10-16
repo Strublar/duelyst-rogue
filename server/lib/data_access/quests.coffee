@@ -23,6 +23,8 @@ generatePushId = require '../../../app/common/generate_push_id'
 SDK = require '../../../app/sdk'
 QuestFactory = require '../../../app/sdk/quests/questFactory'
 QuestCatchUp = require '../../../app/sdk/quests/questCatchUp.coffee'
+RoguelikeProgression = require '../../../app/sdk/roguelike/roguelikeProgression'
+RoguelikeProgressionModule = require '../roguelike_progression'
 QuestType = require '../../../app/sdk/quests/questTypeLookup'
 UtilsGameSession = require '../../../app/common/utils/utils_game_session.coffee'
 NewPlayerProgressionHelper = require '../../../app/sdk/progression/newPlayerProgressionHelper'
@@ -37,9 +39,10 @@ class QuestsModule
   @PROMOTIONAL_QUEST_SLOT:30
 
   # control if seasonal / catchup quests should be active
-  @SEASONAL_QUESTS_ACTIVE: true
-  @CATCH_UP_QUEST_ACTIVE: true
-  @PROMOTIONAL_QUEST_ACTIVE: true
+  # roguelike: only roguelike daily quests
+  @SEASONAL_QUESTS_ACTIVE: false
+  @CATCH_UP_QUEST_ACTIVE: false
+  @PROMOTIONAL_QUEST_ACTIVE: false
 
   # Catch up quest reward definitions
   @CATCH_UP_CHARGE_GOLD_VALUE: 50
@@ -68,14 +71,7 @@ class QuestsModule
     .bind {}
     .spread (newPlayerProgressionRow,userRow,questRows) ->
 
-      currentStage = NewPlayerProgressionStageEnum[newPlayerProgressionRow?.stage] || NewPlayerProgressionStageEnum.Tutorial
-      if currentStage.value < NewPlayerProgressionHelper.DailyQuestsStartToGenerateStage.value
-        return Promise.resolve(false)
-
-      # if the first two quest slots are populated by begginer quests, no need to generate daily quests "yet"
-      begginerQuestsInFirstTwoSlots = _.filter questRows, (q)-> return q.quest_slot_index < 2 and QuestFactory.questForIdentifier(q.quest_type_id)?.isBeginner
-      if begginerQuestsInFirstTwoSlots?.length == 2
-        return Promise.resolve(false)
+      # roguelike: daily quests are generated from the start (no beginner quests)
 
       if questRows?
         for quest in questRows
@@ -158,11 +154,13 @@ class QuestsModule
         knex("user_quests")
           .transacting(tx)
           .forUpdate()
-          .select().where({'user_id':userId})
+          .select().where({'user_id':userId}),
+        RoguelikeProgressionModule.load(userId)
       ])
       .bind this_obj
-      .spread (userRow,questRows)->
+      .spread (userRow,questRows,roguelikeProgression)->
 
+        @.lockedQuestIds = QuestsModule._getLockedRoguelikeQuestIds(roguelikeProgression)
         @.updatedQuests = []
         @.userRow = userRow
         @.removedQuests = []
@@ -285,7 +283,7 @@ class QuestsModule
 
             Logger.module("QuestsModule").debug("generateDailyQuests() -> Generating quest for slot #{i}. user #{userId.blue}.")
 
-            sdkQuest = QuestFactory.randomQuestForSlotExcludingIds(i,quest_ids_generated)
+            sdkQuest = QuestFactory.randomQuestForSlotExcludingIds(i,quest_ids_generated.concat(@.lockedQuestIds))
             quest = QuestsModule._questDataForQuest(sdkQuest,MOMENT_NOW_UTC)
             quest.user_id = userId
             quest.quest_slot_index = i
@@ -446,6 +444,9 @@ class QuestsModule
     # userId must be defined
     if !userId
       return Promise.reject(new Error("Can not find if user needs daily quests: invalid user ID - #{userId}"))
+
+    # roguelike: no beginner quests (they need other game modes)
+    return Promise.resolve(null)
 
     Logger.module("QuestsModule").time "generateBeginnerQuests() -> for user #{userId.blue}.".green
 
@@ -637,11 +638,15 @@ class QuestsModule
 
     return knex.transaction (tx)->
 
-      knex("user_quests").select().where({'user_id':userId}).transacting(tx).forUpdate()
+      Promise.all([
+        knex("user_quests").select().where({'user_id':userId}).transacting(tx).forUpdate(),
+        RoguelikeProgressionModule.load(userId)
+      ])
       .bind this_obj
-      .then (questRows)->
+      .spread (questRows,roguelikeProgression)->
 
         @.questRows = questRows
+        @.lockedQuestIds = QuestsModule._getLockedRoguelikeQuestIds(roguelikeProgression)
 
         if questRows?.length > 0
 
@@ -675,7 +680,7 @@ class QuestsModule
 
             start_of_today_utc = MOMENT_NOW_UTC.clone().startOf('day').toDate()
 
-            quest1 = QuestFactory.randomQuestForSlotExcludingIds(questIndex,quest_ids_generated)
+            quest1 = QuestFactory.randomQuestForSlotExcludingIds(questIndex,quest_ids_generated.concat(@.lockedQuestIds or []))
 
             # if we requested a SPECIFIC quest as a replacement, use that quest
             if replaceWithQuestId?
@@ -1099,6 +1104,12 @@ class QuestsModule
   # @param  {Moment}    systemTime      Pass in the current system time to use to generate quests. Used only for testing.
   # @return  {Promise}              Promise.
   ###
+  ###*
+  # Returns the ids of the quests a user can't get yet: quests of roguelike generals not unlocked.
+  ###
+  @_getLockedRoguelikeQuestIds: (roguelikeProgression) ->
+    return QuestFactory.getLockedRoguelikeQuestIds((generalId) -> RoguelikeProgression.getIsGeneralUnlocked(roguelikeProgression, generalId))
+
   @_setQuestProgress:(txPromise,tx,quest,progressAmount,gameId,systemTime)->
 
     MOMENT_NOW_UTC = systemTime || moment().utc()
@@ -1161,6 +1172,10 @@ class QuestsModule
         if quest.gold
           # update user gold
           allQueries.push(InventoryModule.giveUserGold(txPromise,tx,quest.user_id,quest.gold,'daily quest',completedQuest.id))
+
+        if questModel.getRoguelikeXpReward()
+          # roguelike quests give roguelike account xp
+          allQueries.push(RoguelikeProgressionModule.addAccountXp(tx,quest.user_id,questModel.getRoguelikeXpReward()))
 
         if quest.spirit_orbs
           # add booster to user

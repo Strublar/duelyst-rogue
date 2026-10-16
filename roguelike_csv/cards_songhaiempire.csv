@@ -1,136 +1,136 @@
-﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description
-101,Kaleos Xaan,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Teleport a friendly minion up to 2 spaces.
-123,Reva Eventide,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Summon a Heartseeker nearby your General.
-152,Shidai Stormblossom,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Put a Spellsword into your action bar that cannot be replaced.
+﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description,tags
+101,Kaleos Xaan,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Teleport a friendly unit up to 2 spaces.,
+123,Reva Eventide,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Summon a Heartseeker nearby your General.,
+152,Shidai Stormblossom,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Draw 2 spells from your deck. They cost 1 less and are Ethereal.,
 154,Hideatsu the Ebon Ox,Minion,Mythron,Mythron,yes,0,5,5,,"Destiny, Trial","Trial: Summon 7 minions from your action bar with different costs.
-Destiny: Summon friendly minions to deal their cost as damage to an enemy."
-20129,Juxtaposition,Spell,Epic,Core,yes,0,,,,,Switch positions between ANY two minions.
-20085,Mana Vortex,Spell,Rare,Core,yes,0,,,,,The next spell you cast this turn costs 1 less.
-20355,Meditate,Spell,Rare,Mythron,yes,0,,,,,Shuffle five copies of the spell you cast most recently into your deck (excluding Meditate).
-126,Ace,Minion,Common,ShimZar,yes,1,1,2,BattlePet,"Battle Pet, Ranged",Ranged
-20323,Assassination Protocol,Spell,Common,Immortal,yes,1,,,,,Reactivate an exhausted friendly minion. It cannot damage or attack Generals this turn.
-30023,Crescent Spear,Artifact,Legendary,ShimZar,yes,1,,,,Destructible,Your General gains +1 Attack. Spells you cast that deal damage deal +1 damage.
-20088,Ghost Lightning,Spell,Basic,Core,yes,1,,,,,Deal 1 damage to all enemy minions.
-20275,Gotatsu,Spell,Common,Unearthed,yes,1,,,,,Deal 1 damage to a minion. Draw a card at end of turn.
-108,Heartseeker,Minion,Common,Core,yes,1,1,1,,Ranged,Ranged
+Destiny: Summon friendly minions to deal their cost as damage to an enemy.",
+20129,Juxtaposition,Spell,Epic,Core,yes,0,,,,,Switch positions between ANY two minions.,arcanyst
+20085,Mana Vortex,Spell,Rare,Core,yes,0,,,,,The next spell you cast this turn costs 1 less.,arcanyst;ramp
+20355,Meditate,Spell,Rare,Mythron,yes,0,,,,,Shuffle five copies of the spell you cast most recently into your deck (excluding Meditate).,arcanyst
+126,Ace,Minion,Common,ShimZar,yes,1,1,2,BattlePet,"Battle Pet, Ranged",Ranged,ranged
+20323,Assassination Protocol,Spell,Common,Immortal,yes,1,,,,,Reactivate an exhausted friendly minion. It cannot damage or attack Generals this turn.,arcanyst
+30023,Crescent Spear,Artifact,Legendary,ShimZar,yes,1,,,,Destructible,Your General gains +1 Attack. Spells you cast that deal damage deal +1 damage.,general_atk;arcanyst
+20088,Ghost Lightning,Spell,Basic,Core,yes,1,,,,,Deal 1 damage to all enemy minions.,dmg_spell;arcanyst
+20275,Gotatsu,Spell,Common,Unearthed,yes,1,,,,,Deal 1 damage to anything. Draw a card at end of turn.,dmg_spell;arcanyst
+108,Heartseeker,Minion,Common,Core,yes,1,1,1,,Ranged,Ranged,ranged
 30052,Horned Mask,Artifact,Epic,Mythron,yes,1,,,,"Destructible, Backstab","Your General gains +1 Attack.
-After a friendly minion with Backstab attacks, it gains +1/+1."
-20086,Inner Focus,Spell,Basic,Core,yes,1,,,,,Reactivate an exhausted friendly minion with 3 or less Attack.
-20256,Joseki,Spell,Common,Ancients,yes,1,,,,,Each player steals a random card from their opponent's deck.
-129,Katara,Minion,Common,ShimZar,yes,1,1,3,,Backstab,Backstab: (1).
-20354,Knucklestorm,Spell,Common,Mythron,yes,1,,,,Intensify,Intensify: Deal 1 damage to an enemy.
-20168,Mist Dragon Seal,Spell,Common,Core,yes,1,,,,,Give a friendly minion +1/+1 and teleport it anywhere.
-20167,Mist Walking,Spell,Rare,Core,yes,1,,,,,Teleport your General up to 2 spaces.
-20241,Obscuring Blow,Spell,Rare,Ancients,yes,1,,,,Backstab,Give a friendly minion or General Backstab (2).
-20192,Shadow Waltz,Spell,Common,ShimZar,yes,1,,,,Backstab,Lower the cost of all minions with Backstab in your action bar by 1 and give them +1/+1.
-20294,Spiral Counter,Spell,Common,Unearthed,yes,1,,,,,Deal 8 damage to an enemy minion that attacked last turn.
-20106,Artifact Defiler,Spell,Common,Core,yes,2,,,,,Destroy all artifacts on the enemy General.
-30010,Bloodrage Mask,Artifact,Basic,Core,yes,2,,,,Destructible,"Whenever you cast a spell, deal 1 damage to the enemy General."
-115,Chakri Avatar,Minion,Basic,Core,yes,2,1,2,Arcanyst,,"Whenever you cast a spell, this minion gains +1/+1"
-20191,Crimson Coil,Spell,Common,ShimZar,yes,2,,,,Token,Deal 2 damage to a minion. Activate your Battle Pets.
-20094,Deathstrike Seal,Spell,Rare,Core,yes,2,,,,,"Give a friendly minion, ""Destroy any minion damaged by this minion."""
-20143,Eight Gates,Spell,Legendary,Core,yes,2,,,,,Spells you cast this turn that deal damage deal +2 damage.
-20231,Ethereal Blades,Spell,Common,Ancients,yes,2,,,,,Give a friendly minion AND your General +2 Attack this turn.
-110,Kaido Assassin,Minion,Basic,Core,yes,2,2,3,,Backstab,Backstab: (1).
+After a friendly minion with Backstab attacks, it gains +1/+1.",general_atk;backstab
+20086,Inner Focus,Spell,Basic,Core,yes,1,,,,,Reactivate an exhausted friendly minion with 3 or less Attack.,arcanyst
+20256,Joseki,Spell,Common,Ancients,yes,1,,,,,Each player steals a random card from their opponent's deck.,arcanyst
+129,Katara,Minion,Common,ShimZar,yes,1,1,3,,Backstab,Backstab: (1).,backstab
+20354,Knucklestorm,Spell,Common,Mythron,yes,1,,,,Intensify,Intensify: Deal 1 damage to an enemy.,dmg_spell;arcanyst
+20168,Mist Dragon Seal,Spell,Common,Core,yes,1,,,,,Give a friendly minion +1/+1 and teleport it anywhere.,arcanyst
+20167,Mist Walking,Spell,Rare,Core,yes,1,,,,,Teleport your General up to 2 spaces.,arcanyst
+20241,Obscuring Blow,Spell,Rare,Ancients,yes,1,,,,Backstab,Give a friendly minion or General Backstab (2).,arcanyst;backstab
+20192,Shadow Waltz,Spell,Common,ShimZar,yes,1,,,,Backstab,Lower the cost of all minions with Backstab in your action bar by 1 and give them +1/+1.,arcanyst;backstab
+20294,Spiral Counter,Spell,Common,Unearthed,yes,1,,,,,Deal 8 damage to an enemy minion that attacked last turn.,dmg_spell;arcanyst
+20106,Artifact Defiler,Spell,Common,Core,yes,2,,,,,Destroy all artifacts on the enemy General.,arcanyst
+30010,Bloodrage Mask,Artifact,Basic,Core,yes,2,,,,Destructible,"Whenever you cast a spell, deal 1 damage to the enemy General.",arcanyst
+115,Chakri Avatar,Minion,Basic,Core,yes,3,2,3,Arcanyst,,"Whenever you cast a spell, this minion gains +1/+1",arcanyst
+20191,Crimson Coil,Spell,Common,ShimZar,yes,2,,,,Token,Deal 2 damage to a minion. Activate your Battle Pets.,dmg_spell;arcanyst
+20094,Deathstrike Seal,Spell,Rare,Core,yes,2,,,,,"Give a friendly minion, ""Destroy any minion damaged by this minion.""",arcanyst
+20143,Eight Gates,Spell,Legendary,Core,yes,2,,,,,Spells you cast this turn that deal damage deal +2 damage.,dmg_spell;arcanyst
+20231,Ethereal Blades,Spell,Common,Ancients,yes,2,,,,,Give a friendly minion AND your General +2 Attack this turn.,arcanyst;general_atk
+110,Kaido Assassin,Minion,Basic,Core,yes,2,2,3,,Backstab,Backstab: (1).,backstab
 30007,Mask of Shadows,Artifact,Legendary,Core,yes,2,,,,"Destructible, Backstab","Your General gains +1 Attack.
-Your General gains Backstab (4)."
-20341,Mass Flight,Spell,Rare,Immortal,yes,2,,,,,Give all friendly minions Flying this turn.
-20194,Mirror Meld,Spell,Rare,ShimZar,yes,2,,,,,Summon a copy of a friendly minion that costs 2 or less nearby.
-20081,Phoenix Fire,Spell,Basic,Core,yes,2,,,,,Deal 3 damage to anything.
-20080,Saberspine Seal,Spell,Basic,Core,yes,2,,,,,Give a minion or General +3 Attack this turn.
+Your General gains Backstab (4).",general_atk;backstab
+20341,Mass Flight,Spell,Rare,Immortal,yes,2,,,,,Give all friendly minions Flying this turn.,arcanyst
+20194,Mirror Meld,Spell,Rare,ShimZar,yes,2,,,,,Summon a copy of a friendly minion that costs 2 or less nearby.,arcanyst
+20081,Phoenix Fire,Spell,Basic,Core,yes,2,,,,,Deal 3 damage to anything.,dmg_spell;arcanyst
+20080,Saberspine Seal,Spell,Basic,Core,yes,2,,,,,Give a minion or General +3 Attack this turn.,arcanyst;general_atk
 140,Scroll Bandit,Minion,Epic,Unearthed,yes,2,1,3,Arcanyst,Backstab,"Backstab: (1).
-Whenever this backstabs, steal a spell from your opponent's deck."
-20365,Second Self,Spell,Rare,Mythron,yes,2,,,,,Put an EXACT copy of a friendly minion into your action bar.
-145,Suzumebachi,Minion,Common,Immortal,yes,2,1,4,,,"Whenever you cast a spell, this minion gains +1 Attack until your next turn."
+Whenever this backstabs, steal a spell from your opponent's deck.",arcanyst;backstab
+20365,Second Self,Spell,Rare,Mythron,yes,2,,,,,Put an EXACT copy of a friendly minion into your action bar.,arcanyst
+145,Suzumebachi,Minion,Common,Immortal,yes,2,1,4,,,"Whenever you cast a spell, this minion gains +1 Attack until your next turn.",arcanyst
 121,Tusk Boar,Minion,Legendary,Core,yes,2,2,3,,Rush,"Rush
-Return this minion to your action bar at the beginning of your turn."
-125,Xho,Minion,Rare,ShimZar,yes,2,2,3,BattlePet,"Battle Pet, Dying Wish",Dying Wish: Put a random Songhai spell into your action bar. It costs 1 less.
-20327,Bamboozle,Spell,Epic,Immortal,yes,3,,,,Token,"Transform a nearby enemy minion into a 0/2 Panddo. If it is already a Panddo, instead destroy it and draw to fill your action bar."
-30027,Bangle of Blinding Strike,Artifact,Rare,Ancients,yes,3,,,,"Destructible, Celerity",Your General has Celerity.
-130,Battle Panddo,Minion,Epic,ShimZar,yes,3,2,4,,,"Whenever this minion takes damage, deal 1 damage to all enemies."
-117,Celestial Phantom,Minion,Rare,Core,yes,3,1,5,,,Destroy any minion damaged by this minion.
-30009,Cyclone Mask,Artifact,Epic,Core,yes,3,,,,"Destructible, Ranged",Your General gains Ranged.
+Return this minion to your action bar at the beginning of your turn.",
+125,Xho,Minion,Rare,ShimZar,yes,2,2,3,BattlePet,"Battle Pet, Dying Wish",Dying Wish: Put a random Songhai spell into your action bar. It costs 1 less.,ramp;dying_wish
+20327,Bamboozle,Spell,Epic,Immortal,yes,3,,,,Token,"Transform a nearby enemy minion into a 0/2 Panddo. If it is already a Panddo, instead destroy it and draw to fill your action bar.",
+30027,Bangle of Blinding Strike,Artifact,Rare,Ancients,yes,3,,,,"Destructible, Celerity",Your General has Celerity.,
+130,Battle Panddo,Minion,Epic,ShimZar,yes,3,2,4,,,"Whenever this minion takes damage, deal 1 damage to all enemies.",
+117,Celestial Phantom,Minion,Rare,Core,yes,3,1,5,,,Destroy any minion damaged by this minion.,
+30009,Cyclone Mask,Artifact,Epic,Core,yes,3,,,,"Destructible, Ranged",Your General gains Ranged.,ranged
 151,Dusk Rigger,Minion,Rare,Immortal,yes,3,3,3,Mech,Backstab,"Backstab: (2).
-Whenever this backstabs, put a MECHAZ0R Progression into your action bar."
-20283,Flicker,Spell,Epic,Unearthed,yes,3,,,,,Teleport your General to a space behind an enemy.
+Whenever this backstabs, put a MECHAZ0R Progression into your action bar.",mech;backstab
+20283,Flicker,Spell,Epic,Unearthed,yes,3,,,,,Teleport your General to a space behind an enemy.,
 112,Gore Horn,Minion,Rare,Core,yes,3,3,3,,Backstab,"Backstab: (2)
-After this minion attacks, it gains +1/+1."
+After this minion attacks, it gains +1/+1.",backstab
 142,Hundred-Handed Rakushi,Minion,Common,Unearthed,yes,3,3,4,,"Sentinel, Token","Sentinel: Minion summoned.
-Deal 2 damage to the minion that transformed this."
-114,Jade Monk,Minion,Common,Core,yes,3,4,3,,,"Whenever this minion takes damage, deal 1 damage to a random enemy minion."
+Deal 2 damage to the minion that transformed this.",
+114,Jade Monk,Minion,Common,Core,yes,3,4,3,,,"Whenever this minion takes damage, deal 1 damage to a random enemy minion.",
 156,Kaido Expert,Minion,Rare,Mythron,yes,3,2,2,,Backstab,"Backstab: (1).
-Whenever this minion backstabs, summon a minion with Backstab that costs 2 or less from your deck nearby."
+Whenever this minion backstabs, summon a minion with Backstab that costs 2 or less from your deck nearby.",backstab
 128,Ki Beholder,Minion,Rare,ShimZar,yes,3,3,2,,"Opening Gambit, Ranged","Ranged
-Opening Gambit: An enemy minion cannot move next turn."
-20102,Killing Edge,Spell,Basic,Core,yes,3,,,,Backstab,"Give a friendly minion +4/+2. If that minion has Backstab, draw a card at end of turn."
-122,Lantern Fox,Minion,Epic,Core,yes,3,2,3,,,"Whenever this minion takes damage, put a Phoenix Fire into your action bar."
+Opening Gambit: An enemy minion cannot move next turn.",ranged;opening_gambit
+20102,Killing Edge,Spell,Basic,Core,yes,3,,,,Backstab,"Give a friendly minion +4/+2. If that minion has Backstab, draw a card at end of turn.",backstab
+122,Lantern Fox,Minion,Epic,Core,yes,3,2,3,,,"Whenever this minion takes damage, put a Phoenix Fire into your action bar.",arcanyst
 144,Mind-Cage Oni,Minion,Rare,Unearthed,yes,3,3,2,,"Sentinel, Token","Sentinel: Spell cast.
-Whenever your opponent casts a spell, put a copy of that spell into your action bar."
+Whenever your opponent casts a spell, put a copy of that spell into your action bar.",arcanyst
 143,Mizuchi,Minion,Rare,Unearthed,yes,3,2,5,,"Sentinel, Token, Backstab, Flying","Sentinel: General attacks.
 Flying
-Backstab: (2)."
-20087,Onyx Bear Seal,Spell,Epic,Core,yes,3,,,,Token,Transform an enemy minion into a 0/2 Panddo that cannot be attacked.
-158,Orizuru,Minion,Common,Mythron,yes,3,3,4,,Flying,Flying
-20385,Pandatentiary,Spell,Epic,Mythron,yes,3,,,,Token,Surround the enemy General with friendly Panddo that disappear at the start of your next turn.
+Backstab: (2).",general_atk;backstab
+20087,Onyx Bear Seal,Spell,Epic,Core,yes,3,,,,Token,Transform an enemy minion into a 0/2 Panddo that cannot be attacked.,
+158,Orizuru,Minion,Common,Mythron,yes,3,3,4,,Flying,Flying,
+20385,Pandatentiary,Spell,Epic,Mythron,yes,3,,,,Token,Surround the enemy General with friendly Panddo that disappear at the start of your next turn.,
 149,Penumbraxx,Minion,Legendary,Immortal,yes,3,4,1,,"Token, Build, Backstab","Build: (2).
 Backstab: (2).
-Whenever this backstabs, transform it into a building with Build (1)."
-135,Sparrowhawk,Minion,Common,Ancients,yes,3,3,3,Arcanyst,Bond,Bond: Put a Mist Dragon Seal into your action bar.
-20328,Substitution,Spell,Epic,Immortal,yes,3,,,,,Switch positions between a friendly minion and your General.
-20314,Thunderbomb,Spell,Common,Immortal,yes,3,,,,,Deal 3 damage to an enemy and 1 damage to all enemies around it.
-132,Twilight Fox,Minion,Legendary,Ancients,yes,3,3,4,,Blood Surge,Blood Surge: Teleport a random enemy to the space behind your General.
-20082,Twin Strike,Spell,Common,Core,yes,3,,,,,Deal 2 damage to exactly two random enemy minions. Draw a card at end of turn.
+Whenever this backstabs, transform it into a building with Build (1).",backstab
+135,Sparrowhawk,Minion,Common,Ancients,yes,3,3,3,Arcanyst,Bond,Bond: Put a Mist Dragon Seal into your action bar.,arcanyst
+20328,Substitution,Spell,Epic,Immortal,yes,3,,,,,Switch positions between a friendly minion and your General.,
+20314,Thunderbomb,Spell,Common,Immortal,yes,3,,,,,Deal 3 damage to an enemy and 1 damage to all enemies around it.,dmg_spell
+132,Twilight Fox,Minion,Legendary,Ancients,yes,3,3,4,,Blood Surge,Blood Surge: Teleport a random enemy to the space behind your General.,bbs
+20082,Twin Strike,Spell,Common,Core,yes,3,,,,,Deal 2 damage to exactly two random enemy minions. Draw a card at end of turn.,dmg_spell
 30033,Unbounded Energy Amulet,Artifact,Legendary,Unearthed,yes,3,,,,Destructible,"Your General gains +1 Attack.
-Your General may move an additional space."
-134,Whiplash,Minion,Common,Ancients,yes,3,4,3,,Blood Surge,Blood Surge: Deal 2 damage to the enemy General.
-109,Widowmaker,Minion,Basic,Core,yes,3,2,3,,Ranged,Ranged
-20100,Ancestral Divination,Spell,Common,Core,yes,4,,,,,Draw a card for each friendly minion.
-155,Bakezori,Minion,Epic,Mythron,yes,4,2,6,,,"Whenever this minion is moved for any reason, draw a card."
-160,Coalfist,Minion,Common,Mythron,yes,4,5,4,,Intensify,Intensify: Give a random nearby friendly minion +2 Attack this turn.
-20240,Cobra Strike,Spell,Epic,Ancients,yes,4,,,,,Deal 3 damage to an enemy minion AND the enemy General.
-138,Flamewreath,Minion,Common,Unearthed,yes,4,2,4,,,"Whenever this minion is moved for any reason, it deals 2 damage to all enemies around it."
-116,Four Winds Magi,Minion,Rare,Core,yes,4,4,4,Arcanyst,,"Whenever you cast a spell, deal 1 damage to enemy General and restore 1 Health to your General"
-120,Keshrai Fanblade,Minion,Common,Core,yes,4,5,3,,Opening Gambit,"Opening Gambit: Next turn, opponent's spells cost 2 more to cast"
-136,Kindling,Minion,Epic,Ancients,yes,4,3,5,Arcanyst,,"Whenever you cast a spell, your Arcanyst minions gain +1 Attack."
+Your General may move an additional space.",general_atk
+134,Whiplash,Minion,Common,Ancients,yes,3,4,3,,Blood Surge,Blood Surge: Deal 2 damage to the enemy General.,bbs
+109,Widowmaker,Minion,Basic,Core,yes,3,2,3,,Ranged,Ranged,ranged
+20100,Ancestral Divination,Spell,Common,Core,yes,4,,,,,Draw a card for each friendly minion.,
+155,Bakezori,Minion,Epic,Mythron,yes,4,2,6,,,"Whenever this minion is moved for any reason, draw a card.",
+160,Coalfist,Minion,Common,Mythron,yes,4,5,4,,Intensify,Intensify: Give a random nearby friendly minion +2 Attack this turn.,
+20240,Cobra Strike,Spell,Epic,Ancients,yes,4,,,,,Deal 3 damage to an enemy minion AND the enemy General.,dmg_spell
+138,Flamewreath,Minion,Common,Unearthed,yes,4,2,4,,,"Whenever this minion is moved for any reason, it deals 2 damage to all enemies around it.",
+116,Four Winds Magi,Minion,Rare,Core,yes,4,4,4,Arcanyst,,"Whenever you cast a spell, deal 1 damage to enemy General and restore 1 Health to your General",heal;arcanyst
+120,Keshrai Fanblade,Minion,Common,Core,yes,4,5,3,,Opening Gambit,"Opening Gambit: Next turn, opponent's spells cost 2 more to cast",opening_gambit
+136,Kindling,Minion,Epic,Ancients,yes,4,3,5,Arcanyst,,"Whenever you cast a spell, your Arcanyst minions gain +1 Attack.",arcanyst
 148,Manakite Drifter,Minion,Common,Immortal,yes,4,5,5,,"Token, Build","Build: (2).
-When this minion is built, gain +2 mana this turn."
+When this minion is built, gain +2 mana this turn.",ramp
 157,Massacre Artist,Minion,Legendary,Mythron,yes,4,2,5,,Backstab,"Backstab: (2).
-After this minion attacks and backstabs, all attacks are backstabs this turn."
-20193,Pandamonium,Spell,Epic,ShimZar,yes,4,,,,Token,Transform ALL minions into 0/2 Panddo that cannot be attacked until end of turn.
-124,Storm Sister Alkyone,Minion,Legendary,Core,yes,4,3,5,,,Spells you cast that deal damage deal +1 damage.
-150,Wildfire Tenketsu,Minion,Epic,Immortal,yes,4,3,5,,Blood Surge,Blood Surge: Put an Eight Gates into your action bar.
-20279,Bombard,Spell,Rare,Unearthed,yes,5,,,,Ranged,Reactivate your minions with Ranged.
-133,Geomancer,Minion,Rare,Ancients,yes,5,5,4,,Opening Gambit,Opening Gambit: Your Bloodbound Spell is Phoenix Fire.
-119,Hamon Bladeseeker,Minion,Epic,Core,yes,5,8,8,,,"At the start of your turn, deal 2 damage to your General."
-20155,Heaven's Eclipse,Spell,Legendary,Core,yes,5,,,,,Draw 3 spell cards from your deck.
-127,Onyx Jaguar,Minion,Epic,ShimZar,yes,5,3,3,,,"Whenever a friendly unit is moved for any reason, it gains +1/+1."
+After this minion attacks and backstabs, all attacks are backstabs this turn.",backstab
+20193,Pandamonium,Spell,Epic,ShimZar,yes,4,,,,Token,Transform ALL minions into 0/2 Panddo that cannot be attacked until end of turn.,
+124,Storm Sister Alkyone,Minion,Legendary,Core,yes,4,3,5,,,Spells you cast that deal damage deal +1 damage.,arcanyst
+150,Wildfire Tenketsu,Minion,Epic,Immortal,yes,4,3,5,,Blood Surge,Blood Surge: Put an Eight Gates into your action bar.,bbs
+20279,Bombard,Spell,Rare,Unearthed,yes,5,,,,Ranged,Reactivate your minions with Ranged.,ranged
+133,Geomancer,Minion,Rare,Ancients,yes,5,5,4,,Opening Gambit,Opening Gambit: Your Bloodbound Spell is Phoenix Fire.,bbs;opening_gambit
+119,Hamon Bladeseeker,Minion,Epic,Core,yes,5,8,8,,,"At the start of your turn, deal 2 damage to your General.",
+20155,Heaven's Eclipse,Spell,Legendary,Core,yes,5,,,,,Draw 3 spell cards from your deck.,
+127,Onyx Jaguar,Minion,Epic,ShimZar,yes,5,3,3,,,"Whenever a friendly unit is moved for any reason, it gains +1/+1.",
 20389,Phoenix Barrage,Spell,Common,Mythron,yes,5,,,,,"Deal 3 damage to anything.
-Put a Phoenix Fire into your action bar."
+Put a Phoenix Fire into your action bar.",dmg_spell
 111,Scarlet Viper,Minion,Common,Core,yes,5,2,5,,"Backstab, Flying","Flying
-Backstab: (4)."
-20326,Seeker Squad,Spell,Legendary,Immortal,yes,5,,,,,Summon a Heartseeker in each nearby space diagonal from your General.
-20267,Twilight Reiki,Spell,Legendary,Unearthed,yes,5,,,,,Put 3 random Songhai minions into your action bar. They cost 1 less.
+Backstab: (4).",backstab
+20326,Seeker Squad,Spell,Legendary,Immortal,yes,5,,,,,Summon a Heartseeker in each nearby space diagonal from your General.,
+20267,Twilight Reiki,Spell,Legendary,Unearthed,yes,5,,,,,Put 3 random Songhai minions into your action bar. They cost 1 less.,ramp
 159,Xenkai Cannoneer,Minion,Legendary,Mythron,yes,5,4,4,,"Rush, Ranged","Ranged
-Whenever you summon a minion with Ranged, that minion gains Rush."
-139,Eternity Painter,Minion,Legendary,Unearthed,yes,6,3,4,,Token,"At the end of your turn, transform all nearby enemy minions into 0/2 Panddos that cannot be attacked."
-20290,Firestorm Mantra,Spell,Epic,Unearthed,yes,6,,,,,Steal Health from the enemy General equal to twice the number of spells cast this turn.
-131,Grandmaster Zendo,Minion,Legendary,Core,yes,6,3,6,,,The enemy General moves and attacks automatically.
-30038,Ornate Hiogi,Artifact,Rare,Immortal,yes,6,,,,Destructible,"Whenever you cast a spell, draw a card."
+Whenever you summon a minion with Ranged, that minion gains Rush.",ranged
+139,Eternity Painter,Minion,Legendary,Unearthed,yes,6,3,4,,Token,"At the end of your turn, transform all nearby enemy minions into 0/2 Panddos that cannot be attacked.",
+20290,Firestorm Mantra,Spell,Epic,Unearthed,yes,6,,,,,Steal Health from the enemy General equal to twice the number of spells cast this turn.,
+131,Grandmaster Zendo,Minion,Legendary,Core,yes,6,3,6,,,The enemy General moves and attacks automatically.,general_atk
+30038,Ornate Hiogi,Artifact,Rare,Immortal,yes,6,,,,Destructible,"Whenever you cast a spell, draw a card.",arcanyst
 137,Calligrapher,Minion,Legendary,Ancients,yes,7,3,7,Arcanyst,Rush,"Rush
-Whenever this minion attacks, put three Songhai spells into your action bar."
-146,Second-sword Sarugi,Minion,Legendary,Immortal,yes,7,4,7,,,Your spells cost 2 less.
-118,Storm Kage,Minion,Legendary,Core,yes,7,5,10,,,"Whenever one of your spells deals damage, put a Kage Lightning in your action bar."
-20217,Koan of Horns,Spell,Legendary,ShimZar,yes,8,,,,,Transform all minions in your action bar and deck into 0-cost Gore Horns. Draw 3 cards.
-20084,Spiral Technique,Spell,Epic,Core,yes,8,,,,,Deal 8 damage to anything.
-20377,Kensho Vortex,Spell,Legendary,Mythron,yes,11,,,,,"Costs 1 less for each spell you cast this game. Whenever you cast a spell this turn, summon a minion that costs up to 2 more nearby your General."
-30043,Blazing Relic,Artifact,Token,Immortal,no,0,,,,Destructible,
-20349,MECHAZ0R Progression,Spell,Token,Immortal,no,0,,,,,Progresses MECHAZ0R build by +20%.
-20308,Kiyomori,Spell,Token,Core,no,1,,,,,Your General may move an additional space this turn.
-20310,Kotetsu,Spell,Token,Core,no,1,,,,Backstab,Give a friendly minion or General Backstab (2) this turn.
-20307,Murasame,Spell,Token,Core,no,1,,,,,Draw a card at end of turn.
-113,Panddo,Minion,Token,Core,no,1,0,2,,Token,Cannot be attacked
-20302,Petal Flurry,Spell,Token,Core,no,1,,,,,Put a Spellsword into your action bar that cannot be replaced.
-20309,Tanahashi,Spell,Token,Core,no,1,,,,,Teleport an enemy minion 1 space.
-153,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",
-141,Watchful Sentinel,Minion,Token,Unearthed,no,3,3,3,,Token,Sentinel: This transforms into a powerful minion if its hidden condition is met.
-147,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",
+Whenever this minion attacks, put three Songhai spells into your action bar.",arcanyst;ramp
+146,Second-sword Sarugi,Minion,Legendary,Immortal,yes,7,4,7,,,Your spells cost 2 less.,ramp;arcanyst
+118,Storm Kage,Minion,Legendary,Core,yes,7,5,10,,,"Whenever one of your spells deals damage, put a Kage Lightning in your action bar.",ramp;arcanyst
+20217,Koan of Horns,Spell,Legendary,ShimZar,yes,8,,,,,Transform all minions in your action bar and deck into 0-cost Gore Horns. Draw 3 cards.,ramp
+20084,Spiral Technique,Spell,Epic,Core,yes,8,,,,,Deal 8 damage to anything.,dmg_spell;ramp
+20377,Kensho Vortex,Spell,Legendary,Mythron,yes,11,,,,,"Costs 1 less for each spell you cast this game. Whenever you cast a spell this turn, summon a minion that costs up to 2 more nearby your General.",ramp;arcanyst
+30043,Blazing Relic,Artifact,Token,Immortal,no,0,,,,Destructible,,
+20349,MECHAZ0R Progression,Spell,Token,Immortal,no,0,,,,,Progresses MECHAZ0R build by +20%.,
+20308,Kiyomori,Spell,Token,Core,no,1,,,,,Your General may move an additional space this turn.,
+20310,Kotetsu,Spell,Token,Core,no,1,,,,Backstab,Give a friendly minion or General Backstab (2) this turn.,
+20307,Murasame,Spell,Token,Core,no,1,,,,,Draw a card at end of turn.,
+113,Panddo,Minion,Token,Core,no,1,0,2,,Token,Cannot be attacked,
+20302,Petal Flurry,Spell,Token,Core,no,1,,,,,Draw 2 spells from your deck. They cost 1 less and are Ethereal.,
+20309,Tanahashi,Spell,Token,Core,no,1,,,,,Teleport an enemy minion 1 space.,
+153,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",,
+141,Watchful Sentinel,Minion,Token,Unearthed,no,3,3,3,,Token,Sentinel: This transforms into a powerful minion if its hidden condition is met.,
+147,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",,

@@ -11,7 +11,6 @@ spell_buff,Buff,Spells that give +Attack/+Health,+1/+1 Buff,+2/+2 Buff,+3/+3 Buf
 spell_cost,Cost,Spells with cost 1+,-1 Cost,-1 Cost,-2 Cost,-3 Cost,Changes base cost (minimum 0; not dispellable)
 echo,Echo,All cards (minions/spells/artifacts),+ Echo,+ Echo,+ Echo,+ Echo,Keyword: the first card with Echo you play each turn returns to your hand (with its mods)
 warp,Warp,Minions with cost 0-2,+ Warp,,,,"Keyword: when you replace this minion, it is summoned in front of your General instead of going back to the deck (nothing happens if that space is taken)"
-blood_link,Blood Link,All cards (minions/spells/artifacts),+ Blood Link,+ Blood Link,+ Blood Link,+ Blood Link,"Keyword: when you cast your Bloodbound Spell, draw one copy of this card from your deck"
 bloodcall,Bloodcall,All cards (minions/spells/artifacts),+ Bloodcall,+ Bloodcall,+ Bloodcall,+ Bloodcall,"Keyword: when played, refresh your Bloodbound Spell"
 patient,Patient,All cards with cost 5+ (minions/spells/artifacts),,+ Patient,+ Patient,+ Patient,"Keyword: at the end of your turn, if this card is in your hand, it costs 1 less (stacks each turn)"
 mirror,Mirror,Spells with cost 0-2,+ Mirror,,,,"Keyword: when cast, add an Ethereal copy of this spell that costs 0 (other mods kept, without Mirror) to your hand. Ethereal: discarded at the end of your turn if still in hand"

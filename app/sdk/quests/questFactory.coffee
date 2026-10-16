@@ -7,6 +7,9 @@ QuestParticipationWithFaction = require './questParticipationWithFaction'
 QuestAlternateDealDamage = require './questAlternateDealDamage'
 QuestAlternateDestroyUnits = require './questAlternateDestroyUnits'
 QuestGameGoal = require './questGameGoal'
+QuestRoguelike = require './questRoguelike'
+RoguelikeProgressionData = require 'app/sdk/roguelike/roguelikeProgressionData'
+RoguelikeGenerals = require 'app/sdk/roguelike/roguelikeGenerals'
 
 # beginner quests
 QuestBeginnerWinPracticeGames = require './questBeginnerWinPracticeGames'
@@ -51,6 +54,15 @@ _ = require 'underscore'
 moment = require 'moment'
 i18next = require 'i18next'
 
+# faction names of roguelike quests (factions names are not translated server side)
+ROGUELIKE_FACTION_NAMES = {}
+ROGUELIKE_FACTION_NAMES[FactionsLookup.Faction1] = "Lyonar"
+ROGUELIKE_FACTION_NAMES[FactionsLookup.Faction2] = "Songhai"
+ROGUELIKE_FACTION_NAMES[FactionsLookup.Faction3] = "Vetruvian"
+ROGUELIKE_FACTION_NAMES[FactionsLookup.Faction4] = "Abyssian"
+ROGUELIKE_FACTION_NAMES[FactionsLookup.Faction5] = "Magmar"
+ROGUELIKE_FACTION_NAMES[FactionsLookup.Faction6] = "Vanar"
+
 class QuestFactory
 
   # global cache for quick access
@@ -79,6 +91,15 @@ class QuestFactory
   @_LONG_GENERAL_DESTROYER_ID: 1600
   @_LONG_MINION_SUMMON_ID: 1700
   @_LONG_MINION_DESTROYER_ID: 1800
+
+  # roguelike quests (the only ones generated, see _generateRoguelikeQuests)
+  @_ROGUELIKE_FACTION_WINS_BASE_ID: 2000
+  @_ROGUELIKE_LONG_WINS_ID: 2100
+  @_ROGUELIKE_LONG_GENERAL_DAMAGE_ID: 2101
+  @_ROGUELIKE_LONG_MINIONS_KILLED_ID: 2102
+  @_ROGUELIKE_LONG_SPELLS_CAST_ID: 2103
+  @_ROGUELIKE_LONG_MINIONS_PLAYED_ID: 2104
+  @_ROGUELIKE_GENERAL_WINS_BASE_ID: 100000 # + general id
 
   # end CONSTS DO NOT CHANGE #
 
@@ -350,6 +371,66 @@ class QuestFactory
     # Promo Quests
     @_questCache.push(new QuestAnniversary2017())
 
+    # only roguelike quests are generated: every other quest is excluded (current ones get replaced)
+    for quest in @_questCache
+      if !_.contains(quest.types, QuestType.ExcludeFromSystem)
+        quest.types = quest.types.concat(QuestType.ExcludeFromSystem)
+    @_generateRoguelikeQuests()
+
+  @_generateRoguelikeQuests: () ->
+    shortXp = RoguelikeProgressionData.xp.quest_short or 0
+    longXp = RoguelikeProgressionData.xp.quest_long or 0
+    @_roguelikeShortQuests = []
+    @_roguelikeLongQuests = []
+
+    winsFightProgress = (playerData) -> if playerData.isWinner then 1 else 0
+
+    # short: win fights with a faction
+    for faction in FactionFactory.getAllPlayableFactions()
+      do (faction) =>
+        shortName = ROGUELIKE_FACTION_NAMES[faction.id] or faction.name?.split(" ")[0]
+        @_roguelikeShortQuests.push new QuestRoguelike(@_ROGUELIKE_FACTION_WINS_BASE_ID + faction.id, "#{shortName} Campaign", [QuestType.ShortQuest], shortXp, 3,
+          ((count) -> "Win #{count} roguelike fights as #{shortName}."),
+          ((playerData, playerSetupData) -> if playerData.isWinner and playerSetupData.factionId == faction.id then 1 else 0))
+
+    # short: win fights with a general (only offered once the general is unlocked)
+    for generalId in _.map(_.keys(RoguelikeGenerals.generals), Number)
+      do (generalId) =>
+        getGeneralName = () ->
+          card = GameSession.getCardCaches().getCardById(generalId)
+          return if card? then card.getName() else "General"
+        @_roguelikeShortQuests.push new QuestRoguelike(@_ROGUELIKE_GENERAL_WINS_BASE_ID + generalId, (() -> "#{getGeneralName()}'s Path"), [QuestType.ShortQuest], shortXp, 2,
+          ((count) -> "Win #{count} roguelike fights with #{getGeneralName()}."),
+          winsFightProgress, generalId)
+
+    # long
+    @_roguelikeLongQuests.push new QuestRoguelike(@_ROGUELIKE_LONG_WINS_ID, "Conqueror", [QuestType.LongQuest], longXp, 8,
+      ((count) -> "Win #{count} roguelike fights."), winsFightProgress)
+    @_roguelikeLongQuests.push new QuestRoguelike(@_ROGUELIKE_LONG_GENERAL_DAMAGE_ID, "General Slayer", [QuestType.LongQuest], longXp, 150,
+      ((count) -> "Deal #{count} damage to enemy Generals."),
+      ((playerData) -> playerData.totalDamageDealtToGeneral or 0))
+    @_roguelikeLongQuests.push new QuestRoguelike(@_ROGUELIKE_LONG_MINIONS_KILLED_ID, "Assassin", [QuestType.LongQuest], longXp, 40,
+      ((count) -> "Destroy #{count} enemy minions."),
+      ((playerData) -> playerData.totalMinionsKilled or 0))
+    @_roguelikeLongQuests.push new QuestRoguelike(@_ROGUELIKE_LONG_SPELLS_CAST_ID, "Spellweaver", [QuestType.LongQuest], longXp, 30,
+      ((count) -> "Cast #{count} spells from your hand."),
+      ((playerData) -> playerData.totalSpellsPlayedFromHand or 0))
+    @_roguelikeLongQuests.push new QuestRoguelike(@_ROGUELIKE_LONG_MINIONS_PLAYED_ID, "Warlord", [QuestType.LongQuest], longXp, 40,
+      ((count) -> "Summon #{count} minions from your hand."),
+      ((playerData) -> playerData.totalMinionsPlayedFromHand or 0))
+
+    @_questCache = @_questCache.concat(@_roguelikeShortQuests, @_roguelikeLongQuests)
+
+  ###*
+  # Returns the ids of the general quests that can't be offered to a player: quests of generals not unlocked yet.
+  # @param  {Function}  isGeneralUnlocked  (generalId) -> Boolean
+  # @return  {Array}
+  ###
+  @getLockedRoguelikeQuestIds: (isGeneralUnlocked) ->
+    if !@_questCache
+      @_generateQuestCache()
+    return _.map(_.filter(@_roguelikeShortQuests, (quest) -> quest.getGeneralId()? and !isGeneralUnlocked(quest.getGeneralId())), (quest) -> quest.getId())
+
   @questForIdentifier:(identifier)->
     if !@_questCache
       @_generateQuestCache()
@@ -412,6 +493,15 @@ class QuestFactory
   # Given a slot index, returns an array of tuples
   # Each tuple contains [Quest,percentage chance for Quest]
   @_questChancesForSlot: (slotIndex) ->
+    if !@_questCache
+      @_generateQuestCache()
+    # roguelike: slot 0 is a short quest (faction or general fights), slot 1 a long one
+    # general quests share the weight of their faction quest so factions are equally likely
+    if slotIndex == 0
+      return _.map(@_roguelikeShortQuests, (quest) -> [quest, if quest.getGeneralId()? then 1.0 / 3.0 else 1.0])
+    else if slotIndex == 1
+      return _.map(@_roguelikeLongQuests, (quest) -> [quest, 1.0])
+
     if slotIndex == 0
       return   [
         [@questForIdentifier(@_FACTION_CHALLENGER_BASE_ID + FactionsLookup.Faction1),0.13],

@@ -1,8 +1,9 @@
-﻿role,id,name,copies,type,mana_cost,attack,health,description
-general,1,Argeon Highmayne,1,General,,2,25,Bloodbound Spell: Give a friendly minion nearby your General +2 Attack.
-bloodbound_spell,20174,Roar,,Spell,1,,,Give a friendly minion nearby your General +2 Attack.
-card,9,Windblade Adept,3,Minion,2,2,3,Zeal: Gains +1 Attack
-card,8,Lysian Brawler,3,Minion,4,4,4,Celerity
-card,20066,True Strike,3,Spell,1,,,Deal 2 damage to a minion.
-card,20047,War Surge,3,Spell,2,,,Give all friendly minions +1/+1.
-card,19027,Primus Shieldmaster,3,Minion,4,3,6,Provoke
+﻿role,id,name,copies,type,mana_cost,attack,health,description,mods
+general,1,Argeon Highmayne,1,General,,2,25,Bloodbound Spell: Give a friendly minion Zeal: +2 Attack.,
+bloodbound_spell,20174,Roar,,Spell,1,,,Give a friendly minion Zeal: +2 Attack.,
+card,9,Windblade Adept,3,Minion,2,2,3,Zeal: Gains +1 Attack,
+card,20332,Dauntless Advance,3,Spell,2,,,"Your General and nearby friendly minions gain, ""Takes no damage this turn.""",
+card,20188,Afterblaze,3,Spell,3,,,"Give a friendly minion +2/+4. If that minion has Zeal, draw a card.",
+card,11,Silverguard Knight,3,Minion,3,1,5,"Provoke
+Zeal: Gains +2 Attack",
+card,16,Suntide Maiden,3,Minion,4,3,6,"Zeal: At the end of your turn, fully heal this minion.",

@@ -22,6 +22,7 @@ var GamesManager = require('app/ui/managers/games_manager');
 var ZodiacSymbolModel = require('app/ui/models/zodiac_symbol');
 var audio_engine = require('app/audio/audio_engine');
 var CrateManager = require('app/ui/managers/crate_manager');
+var RoguelikeProgressionItemView = require('app/ui/views/item/roguelike_progression');
 var StreamManager = require('app/ui/managers/stream_manager');
 var ServerStatusManager = require('app/ui/managers/server_status_manager');
 var i18next = require('i18next');
@@ -70,6 +71,7 @@ var MainMenuItemView = Backbone.Marionette.ItemView.extend({
     'click .watch': 'onClickWatch',
     'click .collection': 'onClickCollection',
     'click .codex': 'onClickCodex',
+    'click .roguelike-progression': 'onClickRoguelikeProgression',
     'click .crate-inventory': 'onClickCrateInventory',
     'click .next-scene': 'onClickNextScene',
     'click .previous-scene': 'onClickPreviousScene',
@@ -271,6 +273,10 @@ var MainMenuItemView = Backbone.Marionette.ItemView.extend({
 
   onClickCodex: function () {
     EventBus.getInstance().trigger(EVENTS.show_codex);
+  },
+
+  onClickRoguelikeProgression: function () {
+    NavigationManager.getInstance().toggleModalViewByClass(RoguelikeProgressionItemView);
   },
 
   onClickCrateInventory: function () {

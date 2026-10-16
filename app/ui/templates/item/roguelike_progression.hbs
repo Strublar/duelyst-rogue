@@ -1,0 +1,77 @@
+<div class="modal-dialog">
+	<button type="button" class="btn btn-clean btn-user-cancel btn-cancel-primary"></button>
+	<div class="modal-content">
+		<div class="modal-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="roguelike-progression-header">
+							<h1>{{localize key='main_menu.roguelike_general_level_label' level=account_level}}</h1>
+							<div class="progress">
+								<div class="progress-bar level-progress-bar" style="width: {{account_progress_percent}}%"></div>
+							</div>
+							<div class="xp-label">{{account_xp_label}}</div>
+						</div>
+						<ul id="roguelike_progression_tabs" class="nav nav-tabs">
+							<li role="select" data-value="account"><a>{{localize 'main_menu.roguelike_progression_account_tab'}}</a></li>
+							<li role="select" data-value="generals"><a>{{localize 'main_menu.roguelike_progression_generals_tab'}}</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-body clearfix">
+			<div class="roguelike-progression-tab" data-tab="account">
+				<table class="roguelike-progression-levels">
+					{{#each account_levels}}
+						<tr class="{{#if reached}}reached{{/if}} {{#if current}}current{{/if}}">
+							<td class="level">{{localize key='main_menu.roguelike_general_level_label' level=level}}</td>
+							<td class="xp">{{xp}} XP</td>
+							<td class="unlocks">{{unlocks}}</td>
+							<td class="status">{{#if reached}}<i class="fa fa-check"></i>{{else}}<i class="fa fa-lock"></i>{{/if}}</td>
+						</tr>
+					{{/each}}
+				</table>
+			</div>
+			<div class="roguelike-progression-tab profile-faction-levels hide" data-tab="generals">
+				{{#each factions}}
+					<h3 class="faction-name">{{faction_name}}</h3>
+					<div id="faction_levels">
+						{{#each generals}}
+							<div class="faction-level {{#unless unlocked}}locked{{/unless}}">
+								<div class="faction-image">
+									<img class="faction-crest f{{faction_id}}" src="{{imageForResourceScale (concat 'resources/crests/crest_f' faction_id '.png')}}" />
+									<div class="general-portrait">
+										<div class="general-portrait-image" style="background-image:url({{imageForResourceScale portrait_img}})"></div>
+									</div>
+								</div>
+								<div class="progress">
+									<div class="progress-bar level-progress-bar" style="width: {{progress_percent}}%"></div>
+								</div>
+								<h2 class="label">
+									<span class="level">{{localize 'common.abbreviated_level_label'}} {{level}}</span>
+									<span class="faction-name">{{name}}</span>
+								</h2>
+								<p class="next-reward">{{xp_label}}</p>
+								{{#if lock_label}}
+									<p class="next-reward lock-label"><i class="fa fa-lock"></i> {{lock_label}}</p>
+								{{else}}
+									{{#if next_unlocks}}
+										<p class="next-reward"><strong>{{localize 'common.abbreviated_level_label'}} {{next_level}}:</strong> {{next_unlocks}}</p>
+									{{/if}}
+								{{/if}}
+								{{#if starting_mods.length}}
+									<ul class="starting-mods">
+										{{#each starting_mods}}
+											<li class="{{#if reached}}reached{{/if}}">{{localize 'common.abbreviated_level_label'}} {{level}} - {{label}}</li>
+										{{/each}}
+									</ul>
+								{{/if}}
+							</div>
+						{{/each}}
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>

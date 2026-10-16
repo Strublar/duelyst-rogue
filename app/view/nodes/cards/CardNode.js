@@ -28,8 +28,12 @@ const FXRarityFlareSprite = require('app/view/nodes/fx/FXRarityFlareSprite');
 // var VoronoiPrismaticSprite = require("app/view/nodes/fx/VoronoiPrismaticSprite");
 const FXFbmPolarFlareSprite = require('app/view/nodes/fx/FXFbmPolarFlareSprite');
 const i18next = require('i18next');
+const RoguelikeCardTags = require('app/sdk/roguelike/roguelikeCardTags');
 const EntityNode = require('./EntityNode');
 const SdkNode = require('./SdkNode');
+
+// debug: show roguelike card tags in the keywords panel
+const SHOW_ROGUELIKE_CARD_TAGS = true;
 
 /** **************************************************************************
  CardNode
@@ -78,6 +82,7 @@ var CardNode = SdkNode.extend({
   _modifiersContainerNode: null,
   _modifiersDirty: false,
   _outlineGlow: null, // selectReveal glow outline sprite
+  revealScale: 1.0, // scale the card ends at after selectReveal (ex: smaller reward choices)
   _outlineGlowAlt: null,
   _outlineGlowBlurred: null,
   _prismaticGlow: null,
@@ -1342,7 +1347,21 @@ var CardNode = SdkNode.extend({
     } else {
       keywordClasses = this.sdkCard.getKeywordClasses(true);
     }
-    if (keywordClasses != null && keywordClasses.length > 0) {
+    // keywords as {name, definition}, different modifiers can share a keyword (ex: two opening gambits), explain it once
+    const keywordEntries = [];
+    (keywordClasses || []).forEach((keyword) => {
+      const keywordName = keyword.isHiddenToUI ? null : keyword.getName();
+      if (keywordName != null && !keywordEntries.some((entry) => entry.name === keywordName)) {
+        keywordEntries.push({ name: keywordName, definition: keyword.getKeywordDefinition() });
+      }
+    });
+    if (SHOW_ROGUELIKE_CARD_TAGS) {
+      const tags = RoguelikeCardTags.getTags(this.sdkCard.getBaseCardId());
+      if (tags.length > 0) {
+        keywordEntries.push({ name: 'Tags', definition: tags.join(', ') });
+      }
+    }
+    if (keywordEntries.length > 0) {
       this._hasKeywords = true;
 
       // keywords and descriptions
@@ -1350,33 +1369,25 @@ var CardNode = SdkNode.extend({
       const paddingRight = CONFIG.CARD_KEYWORD_PADDING_HORIZONTAL;
       let keywordsHeight = CONFIG.CARD_KEYWORD_PADDING_VERTICAL;
       let maxWidth = 0;
-      const keywordNamesShown = [];
-      for (let i = 0; i < keywordClasses.length; i++) {
-        const keyword = keywordClasses[i];
-        if (!keyword.isHiddenToUI) {
-          const keywordName = keyword.getName();
-          // different modifiers can share a keyword (ex: two opening gambits), explain it once
-          if (keywordName != null && keywordNamesShown.indexOf(keywordName) === -1) {
-            keywordNamesShown.push(keywordName);
-            const keywordNameLabel = new cc.LabelTTF(keywordName, RSX.font_bold.name, 14, cc.size(CONFIG.CARD_KEYWORDS_WIDTH, 0), cc.TEXT_ALIGNMENT_LEFT);
-            keywordNameLabel.setFontFillColor(cc.color.WHITE);
-            keywordNameLabel.setAnchorPoint(0, 1);
-            keywordNameLabel.setPosition(paddingLeft, -keywordsHeight);
-            this._keywordsContainerNode.addChild(keywordNameLabel);
-            const keywordLabelContentSize = keywordNameLabel.getContentSize();
-            keywordsHeight += keywordLabelContentSize.height + CONFIG.CARD_KEYWORD_PADDING_VERTICAL;
+      for (let i = 0; i < keywordEntries.length; i++) {
+        const keywordEntry = keywordEntries[i];
+        const keywordNameLabel = new cc.LabelTTF(keywordEntry.name, RSX.font_bold.name, 14, cc.size(CONFIG.CARD_KEYWORDS_WIDTH, 0), cc.TEXT_ALIGNMENT_LEFT);
+        keywordNameLabel.setFontFillColor(cc.color.WHITE);
+        keywordNameLabel.setAnchorPoint(0, 1);
+        keywordNameLabel.setPosition(paddingLeft, -keywordsHeight);
+        this._keywordsContainerNode.addChild(keywordNameLabel);
+        const keywordLabelContentSize = keywordNameLabel.getContentSize();
+        keywordsHeight += keywordLabelContentSize.height + CONFIG.CARD_KEYWORD_PADDING_VERTICAL;
 
-            const keywordDescriptionLabel = new cc.LabelTTF(keyword.getKeywordDefinition(), RSX.font_light.name, 12, cc.size(CONFIG.CARD_KEYWORDS_WIDTH, 0), cc.TEXT_ALIGNMENT_LEFT);
-            keywordDescriptionLabel.setFontFillColor(cc.color.WHITE);
-            keywordDescriptionLabel.setAnchorPoint(0, 1);
-            keywordDescriptionLabel.setLineHeight(14);
-            keywordDescriptionLabel.setPosition(paddingLeft, -keywordsHeight);
-            this._keywordsContainerNode.addChild(keywordDescriptionLabel);
-            const keywordDescriptionLabelContentSize = keywordDescriptionLabel.getContentSize();
-            keywordsHeight += keywordDescriptionLabelContentSize.height + CONFIG.CARD_KEYWORD_PADDING_VERTICAL * 2.0;
-            maxWidth = Math.max(maxWidth, keywordLabelContentSize.width, keywordDescriptionLabelContentSize.width);
-          }
-        }
+        const keywordDescriptionLabel = new cc.LabelTTF(keywordEntry.definition, RSX.font_light.name, 12, cc.size(CONFIG.CARD_KEYWORDS_WIDTH, 0), cc.TEXT_ALIGNMENT_LEFT);
+        keywordDescriptionLabel.setFontFillColor(cc.color.WHITE);
+        keywordDescriptionLabel.setAnchorPoint(0, 1);
+        keywordDescriptionLabel.setLineHeight(14);
+        keywordDescriptionLabel.setPosition(paddingLeft, -keywordsHeight);
+        this._keywordsContainerNode.addChild(keywordDescriptionLabel);
+        const keywordDescriptionLabelContentSize = keywordDescriptionLabel.getContentSize();
+        keywordsHeight += keywordDescriptionLabelContentSize.height + CONFIG.CARD_KEYWORD_PADDING_VERTICAL * 2.0;
+        maxWidth = Math.max(maxWidth, keywordLabelContentSize.width, keywordDescriptionLabelContentSize.width);
       }
 
       // draw background rectangle for bar
@@ -3045,10 +3056,10 @@ var CardNode = SdkNode.extend({
             }
 
             this.setSecondaryXYZRotation(new cc.kmVec3(-45, 35, 0));
-            this.setScale(0.8);
+            this.setScale(0.8 * this.revealScale);
             const revealAction = cc.spawn(
               SecondaryXYZRotateBy.create(rotateTime * rotationSpeed, 45, -35, 0).easing(customEaseBackOut),
-              cc.scaleTo(rotateTime * rotationSpeed, 1, 1).easing(customEaseBackOut),
+              cc.scaleTo(rotateTime * rotationSpeed, this.revealScale, this.revealScale).easing(customEaseBackOut),
               cc.sequence(
                 cc.delayTime(rotateTime * rotationSpeed),
                 cc.callFunc(() => {

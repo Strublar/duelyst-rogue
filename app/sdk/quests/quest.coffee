@@ -8,6 +8,7 @@ class Quest
   name: null # player visible name of quest
   goldReward: undefined # gold reward for completion of quest
   spiritOrbsReward: undefined # spirit orb count reward for completion of quest
+  roguelikeXpReward: undefined # roguelike account xp reward for completion of quest
   params: null # object of properties that get saved to firebase e.g. completion progress
   requiresStreak: undefined # if a quest requires a streak, all progress will reset if a game completes without making progress
   friendlyMatchesCount: undefined
@@ -72,6 +73,9 @@ class Quest
 
   getSpiritOrbsReward:()->
     return @spiritOrbsReward
+
+  getRoguelikeXpReward:()->
+    return @roguelikeXpReward
 
   getIsReplaceable:()->
     return @isReplaceable

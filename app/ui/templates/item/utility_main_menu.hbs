@@ -5,10 +5,10 @@
 <div class="utility-bottom">
 
 	<div class="btn-group">
-		<button type="button" class="animate-reveal gold" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.gold_currency_indicator_tooptip'}}">
+		<button type="button" class="animate-reveal gold hidden" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.gold_currency_indicator_tooptip'}}">
 			<span class="icon-gold"></span><span class="gold-count">{{gold_amount}}</span>
 		</button>
-		<button type="button" class="animate-reveal diamond" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.premium_currency_indicator_tooltip'}}">
+		<button type="button" class="animate-reveal diamond hidden" data-toggle="tooltip" data-placement="left" title="{{localize 'main_menu.premium_currency_indicator_tooltip'}}">
 				<span class="icon-premium"></span><span class="diamond-count">0</span>
 		</button>
 		<!-- <button type="button" class="btn btn-default shop disabled"><div class="symbol"></div>Store</button> -->
@@ -23,7 +23,7 @@
 		{{/if}}
 		<button type="button" class="btn btn-default animate-reveal settings">
 			<div class="symbol"></div>{{localize 'main_menu.menu_item_settings'}}</button>
-		<button type="button" class="btn btn-default animate-reveal buddy-list">
+		<button type="button" class="btn btn-default animate-reveal buddy-list hidden">
 			<div class="symbol"></div>{{localize 'main_menu.menu_item_buddy_list'}} (<strong class="buddy-count"></strong>)
 			<div class="unread-conversation-block hide"><i class="fa fa-comment"></i>
 				<div class="unread-conversation-count">0</div>
@@ -31,7 +31,7 @@
 		</button>
 	</div>
 
-	<button class="btn animate-reveal booster-pack-collection">
+	<button class="btn animate-reveal booster-pack-collection hidden">
 		<div class="symbol-booster-pack">
 			<div class="symbol-booster-pack-center"></div>
 			<div class="symbol-booster-pack-ring"></div>

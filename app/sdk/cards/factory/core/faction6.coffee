@@ -57,6 +57,7 @@ ModifierInfiltrate = require 'app/sdk/modifiers/modifierInfiltrate'
 ModifierCannotAttackGeneral = require 'app/sdk/modifiers/modifierCannotAttackGeneral'
 ModifierSummonWatchByRaceBuffSelf = require 'app/sdk/modifiers/modifierSummonWatchByRaceBuffSelf'
 ModifierSummonWatchByRaceDamageEnemyMinion = require 'app/sdk/modifiers/modifierSummonWatchByRaceDamageEnemyMinion'
+ModifierEnemyStunWatchDamageStunned = require 'app/sdk/modifiers/modifierEnemyStunWatchDamageStunned'
 ModifierEndTurnWatchDamageNearbyEnemy = require 'app/sdk/modifiers/modifierEndTurnWatchDamageNearbyEnemy'
 ModifierStunWhenAttacked = require 'app/sdk/modifiers/modifierStunWhenAttacked'
 ModifierWall = require 'app/sdk/modifiers/modifierWall'
@@ -802,7 +803,8 @@ class CardFactory_CoreSet_Faction6
       card.maxHP = 3
       card.manaCost = 3
       card.rarityId = Rarity.Rare
-      card.setInherentModifiersContextObjects([ModifierSummonWatchByRaceDamageEnemyMinion.createContextObject(2, Races.Vespyr, "a Vespyr minion")])
+      card.setInherentModifiersContextObjects([ModifierEnemyStunWatchDamageStunned.createContextObject(2)])
+      card.addKeywordClassToInclude(ModifierStunned)
 
     if (identifier == Cards.Faction6.WolfAspect)
       card = new Unit(gameSession)
@@ -1040,11 +1042,6 @@ class CardFactory_CoreSet_Faction6
       card.manaCost = 1
       card.applyToOwnGeneral = true
       card.spellFilterType = SpellFilterType.None
-      attackBuff = Modifier.createContextObjectWithAttributeBuffs(1,1)
-      attackBuff.appliedName = i18next.t("modifiers.faction_6_spell_kinetic_surge_1")
-      customContextObject = PlayerModifierSummonWatchApplyModifiers.createContextObject([attackBuff], i18next.t("modifiers.faction_6_spell_kinetic_surge_2"))
-      customContextObject.durationEndTurn = 1
-      card.setTargetModifiersContextObjects([customContextObject])
       card.setFXResource(["FX.Cards.Spell.KineticSurge"])
       card.setBaseSoundResource(
         apply : RSX.sfx_loot_crate_card_reward_reveal_0.audio

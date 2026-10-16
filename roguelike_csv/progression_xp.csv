@@ -1,0 +1,6 @@
+﻿source,xp,description
+win,5,XP per fight won
+win_per_level,3,"Extra XP per fight already won in the run (fight 1: +0, fight 2: +3, fight 3: +6...)"
+loss,0,XP for the fight that ends the run
+quest_short,25,Roguelike XP for a daily short quest (faction or general fights)
+quest_long,50,Roguelike XP for a daily long quest

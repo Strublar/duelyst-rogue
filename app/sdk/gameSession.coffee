@@ -2531,6 +2531,21 @@ class _GameSession extends SDKObject
    * @param {Action} sourceAction
    * @private
    ###
+  ###*
+   * Roguelike: a newly generated card (ex: put in hand or summoned by an effect) without mods gets the mods
+   * of the same card in its owner's deck, so generated cards benefit from the run's card mods.
+   * @param {Card} card new card with its owner set
+   ###
+  injectRoguelikeCardModsIntoNewCard: (card) ->
+    if card? and !card.getIndex()? and !card.copyCardData?
+      ownerId = card.getOwnerId()
+      baseCardId = card.getBaseCardId()
+      for index, existingCard of @cardsByIndex
+        if existingCard? and existingCard.copyCardData? and existingCard.getOwnerId() == ownerId and existingCard.getBaseCardId() == baseCardId
+          card.applyCardData(JSON.parse(JSON.stringify(existingCard.copyCardData)))
+          card.copyCardData = JSON.parse(JSON.stringify(existingCard.copyCardData))
+          return
+
   _injectSkinAndPrismaticPropertiesIntoCard: (card, sourceAction) ->
     if card? and sourceAction? and !(sourceAction instanceof DrawCardAction)
       # get card current id

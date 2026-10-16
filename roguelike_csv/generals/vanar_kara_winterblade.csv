@@ -1,8 +1,8 @@
-﻿role,id,name,copies,type,mana_cost,attack,health,description
-general,527,Kara Winterblade,1,General,,2,25,Bloodbound Spell: Friendly minions summoned this turn gain +1/+1.
-bloodbound_spell,20185,Kinetic Surge,,Spell,1,,,Friendly minions summoned this turn gain +1/+1.
-card,505,Crystal Cloaker,3,Minion,2,2,3,Infiltrate: Gain +2 Attack.
-card,526,Arctic Displacer,3,Minion,5,10,4,Airdrop
-card,20139,Flash Freeze,3,Spell,0,,,Deal 1 damage to a minion and Stun it.
-card,20135,Frostfire,3,Spell,2,,,"Give a friendly minion +3 Attack. If it is Vespyr, also give it +3 Health."
-card,19034,Young Flamewing,3,Minion,4,5,4,Flying.
+﻿role,id,name,copies,type,mana_cost,attack,health,description,mods
+general,527,Kara Winterblade,1,General,,2,25,"Bloodbound Spell: Permanently gain 1 mana crystal. If you already had 9, deal 3 damage to all nearby enemies.",
+bloodbound_spell,20185,Kinetic Surge,,Spell,1,,,"Permanently gain 1 mana crystal. If you already had 9, deal 3 damage to all nearby enemies.",
+card,506,Crystal Wisp,3,Minion,2,1,1,Dying Wish: Permanently gain 1 mana crystal.,
+card,20160,Hailstone Prison,3,Spell,2,,,Return ANY minion to its action bar.,
+card,20261,Mana Deathgrip,3,Spell,2,,,"Deal 1 damage to an enemy minion. If it dies this turn, permanently gain 1 mana crystal.",
+card,11115,Thunderhorn,3,Minion,4,4,4,"Whenever this minion damages an enemy, it also damages all joined enemies.",
+card,11026,War Talon,3,Minion,7,4,9,"Frenzy, Provoke",

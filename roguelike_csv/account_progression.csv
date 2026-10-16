@@ -1,0 +1,17 @@
+﻿level,xp,unlock,value,description
+1,0,card_choices,3,Card rewards offer 3 cards
+1,0,loot_mods,1,Looted cards carry 1 mod
+1,0,upgrade_choices,3,The upgrade bonus reward offers 3 cards
+1,0,tag_chance,10,Synergy roll chance after the first win (%)
+1,0,tag_chance_per_win,10,Synergy roll chance gained per win (%)
+2,50,upgrade_reward,1,Unlocks the upgrade bonus reward after each card reward
+3,120,card_choices,1,+1 card reward choice
+3,120,rerolls,1,1 reward reroll per run
+4,220,rarity_bonus,1,Better card reward rarity
+5,350,general_hp,2,+2 General Health
+6,500,tag_chance,10,+10% synergy roll chance
+7,700,upgrade_choices,1,+1 upgrade choice
+7,700,rerolls,1,+1 reward reroll per run
+8,950,rarity_bonus,1,Better card reward rarity
+9,1250,general_hp,3,+3 General Health
+10,1600,rarity_bonus,1,Better card reward rarity

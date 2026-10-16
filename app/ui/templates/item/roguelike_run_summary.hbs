@@ -1,0 +1,29 @@
+{{#if general_concept_img}}<div class="run-summary-general" style="background-image:url({{general_concept_img}})"></div>{{/if}}
+<div class="status-content">
+	<div class="status-header">
+		<div class="bracketed-text result">
+			<h1 class="bracketed-text-content result-content uppercase">{{localize 'main_menu.roguelike_run_summary_title'}}</h1>
+		</div>
+	</div>
+	<div class="status-body">
+		<div class="run-wins">{{wins_label}}</div>
+		<div class="xp-earned">
+			{{localize key='main_menu.roguelike_xp_earned_label' xp=xp_earned}}{{#if quest_xp_earned}} &nbsp;·&nbsp; {{localize key='main_menu.roguelike_quest_xp_earned_label' xp=quest_xp_earned}}{{/if}}
+		</div>
+		{{#each sections}}
+			<div class="progression-section" data-section="{{key}}">
+				<h6 class="faction-level"><span class="section-name">{{name}}</span> - <span class="uppercase">{{localize 'common.xp_level'}}</span> <span class="section-level">{{start_level}}</span></h6>
+				<div class="progress level-progress">
+					<div class="progress-bar level-progress-bar complete" style="width: {{start_percent}}%"></div>
+					<div class="progress-bar level-progress-bar earned" style="width: 0%"></div>
+				</div>
+				<div class="section-xp-label"></div>
+				<ul class="section-unlocks"></ul>
+			</div>
+		{{/each}}
+	</div>
+	<div class="status-footer">
+		<button type="button" class="btn btn-clean btn-clean-primary continue-button uppercase">{{localize 'main_menu.roguelike_continue_label'}}</button>
+	</div>
+</div>
+<div class="level-up-notice">{{localize 'battle.level_up_notice'}}</div>

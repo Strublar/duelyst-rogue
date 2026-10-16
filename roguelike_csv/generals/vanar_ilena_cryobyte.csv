@@ -1,8 +1,8 @@
-﻿role,id,name,copies,type,mana_cost,attack,health,description
-general,558,Ilena Cryobyte,1,General,,2,25,Bloodbound Spell: Stun a nearby enemy minion.
-bloodbound_spell,20306,Crystallize,,Spell,1,,,Stun a nearby enemy minion.
-card,505,Crystal Cloaker,3,Minion,2,2,3,Infiltrate: Gain +2 Attack.
-card,526,Arctic Displacer,3,Minion,5,10,4,Airdrop
-card,20139,Flash Freeze,3,Spell,0,,,Deal 1 damage to a minion and Stun it.
-card,20135,Frostfire,3,Spell,2,,,"Give a friendly minion +3 Attack. If it is Vespyr, also give it +3 Health."
-card,19034,Young Flamewing,3,Minion,4,5,4,Flying.
+﻿role,id,name,copies,type,mana_cost,attack,health,description,mods
+general,558,Ilena Cryobyte,1,General,,2,25,Bloodbound Spell: Stun a nearby enemy minion.,
+bloodbound_spell,20306,Crystallize,,Spell,1,,,Stun a nearby enemy minion.,
+card,20139,Flash Freeze,3,Spell,0,,,Deal 1 damage to a minion and Stun it.,
+card,555,Cryoblade,3,Minion,2,2,3,Deals double damage to Stunned enemies.,
+card,20237,Frigid Corona,3,Spell,2,,,"Stun an enemy. If it was already Stunned, Insight 2 and Bloodcall.",
+card,519,Glacial Elemental,3,Minion,3,2,3,"Whenever an enemy is Stunned, deal 2 damage to it.",
+card,537,Sleet Dasher,3,Minion,4,3,6,"Whenever this minion attacks a Stunned enemy, reactivate it and remove the Stun.",

@@ -48,6 +48,15 @@ const ChooseFactionLayer = BaseLayer.extend({
     this.titleLabel.setPosition(0, 200);
     this.titleLabel.setVisible(false);
     this.addChild(this.titleLabel);
+
+    // optional secondary line below the title (ex: roguelike progression)
+    if (arenaRunData && arenaRunData.sub_title_label) {
+      this.subTitleLabel = new cc.LabelTTF(arenaRunData.sub_title_label.toUpperCase(), RSX.font_light.name, 18, cc.size(900, 24), cc.TEXT_ALIGNMENT_CENTER);
+      this.subTitleLabel.setFontFillColor(cc.color(255, 222, 90));
+      this.subTitleLabel.setPosition(0, 170);
+      this.subTitleLabel.setVisible(false);
+      this.addChild(this.subTitleLabel);
+    }
   },
 
   /* endregion INITIALIZE */
@@ -138,33 +147,36 @@ const ChooseFactionLayer = BaseLayer.extend({
       // play show audio
       audio_engine.current().play_effect(RSX.sfx_ui_explosion.audio, false);
 
-      // show all faction choices, in rows of up to 3 (more than 3 choices are shown smaller in a grid)
+      // show all faction choices, in rows of up to 3 (more than 3 choices are shown in a grid with smaller crests, text keeps its size)
       const numColumns = Math.min(3, factionChoices.length);
       const numRows = Math.ceil(factionChoices.length / numColumns);
+      const crestScale = numRows > 1 ? 0.6 : 1.0;
       if (numRows > 1) {
-        // layers scale around their anchor (the window center for a full window layer), so anchor at the origin
-        // where choices are centered, otherwise scaling shifts the choices off center
-        this.setAnchorPoint(0, 0);
-        this.setScale(0.6);
-        this.titleLabel.setFontSize(40);
-        this.titleLabel.setDimensions(cc.size(1500, 50));
-        this.titleLabel.setPosition(0, numRows * 200 + 60);
+        const topRowY = ((numRows - 1) / 2) * 290;
+        this.titleLabel.setPosition(0, topRowY + (this.subTitleLabel != null ? 165 : 140));
+        if (this.subTitleLabel != null) {
+          this.subTitleLabel.setPosition(0, topRowY + 135);
+        }
       }
       const showFactionPromises = [];
       for (var i = 0; i < factionChoices.length; i++) {
         const column = i % numColumns;
         const row = Math.floor(i / numColumns);
-        const position = cc.p((column - (numColumns - 1) / 2) * 300, ((numRows - 1) / 2 - row) * 420);
-        showFactionPromises.push(this.showFactionOption(factionChoices[i], position));
+        const position = numRows > 1
+          ? cc.p((column - (numColumns - 1) / 2) * 260, ((numRows - 1) / 2 - row) * 290)
+          : cc.p((column - (numColumns - 1) / 2) * 300, 0);
+        showFactionPromises.push(this.showFactionOption(factionChoices[i], position, null, crestScale));
       }
 
       // fade in title after short delay
-      this.titleLabel.setOpacity(0.0);
-      this.titleLabel.runAction(cc.sequence(
-        cc.delayTime(CONFIG.ANIMATE_FAST_DURATION),
-        cc.show(),
-        cc.fadeIn(CONFIG.FADE_FAST_DURATION),
-      ));
+      [this.titleLabel, this.subTitleLabel].filter((label) => label != null).forEach((label) => {
+        label.setOpacity(0.0);
+        label.runAction(cc.sequence(
+          cc.delayTime(CONFIG.ANIMATE_FAST_DURATION),
+          cc.show(),
+          cc.fadeIn(CONFIG.FADE_FAST_DURATION),
+        ));
+      });
 
       // shake delegate after short delay
       showFactionPromises.push(this.delegate.showShake(CONFIG.ANIMATE_FAST_DURATION * 2.0));
@@ -178,9 +190,10 @@ const ChooseFactionLayer = BaseLayer.extend({
     });
   },
 
-  showFactionOption(factionId, position, delay) {
+  showFactionOption(factionId, position, delay, crestScale) {
     return new Promise((resolve, reject) => {
       if (delay == null) { delay = 0.0; }
+      if (crestScale == null) { crestScale = 1.0; }
 
       // add a small random delay
       delay += Math.random() * 0.1;
@@ -189,7 +202,7 @@ const ChooseFactionLayer = BaseLayer.extend({
       const crestGlow = new FXGlowImageMap();
       crestGlow.setRequiredTextureResource(SDK.FactionFactory.getCrestShadowResourceForFactionId(factionId));
       crestGlow.setAnchorPoint(0.5, 0.5);
-      crestGlow.setScale(0.28);
+      crestGlow.setScale(0.28 * crestScale);
       crestGlow.setPosition(position);
       crestGlow.setLevelsInWhite(200);
       crestGlow.setGamma(0.75);
@@ -199,7 +212,7 @@ const ChooseFactionLayer = BaseLayer.extend({
 
       // label
       const factionNameLabel = new cc.LabelTTF(SDK.FactionFactory.factionForIdentifier(factionId).name.toUpperCase(), RSX.font_light.name, 18, cc.size(500, 32), cc.TEXT_ALIGNMENT_CENTER);
-      factionNameLabel.setPosition(cc.p(position.x, position.y - 200.0));
+      factionNameLabel.setPosition(cc.p(position.x, position.y - 200.0 * crestScale - 10.0 * (1.0 - crestScale)));
       this.addChild(factionNameLabel, -2);
 
       // fire ring
@@ -207,7 +220,7 @@ const ChooseFactionLayer = BaseLayer.extend({
       fireRingSprite.setBlendFunc(cc.SRC_ALPHA, cc.ONE);
       fireRingSprite.setAnchorPoint(0.5, 0.5);
       fireRingSprite.setPosition(position);
-      fireRingSprite.setScale(5.0);
+      fireRingSprite.setScale(5.0 * crestScale);
       fireRingSprite.setVisible(false);
       this.addChild(fireRingSprite, -1);
 
@@ -217,6 +230,7 @@ const ChooseFactionLayer = BaseLayer.extend({
       explosionParticles.setPosition(position);
       explosionParticles.setAutoRemoveOnFinish(false);
       explosionParticles.stopSystem();
+      explosionParticles.setScale(crestScale);
       this.addChild(explosionParticles, -1);
 
       // crest
@@ -224,7 +238,7 @@ const ChooseFactionLayer = BaseLayer.extend({
       crest.setRequiredTextureResource(SDK.FactionFactory.getCrestResourceForFactionId(factionId));
       crest.setVisible(false);
       crest.setAnchorPoint(0.5, 0.5);
-      crest._baseScale = 0.3;
+      crest._baseScale = 0.3 * crestScale;
       crest.setPosition(position);
       crest._factionId = factionId;
       crest._glowNode = crestGlow;

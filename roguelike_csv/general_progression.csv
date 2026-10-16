@@ -1,0 +1,6 @@
+﻿level,xp,unlock,value,description
+1,0,,,
+2,40,,,Starting deck mods (mods column of roguelike_csv/generals/*.csv)
+3,100,next_general,1,Unlocks the next general of the faction
+4,180,,,
+5,300,general_hp,2,+2 General Health with this general

@@ -103,6 +103,12 @@ const roguelikeInput = t.struct({
   wins: t.Number,
 });
 
+const roguelikeRunResultInput = t.struct({
+  general_id: t.Number,
+  wins: t.Number,
+  is_loss: t.Bool,
+});
+
 const bossBattleInput = t.struct({
   deck: types.Deck,
   cardBackId: t.maybe(t.Num),
@@ -151,6 +157,7 @@ module.exports = {
   matchmakingInput,
   singlePlayerInput,
   roguelikeInput,
+  roguelikeRunResultInput,
   bossBattleInput,
   reportPlayerInput,
   deckInput,

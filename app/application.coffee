@@ -820,8 +820,8 @@ App.showPlay = (playModeIdentifier, showingDirectlyFromGame) ->
     return Promise.reject()
   else
     return PackageManager.getInstance().loadAndActivateMajorPackage("nongame", null, null, () ->
-      # force play mode to string
-      if !_.isString(playModeIdentifier) then playModeIdentifier = ""
+      # roguelike is the only play mode
+      playModeIdentifier = SDK.PlayModes.Roguelike
 
       # add mode to route
       NavigationManager.getInstance().addMajorRoute("play_" + playModeIdentifier, App.showPlay, App, [playModeIdentifier])
@@ -1737,13 +1737,17 @@ App._startSinglePlayerGame = (myPlayerDeck, myPlayerFactionId, myPlayerGeneralId
       # get found game data from game listing data
       playerDataModel = App._playerDataFromGameListingData(gameListingData)
 
-      # show found game
-      return Promise.all([
-        Scene.getInstance().showVsForGame(playerDataModel.get("myPlayerFactionId"), playerDataModel.get("opponentPlayerFactionId"), playerDataModel.get("myPlayerIsPlayer1"), CONFIG.ANIMATE_MEDIUM_DURATION, playerDataModel.get("myPlayerGeneralId"), playerDataModel.get("opponentPlayerGeneralId")),
-        Scene.getInstance().showNewGame(playerDataModel.get("player1GeneralId"), playerDataModel.get("player2GeneralId")),
-        NavigationManager.getInstance().destroyNonContentViews(),
-        findingGameItemView.showFoundGame(playerDataModel)
-      ]).then(() ->
+      # show found game (roguelike fights skip the versus screen and stay on the finding game screen with the player's general)
+      if roguelikeData?
+        showFoundGamePromise = NavigationManager.getInstance().destroyNonContentViews()
+      else
+        showFoundGamePromise = Promise.all([
+          Scene.getInstance().showVsForGame(playerDataModel.get("myPlayerFactionId"), playerDataModel.get("opponentPlayerFactionId"), playerDataModel.get("myPlayerIsPlayer1"), CONFIG.ANIMATE_MEDIUM_DURATION, playerDataModel.get("myPlayerGeneralId"), playerDataModel.get("opponentPlayerGeneralId")),
+          Scene.getInstance().showNewGame(playerDataModel.get("player1GeneralId"), playerDataModel.get("player2GeneralId")),
+          NavigationManager.getInstance().destroyNonContentViews(),
+          findingGameItemView.showFoundGame(playerDataModel)
+        ])
+      return showFoundGamePromise.then(() ->
         # join found game
         return App._joinGame(gameListingData)
       )

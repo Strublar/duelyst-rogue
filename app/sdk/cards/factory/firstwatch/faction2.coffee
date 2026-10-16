@@ -201,7 +201,7 @@ class CardFactory_FirstWatchSet_Faction2
       card.damageAmount = 1
       card.rarityId = Rarity.Common
       card.spellFilterType = SpellFilterType.NeutralDirect
-      card.canTargetGeneral = false
+      card.canTargetGeneral = true
       card.setFXResource(["FX.Cards.Spell.Gotatsu"])
       card.setBaseSoundResource(
         apply : RSX.sfx_spell_phoenixfire.audio

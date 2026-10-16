@@ -1,33 +1,36 @@
-SpellApplyPlayerModifiers = require './spellApplyPlayerModifiers'
+CONFIG = require 'app/common/config'
+Spell = require './spell'
 CardType = require 'app/sdk/cards/cardType'
-ApplyCardToBoardAction = require 'app/sdk/actions/applyCardToBoardAction'
-PlayCardAsTransformAction = require 'app/sdk/actions/playCardAsTransformAction'
-CloneEntityAsTransformAction = require 'app/sdk/actions/cloneEntityAsTransformAction'
+DamageAction = require 'app/sdk/actions/damageAction'
+BonusManaCoreAction = require 'app/sdk/actions/bonusManaCoreAction'
 
-class SpellKineticSurge extends SpellApplyPlayerModifiers
+###
+  Kara's Bloodbound Spell (roguelike): permanently gain 1 mana crystal.
+  If you already had the maximum, deal 3 damage to all enemies around your General.
+###
+class SpellKineticSurge extends Spell
+
+  damageAmount: 3
 
   onApplyEffectToBoardTile: (board,x,y,sourceAction) ->
+    super(board,x,y,sourceAction)
+
     if @getGameSession().getIsRunningAsAuthoritative()
-      super(board,x,y,sourceAction) # apply player modifier to General
+      hadMaxMana = @getOwner().getMaximumMana() >= CONFIG.MAX_MANA
 
-      # find all summon actions that summoned a friendly unit this turn
-      summonActions = []
-      actions = []
-      for step in @getGameSession().getCurrentTurn().getSteps()
-        if step isnt @getGameSession().getExecutingStep() # don't need to check current step since player modifier will catch summons on this step
-          actions = step.getAction().getFlattenedActionTree()
-          for action in actions
-            if action instanceof ApplyCardToBoardAction and action.getTarget().getType() is CardType.Unit and action.getTarget().getOwnerId() is @getOwnerId()
-              summonActions.push(action)
+      bonusManaCoreAction = new BonusManaCoreAction(@getGameSession())
+      bonusManaCoreAction.setSource(@)
+      bonusManaCoreAction.setOwnerId(@getOwnerId())
+      @getGameSession().executeAction(bonusManaCoreAction)
 
-      # and apply modifiers to all friendly units summoned this turn as well
-      for action in summonActions
-        # but ignore transforms
-        if !(action instanceof PlayCardAsTransformAction or action instanceof CloneEntityAsTransformAction)
-          targetUnit = action.getTarget()
-          if targetUnit?
-            for modifierContextObject in @targetModifiersContextObjects[0].modifiersContextObjects
-              @getGameSession().applyModifierContextObject(modifierContextObject, targetUnit)
-
+      if hadMaxMana
+        general = @getGameSession().getGeneralForPlayerId(@getOwnerId())
+        for enemy in board.getEnemyEntitiesAroundEntity(general, CardType.Unit, 1)
+          damageAction = new DamageAction(@getGameSession())
+          damageAction.setOwnerId(@getOwnerId())
+          damageAction.setSource(@)
+          damageAction.setTarget(enemy)
+          damageAction.setDamageAmount(@damageAmount)
+          @getGameSession().executeAction(damageAction)
 
 module.exports = SpellKineticSurge

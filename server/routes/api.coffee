@@ -54,6 +54,7 @@ router.use '/api/me/ribbons', meRoutes.ribbons
 router.use '/api/me/gift_codes', meRoutes.gift_codes
 router.use '/api/me/referrals', meRoutes.referrals
 router.use '/api/me/rift', meRoutes.rift
+router.use '/api/me/roguelike', meRoutes.roguelike
 
 # replays API (anyone can call it)
 router.use '/replays', replaysRoutes

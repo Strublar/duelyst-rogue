@@ -1,0 +1,160 @@
+// roguelike progression screen, reusing the profile modal styles (#app-profile)
+#app-profile.roguelike-progression {
+
+	.modal-body {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	.roguelike-progression-header {
+		color: $off-white;
+		text-align: center;
+		h1 {
+			font-size: 2.0rem;
+			text-transform: uppercase;
+			color: #fff;
+			text-shadow: 0 0 1.5rem $light-yellow;
+			margin: 0 0 1.0rem 0;
+		}
+		div.progress {
+			width: 30.0rem;
+			height: 1.0rem;
+			margin: 0 auto 0.5rem auto;
+			border: solid #fff 0.1rem;
+			border-radius: 0.5rem;
+			background: #000;
+			box-shadow: 0 0 1.0rem $blue;
+			overflow: visible;
+			.progress-bar {
+				border-radius: 0.5rem 0 0 0.5rem;
+				background: #fff;
+				box-shadow: none;
+			}
+		}
+		.xp-label {
+			font-size: 1.3rem;
+			text-transform: uppercase;
+		}
+	}
+
+	table.roguelike-progression-levels {
+		width: 100%;
+		color: $off-white;
+		font-size: 1.4rem;
+		tr {
+			border-bottom: solid 0.1rem rgba(255, 255, 255, 0.1);
+			opacity: 0.5;
+			&.reached {
+				opacity: 1.0;
+			}
+			&.current td.level {
+				color: #fff;
+				text-shadow: 0 0 1.5rem $light-yellow;
+			}
+		}
+		td {
+			padding: 0.8rem 1.0rem;
+			vertical-align: top;
+			&.level {
+				font-weight: bold;
+				text-transform: uppercase;
+				white-space: nowrap;
+			}
+			&.xp {
+				white-space: nowrap;
+			}
+			&.unlocks {
+				width: 100%;
+			}
+		}
+	}
+
+	div.profile-faction-levels {
+		h3.faction-name {
+			color: #fff;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			text-align: center;
+			margin: 1.0rem 0 2.0rem 0;
+		}
+		div#faction_levels div.faction-level {
+			margin-bottom: 2.0rem;
+			&.locked {
+				opacity: 0.5;
+			}
+			p.lock-label {
+				color: $light-yellow;
+			}
+			ul.starting-mods {
+				list-style: none;
+				padding: 0;
+				font-size: 1.2rem;
+				opacity: 0.6;
+				li.reached {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+// end of run summary, reusing the end of game screen styles (#app-victory)
+#app-victory.roguelike-run-summary {
+	pointer-events: auto;
+	background: rgba(0, 0, 0, 0.75);
+
+	.run-summary-general {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: 50% 100%;
+		background-size: contain;
+		opacity: 0.6;
+		pointer-events: none;
+	}
+	.status-content {
+		justify-content: center;
+	}
+	.run-wins {
+		color: #fff;
+		font-size: 2.0rem;
+	}
+	.xp-earned {
+		color: #fff;
+		font-size: 2.2rem;
+		font-weight: bold;
+		text-shadow: 0 0 1.5rem $key-color;
+		margin-bottom: 1.0rem;
+	}
+	.progression-section {
+		margin-top: 2.0rem;
+		h6.faction-level {
+			color: #fff;
+			font-size: 1.8rem;
+			margin: 0;
+		}
+		.level-progress {
+			margin: 1.0rem auto 0.5rem auto;
+		}
+		.section-xp-label {
+			font-size: 1.4rem;
+			line-height: 2.0rem;
+		}
+		ul.section-unlocks {
+			list-style: none;
+			padding: 0;
+			margin: 0.5rem 0 0 0;
+			font-size: 1.5rem;
+			line-height: 2.2rem;
+			color: $light-yellow;
+		}
+	}
+	.status-footer .continue-button {
+		pointer-events: auto;
+		font-size: 1.8rem;
+		padding: 1.0rem 3.0rem;
+	}
+}

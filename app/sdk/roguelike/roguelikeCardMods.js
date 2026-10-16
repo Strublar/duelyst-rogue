@@ -6,7 +6,6 @@ const ModifierFirstBlood = require('app/sdk/modifiers/modifierFirstBlood');
 const ModifierInsight = require('app/sdk/modifiers/modifierInsight');
 const ModifierEcho = require('app/sdk/modifiers/modifierEcho');
 const ModifierWarp = require('app/sdk/modifiers/modifierWarp');
-const ModifierBloodLink = require('app/sdk/modifiers/modifierBloodLink');
 const ModifierBloodcall = require('app/sdk/modifiers/modifierBloodcall');
 const ModifierPatient = require('app/sdk/modifiers/modifierPatient');
 const ModifierEthereal = require('app/sdk/modifiers/modifierEthereal');
@@ -257,17 +256,6 @@ RoguelikeCardMods.mods = {
     },
   },
 
-  blood_link: {
-    getLabel: () => '+ Blood Link',
-    canApply: (card) => (isMinion(card) || isSpell(card) || card.getType() === CardType.Artifact) && !hasKeyword(card, ModifierBloodLink),
-    apply: (cardData, card) => {
-      addModifier(cardData, ModifierBloodLink.createContextObject({ isAddedKeyword: true }));
-      // cards without a written description already list their keywords
-      if (card.getDescription()) {
-        addDescriptionPrefix(cardData, 'Blood Link');
-      }
-    },
-  },
   bloodcall: {
     getLabel: () => '+ Bloodcall',
     canApply: (card) => (isMinion(card) || isSpell(card) || card.getType() === CardType.Artifact) && !card.refreshSignatureCardOnPlay,

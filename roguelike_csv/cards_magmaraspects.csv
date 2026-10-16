@@ -1,131 +1,131 @@
-﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description
-449,Ragnora the Relentless,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Summon a Ripper Egg nearby your General, or hatch a friendly Egg.
-418,Starhorn the Seeker,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Insight 3
-401,Vaath the Immortal,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Give your General +1 Attack.
-20111,Dampening Wave,Spell,Basic,Core,yes,0,,,,,Choose a unit. It cannot counterattack this turn.
-20112,Flash Reincarnation,Spell,Rare,Core,yes,0,,,,,"If the next card you play this turn is a minion, it costs 2 less and takes 2 damage."
-20119,Amplification,Spell,Common,Core,yes,1,,,,,Give a friendly damaged minion +2 Attack and +4 Health.
-20115,Dance of Dreams,Spell,Basic,Core,yes,1,,,,,"Whenever a friendly minion dies this turn, draw a card."
-30037,Eternal Heart,Artifact,Legendary,Unearthed,yes,1,,,,Destructible,Your General cannot die.
-30028,Godhammer,Artifact,Rare,Ancients,yes,1,,,,Destructible,"Your minions have ""Grow: +1/+1."""
-20116,Greater Fortitude,Spell,Basic,Core,yes,1,,,,,Give a friendly minion +2/+2.
-20203,Lava Lance,Spell,Common,ShimZar,yes,1,,,,,"Deal 2 damage to a unit. If you have an Egg, deal 4 damage instead."
+﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description,tags
+449,Ragnora the Relentless,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Summon a Ripper Egg nearby your General,,
+418,Starhorn the Seeker,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Insight 3,
+401,Vaath the Immortal,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Give your General +1 Attack.,
+20111,Dampening Wave,Spell,Basic,Core,yes,0,,,,,Choose a unit. It cannot counterattack this turn.,arcanyst
+20112,Flash Reincarnation,Spell,Rare,Core,yes,0,,,,,"If the next card you play this turn is a minion, it costs 2 less and takes 2 damage.",arcanyst;ramp
+20119,Amplification,Spell,Common,Core,yes,1,,,,,Give a friendly damaged minion +2 Attack and +4 Health.,arcanyst
+20115,Dance of Dreams,Spell,Basic,Core,yes,1,,,,,"Whenever a friendly minion dies this turn, draw a card.",arcanyst
+30037,Eternal Heart,Artifact,Legendary,Unearthed,yes,1,,,,Destructible,Your General cannot die.,
+30028,Godhammer,Artifact,Rare,Ancients,yes,1,,,,Destructible,"Your minions have ""Grow: +1/+1.""",grow
+20116,Greater Fortitude,Spell,Basic,Core,yes,1,,,,,Give a friendly minion +2/+2.,arcanyst
+20203,Lava Lance,Spell,Common,ShimZar,yes,1,,,,,"Deal 2 damage to a unit. If you have an Egg, deal 4 damage instead.",dmg_spell;arcanyst;egg
 30049,Rage Reactor,Artifact,Rare,Immortal,yes,1,,,,"Destructible, Token","Your General gains +1 Attack.
-Whenever your General destroys an enemy, summon a Ripper Egg on that space."
-20202,Razor Skin,Spell,Common,ShimZar,yes,1,,,,Token,Give all friendly minions +1 Attack. Put a random Battle Pet into your action bar.
-421,Rex,Minion,Common,ShimZar,yes,1,3,1,BattlePet,"Battle Pet, Rebirth",Rebirth
-20114,Tremor,Spell,Common,Core,yes,1,,,,Stun,Stun enemy minions in a 2x2 area.
-451,Angered Okkadok,Minion,Common,Mythron,yes,2,1,2,,Intensify,Intensify: This minion gains +1/+1.
-444,Biomimetic Hulk,Minion,Common,Immortal,yes,2,10,10,,"Token, Build",Build: (3).
-20258,Cascading Rebirth,Spell,Common,Ancients,yes,2,,,,,Destroy a friendly minion to summon a random Magmar minion that costs 1 more.
-20369,Deep Impact,Spell,Rare,Mythron,yes,2,,,,,Deal damage to a minion to reduce its Health to 1.
-20113,Diretide Frenzy,Spell,Common,Core,yes,2,,,,Frenzy,Give a friendly minion +1 Attack and Frenzy.
-20312,Embryotic Insight,Spell,Common,Immortal,yes,2,,,,,"If you have an Egg, draw 2 cards."
-20225,Entropic Gaze,Spell,Common,Ancients,yes,2,,,,,Deal 2 damage to the enemy General. Both players draw a card.
-420,Gro,Minion,Rare,ShimZar,yes,2,2,4,BattlePet,"Battle Pet, Grow",Grow: +1/+1
-20358,Invigoration,Spell,Common,Mythron,yes,2,,,,Intensify,Intensify: Restore 3 Health to your General.
-30013,Iridium Scale,Artifact,Epic,Core,yes,2,,,,"Destructible, Frenzy",Your General gains Frenzy.
-409,Kujata,Minion,Epic,Core,yes,2,2,2,,,Your minions cost 1 less to summon and take 1 damage when summoned from your action bar.
-20382,Mitotic Induction,Spell,Epic,Mythron,yes,2,,,,Token,Summon an Egg of the minion most recently summoned from your action bar.
-20125,Natural Selection,Spell,Basic,Core,yes,2,,,,,Destroy ANY minion with the lowest Attack or tied for the lowest Attack.
-406,Phalanxar,Minion,Basic,Core,yes,2,6,1,,,
-20268,Primal Ballast,Spell,Rare,Unearthed,yes,2,,,,,"Dispel a space. If there is a minion on that space, give it +2/+2."
-430,Rancour,Minion,Rare,Ancients,yes,2,1,3,,,"Whenever your General takes damage, this minion gains that much attack. "
-446,Seismoid,Minion,Rare,Immortal,yes,2,3,1,Mech,,"Whenever you summon a Mech minion from your action bar, both players draw a card."
-20288,Vaath's Brutality,Spell,Common,Unearthed,yes,2,,,,Stun,Stun an enemy minion. Give your General +1 Attack.
-438,Warpup,Minion,Rare,Unearthed,yes,2,1,1,,"Forcefield, Frenzy","Forcefield, Frenzy"
-412,Young Silithar,Minion,Common,Core,yes,2,2,3,,Rebirth,Rebirth
+Whenever your General destroys an enemy, summon a Ripper Egg on that space.",egg;general_atk
+20202,Razor Skin,Spell,Common,ShimZar,yes,1,,,,Token,Give all friendly minions +1 Attack. Put a random Battle Pet into your action bar.,arcanyst
+421,Rex,Minion,Common,ShimZar,yes,1,3,1,BattlePet,"Battle Pet, Rebirth",Rebirth,egg
+20114,Tremor,Spell,Common,Core,yes,1,,,,Stun,Stun enemy minions in a 2x2 area.,arcanyst;stun
+451,Angered Okkadok,Minion,Common,Mythron,yes,2,1,2,,Intensify,Intensify: This minion gains +1/+1.,
+444,Biomimetic Hulk,Minion,Common,Immortal,yes,2,10,10,,"Token, Build",Build: (3).,
+20258,Cascading Rebirth,Spell,Common,Ancients,yes,2,,,,,Destroy a friendly minion to summon a random Magmar minion that costs 1 more.,arcanyst
+20369,Deep Impact,Spell,Rare,Mythron,yes,2,,,,,Deal damage to a minion to reduce its Health to 1.,dmg_spell;arcanyst
+20113,Diretide Frenzy,Spell,Common,Core,yes,2,,,,Frenzy,Give a friendly minion +1 Attack and Frenzy.,arcanyst
+20312,Embryotic Insight,Spell,Common,Immortal,yes,2,,,,,"If you have an Egg, draw 2 cards.",arcanyst;egg
+20225,Entropic Gaze,Spell,Common,Ancients,yes,2,,,,,Deal 2 damage to the enemy General. Both players draw a card.,dmg_spell;arcanyst
+420,Gro,Minion,Rare,ShimZar,yes,2,2,4,BattlePet,"Battle Pet, Grow",Grow: +1/+1,grow
+20358,Invigoration,Spell,Common,Mythron,yes,2,,,,Intensify,Intensify: Restore 3 Health to your General.,heal;arcanyst
+30013,Iridium Scale,Artifact,Epic,Core,yes,2,,,,"Destructible, Frenzy",Your General gains Frenzy.,
+409,Kujata,Minion,Epic,Core,yes,2,2,2,,,Your minions cost 1 less to summon and take 1 damage when summoned from your action bar.,ramp
+20382,Mitotic Induction,Spell,Epic,Mythron,yes,2,,,,Token,Summon an Egg of the minion most recently summoned from your action bar.,arcanyst;egg
+20125,Natural Selection,Spell,Basic,Core,yes,2,,,,,Destroy ANY minion with the lowest Attack or tied for the lowest Attack.,arcanyst
+406,Phalanxar,Minion,Basic,Core,yes,2,6,1,,,,
+20268,Primal Ballast,Spell,Rare,Unearthed,yes,2,,,,,"Dispel a space. If there is a minion on that space, give it +2/+2.",arcanyst
+430,Rancour,Minion,Rare,Ancients,yes,2,0,3,,Opening Gambit,Opening Gambit: Gain as much Attack as your General.,general_atk;opening_gambit
+446,Seismoid,Minion,Rare,Immortal,yes,2,3,1,Mech,,"Whenever you summon a Mech minion from your action bar, both players draw a card.",mech
+20288,Vaath's Brutality,Spell,Common,Unearthed,yes,2,,,,Stun,Stun an enemy minion. Give your General +1 Attack.,arcanyst;general_atk;stun
+438,Warpup,Minion,Rare,Unearthed,yes,2,1,1,,"Forcefield, Frenzy","Forcefield, Frenzy",
+412,Young Silithar,Minion,Common,Core,yes,2,2,3,,Rebirth,Rebirth,egg
 30055,Zoetic Charm,Artifact,Epic,Mythron,yes,2,,,,"Destructible, Forcefield","Your General has +1 Attack.
-Your Eggs have Forcefield."
+Your Eggs have Forcefield.",egg;general_atk
 20390,Bellow,Spell,Common,Mythron,yes,3,,,,Stun,"Give a friendly minion +3 Attack.
-Stun enemy minions around it."
-439,Catalyst Quillbeast,Minion,Common,Unearthed,yes,3,3,4,,,"Whenever you cast a spell, deal 1 damage to ALL minions."
-402,Earth Walker,Minion,Basic,Core,yes,3,3,3,,Grow,Grow: +1/+1
-20346,Effulgent Infusion,Spell,Common,Immortal,yes,3,,,,,Give a friendly minion +Attack equal to your General's Attack.
-20291,Endure the Beastlands,Spell,Epic,Unearthed,yes,3,,,,Primal Flourish,Turn a 2x2 area into Primal Flourish.
+Stun enemy minions around it.",stun
+439,Catalyst Quillbeast,Minion,Common,Unearthed,yes,3,3,4,,,"Whenever you cast a spell, deal 1 damage to ALL minions.",arcanyst
+402,Earth Walker,Minion,Basic,Core,yes,3,3,3,,Grow,Grow: +1/+1,grow
+20346,Effulgent Infusion,Spell,Common,Immortal,yes,3,,,,,Give a friendly minion +Attack equal to your General's Attack.,
+20291,Endure the Beastlands,Spell,Epic,Unearthed,yes,3,,,,Primal Flourish,Turn a 2x2 area into Primal Flourish.,
 448,Erratic Raptyr,Minion,Common,Immortal,yes,3,5,5,,Rebirth,"Rebirth
-After this minion attacks or counterattacks, turn it into an Egg."
-20162,Kinetic Equilibrium,Spell,Rare,Core,yes,3,,,,,Deal 2 damage to ALL minions in a 3x3 area. Friendly minions in the area also gain +2 Attack.
-455,Krater,Minion,Common,Mythron,yes,3,2,4,,Opening Gambit,Opening Gambit: Deal 1 damage to everything (including itself).
+After this minion attacks or counterattacks, turn it into an Egg.",egg
+20162,Kinetic Equilibrium,Spell,Rare,Core,yes,3,,,,,Deal 2 damage to ALL minions in a 3x3 area. Friendly minions in the area also gain +2 Attack.,dmg_spell
+455,Krater,Minion,Common,Mythron,yes,3,2,4,,Opening Gambit,Opening Gambit: Deal 1 damage to everything (including itself).,opening_gambit
 423,Moloki Huntress,Minion,Epic,ShimZar,yes,3,1,2,,Grow,"Grow: +1/+1
-Friendly minions grow at the start of BOTH player's turns."
+Friendly minions grow at the start of BOTH player's turns.",grow
 454,Oropsisaur,Minion,Legendary,Mythron,yes,3,2,5,,Grow,"Grow: +1/+1.
-Whenever another friendly minion with Grow survives damage, that minion grows."
-410,Primordial Gazer,Minion,Basic,Core,yes,3,2,2,,Opening Gambit,Opening Gambit: Give a nearby friendly minion +2/+2.
+Whenever another friendly minion with Grow survives damage, that minion grows.",grow
+410,Primordial Gazer,Minion,Basic,Core,yes,3,2,2,,Opening Gambit,Opening Gambit: Give a nearby friendly minion +2/+2.,opening_gambit
 432,Ragebinder,Minion,Common,Ancients,yes,3,3,4,Golem,"Rebirth, Bond","Rebirth
-Bond: Restore 3 Health to your General."
-20234,Tectonic Spikes,Spell,Rare,Ancients,yes,3,,,,,Both players draw 3 cards. Deal 3 damage to both Generals.
-437,Terradon,Minion,Common,Unearthed,yes,3,2,8,,,
-429,Thraex,Minion,Common,Ancients,yes,3,2,4,,Blood Surge,Blood Surge: All friendly minions gain +1 Attack (including itself).
-30017,Twin Fang,Artifact,Legendary,Core,yes,3,,,,Destructible,"Whenever a friendly minion or your General takes damage, your General gains +2 Attack."
-20338,Upper Hand,Spell,Rare,Immortal,yes,3,,,,,Deal 1 damage to an enemy minion for each card in your opponent's action bar.
-20296,Verdant Fulmination,Spell,Epic,Unearthed,yes,3,,,,Primal Flourish,Your minions on friendly Primal Flourish grow. Turn your other minions' spaces into Primal Flourish.
-417,Vindicator,Minion,Legendary,Core,yes,3,1,3,,,"Whenever your opponent draws a card, this minion gains +2/+2."
-30012,Adamantite Claws,Artifact,Basic,Core,yes,4,,,,Destructible,Your General gains +4 Attack.
-453,Beastclad Hunter,Minion,Rare,Mythron,yes,4,3,6,,,Takes no damage from minions with less Attack.
-20297,Blood Rage,Spell,Common,Unearthed,yes,4,,,,,Give a friendly minion +1/+1 for each time damage was dealt this turn.
-428,Drogon,Minion,Legendary,Ancients,yes,4,5,4,,Blood Surge,Blood Surge: Double your General's Attack this turn.
-419,Earth Sister Taygete,Minion,Legendary,Core,yes,4,3,4,,,"Whenever this minion takes damage, deal that much damage to all nearby enemies."
-20117,Earth Sphere,Spell,Common,Core,yes,4,,,,,Restore 8 Health to your General.
-20157,Egg Morph,Spell,Rare,Core,yes,4,,,,Token,"Turn a non-Egg minion into an Egg, or hatch an Egg."
+Bond: Restore 3 Health to your General.",golem;heal;egg
+20234,Tectonic Spikes,Spell,Rare,Ancients,yes,3,,,,,Both players draw 3 cards. Deal 3 damage to both Generals.,dmg_spell
+437,Terradon,Minion,Common,Unearthed,yes,3,2,8,,,,
+429,Thraex,Minion,Common,Ancients,yes,3,2,4,,Blood Surge,"Blood Surge: All allies gain +1 Attack, including your General.",bbs;general_atk
+30017,Twin Fang,Artifact,Legendary,Core,yes,3,,,,Destructible,"Whenever a friendly minion or your General takes damage, your General gains +2 Attack.",general_atk
+20338,Upper Hand,Spell,Rare,Immortal,yes,3,,,,,Deal 1 damage to an enemy minion for each card in your opponent's action bar.,dmg_spell
+20296,Verdant Fulmination,Spell,Epic,Unearthed,yes,3,,,,Primal Flourish,Your minions on friendly Primal Flourish grow. Turn your other minions' spaces into Primal Flourish.,
+417,Vindicator,Minion,Legendary,Core,yes,3,1,3,,,"Whenever your opponent draws a card, this minion gains +2/+2.",
+30012,Adamantite Claws,Artifact,Basic,Core,yes,4,,,,Destructible,Your General gains +4 Attack.,general_atk
+453,Beastclad Hunter,Minion,Rare,Mythron,yes,4,3,6,,,Takes no damage from minions with less Attack.,
+20297,Blood Rage,Spell,Common,Unearthed,yes,4,,,,,Give a friendly minion +1/+1 for each time damage was dealt this turn.,
+428,Drogon,Minion,Legendary,Ancients,yes,4,5,4,,Blood Surge,Blood Surge: Double your General's Attack this turn.,bbs
+419,Earth Sister Taygete,Minion,Legendary,Core,yes,4,3,4,,,"Whenever this minion takes damage, deal that much damage to all nearby enemies.",
+20117,Earth Sphere,Spell,Common,Core,yes,4,,,,,Restore 8 Health to your General.,heal
+20157,Egg Morph,Spell,Rare,Core,yes,4,,,,Token,"Turn a non-Egg minion into an Egg, or hatch an Egg.",egg
 407,Elucidator,Minion,Rare,Core,yes,4,5,4,,"Opening Gambit, Rush","Rush
-Opening Gambit: Deal 4 damage to your General."
-20370,Gargantuan Growth,Spell,Rare,Mythron,yes,4,,,,,"Give a minion, ""Grow: +8/+8."""
+Opening Gambit: Deal 4 damage to your General.",opening_gambit
+20370,Gargantuan Growth,Spell,Rare,Mythron,yes,4,,,,,"Give a minion, ""Grow: +8/+8.""",grow
 445,Gigaloth,Minion,Legendary,Immortal,yes,4,7,7,,"Token, Build","Build: (2).
-Whenever this minion attacks, other friendly minions gain +3/+3."
-403,Grimrock,Minion,Common,Core,yes,4,3,4,,Grow,Grow: +2/+2
-458,Haruspex,Minion,Legendary,Mythron,yes,4,7,6,,,"Whenever this minion takes damage, your opponent draws a card."
+Whenever this minion attacks, other friendly minions gain +3/+3.",
+403,Grimrock,Minion,Common,Core,yes,4,3,4,,Grow,Grow: +2/+2,grow
+458,Haruspex,Minion,Legendary,Mythron,yes,4,7,6,,,"Whenever this minion takes damage, your opponent draws a card.",
 456,Hatefurnace,Minion,Mythron,Mythron,yes,4,5,4,,"Rush, Frenzy, Destiny, Trial","Trial: Cast 7 spells that cause a minion to gain +Attack.
-Destiny: Minions summoned from your action bar gain Rush and Frenzy."
-20344,Homeostatic Rebuke,Spell,Epic,Immortal,yes,4,,,,,ALL minions attack themselves.
-20156,Mind Steal,Spell,Epic,Core,yes,4,,,,,Steal a random minion from your opponent's deck and summon it.
-440,Omniseer,Minion,Rare,Unearthed,yes,4,4,5,,"Opening Gambit, Primal Flourish",Opening Gambit: Turn a nearby space into Primal Flourish.
-441,Progenitor,Minion,Legendary,Immortal,yes,4,5,4,,"Token, Opening Gambit",Opening Gambit: Each of your other non-Egg minions summon an Egg of itself behind itself.
-20319,Pupabomb,Spell,Epic,Immortal,yes,4,,,,,Destroy a friendly Egg to deal 4 damage to enemies around it.
-435,Rizen,Minion,Epic,Unearthed,yes,4,3,2,,Token,"Whenever your opponent summons a minion, this minion summons an Egg of itself nearby."
-20218,Thumping Wave,Spell,Rare,ShimZar,yes,4,,,,Token,"Give a minion +5 Attack. At end of turn, transform it into a 3/3 Kin."
-20245,Valknu's Seal,Spell,Epic,Ancients,yes,4,,,,Token,Summon an Egg that hatches into a copy of your General.
-413,Veteran Silithar,Minion,Common,Core,yes,4,4,4,,Rebirth,Rebirth
-422,Wild Inceptor,Minion,Common,ShimZar,yes,3,2,3,,Opening Gambit,Opening Gambit: Hatch a friendly Egg.
-404,Kolossus,Minion,Common,Core,yes,5,1,7,,Grow,Grow: +4/+4
-433,Lavaslasher,Minion,Epic,Ancients,yes,5,4,7,Golem,Opening Gambit,Opening Gambit: This minion fights a nearby enemy minion.
+Destiny: Minions summoned from your action bar gain Rush and Frenzy.",
+20344,Homeostatic Rebuke,Spell,Epic,Immortal,yes,4,,,,,ALL minions attack themselves.,
+20156,Mind Steal,Spell,Epic,Core,yes,4,,,,,Steal a random minion from your opponent's deck and summon it.,
+440,Omniseer,Minion,Rare,Unearthed,yes,4,4,5,,"Opening Gambit, Primal Flourish",Opening Gambit: Turn a nearby space into Primal Flourish.,opening_gambit
+441,Progenitor,Minion,Legendary,Immortal,yes,4,5,4,,"Token, Opening Gambit",Opening Gambit: Each of your other non-Egg minions summon an Egg of itself behind itself.,egg;opening_gambit
+20319,Pupabomb,Spell,Epic,Immortal,yes,4,,,,,Destroy a friendly Egg to deal 4 damage to enemies around it.,dmg_spell;egg
+435,Rizen,Minion,Epic,Unearthed,yes,4,3,2,,Token,"Whenever your opponent summons a minion, this minion summons an Egg of itself nearby.",egg
+20218,Thumping Wave,Spell,Rare,ShimZar,yes,4,,,,Token,"Give a minion +5 Attack. At end of turn, transform it into a 3/3 Kin.",
+20245,Valknu's Seal,Spell,Epic,Ancients,yes,4,,,,Token,Summon an Egg that hatches into a copy of your General.,egg
+413,Veteran Silithar,Minion,Common,Core,yes,4,4,4,,Rebirth,Rebirth,egg
+422,Wild Inceptor,Minion,Common,ShimZar,yes,3,2,3,,Opening Gambit,Opening Gambit: Hatch a friendly Egg.,egg;opening_gambit
+404,Kolossus,Minion,Common,Core,yes,5,1,7,,Grow,Grow: +4/+4,grow
+433,Lavaslasher,Minion,Epic,Ancients,yes,5,4,7,Golem,Opening Gambit,Opening Gambit: This minion fights a nearby enemy minion.,golem;opening_gambit
 452,Mortar-maw,Minion,Epic,Mythron,yes,5,4,4,,Ranged,"Ranged
-Whenever this minion attacks, it also damages enemies around its target."
-20206,Nature's Confluence,Spell,Epic,ShimZar,yes,5,,,,Token,Summon four copies of a random Battle Pet in a 2x2 area.
-20122,Plasma Storm,Spell,Basic,Core,yes,5,,,,,Destroy ALL minions with 3 or less Attack.
-415,Spirit Harvester,Minion,Rare,Core,yes,5,5,5,,,"At the end of your turn, deal 1 damage to ALL other minions."
-426,Visionar,Minion,Epic,ShimZar,yes,5,5,6,,,"Whenever ANY player draws a card, this minion gains +1/+1."
-447,Armada,Minion,Epic,Immortal,yes,6,5,6,,Blood Surge,Blood Surge: Deal 5 damage to the closest enemy.
-20124,Chrysalis Burst,Spell,Legendary,Core,yes,6,,,,Token,Summon a random Egg in 4 random spaces.
+Whenever this minion attacks, it also damages enemies around its target.",ranged
+20206,Nature's Confluence,Spell,Epic,ShimZar,yes,5,,,,Token,Summon four copies of a random Battle Pet in a 2x2 area.,
+20122,Plasma Storm,Spell,Basic,Core,yes,5,,,,,Destroy ALL minions with 3 or less Attack.,
+415,Spirit Harvester,Minion,Rare,Core,yes,5,5,5,,,"At the end of your turn, deal 1 damage to ALL other minions.",
+426,Visionar,Minion,Epic,ShimZar,yes,5,5,6,,,"Whenever ANY player draws a card, this minion gains +1/+1.",
+447,Armada,Minion,Epic,Immortal,yes,6,5,6,,Blood Surge,Blood Surge: Deal 5 damage to the closest enemy.,bbs
+20124,Chrysalis Burst,Spell,Legendary,Core,yes,6,,,,Token,Summon a random Egg in 4 random spaces.,egg
 424,Dreadnought,Minion,Legendary,ShimZar,yes,6,4,7,,Rebirth,"Rebirth
-Egg minions you summon gain +2/+2."
-20063,Fractal Replication,Spell,Epic,Core,yes,6,,,,,Summon two copies of a friendly minion nearby that minion.
-405,Makantor Warbeast,Minion,Epic,Core,yes,6,4,4,,"Frenzy, Rush","Frenzy, Rush"
-20121,Metamorphosis,Spell,Legendary,Core,yes,6,,,,Token,Transform all enemy minions into 1/1 Magma with no abilities until the end of your opponent's turn.
-30025,Morin-Khur,Artifact,Legendary,ShimZar,yes,6,,,,Destructible,"Your General gains +3 Attack. Whenever your General deals damage, hatch all friendly Eggs."
-20118,Bounded Lifeforce,Spell,Epic,Core,yes,7,,,,,Your General becomes 10/10.
-20292,Evolutionary Apex,Spell,Legendary,Unearthed,yes,7,,,,,BOTH players put all minions in their action bars onto the battlefield nearby their General.
+Egg minions you summon gain +2/+2.",egg
+20063,Fractal Replication,Spell,Epic,Core,yes,6,,,,,Summon two copies of a friendly minion nearby that minion.,
+405,Makantor Warbeast,Minion,Epic,Core,yes,6,4,4,,"Frenzy, Rush","Frenzy, Rush",
+20121,Metamorphosis,Spell,Legendary,Core,yes,6,,,,Token,Transform all enemy minions into 1/1 Magma with no abilities until the end of your opponent's turn.,
+30025,Morin-Khur,Artifact,Legendary,ShimZar,yes,6,,,,Destructible,"Your General gains +3 Attack. Whenever your General deals damage, hatch all friendly Eggs.",egg;general_atk
+20118,Bounded Lifeforce,Spell,Epic,Core,yes,7,,,,,Your General becomes 10/10.,ramp
+20292,Evolutionary Apex,Spell,Legendary,Unearthed,yes,7,,,,,BOTH players put all minions in their action bars onto the battlefield nearby their General.,ramp
 414,Silithar Elder,Minion,Legendary,Core,yes,7,7,7,,"Token, Rebirth","Rebirth
-At the end of your turn, summon a Silithar Elder Egg nearby."
-408,Unstable Leviathan,Minion,Rare,Core,yes,7,11,11,,,"At the start of your turn, deal 4 damage to a random minion or General."
-20383,Extinction Event,Spell,Legendary,Mythron,yes,8,,,,Token,Each of your Eggs hatches into a Katastrophosaurus.
-20219,Flaming Stampede,Spell,Legendary,ShimZar,yes,8,,,,,Deal 8 damage to ALL non-Egg minions and Generals.
+At the end of your turn, summon a Silithar Elder Egg nearby.",ramp;egg
+408,Unstable Leviathan,Minion,Rare,Core,yes,7,11,11,,,"At the start of your turn, deal 4 damage to a random minion or General.",ramp
+20383,Extinction Event,Spell,Legendary,Mythron,yes,8,,,,Token,Each of your Eggs hatches into a Katastrophosaurus.,ramp;egg
+20219,Flaming Stampede,Spell,Legendary,ShimZar,yes,8,,,,,Deal 8 damage to ALL non-Egg minions and Generals.,dmg_spell;ramp;egg
 434,Juggernaut,Minion,Legendary,Ancients,yes,8,4,10,Golem,"Token, Grow","Grow: +5/+5
-Whenever this minion takes damage, summon that many random Golem Eggs nearby."
+Whenever this minion takes damage, summon that many random Golem Eggs nearby.",golem;ramp;egg;grow
 20339,Saurian Finality,Spell,Legendary,Immortal,yes,8,,,,Stun,"Stun the enemy General.
 Your General gains +3 Attack.
 Both players lose 3 mana.
-Restore 10 Health to your General."
+Restore 10 Health to your General.",heal;ramp;general_atk;stun
 436,Grandmaster Kraigon,Minion,Legendary,Core,yes,9,7,7,,"Forcefield, Grow, Frenzy","Forcefield, Frenzy, Grow: +7/+7.
 Your General has:
-Forcefield, Frenzy, Grow: +7/+7."
-425,Mandrake,Minion,Rare,ShimZar,yes,12,6,6,,,Costs 1 less for each minion summoned from ANY player's action bar this game.
-411,Chrysalis Egg,Minion,Token,Core,no,0,0,1,,Token,
-30046,Primal Relic,Artifact,Token,Immortal,no,0,,,,Destructible,
-416,Magma,Minion,Token,Core,no,1,1,1,,Token,
-442,Ripper,Minion,Token,Core,no,1,3,1,,"Token, Rebirth, Celerity","Rebirth, Celerity"
-443,Building,Minion,Token,Immortal,no,2,0,10,Structure,"Token, Structure",
-427,Kin,Minion,Token,ShimZar,no,3,3,3,BattlePet,"Token, Battle Pet",
-450,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",
-457,Katastrophosaurus,Minion,Token,Mythron,no,5,6,26,,Token,
-431,Spirit of Valknu,Minion,Token,Ancients,no,6,2,25,,Token,
+Forcefield, Frenzy, Grow: +7/+7.",ramp;grow
+425,Mandrake,Minion,Rare,ShimZar,yes,12,6,6,,,Costs 1 less for each minion summoned from ANY player's action bar this game.,ramp
+411,Chrysalis Egg,Minion,Token,Core,no,0,0,1,,Token,,
+30046,Primal Relic,Artifact,Token,Immortal,no,0,,,,Destructible,,
+416,Magma,Minion,Token,Core,no,1,1,1,,Token,,
+442,Ripper,Minion,Token,Core,no,1,3,1,,"Token, Rebirth, Celerity","Rebirth, Celerity",
+443,Building,Minion,Token,Immortal,no,2,0,10,Structure,"Token, Structure",,
+427,Kin,Minion,Token,ShimZar,no,3,3,3,BattlePet,"Token, Battle Pet",,
+450,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",,
+457,Katastrophosaurus,Minion,Token,Mythron,no,5,6,26,,Token,,
+431,Spirit of Valknu,Minion,Token,Ancients,no,6,2,25,,Token,,

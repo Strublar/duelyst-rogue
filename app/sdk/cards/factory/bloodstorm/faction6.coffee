@@ -27,6 +27,11 @@ SpellApplyModifiersToGeneral = require 'app/sdk/spells/spellApplyModifiersToGene
 Modifier = require 'app/sdk/modifiers/modifier'
 ModifierSynergizeSpawnVanarToken = require 'app/sdk/modifiers/modifierSynergizeSpawnVanarToken'
 ModifierKillWatchRefreshExhaustion = require 'app/sdk/modifiers/modifierKillWatchRefreshExhaustion'
+ModifierMyAttackWatchStunnedRefreshExhaustion = require 'app/sdk/modifiers/modifierMyAttackWatchStunnedRefreshExhaustion'
+ModifierStunned = require 'app/sdk/modifiers/modifierStunned'
+ModifierInsight = require 'app/sdk/modifiers/modifierInsight'
+ModifierBloodcall = require 'app/sdk/modifiers/modifierBloodcall'
+SpellFrigidCorona = require 'app/sdk/spells/spellFrigidCorona'
 ModifierDealDamageWatchRefreshSignatureCard = require 'app/sdk/modifiers/modifierDealDamageWatchRefreshSignatureCard'
 ModifierStunnedVanar = require 'app/sdk/modifiers/modifierStunnedVanar'
 ModifierStun = require 'app/sdk/modifiers/modifierStun'
@@ -112,7 +117,8 @@ class CardFactory_BloodstormSet_Faction6
       card.atk = 3
       card.maxHP = 6
       card.manaCost = 4
-      card.setInherentModifiersContextObjects([ModifierKillWatchRefreshExhaustion.createContextObject(false, true)])
+      card.setInherentModifiersContextObjects([ModifierMyAttackWatchStunnedRefreshExhaustion.createContextObject()])
+      card.addKeywordClassToInclude(ModifierStunned)
       card.rarityId = Rarity.Rare
 
     if (identifier == Cards.Spell.ConcealingShroud)
@@ -169,7 +175,7 @@ class CardFactory_BloodstormSet_Faction6
       )
 
     if (identifier == Cards.Spell.FrigidCorona)
-      card = new SpellApplyModifiers(gameSession)
+      card = new SpellFrigidCorona(gameSession)
       card.setCardSetId(CardSet.CombinedUnlockables)
       card.factionId = Factions.Faction6
       card.id = Cards.Spell.FrigidCorona
@@ -178,10 +184,10 @@ class CardFactory_BloodstormSet_Faction6
       card.manaCost = 2
       card.rarityId = Rarity.Common
       card.spellFilterType = SpellFilterType.EnemyDirect
-      card.canTargetGeneral = false
-      card.drawCardsPostPlay = 1
-      card.setTargetModifiersContextObjects([ModifierStunnedVanar.createContextObject()])
+      card.canTargetGeneral = true
       card.addKeywordClassToInclude(ModifierStun)
+      card.addKeywordClassToInclude(ModifierInsight)
+      card.addKeywordClassToInclude(ModifierBloodcall)
       card.setFXResource(["FX.Cards.Spell.FrigidCorona"])
       card.setBaseSoundResource(
         apply : RSX.sfx_f6_icebeetle_death.audio

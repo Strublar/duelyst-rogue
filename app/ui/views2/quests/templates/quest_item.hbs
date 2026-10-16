@@ -4,6 +4,9 @@
 		{{#if gold}}
 			<div class="gold-reward">{{gold}}</div>
 		{{/if}}
+		{{#if roguelike_xp}}
+			<div class="xp-reward">+{{roguelike_xp}} XP</div>
+		{{/if}}
 		{{#if gift_chests}}
 			<!--<div class="gift-chests-reward" data-toggle="popover" data-content="{{ rewards_details }}"><img style="width:10rem; margin-top:-2rem;" src="{{imageForResourceScale (imageForResourceName 'gift_loot_crate_sphere')}}" /></div>-->
         <div class="gift-chests-reward"><img style="width:10rem; margin-top:-2rem;" src="{{imageForResourceScale (imageForResourceName 'gift_loot_crate_sphere')}}" /></div>

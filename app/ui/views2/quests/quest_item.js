@@ -37,6 +37,7 @@ var QuestItemView = Backbone.Marionette.ItemView.extend({
         data.cosmetic_key = quest.cosmeticKeys[0];
       }
       data.rewards_details = quest.rewardDetails;
+      data.roguelike_xp = quest.getRoguelikeXpReward();
     }
 
     return data;

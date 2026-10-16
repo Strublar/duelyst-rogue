@@ -1,117 +1,117 @@
-﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description
-1,Argeon Highmayne,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Give a friendly minion nearby your General +2 Attack.
-51,Brome Warcrest,General,Basic,Core,yes,0,2,25,,"Zeal, Provoke",Bloodbound Spell: Summon a 1/2 Crestfallen with Zeal: Provoke in front of your General.
-23,Zir'An Sunforge,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Restore 3 Health to anything.
-20109,Beam Shock,Spell,Common,Core,yes,0,,,,Stun,Stun an enemy.
-20316,Steadfast Formation,Spell,Common,Immortal,yes,0,,,,Provoke,Give friendly minions in a 2x2 area Provoke.
-30004,Sunstone Bracers,Artifact,Basic,Core,yes,0,,,,Destructible,Your General gains +1 Attack.
-20120,Aegis Barrier,Spell,Legendary,Core,yes,1,,,,,Choose a friendly minion. It can't be targeted by enemy spells. Draw a card.
-20158,Aerial Rift,Spell,Epic,Core,yes,1,,,,Airdrop,Give your minions Airdrop this turn.  Draw a card.
-20045,Auryn Nexus,Spell,Common,Core,yes,1,,,,,Give a friendly minion +3 Health.
-20233,Draining Wave,Spell,Common,Ancients,yes,1,,,,,Deal 4 damage to a minion AND your General.
-20189,Fighting Spirit,Spell,Epic,ShimZar,yes,1,,,,Token,Give all friendly minions +1 Health. Put a random Battle Pet into your action bar.
-20287,Fortified Assault,Spell,Rare,Unearthed,yes,1,,,,Hallowed Ground,Turn an enemy minion's space into Hallowed Ground. Deal it 1 damage for each friendly Hallowed Ground.
-20361,Lifestream,Spell,Common,Mythron,yes,1,,,,,"Fully heal a friendly minion, then draw a copy of it from your deck."
-20062,Lionheart Blessing,Spell,Rare,Core,yes,1,,,,,"Give a friendly minion, ""Zeal: Whenever this minion deals damage, draw a card."""
-20161,Magnetize,Spell,Rare,Core,yes,1,,,,,Pull ANY minion to the space in front of your General.
-20280,Sanctify,Spell,Common,Unearthed,yes,1,,,,Hallowed Ground,Give a friendly minion +1/+1 and turn its space into Hallowed Ground.
-14,Silverguard Squire,Minion,Common,Core,yes,1,1,4,,,
-26,Slo,Minion,Common,ShimZar,yes,1,1,4,BattlePet,"Battle Pet, Provoke",Provoke
-20043,Sundrop Elixir,Spell,Common,Core,yes,1,,,,,Restore 5 Health to anything.
-38,Sunrise Cleric,Minion,Common,Unearthed,yes,1,1,3,,"Hallowed Ground, Opening Gambit",Opening Gambit: Turn a nearby space into Hallowed Ground.
-20066,True Strike,Spell,Basic,Core,yes,1,,,,,Deal 2 damage to a minion.
-21,Azurite Lion,Minion,Common,Core,yes,2,2,3,,Celerity,Celerity
-20315,Bolster,Spell,Common,Mythron,yes,2,,,,Intensify,Intensify: Give friendly minions +2 Health.
-20281,Channeled Breath,Spell,Common,Unearthed,yes,2,,,,,Restore 2 Health to your General for each friendly minion.
-20332,Dauntless Advance,Spell,Common,Immortal,yes,2,,,,,"Your General and nearby friendly minions gain, ""Takes no damage this turn."""
-25,Fiz,Minion,Rare,ShimZar,yes,2,3,3,BattlePet,"Opening Gambit, Battle Pet",Opening Gambit: Restore 2 Health to anything.
-30026,Gold Vitriol,Artifact,Rare,Ancients,yes,2,,,,Destructible,"Whenever anything is healed, deal 2 damage to a random enemy."
-20046,Lasting Judgement,Spell,Rare,Core,yes,2,,,,,"Give ANY minion +3 Attack, but -3 Health."
-15,Lightchaser,Minion,Common,Core,yes,2,3,2,,,"Whenever anything is healed, this minion gains +1/+1."
-20190,Lucent Beam,Spell,Common,ShimZar,yes,2,,,,,"Deal 2 damage to an enemy. If anything was healed this turn, deal 4 damage instead."
-20366,Marching Orders,Spell,Rare,Mythron,yes,2,,,,Zeal,"Give friendly minions directly in front of and behind your General +2/+2.  If they have Zeal, they cannot be targeted by enemy spells."
-20235,Prism Barrier,Spell,Rare,Ancients,yes,2,,,,Forcefield,Give a friendly minion Forcefield.
-37,Pureblade Enforcer,Minion,Common,Unearthed,yes,2,1,3,,,"Whenever your opponent casts a spell, this minion gains +1/+1."
-20064,Sun Bloom,Spell,Common,Core,yes,2,,,,,Dispel a 2x2 area.
-27,Sun Wisp,Minion,Common,ShimZar,yes,2,2,1,,Opening Gambit,Opening Gambit: Draw a card.
-30048,Sunbond Pavise,Artifact,Rare,Immortal,yes,2,,,,"Destructible, Provoke",Friendly minions directly above and below your General gain +2 Attack and Provoke.
-10,Sunstone Templar,Minion,Epic,Core,yes,2,1,4,,,"Whenever this attacks or counterattacks, it dispels that enemy"
-20044,Tempest,Spell,Basic,Core,yes,2,,,,,Deal 2 damage to everything.
-20285,Vale Ascension,Spell,Epic,Unearthed,yes,2,,,,Hallowed Ground,Summon a friendly non-token minion destroyed this game onto friendly Hallowed Ground.
-20047,War Surge,Spell,Basic,Core,yes,2,,,,,Give all friendly minions +1/+1.
-34,Warblade,Minion,Common,Ancients,yes,2,1,4,Golem,Bond,Bond: Other friendly minions gain +1/+1.
-9,Windblade Adept,Minion,Basic,Core,yes,2,2,3,,Zeal,Zeal: Gains +1 Attack
-20188,Afterblaze,Spell,Common,ShimZar,yes,3,,,,Zeal,"Give a friendly minion +2/+4. If that minion has Zeal, draw a card."
-12,Arclyte Sentinel,Minion,Rare,Core,yes,3,2,4,,Opening Gambit,"Opening Gambit: Give ANY nearby minion +2 Attack, but -2 Health"
-40,Auroara,Minion,Epic,Unearthed,yes,3,1,5,,,"Whenever you summon a minion with 2 or less Attack, this minion gains +2 Attack."
-50,Decorated Enlistee,Minion,Common,Immortal,yes,3,1,5,,,"While at full Health, this minion has +3 Attack."
-20068,Divine Bond,Spell,Basic,Core,yes,3,,,,,Give a minion +Attack equal to its Health.
-20274,Empyreal Congregation,Spell,Epic,Unearthed,yes,3,,,,,Give friendly minions in a 2x2 area +2/+2.
-20317,Fealty,Spell,Rare,Immortal,yes,3,,,,,Draw a card for each friendly minion nearby your General.
-54,Gryphon Fledgling,Minion,Rare,Mythron,yes,3,5,3,,"Flying, Zeal",Zeal: Flying
-53,Legion,Minion,Common,Mythron,yes,3,3,2,,"Token, Intensify",Intensify: Put 1 Crestfallen into your action bar. Shuffle a copy of this minion into your deck.
-20249,Life Coil,Spell,Common,Ancients,yes,3,,,,,Double a minion's Health.
-20090,Martyrdom,Spell,Basic,Core,yes,3,,,,,Destroy ANY minion. Restore that minion's Health to its General.
-28,Radiant Dragoon,Minion,Rare,ShimZar,yes,3,3,4,,,"At the end of your turn, give a friendly minion +1 Health."
-32,Scintilla,Minion,Common,Ancients,yes,3,3,4,,Blood Surge,Blood Surge: Restore 3 Health to your General.
+﻿id,name,type,rarity,set,collectible,mana_cost,attack,health,tribe,keywords,description,tags
+1,Argeon Highmayne,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Give a friendly minion Zeal: +2 Attack.,
+51,Brome Warcrest,General,Basic,Core,yes,0,2,25,,"Zeal, Provoke",Bloodbound Spell: Summon a 1/2 Crestfallen with Zeal: Provoke in front of your General.,
+23,Zir'An Sunforge,General,Basic,Core,yes,0,2,25,,,Bloodbound Spell: Restore 3 Health to anything.,
+20109,Beam Shock,Spell,Common,Core,yes,0,,,,Stun,Stun an enemy.,arcanyst;stun
+20316,Steadfast Formation,Spell,Common,Immortal,yes,0,,,,Provoke,Give friendly minions in a 2x2 area Provoke.,provoke;arcanyst
+30004,Sunstone Bracers,Artifact,Basic,Core,yes,0,,,,Destructible,Your General gains +1 Attack.,general_atk
+20120,Aegis Barrier,Spell,Legendary,Core,yes,1,,,,,Choose a friendly minion. It can't be targeted by enemy spells. Draw a card.,arcanyst
+20158,Aerial Rift,Spell,Epic,Core,yes,1,,,,Airdrop,Give your minions Airdrop this turn.  Draw a card.,arcanyst
+20045,Auryn Nexus,Spell,Common,Core,yes,1,,,,,Give a friendly minion +3 Health.,arcanyst
+20233,Draining Wave,Spell,Common,Ancients,yes,1,,,,,Deal 4 damage to a minion AND your General.,dmg_spell;arcanyst
+20189,Fighting Spirit,Spell,Epic,ShimZar,yes,1,,,,Token,Give all friendly minions +1 Health. Put a random Battle Pet into your action bar.,arcanyst
+20287,Fortified Assault,Spell,Rare,Unearthed,yes,1,,,,Hallowed Ground,Turn an enemy minion's space into Hallowed Ground. Deal it 1 damage for each friendly Hallowed Ground.,dmg_spell;arcanyst
+20361,Lifestream,Spell,Common,Mythron,yes,1,,,,,"Fully heal a friendly minion, then draw a copy of it from your deck.",heal;arcanyst
+20062,Lionheart Blessing,Spell,Rare,Core,yes,1,,,,,"Give a friendly minion, ""Zeal: Whenever this minion deals damage, draw a card.""",zeal;dmg_spell;arcanyst
+20161,Magnetize,Spell,Rare,Core,yes,1,,,,,Pull ANY minion to the space in front of your General.,arcanyst
+20280,Sanctify,Spell,Common,Unearthed,yes,1,,,,Hallowed Ground,Give a friendly minion +1/+1 and turn its space into Hallowed Ground.,arcanyst
+14,Silverguard Squire,Minion,Common,Core,yes,1,1,4,,,,
+26,Slo,Minion,Common,ShimZar,yes,1,1,4,BattlePet,"Battle Pet, Provoke",Provoke,provoke
+20043,Sundrop Elixir,Spell,Common,Core,yes,1,,,,,Restore 5 Health to anything.,heal;arcanyst
+38,Sunrise Cleric,Minion,Common,Unearthed,yes,1,1,3,,"Hallowed Ground, Opening Gambit",Opening Gambit: Turn a nearby space into Hallowed Ground.,opening_gambit
+20066,True Strike,Spell,Basic,Core,yes,1,,,,,Deal 2 damage to a minion.,dmg_spell;arcanyst
+21,Azurite Lion,Minion,Common,Core,yes,2,2,3,,Celerity,Celerity,
+20315,Bolster,Spell,Common,Mythron,yes,2,,,,Intensify,Intensify: Give friendly minions +2 Health.,arcanyst
+20281,Channeled Breath,Spell,Common,Unearthed,yes,2,,,,,Restore 2 Health to your General for each friendly minion.,heal;arcanyst
+20332,Dauntless Advance,Spell,Common,Immortal,yes,2,,,,,"Your General and nearby friendly minions gain, ""Takes no damage this turn.""",arcanyst
+25,Fiz,Minion,Rare,ShimZar,yes,2,3,3,BattlePet,"Opening Gambit, Battle Pet",Opening Gambit: Restore 2 Health to anything.,heal;opening_gambit
+30026,Gold Vitriol,Artifact,Rare,Ancients,yes,2,,,,Destructible,"Whenever anything is healed, deal 2 damage to a random enemy.",
+20046,Lasting Judgement,Spell,Rare,Core,yes,2,,,,,"Give ANY minion +3 Attack, but -3 Health.",arcanyst
+15,Lightchaser,Minion,Common,Core,yes,2,3,2,,,"Whenever anything is healed, this minion gains +1/+1.",
+20190,Lucent Beam,Spell,Common,ShimZar,yes,2,,,,,"Deal 2 damage to an enemy. If anything was healed this turn, deal 4 damage instead.",dmg_spell;arcanyst
+20366,Marching Orders,Spell,Rare,Mythron,yes,2,,,,Zeal,"Give friendly minions directly in front of and behind your General +2/+2.  If they have Zeal, they cannot be targeted by enemy spells.",zeal;arcanyst
+20235,Prism Barrier,Spell,Rare,Ancients,yes,2,,,,Forcefield,Give a friendly minion Forcefield.,arcanyst
+37,Pureblade Enforcer,Minion,Common,Unearthed,yes,2,1,3,,,"Whenever your opponent casts a spell, this minion gains +1/+1.",arcanyst
+20064,Sun Bloom,Spell,Common,Core,yes,2,,,,,Dispel a 2x2 area.,arcanyst
+27,Sun Wisp,Minion,Common,ShimZar,yes,2,2,1,,Opening Gambit,Opening Gambit: Draw a card.,opening_gambit
+30048,Sunbond Pavise,Artifact,Rare,Immortal,yes,2,,,,"Destructible, Provoke",Friendly minions directly above and below your General gain +2 Attack and Provoke.,provoke;general_atk
+10,Sunstone Templar,Minion,Epic,Core,yes,2,1,4,,,"Whenever this attacks or counterattacks, it dispels that enemy",
+20044,Tempest,Spell,Basic,Core,yes,2,,,,,Deal 2 damage to everything.,dmg_spell;arcanyst
+20285,Vale Ascension,Spell,Epic,Unearthed,yes,2,,,,Hallowed Ground,Summon a friendly non-token minion destroyed this game onto friendly Hallowed Ground.,arcanyst
+20047,War Surge,Spell,Basic,Core,yes,2,,,,,Give all friendly minions +1/+1.,arcanyst
+34,Warblade,Minion,Common,Ancients,yes,2,1,4,Golem,Bond,Bond: Other friendly minions gain +1/+1.,golem
+9,Windblade Adept,Minion,Basic,Core,yes,2,2,3,,Zeal,Zeal: Gains +1 Attack,zeal
+20188,Afterblaze,Spell,Common,ShimZar,yes,3,,,,Zeal,"Give a friendly minion +2/+4. If that minion has Zeal, draw a card.",zeal
+12,Arclyte Sentinel,Minion,Rare,Core,yes,3,2,4,,Opening Gambit,"Opening Gambit: Give ANY nearby minion +2 Attack, but -2 Health",opening_gambit
+40,Auroara,Minion,Epic,Unearthed,yes,3,1,5,,,"Whenever you summon a minion with 2 or less Attack, this minion gains +2 Attack.",
+50,Decorated Enlistee,Minion,Common,Immortal,yes,3,1,5,,,"While at full Health, this minion has +3 Attack.",
+20068,Divine Bond,Spell,Basic,Core,yes,3,,,,,Give a minion +Attack equal to its Health.,
+20274,Empyreal Congregation,Spell,Epic,Unearthed,yes,3,,,,,Give friendly minions in a 2x2 area +2/+2.,
+20317,Fealty,Spell,Rare,Immortal,yes,3,,,,,Draw a card for each friendly minion nearby your General.,
+54,Gryphon Fledgling,Minion,Rare,Mythron,yes,3,5,3,,"Flying, Zeal",Zeal: Flying,zeal
+53,Legion,Minion,Common,Mythron,yes,3,3,2,,"Token, Intensify",Intensify: Put 1 Crestfallen into your action bar. Shuffle a copy of this minion into your deck.,
+20249,Life Coil,Spell,Common,Ancients,yes,3,,,,,Double a minion's Health.,
+20090,Martyrdom,Spell,Basic,Core,yes,3,,,,,Destroy ANY minion. Restore that minion's Health to its General.,heal
+28,Radiant Dragoon,Minion,Rare,ShimZar,yes,3,3,4,,,"At the end of your turn, give a friendly minion +1 Health.",
+32,Scintilla,Minion,Common,Ancients,yes,3,3,4,,Blood Surge,Blood Surge: Restore 3 Health to your General.,heal;bbs
 11,Silverguard Knight,Minion,Basic,Core,yes,3,1,5,,"Provoke, Zeal","Provoke
-Zeal: Gains +2 Attack"
-20187,Sky Burial,Spell,Rare,ShimZar,yes,3,,,,,Destroy a minion that is not nearby any General.
-30001,Skywind Glaives,Artifact,Epic,Core,yes,3,,,,Destructible,Friendly minions nearby your General gain +2 Attack.
-35,Sol Pontiff,Minion,Epic,Ancients,yes,3,1,4,Golem,Zeal,Zeal: Your Golems have +2 Attack.
-29,Sunforge Lancer,Minion,Epic,Core,yes,3,2,4,,,"Whenever anything is healed, give your General +1 Attack."
-48,Surgeforger,Minion,Legendary,Immortal,yes,3,2,2,,,"Whenever you summon a minion nearby this minion, give them both +1/+1."
+Zeal: Gains +2 Attack",provoke;zeal
+20187,Sky Burial,Spell,Rare,ShimZar,yes,3,,,,,Destroy a minion that is not nearby any General.,
+30001,Skywind Glaives,Artifact,Epic,Core,yes,3,,,,Destructible,Friendly minions nearby your General gain +2 Attack.,general_atk
+35,Sol Pontiff,Minion,Epic,Ancients,yes,3,1,4,Golem,Zeal,Zeal: Your Golems have +2 Attack.,golem;zeal
+29,Sunforge Lancer,Minion,Epic,Core,yes,3,2,4,,,"Whenever anything is healed, give your General +1 Attack.",general_atk
+48,Surgeforger,Minion,Legendary,Immortal,yes,3,2,2,,,"Whenever you summon a minion nearby this minion, give them both +1/+1.",
 47,Vigilator,Minion,Common,Immortal,yes,3,3,4,,"Token, Build","Build: (1).
-When this minion is built, give nearby friendly minions +3 Health."
-30018,Arclyte Regalia,Artifact,Legendary,Core,yes,4,,,,Destructible,"Your General gains +2 Attack. The first time your General takes damage each turn, prevent 2 of it."
-20128,Decimate,Spell,Legendary,Core,yes,4,,,,,Destroy ALL minions that are not nearby any General.
-20067,Holy Immolation,Spell,Epic,Core,yes,4,,,,,Restore 4 Health to a friendly minion. Deal 4 damage to enemies around it.
-20325,Invincible,Spell,Epic,Immortal,yes,4,,,,,Give a friendly minion with full Health +4/+4.
-20186,Ironcliffe Heart,Spell,Epic,ShimZar,yes,4,,,,,Transform a friendly minion into an Ironcliffe Guardian.
+When this minion is built, give nearby friendly minions +3 Health.",
+30018,Arclyte Regalia,Artifact,Legendary,Core,yes,4,,,,Destructible,"Your General gains +2 Attack. The first time your General takes damage each turn, prevent 2 of it.",general_atk
+20128,Decimate,Spell,Legendary,Core,yes,4,,,,,Destroy ALL minions that are not nearby any General.,
+20067,Holy Immolation,Spell,Epic,Core,yes,4,,,,,Restore 4 Health to a friendly minion. Deal 4 damage to enemies around it.,heal;dmg_spell
+20325,Invincible,Spell,Epic,Immortal,yes,4,,,,,Give a friendly minion with full Health +4/+4.,
+20186,Ironcliffe Heart,Spell,Epic,ShimZar,yes,4,,,,,Transform a friendly minion into an Ironcliffe Guardian.,
 49,Ironcliffe Monument,Minion,Legendary,Immortal,yes,4,0,10,Structure,"Token, Build, Structure","Build: (2).
-Whenever you summon a minion nearby this, transform that minion into an Ironcliffe Guardian."
-8,Lysian Brawler,Minion,Basic,Core,yes,4,4,4,,Celerity,Celerity
-39,Solpiercer,Minion,Rare,Unearthed,yes,4,3,4,,"Ranged, Zeal",Zeal: Ranged
-24,Sun Sister Sterope,Minion,Legendary,Core,yes,4,4,4,,,"Whenever anything is healed, put a True Strike into your action bar."
-31,Sunbreaker,Minion,Rare,Ancients,yes,4,2,4,,Forcefield,Forcefield. Your Bloodbound Spell is Tempest.
-22,Sunriser,Minion,Epic,Core,yes,4,3,4,,,"Whenever anything is healed, deal 2 damage to all nearby enemies."
-20320,Sunstrike,Spell,Epic,Immortal,yes,4,,,,,Deal 3 damage to enemies and restore 3 Health to friendly minions and Generals in a row.
-16,Suntide Maiden,Minion,Common,Core,yes,4,3,6,,Zeal,"Zeal: At the end of your turn, fully heal this minion."
-20232,Trinity Oath,Spell,Epic,Ancients,yes,4,,,,,Draw 3 cards and restore 3 Health to your General.
-41,War Judicator,Minion,Rare,Unearthed,yes,4,4,5,,,Nearby friendly minions cannot be targeted by enemy spells.
-56,Windcliffe Alarmist,Minion,Common,Mythron,yes,4,2,2,,"Opening Gambit, Provoke",Opening Gambit: Summon a 5/5 Windcliffe Protector with Provoke from your deck.
-20104,Circle of Life,Spell,Epic,Core,yes,5,,,,,Deal 5 damage to an enemy minion. Restore 5 Health to your General.
-30024,Dawn's Eye,Artifact,Legendary,ShimZar,yes,5,,,,Destructible,"Your General gains +4 Attack. At the end of your turn, repair all of your artifacts to full durability."
+Whenever you summon a minion nearby this, transform that minion into an Ironcliffe Guardian.",structure
+8,Lysian Brawler,Minion,Basic,Core,yes,4,4,4,,Celerity,Celerity,
+39,Solpiercer,Minion,Rare,Unearthed,yes,4,3,4,,"Ranged, Zeal",Zeal: Ranged,zeal;ranged
+24,Sun Sister Sterope,Minion,Legendary,Core,yes,4,4,4,,,"Whenever anything is healed, put a True Strike into your action bar.",
+31,Sunbreaker,Minion,Rare,Ancients,yes,4,2,4,,Forcefield,Forcefield. Your Bloodbound Spell is Tempest.,bbs
+22,Sunriser,Minion,Epic,Core,yes,4,3,4,,,"Whenever anything is healed, deal 2 damage to all nearby enemies.",
+20320,Sunstrike,Spell,Epic,Immortal,yes,4,,,,,Deal 3 damage to enemies and restore 3 Health to friendly minions and Generals in a row.,heal;dmg_spell
+16,Suntide Maiden,Minion,Common,Core,yes,4,3,6,,Zeal,"Zeal: At the end of your turn, fully heal this minion.",zeal;heal
+20232,Trinity Oath,Spell,Epic,Ancients,yes,4,,,,,Draw 3 cards and restore 3 Health to your General.,heal
+41,War Judicator,Minion,Rare,Unearthed,yes,4,4,5,,,Nearby friendly minions cannot be targeted by enemy spells.,
+56,Windcliffe Alarmist,Minion,Common,Mythron,yes,4,2,2,,"Opening Gambit, Provoke",Opening Gambit: Summon a 5/5 Windcliffe Protector with Provoke from your deck.,provoke;opening_gambit
+20104,Circle of Life,Spell,Epic,Core,yes,5,,,,,Deal 5 damage to an enemy minion. Restore 5 Health to your General.,heal;dmg_spell
+30024,Dawn's Eye,Artifact,Legendary,ShimZar,yes,5,,,,Destructible,"Your General gains +4 Attack. At the end of your turn, repair all of your artifacts to full durability.",general_atk
 57,Grand Strategos,Minion,Mythron,Mythron,yes,5,5,5,,"Destiny, Trial","Trial: Summon 12 minions with 1 or less Attack.
-Destiny: Promote other friendly minions at the end of your turn."
-30032,Halo Bulwark,Artifact,Legendary,Unearthed,yes,5,,,,"Destructible, Forcefield",Friendly minions nearby your General have Forcefield.
-17,Ironcliffe Guardian,Minion,Rare,Core,yes,5,3,10,,"Airdrop, Provoke","Airdrop, Provoke"
-20384,Lionize,Spell,Epic,Mythron,yes,5,,,,Celerity,Give Celerity to a friendly minion directly behind your General.
+Destiny: Promote other friendly minions at the end of your turn.",
+30032,Halo Bulwark,Artifact,Legendary,Unearthed,yes,5,,,,"Destructible, Forcefield",Friendly minions nearby your General have Forcefield.,
+17,Ironcliffe Guardian,Minion,Rare,Core,yes,5,3,10,,"Airdrop, Provoke","Airdrop, Provoke",provoke
+20384,Lionize,Spell,Epic,Mythron,yes,5,,,,Celerity,Give Celerity to a friendly minion directly behind your General.,
 44,Oakenheart,Minion,Rare,Immortal,yes,5,4,5,Mech,"MECHAZ0R Progress, Opening Gambit","Opening Gambit: Progresses MECHAZ0R build by +20%.
-Your other Mech minions have +1/+1."
-13,Second Sun,Minion,Rare,Core,yes,5,0,8,,Zeal,Zeal: Gains +8 Attack
-30,Solarius,Minion,Legendary,ShimZar,yes,5,3,2,,Zeal,Zeal: Draw 2 additional cards at the end of your turn.
+Your other Mech minions have +1/+1.",mech;opening_gambit
+13,Second Sun,Minion,Rare,Core,yes,5,0,8,,Zeal,Zeal: Gains +8 Attack,zeal
+30,Solarius,Minion,Legendary,ShimZar,yes,5,3,2,,Zeal,Zeal: Draw 2 additional cards at the end of your turn.,zeal
 59,War Exorcist,Minion,Legendary,Mythron,yes,5,3,8,,Provoke,"Provoke
-At the start of your turn, Holy Immolation your damaged minions."
+At the start of your turn, Holy Immolation your damaged minions.",provoke
 55,Windcliffe Protector,Minion,Epic,Mythron,yes,5,5,5,,Provoke,"Provoke
-When a friendly Windcliffe Alarmist dies, transform this minion into a Windcliffe Alarmist."
-20360,Divine Liturgy,Spell,Rare,Mythron,yes,6,,,,,Give all friendly minions +Attack equal to their Health.
+When a friendly Windcliffe Alarmist dies, transform this minion into a Windcliffe Alarmist.",provoke
+20360,Divine Liturgy,Spell,Rare,Mythron,yes,6,,,,,Give all friendly minions +Attack equal to their Health.,
 18,Elyx Stormblade,Minion,Legendary,Core,yes,6,7,7,,Provoke,"Provoke
-Your minions and General may move an additional space"
-45,Prominence,Minion,Epic,Immortal,yes,6,4,7,,Blood Surge,Blood Surge: Summon a Silverguard Knight nearby your General.
+Your minions and General may move an additional space",provoke
+45,Prominence,Minion,Epic,Immortal,yes,6,4,7,,Blood Surge,Blood Surge: Summon a Silverguard Knight nearby your General.,bbs
 30053,Radiant Standard,Artifact,Epic,Mythron,yes,6,,,,Destructible,"Your General has +3 Attack.
-When your General attacks, summon a minion that costs 3 from your deck nearby."
-42,Alabaster Titan,Minion,Legendary,Unearthed,yes,7,5,7,,Opening Gambit,"Opening Gambit: If you have no spells in your deck, equip a full set of equipment."
-20282,Aperion's Claim,Spell,Legendary,Unearthed,yes,7,,,,Hallowed Ground,Destroy ALL minions in a 3x3 area and turn their spaces into Hallowed Ground.
-20318,Call to Arms,Spell,Legendary,Immortal,yes,7,,,,,"Your General gains, ""Minions you summon nearby gain +3/+3."""
-20,Grandmaster Z'ir,Minion,Legendary,Core,yes,7,5,12,,,"When your General dies, Grandmaster Z'ir becomes your General."
-58,Indominus,Minion,Legendary,Mythron,yes,7,7,9,,Invulnerable,Your General is Invulnerable BUT cannot move or attack.
-36,Peacekeeper,Minion,Legendary,Ancients,yes,7,6,6,Golem,"Frenzy, Forcefield, Airdrop, Celerity, Provoke","Airdrop, Forcefield, Frenzy, Provoke, Celerity"
+When your General attacks, summon a minion that costs 3 from your deck nearby.",general_atk
+42,Alabaster Titan,Minion,Legendary,Unearthed,yes,7,5,7,,Opening Gambit,"Opening Gambit: If you have no spells in your deck, equip a full set of equipment.",ramp;opening_gambit
+20282,Aperion's Claim,Spell,Legendary,Unearthed,yes,7,,,,Hallowed Ground,Destroy ALL minions in a 3x3 area and turn their spaces into Hallowed Ground.,ramp
+20318,Call to Arms,Spell,Legendary,Immortal,yes,7,,,,,"Your General gains, ""Minions you summon nearby gain +3/+3.""",ramp
+20,Grandmaster Z'ir,Minion,Legendary,Core,yes,7,5,12,,,"When your General dies, Grandmaster Z'ir becomes your General.",ramp
+58,Indominus,Minion,Legendary,Mythron,yes,7,7,9,,Invulnerable,Your General is Invulnerable BUT cannot move or attack.,ramp;general_atk
+36,Peacekeeper,Minion,Legendary,Ancients,yes,7,6,6,Golem,"Frenzy, Forcefield, Airdrop, Celerity, Provoke","Airdrop, Forcefield, Frenzy, Provoke, Celerity",provoke;golem;ramp
 33,Excelsious,Minion,Legendary,Core,yes,8,6,6,,"Provoke, Celerity","Provoke, Celerity
-This minion gains +1/+1 for each time you healed anything this game."
-20220,Sky Phalanx,Spell,Legendary,ShimZar,yes,8,,,,,Summon three Silverguard Knights nearby your General.
-20392,Amaranthine Vow,Spell,Legendary,Mythron,yes,9,,,,Provoke,Summon around your General all friendly minions with Provoke that died this game.
-30042,Shining Relic,Artifact,Token,Immortal,no,0,,,,Destructible,
-43,Crestfallen,Minion,Token,Core,no,1,1,2,,"Provoke, Token, Zeal",Zeal: Provoke
-46,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",
-52,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",
+This minion gains +1/+1 for each time you healed anything this game.",provoke;ramp
+20220,Sky Phalanx,Spell,Legendary,ShimZar,yes,8,,,,,Summon three Silverguard Knights nearby your General.,ramp
+20392,Amaranthine Vow,Spell,Legendary,Mythron,yes,9,,,,Provoke,Summon around your General all friendly minions with Provoke that died this game.,provoke;ramp
+30042,Shining Relic,Artifact,Token,Immortal,no,0,,,,Destructible,,
+43,Crestfallen,Minion,Token,Core,no,1,1,2,,"Provoke, Token, Zeal",Zeal: Provoke,
+46,Building,Minion,Token,Immortal,no,3,0,10,Structure,"Token, Structure",,
+52,Building,Minion,Token,Immortal,no,4,0,10,Structure,"Token, Structure",,

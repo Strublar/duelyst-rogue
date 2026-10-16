@@ -11,6 +11,9 @@ var GamesManager = require('app/ui/managers/games_manager');
 var RoguelikeManager = require('app/ui/managers/roguelike_manager');
 var RoguelikeCardMods = require('app/sdk/roguelike/roguelikeCardMods');
 var RoguelikeGenerals = require('app/sdk/roguelike/roguelikeGenerals');
+var RoguelikeProgression = require('app/sdk/roguelike/roguelikeProgression');
+var RoguelikeEncounters = require('app/sdk/roguelike/roguelikeEncounters');
+var RoguelikeRunSummaryItemView = require('app/ui/views/item/roguelike_run_summary');
 var ActivityDialogItemView = require('app/ui/views/item/activity_dialog');
 var ArenaLayer = require('app/view/layers/arena/ArenaLayer');
 var RoguelikeTempl = require('app/ui/templates/layouts/arena.hbs');
@@ -29,10 +32,12 @@ var RoguelikeLayout = Backbone.Marionette.LayoutView.extend({
   /* region MARIONETTE EVENTS */
 
   onShow: function () {
-    // load gauntlet resources, as the roguelike reuses the gauntlet visuals
+    // load gauntlet resources, as the roguelike reuses the gauntlet visuals, and the meta progression
+    var roguelikeManager = RoguelikeManager.getInstance();
     Promise.all([
       NavigationManager.getInstance().showDialogView(new ActivityDialogItemView()),
       PackageManager.getInstance().loadMinorPackage('gauntlet'),
+      roguelikeManager.whenRunResultsSent().then(function () { return roguelikeManager.fetchProgression(); }),
     ]).then(function () {
       if (this.isDestroyed) return; // view is destroyed
 
@@ -46,6 +51,8 @@ var RoguelikeLayout = Backbone.Marionette.LayoutView.extend({
       this.listenTo(NavigationManager.getInstance(), EVENTS.user_triggered_cancel, this.cancelLookingForGame);
 
       return this.showScreenForRun();
+    }.bind(this)).then(function () {
+      if (!this.isDestroyed) this._showRunSummaries();
     }.bind(this));
   },
 
@@ -71,6 +78,63 @@ var RoguelikeLayout = Backbone.Marionette.LayoutView.extend({
     return _.map(_.rest(run.deck), function (card) { return roguelikeManager.getCardDataForRunCard(card); });
   },
 
+  /* region PROGRESSION */
+
+  /**
+   * Shows the account and general progression earned by the last finished run, if any.
+   */
+  _showRunSummaries: function () {
+    var runSummary = _.last(RoguelikeManager.getInstance().consumeRunSummaries());
+    if (runSummary != null) {
+      NavigationManager.getInstance().showModalView(new RoguelikeRunSummaryItemView({ runSummary: runSummary }));
+    }
+  },
+
+  /**
+   * Returns a level label with its xp, ex: "Level 3 (140 / 220 XP)".
+   */
+  _getXpProgressLabel: function (levelLabel, xpProgress) {
+    var xpLabel = xpProgress.isMaxLevel
+      ? i18next.t('main_menu.roguelike_max_level_label')
+      : i18next.t('main_menu.roguelike_xp_label', { xp: xpProgress.xp, next: xpProgress.nextLevelXp });
+    return levelLabel + ' (' + xpLabel + ')';
+  },
+
+  /**
+   * Returns the account level label with its xp and next unlocks.
+   */
+  _getAccountProgressionLabel: function () {
+    var progression = RoguelikeManager.getInstance().getProgression();
+    var xpProgress = RoguelikeProgression.getAccountXpProgress(progression);
+    var label = this._getXpProgressLabel(i18next.t('main_menu.roguelike_account_level_label', { level: xpProgress.level }), xpProgress);
+    var nextUnlocks = xpProgress.isMaxLevel ? [] : RoguelikeProgression.getLevelDescriptions(false, xpProgress.level + 1);
+    return nextUnlocks.length > 0 ? label + '   ' + i18next.t('main_menu.roguelike_next_unlock_label') + ': ' + nextUnlocks.join(', ') : label;
+  },
+
+  /**
+   * Returns how the locked generals of a faction unlock, ex: "Reva Eventide unlocks at Kaleos Xaan Level 3".
+   */
+  _getLockedGeneralsLabel: function (factionId) {
+    var progression = RoguelikeManager.getInstance().getProgression();
+    var unlockLevel = RoguelikeProgression.getNextGeneralUnlockLevel();
+    var cardCaches = SDK.GameSession.getCardCaches();
+    var lockedGeneralIds = _.reject(RoguelikeGenerals.getGeneralIdsForFaction(factionId), function (generalId) {
+      return RoguelikeProgression.getIsGeneralUnlocked(progression, generalId);
+    });
+    if (unlockLevel == null || lockedGeneralIds.length === 0) {
+      return '';
+    }
+    // only the next general to unlock, the ones after it need it first
+    var generalId = lockedGeneralIds[0];
+    return i18next.t('main_menu.roguelike_locked_general_message', {
+      name: cardCaches.getCardById(generalId).getName(),
+      unlocker: cardCaches.getCardById(RoguelikeProgression.getUnlockingGeneralId(generalId)).getName(),
+      level: unlockLevel,
+    });
+  },
+
+  /* endregion PROGRESSION */
+
   /**
    * Shows the screen matching the run state.
    */
@@ -92,23 +156,27 @@ var RoguelikeLayout = Backbone.Marionette.LayoutView.extend({
       return arenaLayer.showFactionSelectScreen({
         faction_choices: _.pluck(SDK.FactionFactory.getAllPlayableFactions(), 'id'),
         title_label: titleLabel,
+        sub_title_label: this._getAccountProgressionLabel(),
       });
     }
 
-    // general choice before the first fight, each general showing its Bloodbound Spell
+    // general choice before the first fight among the unlocked generals, each general showing its level and Bloodbound Spell
     var generalChoices = roguelikeManager.getGeneralChoices();
     if (generalChoices != null) {
+      var lockedGeneralsLabel = this._getLockedGeneralsLabel(run.factionId);
       arenaLayer.bindDeck([]);
       return arenaLayer.showCardSelectScreen({
         faction_id: run.factionId,
         general_id: generalChoices[0],
         card_choices: generalChoices,
-        card_choice_labels: _.map(generalChoices, function (generalId) {
-          var signatureCard = SDK.GameSession.getCardCaches().getCardById(RoguelikeGenerals.getSignatureCardId(generalId));
-          return signatureCard != null ? i18next.t('main_menu.roguelike_bloodbound_spell_label') + ': ' + signatureCard.getName() : '';
+        card_choice_progressions: _.map(generalChoices, function (generalId) {
+          var xpProgress = RoguelikeProgression.getGeneralXpProgress(roguelikeManager.getProgression(), generalId);
+          var percent = xpProgress.isMaxLevel ? 100 : 100 * (xpProgress.xp - xpProgress.levelXp) / (xpProgress.nextLevelXp - xpProgress.levelXp);
+          return { level: xpProgress.level, percent: percent };
         }),
-        card_choice_title: i18next.t('main_menu.roguelike_choose_general_label'),
+        card_choice_title: i18next.t('main_menu.roguelike_choose_general_label') + (lockedGeneralsLabel ? ' - ' + lockedGeneralsLabel : ''),
         add_selected_card_to_deck: false,
+        hide_deck: true,
       });
     }
 
@@ -121,6 +189,7 @@ var RoguelikeLayout = Backbone.Marionette.LayoutView.extend({
         general_id: run.generalId,
         card_choices: _.map(cardChoices, function (cardChoice) { return roguelikeManager.getCardDataForRunCard(cardChoice); }),
         card_choice_labels: _.map(cardChoices, function (cardChoice) { return RoguelikeCardMods.getModsLabel(cardChoice.id, cardChoice.mods); }),
+        reroll_count: roguelikeManager.getRemainingRerolls(),
       });
     }
 
@@ -138,27 +207,24 @@ var RoguelikeLayout = Backbone.Marionette.LayoutView.extend({
         card_choice_labels: _.map(upgradeChoices, function (upgradeChoice) { return RoguelikeCardMods.getModsLabel(upgradeChoice.id, [upgradeChoice.newModId]); }),
         card_choice_title: i18next.t('main_menu.roguelike_upgrade_card_label'),
         add_selected_card_to_deck: false,
+        reroll_count: roguelikeManager.getRemainingRerolls(),
       });
     }
 
-    // run in progress
+    // run in progress: a milestone per encounter level, highlighting the next fight
     var encounter = roguelikeManager.getNextEncounter();
-    var encounterGeneralCard = SDK.GameSession.getCardCaches().getCardById(encounter.generalId);
-    var encounterLevelLabel = i18next.t('main_menu.roguelike_level_label') + ' ' + encounter.level
-      + (encounter.loop > 0 ? ' · ' + i18next.t('main_menu.roguelike_loop_label') + ' ' + (encounter.loop + 1) : '');
     var wonLastFight = roguelikeManager.consumeWonLastFight();
-    var playerProgression = roguelikeManager.getPlayerProgression();
 
     arenaLayer.bindDeck(this._getRunDeckCardsData(run));
     return arenaLayer.showArenaRunScreen({
       faction_id: run.factionId,
       win_count: run.wins,
-      run_details_label: i18next.t('main_menu.roguelike_wins_label') + ': ' + run.wins
-        + '   ' + i18next.t('main_menu.roguelike_health_label') + ': ' + playerProgression.hp
-        + '   ' + i18next.t('main_menu.roguelike_attack_label') + ': ' + playerProgression.atk
-        + '   ' + i18next.t('main_menu.roguelike_starting_mana_label') + ': ' + playerProgression.mana,
-      run_details_sub_label: i18next.t('main_menu.roguelike_next_fight_label') + ': ' + encounterLevelLabel + ' - ' + encounter.name
-        + '\n' + encounterGeneralCard.getName() + ' - ' + encounter.generalHP + ' ' + i18next.t('main_menu.roguelike_health_label'),
+      run_details_label: '',
+      run_milestones: {
+        count: RoguelikeEncounters.encounters.length,
+        completed: encounter.level - 1,
+        loop: encounter.loop,
+      },
     }, wonLastFight);
   },
 
@@ -220,10 +286,22 @@ var RoguelikeLayout = Backbone.Marionette.LayoutView.extend({
     return Promise.resolve();
   },
 
+  rerollReward: function () {
+    if (!RoguelikeManager.getInstance().rerollReward()) {
+      return Promise.resolve();
+    }
+    return this.showScreenForRun();
+  },
+
   resignArenaRun: function () {
     return NavigationManager.getInstance().showDialogForConfirmation(i18next.t('main_menu.roguelike_abandon_confirmation_message')).then(function () {
-      RoguelikeManager.getInstance().abandonRun();
-      return this.showScreenForRun();
+      var roguelikeManager = RoguelikeManager.getInstance();
+      roguelikeManager.abandonRun();
+      return roguelikeManager.whenRunResultsSent().then(function () {
+        if (this.isDestroyed) return;
+        this._showRunSummaries();
+        return this.showScreenForRun();
+      }.bind(this));
     }.bind(this));
   },
 

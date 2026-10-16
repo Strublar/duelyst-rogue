@@ -40,6 +40,8 @@ GameSetups = require '../../../ai/decks/game_setups'
 RoguelikeEncounters = require '../../../../app/sdk/roguelike/roguelikeEncounters'
 RoguelikeCardMods = require '../../../../app/sdk/roguelike/roguelikeCardMods'
 RoguelikeGenerals = require '../../../../app/sdk/roguelike/roguelikeGenerals'
+RoguelikeProgression = require '../../../../app/sdk/roguelike/roguelikeProgression'
+RoguelikeProgressionModule = require '../../../lib/roguelike_progression'
 CosmeticsFactory = require '../../../../app/sdk/cosmetics/cosmeticsFactory'
 
 awsRegion = config.get('aws.region')
@@ -433,7 +435,6 @@ router.post "/roguelike", (req, res, next) ->
   cardBackId = result.value.cardBackId
   battleMapId = result.value.battleMapId
   encounter = RoguelikeEncounters.getEncounterForFight(result.value.fight_number)
-  playerProgression = RoguelikeEncounters.getPlayerProgressionForWins(result.value.wins)
 
   # re-map deck for correct formatting and anti-cheat, applying run card mods (invalid mods are ignored)
   deck = _.map(result.value.deck, (card)->
@@ -445,12 +446,24 @@ router.post "/roguelike", (req, res, next) ->
   if not generalCard?.isGeneral
     return res.status(400).json({ error: "First card in the deck must be a general" })
 
+  # account and general levels give general stat bonuses and unlock generals
+  RoguelikeProgressionModule.load(userId)
+  .then (progressionState) ->
+    if not RoguelikeProgression.getIsGeneralUnlocked(progressionState, deck[0].id)
+      return res.status(400).json({ error: "This general is locked" })
+    playerProgression = RoguelikeProgression.getPlayerProgression(result.value.wins, progressionState, deck[0].id)
+    return createRoguelikeGame(res, next, userId, cardBackId, battleMapId, encounter, playerProgression, deck)
+  .catch (error) ->
+    Logger.module("ROGUELIKE").error "ERROR: Request.post /roguelike #{userId} failed!".red
+    return next(error)
+
+createRoguelikeGame = (res, next, userId, cardBackId, battleMapId, encounter, playerProgression, deck) ->
   # roguelike generals use the run's health and attack instead of their base stats, and may have another Bloodbound Spell
   deck[0].maxHP = playerProgression.hp
   deck[0].atk = playerProgression.atk
-  signatureCardIdOverride = RoguelikeGenerals.getSignatureCardIdOverride(deck[0].id)
-  if signatureCardIdOverride?
-    deck[0].signatureCardData = { id: signatureCardIdOverride }
+  signatureCardDataOverride = RoguelikeGenerals.getSignatureCardDataOverride(deck[0].id, deck.slice(1))
+  if signatureCardDataOverride?
+    deck[0].signatureCardData = signatureCardDataOverride
 
   # ai deck is the encounter deck led by the encounter general with overridden stats
   aiDeck = [{ id: encounter.generalId, atk: encounter.generalAtk, maxHP: encounter.generalHP }]
@@ -475,7 +488,7 @@ router.post "/roguelike", (req, res, next) ->
   battleMapIndexesToSampleFrom = if battleMapId? then [CosmeticsFactory.cosmeticForIdentifier(battleMapId).battleMapTemplateIndex] else null
   aiUsername = encounter.name
 
-  Logger.module("ROGUELIKE").debug "Request #{userId} : fight #{result.value.fight_number} : #{encounter.name} (level #{encounter.level}, loop #{encounter.loop}) : player #{playerProgression.hp} hp, #{playerProgression.atk} atk, #{playerProgression.mana} mana"
+  Logger.module("ROGUELIKE").debug "Request #{userId} : #{encounter.name} (level #{encounter.level}, loop #{encounter.loop}) : player #{playerProgression.hp} hp, #{playerProgression.atk} atk, #{playerProgression.mana} mana"
 
   return createSinglePlayerGame(userId,"You",GameType.SinglePlayer,deck,cardBackId,battleMapIndexesToSampleFrom,CONFIG.AI_PLAYER_ID,aiUsername,encounter.generalId,null,aiDifficulty,0,null,gameSetupOptions)
   .then (responseData)-> # send data back to the player

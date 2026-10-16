@@ -20,6 +20,12 @@ const audio_engine = require('../../../audio/audio_engine');
 const FXRarityFlareSprite = require('../../nodes/fx/FXRarityFlareSprite');
 const DeckLayer = require('./DeckLayer');
 
+// choice layout, relative to the window center: the general portrait (and its icon) ends at about +245 and the deck panel starts at about -245 (see ArenaLayer)
+const CARD_WIDTH = 225;
+const CARD_HEIGHT = 295;
+const CARDS_TOP_Y = 140;
+const TITLE_Y = 166;
+
 /** **************************************************************************
  ChooseCardLayer
  *************************************************************************** */
@@ -31,6 +37,8 @@ const ChooseCardLayer = BaseLayer.extend({
   _cardNodes: null,
   _cardsData: null,
   _cardLabels: null,
+  _cardProgressNodes: null,
+  _cardScale: 1.0,
   _fluidPuffNodes: null,
   _particleFountains: null,
   _rarityFlares: null,
@@ -44,6 +52,7 @@ const ChooseCardLayer = BaseLayer.extend({
     this._cardNodes = [];
     this._cardsData = [];
     this._cardLabels = [];
+    this._cardProgressNodes = [];
     this._fluidPuffNodes = [];
     this._particleFountains = [];
     this._rarityFlares = [];
@@ -59,10 +68,11 @@ const ChooseCardLayer = BaseLayer.extend({
   /**
    * Shows card options.
    * @param {Array} cardsData card ids or card data (ex: cards with modified stats)
-   * @param {Array} [cardLabels] optional label shown under each card
+   * @param {Array} [cardLabels] optional label shown under each card (cards are smaller to fit it between the general portrait and the deck panel)
    * @param {String} [title] optional title replacing the default one
+   * @param {Array} [cardProgressions] optional level progress bar shown under each card, as {level, percent}
    */
-  showCardOptions(cardsData, cardLabels, title) {
+  showCardOptions(cardsData, cardLabels, title, cardProgressions) {
     // wait to show new cards until animations complete
     return (this._showingAnimationsPromise || Promise.resolve()).then(() => {
       // TODO: cache card nodes and reused for each set of card choices, currently there is a bug with keywords not showing correctly when these card nodes are cached
@@ -75,13 +85,22 @@ const ChooseCardLayer = BaseLayer.extend({
         cardLabel.destroy();
       });
       this._cardLabels = [];
+      _.each(this._cardProgressNodes, (progressNode) => {
+        progressNode.removeFromParent();
+      });
+      this._cardProgressNodes = [];
+      const cardScale = 1.0;
+      const cardsY = CARDS_TOP_Y - CARD_HEIGHT * 0.5 * cardScale;
+      const cardsBottomY = cardsY - CARD_HEIGHT * 0.5 * cardScale;
+      this._cardScale = cardScale;
+      // labels appear once every card is revealed
+      const cardLabelsDelay = cardsData.length * 0.4 + 0.8;
 
       // reset
       this.resetSelection();
 
       let isForGenerals = false;
       const revealDelay = 0.0;
-      const xPositioningDelta = 260;
       const numCards = cardsData.length;
       for (let i = 0; i < numCards; i++) {
         const sdkCard = DeckLayer.createCardFromData(cardsData[i]);
@@ -94,22 +113,30 @@ const ChooseCardLayer = BaseLayer.extend({
         if (!cardNode) {
           cardNode = CardNode.create(sdkCard);
           // Calculate horizontal layout
-          const xPosition = ((numCards - 1) * -0.5 + i) * xPositioningDelta * -1; // Cards appear in reverse order thus '* -1'
-          cardNode.setPosition(xPosition, 0);
+          const xPosition = ((numCards - 1) * -0.5 + i) * (CARD_WIDTH * cardScale + 24) * -1; // Cards appear in reverse order thus '* -1'
+          cardNode.setPosition(xPosition, cardsY);
           cardNode.setGlowColor(CONFIG.ARENA_CARD_GLOW_COLOR);
           this.addChild(cardNode);
           this._cardNodes.push(cardNode);
 
-          // optional label under the card
+          // optional label under the card, in the card text style
           const cardLabelText = cardLabels && cardLabels[i];
           if (cardLabelText) {
             // no fixed height so long labels wrap downward instead of being cropped
-            const cardLabel = new cc.LabelTTF(cardLabelText, RSX.font_bold.name, 16, cc.size(240, 0), cc.TEXT_ALIGNMENT_CENTER, cc.VERTICAL_TEXT_ALIGNMENT_TOP);
-            cardLabel.setFontFillColor({ r: 255, g: 220, b: 100 });
+            const cardLabel = new cc.LabelTTF(cardLabelText, RSX.font_regular.name, 16, cc.size(CARD_WIDTH * cardScale, 0), cc.TEXT_ALIGNMENT_CENTER, cc.VERTICAL_TEXT_ALIGNMENT_TOP);
+            cardLabel.setFontFillColor(cc.color(255, 255, 255));
             cardLabel.setAnchorPoint(0.5, 1);
-            cardLabel.setPosition(xPosition, -192);
+            cardLabel.setPosition(xPosition, cardsBottomY - 8);
+            cardLabel.setOpacity(0);
+            cardLabel.runAction(cc.sequence(cc.delayTime(revealDelay + cardLabelsDelay), cc.fadeIn(CONFIG.FADE_FAST_DURATION)));
             this.addChild(cardLabel, 1);
             this._cardLabels.push(cardLabel);
+          }
+
+          // optional level progress bar under the card
+          const cardProgression = cardProgressions && cardProgressions[i];
+          if (cardProgression) {
+            this._addCardProgressNodes(xPosition, cardsBottomY - 20, cardProgression);
           }
 
           // disabled until fluid sprite texture is fixed
@@ -198,7 +225,8 @@ const ChooseCardLayer = BaseLayer.extend({
           ));
         }
 
-        cardNode.setScale(1.0);
+        cardNode.setScale(cardScale);
+        cardNode.revealScale = cardScale;
         cardNode.setOpacity(255);
         cardNode.setVisible(false);
         cardNode.runAction(
@@ -217,6 +245,9 @@ const ChooseCardLayer = BaseLayer.extend({
           ),
         );
       }
+
+      // keep the title above the cards, under the general portrait
+      this.titleLabel.setPosition(0, TITLE_Y);
 
       if (title) {
         this.titleLabel.setString(title.toUpperCase());
@@ -353,6 +384,9 @@ const ChooseCardLayer = BaseLayer.extend({
       _.each(this._cardLabels, (cardLabel) => {
         cardLabel.fadeToInvisible(CONFIG.FADE_FAST_DURATION);
       });
+      _.each(this._cardProgressNodes, (progressNode) => {
+        progressNode.fadeToInvisible(CONFIG.FADE_FAST_DURATION);
+      });
 
       // select card
       const selectedCardData = this._cardsData[_.indexOf(this._cardNodes, selectedNode)];
@@ -410,7 +444,7 @@ const ChooseCardLayer = BaseLayer.extend({
           const tempOutline = new BaseSprite(otherNode.getOutlineGlowSprite().getTexture());
           tempOutline.setBlendFunc(cc.SRC_ALPHA, cc.ONE);
           tempOutline.setPosition(otherNode.getPosition());
-          tempOutline.setScale(0.95);
+          tempOutline.setScale(0.95 * this._cardScale);
           tempOutline.setOpacity(0);
           this.addChild(tempOutline);
 
@@ -445,6 +479,35 @@ const ChooseCardLayer = BaseLayer.extend({
     });
   },
 
+  /**
+   * Adds a level progress bar (profile xp bar style) and its level under a card.
+   * @param {Number} xPosition
+   * @param {Number} barY
+   * @param {Object} cardProgression {level, percent}
+   */
+  _addCardProgressNodes(xPosition, barY, cardProgression) {
+    const barWidth = 160;
+    const barHeight = 10;
+    const percent = Math.max(0, Math.min(100, cardProgression.percent || 0));
+    const barNode = new cc.DrawNode();
+    const left = xPosition - barWidth * 0.5;
+    // glow, background and border, then fill
+    barNode.drawRect(cc.p(left - 3, barY - 3), cc.p(left + barWidth + 3, barY + barHeight + 3), cc.color(0, 120, 255, 60), 0, cc.color(0, 0, 0, 0));
+    barNode.drawRect(cc.p(left, barY), cc.p(left + barWidth, barY + barHeight), cc.color(0, 0, 0, 255), 1, cc.color(255, 255, 255, 255));
+    if (percent > 0) {
+      barNode.drawRect(cc.p(left + 1, barY + 1), cc.p(left + 1 + (barWidth - 2) * percent / 100, barY + barHeight - 1), cc.color(255, 255, 255, 255), 0, cc.color(0, 0, 0, 0));
+    }
+    this.addChild(barNode, 1);
+    this._cardProgressNodes.push(barNode);
+
+    const levelLabel = new cc.LabelTTF(i18next.t('main_menu.roguelike_general_level_label', { level: cardProgression.level }).toUpperCase(), RSX.font_bold.name, 18, cc.size(240, 24), cc.TEXT_ALIGNMENT_CENTER);
+    levelLabel.setFontFillColor(cc.color(255, 255, 255));
+    levelLabel.enableShadow(2, -2, 0.8, 2);
+    levelLabel.setPosition(xPosition, barY - 18);
+    this.addChild(levelLabel, 1);
+    this._cardProgressNodes.push(levelLabel);
+  },
+
   hasSelection() {
     return this._selectedNode != null;
   },
@@ -463,7 +526,7 @@ const ChooseCardLayer = BaseLayer.extend({
       node.setGlowColor(CONFIG.ARENA_CARD_GLOW_COLOR);
       node.setGlowing(true);
       node.setLocalZOrder(0);
-      node.setScale(1.0);
+      node.setScale(this._cardScale);
       node.setOpacity(255.0);
       node.setVisible(true);
     }

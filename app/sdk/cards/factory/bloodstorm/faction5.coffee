@@ -29,6 +29,7 @@ Modifier = require 'app/sdk/modifiers/modifier'
 ModifierSynergizeApplyModifiersToGeneral = require 'app/sdk/modifiers/modifierSynergizeApplyModifiersToGeneral'
 ModifierDoubleAttackStat = require 'app/sdk/modifiers/modifierDoubleAttackStat'
 ModifierSynergizeApplyModifiers = require 'app/sdk/modifiers/modifierSynergizeApplyModifiers'
+ModifierOpeningGambitBuffSelfByGeneralAttack = require 'app/sdk/modifiers/modifierOpeningGambitBuffSelfByGeneralAttack'
 ModifierMyGeneralDamagedWatchBuffSelfAttackForSame = require 'app/sdk/modifiers/modifierMyGeneralDamagedWatchBuffSelfAttackForSame'
 ModifierOnSpawnCopyMyGeneral = require 'app/sdk/modifiers/modifierOnSpawnCopyMyGeneral'
 ModifierEgg = require 'app/sdk/modifiers/modifierEgg'
@@ -116,7 +117,7 @@ class CardFactory_BloodstormSet_Faction5
       buffContextObject = Modifier.createContextObjectWithAttributeBuffs(1)
       buffContextObject.appliedName = i18next.t("modifiers.faction_5_thraex_buff_name")
       card.setInherentModifiersContextObjects([
-        ModifierSynergizeApplyModifiers.createContextObjectForAllAlliesAndSelf([buffContextObject], false, "All friendly minions gain +1 Attack (including itself)")
+        ModifierSynergizeApplyModifiers.createContextObject([buffContextObject], false, true, true, false, true, CONFIG.WHOLE_BOARD_RADIUS, "All allies gain +1 Attack, including your General")
       ])
 
     if (identifier == Cards.Faction5.Rancour)
@@ -146,11 +147,11 @@ class CardFactory_BloodstormSet_Faction5
         damage : RSX.f5RancourHit.name
         death : RSX.f5RancourDeath.name
       )
-      card.atk = 1
+      card.atk = 0
       card.maxHP = 3
       card.manaCost = 2
       card.rarityId = Rarity.Rare
-      card.setInherentModifiersContextObjects([ModifierMyGeneralDamagedWatchBuffSelfAttackForSame.createContextObject("Rancour\'s Rage")])
+      card.setInherentModifiersContextObjects([ModifierOpeningGambitBuffSelfByGeneralAttack.createContextObject("Rancour\'s Rage")])
       #card.setInherentModifiersContextObjects([ModifierMyGeneralDamagedWatchBuffSelfAttackForSame.createContextObject(i18next.t("modifiers.faction_5_rancour_buff_name"))])
 
     if (identifier == Cards.Spell.TectonicSpikes)

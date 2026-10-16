@@ -693,13 +693,12 @@ class CardFactory_CoreSet_Faction1
       card.name = i18next.t("cards.faction_1_spell_roar_name")
       card.setDescription(i18next.t("cards.faction_1_spell_roar_description"))
       card.spellFilterType = SpellFilterType.AllyDirect
-      card.filterNearGeneral = true
+      card.canTargetGeneral = false
       card.manaCost = 1
-      buffContextObject = Modifier.createContextObjectWithAttributeBuffs(2)
-      buffContextObject.appliedName = i18next.t("modifiers.faction_1_spell_roar_1")
       card.setTargetModifiersContextObjects([
-        buffContextObject
+        ModifierBandingAttack.createContextObject(2)
       ])
+      card.addKeywordClassToInclude(ModifierBanding)
       card.setFXResource(["FX.Cards.Spell.Roar"])
       card.setBaseSoundResource(
         apply : RSX.sfx_neutral_arakiheadhunter_attack_swing.audio

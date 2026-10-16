@@ -76,7 +76,7 @@ RoguelikeEncounters.encounters = [
     name: 'Bandit Camp',
     generalId: Cards.Boss.RoguelikeRagtooth,
     generalAtk: 1,
-    generalHP: 8,
+    generalHP: 10,
     aiDifficulty: 0.1,
     deck: pairs([
       Cards.Neutral.PlanarScout,
@@ -96,7 +96,7 @@ RoguelikeEncounters.encounters = [
     name: 'Desert Raiders',
     generalId: Cards.Faction3.General,
     generalAtk: 2,
-    generalHP: 10,
+    generalHP: 14,
     aiDifficulty: 0.2,
     cardMods: {
       [Cards.Faction3.Pyromancer]: ['rush'],
@@ -120,7 +120,7 @@ RoguelikeEncounters.encounters = [
     name: 'Wraith Cult',
     generalId: Cards.Faction4.General,
     generalAtk: 2,
-    generalHP: 12,
+    generalHP: 19,
     aiDifficulty: 0.3,
     cardMods: {
       [Cards.Faction4.GloomChaser]: ['echo'],
@@ -146,7 +146,7 @@ RoguelikeEncounters.encounters = [
     name: 'Frozen Wastes',
     generalId: Cards.Boss.Boss1,
     generalAtk: 2,
-    generalHP: 14,
+    generalHP: 23,
     aiDifficulty: 0.4,
     cardMods: {
       [Cards.Spell.FlashFreeze]: ['mirror'],
@@ -173,7 +173,7 @@ RoguelikeEncounters.encounters = [
     name: 'Mechaz0r Workshop',
     generalId: Cards.Boss.Boss7,
     generalAtk: 2,
-    generalHP: 16,
+    generalHP: 28,
     aiDifficulty: 0.5,
     cardMods: {
       [Cards.Neutral.Mechaz0rHelm]: ['cost'],
@@ -199,7 +199,7 @@ RoguelikeEncounters.encounters = [
     name: 'Golem Quarry',
     generalId: Cards.Boss.Boss8,
     generalAtk: 2,
-    generalHP: 18,
+    generalHP: 32,
     aiDifficulty: 0.6,
     cardMods: {
       [Cards.Neutral.GolemMetallurgist]: ['draw'],
@@ -228,7 +228,7 @@ RoguelikeEncounters.encounters = [
     name: 'Primal Jungle',
     generalId: Cards.Boss.Boss18,
     generalAtk: 3,
-    generalHP: 20,
+    generalHP: 37,
     aiDifficulty: 0.7,
     cardMods: {
       [Cards.Spell.GreaterFortitude]: ['spell_buff', 'mirror'],
@@ -257,7 +257,7 @@ RoguelikeEncounters.encounters = [
     name: 'Shadow Dojo',
     generalId: Cards.Boss.Boss25,
     generalAtk: 3,
-    generalHP: 22,
+    generalHP: 41,
     aiDifficulty: 0.8,
     cardMods: {
       [Cards.Spell.PhoenixFire]: ['spell_power'],
@@ -286,7 +286,7 @@ RoguelikeEncounters.encounters = [
     name: 'Arcane Academy',
     generalId: Cards.Boss.Boss26,
     generalAtk: 2,
-    generalHP: 25,
+    generalHP: 46,
     aiDifficulty: 0.9,
     cardMods: {
       [Cards.Spell.TrueStrike]: ['spell_power', 'mirror'],
@@ -316,7 +316,7 @@ RoguelikeEncounters.encounters = [
     name: 'The Void',
     generalId: Cards.Boss.Boss16,
     generalAtk: 2,
-    generalHP: 30,
+    generalHP: 50,
     aiDifficulty: 1.0,
     cardMods: {
       [Cards.Spell.DarkTransformation]: ['spell_cost'],
