@@ -465,26 +465,6 @@ var MainMenuItemView = Backbone.Marionette.ItemView.extend({
       this.ui.$playLabel.popover('show');
     }
 
-    if (NewPlayerManager.getInstance().getCurrentCoreStage().value == SDK.NewPlayerProgressionStageEnum.ExtendedPracticeDone.value) {
-      this.ui.$playLabel.addClass('emphasis-glow');
-      this.ui.$playLabel.popover({
-        content: i18next.t('new_player_experience.highlight_ladder_popover'),
-        container: this.$el,
-        animation: true,
-      });
-      this.ui.$playLabel.popover('show');
-    }
-
-    // if (NewPlayerManager.getInstance().getCurrentCoreStage().value == SDK.NewPlayerProgressionStageEnum.FirstFactionLevelingDone.value) {
-    //   this.ui.$playLabel.addClass("emphasis-glow")
-    //   this.ui.$playLabel.popover({
-    //     content: "Season Ladder Here",
-    //     container: this.$el,
-    //    animation: true
-    //   });
-    //   this.ui.$playLabel.popover("show")
-    // }
-
     var soloChallengeQuest = QuestsManager.getInstance().dailyQuestsCollection.find(function (q) {
       return q.get('quest_type_id') == QuestBeginnerCompleteSoloChallenges.Identifier;
     });
@@ -492,19 +472,6 @@ var MainMenuItemView = Backbone.Marionette.ItemView.extend({
       this.ui.$playLabel.addClass('emphasis-glow');
       this.ui.$playLabel.popover({
         content: i18next.t('new_player_experience.highlight_solo_challenge_popover'),
-        container: this.$el,
-        animation: true,
-      });
-      this.ui.$playLabel.popover('show');
-    }
-
-    if (NewPlayerManager.getInstance().getCurrentCoreStage().value == SDK.NewPlayerProgressionStageEnum.FirstFactionLevelingDone.value) {
-    }
-
-    if (NewPlayerManager.getInstance().getCurrentCoreStage().value == SDK.NewPlayerProgressionStageEnum.ExtendedPracticeDone.value) {
-      this.ui.$playLabel.addClass('emphasis-glow');
-      this.ui.$playLabel.popover({
-        content: i18next.t('new_player_experience.highlight_ladder_popover'),
         container: this.$el,
         animation: true,
       });
